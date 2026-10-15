@@ -1,5 +1,6 @@
 import json,re,html,os
 S="https://aitrackertool.dev"
+GA_TAG='<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMR6RG9R83"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'G-VMR6RG9R83\');</script>'
 C={"coding":"Coding & Vibe Coding","chat":"Chat Assistants","image":"Image","video":"Video","audio":"Voice & Audio","writing":"Writing","agents":"Agents & Automation","research":"Productivity & Research","design":"Design & Websites"}
 # name,cat,url,desc,free(True/None),price,tags
 T=[
@@ -92,10 +93,10 @@ def mkfoot():
   cl="".join(f'<li><a href="/categories/{k}.html">{e(v)}</a></li>' for k,v in C.items())
   return (f'<footer class="site"><div class="wrap fgrid"><div><a class="logo" href="/">⚡ AI Tool Tracker</a><p class="mut">Daily, honest picks of useful AI tools for builders.</p><p><a href="https://x.com/AITRACKERTOOL" target="_blank" rel="noopener">@AITRACKERTOOL on X</a> · <a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Newsletter</a></p></div>'
    f'<div><h4>Categories</h4><ul class="flist">{cl}</ul></div><div><h4>Site</h4><ul class="flist"><li><a href="/#directory">Directory</a></li><li><a href="{DROP}">Today\'s Drop</a></li><li><a href="/issue-001.html">Issue #001</a></li><li><a href="/#submit">Submit / Sponsor</a></li></ul></div></div>'
-   '<div class="wrap disc">© 2026 <span data-sitename>AI Tool Tracker</span>. <b>Affiliate disclosure:</b> some links on this site are affiliate links (marked "affiliate link"). If you sign up through them we may earn a commission at no extra cost to you. It never affects which tools we pick.</div></footer>')
+   '<div class="wrap disc">© 2026 <span data-sitename>AI Tool Tracker</span>. <b>Affiliate disclosure:</b> some links on this site are affiliate links (marked "affiliate link"). If you sign up through them we may earn a commission at no extra cost to you. It never affects which tools we pick. This site uses Google Analytics to count visits.</div></footer>')
 FOOTER=mkfoot()
 def head(t,d,path,ld):
-  return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script><link rel="stylesheet" href="/style.css"></head><body>'+nav()
+  return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script><link rel="stylesheet" href="/style.css">'+GA_TAG+'</head><body>'+nav()
 foot=FOOTER+'<script src="/config.js"></script></body></html>'
 def isaff(x): return "bolt.cello.so" in x["url"]
 def link(x):
@@ -153,6 +154,8 @@ print(len(data),len(urls))
 PTH='<div class="pf" role="group" aria-label="Pricing filter"><button type="button" class="pfb on" data-p="all" aria-pressed="true">All</button><button type="button" class="pfb" data-p="free" aria-pressed="false">Free</button><button type="button" class="pfb" data-p="paid" aria-pressed="false">Paid</button></div>'
 ix=open("index.html").read()
 hd=ix[:ix.index("<body>")+6].replace('href="style.css"','href="/style.css"')
+if "G-VMR6RG9R83" not in hd:
+  hd=hd.replace("</head>",GA_TAG+"</head>",1)
 groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{ICON[k]} {e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">View category →</a></div><div class="grid">{"".join(card(y) for y in data if y["category"]==k)}</div></section>' for k,v in C.items())
 body=nav()+f'''<main id="main"><section class="hero"><div class="wrap"><span class="kicker">// new daily drop · oct 14, 2026</span><h1>Find the right AI tool, fast.</h1><p class="tag">{len(data)} hand-checked AI tools in {len(C)} categories, plus a daily drop of new launches. No hype.</p>
 <form class="hsearch" role="search" onsubmit="event.preventDefault();var q=document.getElementById('q');q.value=this.q.value;q.dispatchEvent(new Event('input'));document.getElementById('directory').scrollIntoView()"><input name="q" type="search" placeholder="Search tools, e.g. video, agent, free" aria-label="Search tools"><button class="btn" type="submit">Search</button></form></div></section>
@@ -172,4 +175,6 @@ for p in ["drop-2026-10-14.html","issue-001.html","thanks.html"]:
   h=re.sub(r'(<a class="skip".*?</header>|<nav class="wrap">.*?</nav>)',lambda m:nav(),h,count=1,flags=re.S)
   h=re.sub(r'<footer.*?</footer>',lambda m:FOOTER,h,count=1,flags=re.S)
   h=h.replace('href="style.css"','href="/style.css"')
+  if "G-VMR6RG9R83" not in h:
+    h=h.replace("</head>",GA_TAG+"</head>",1)
   open(p,"w").write(h)
