@@ -8,7 +8,7 @@ const TOOLS=[
 {name:"Rill Browser",url:"https://rill.love",category:"Productivity",pricing:"Free",desc:"AI-native browser that turns any page into a task for your Claude Code or Codex agent (⌘E).",why:"Brings browsing context straight to your coding agent and shows all agent projects in one place, on the plan you already have."},
 {name:"Articos MCP",url:"https://www.articos.com/",category:"Marketing",pricing:"",desc:"Test messaging and landing pages against simulated buyer personas, right inside your agent.",why:"Shipping fast is half the job. This lets builders sanity-check positioning before launch. #1 on Product Hunt Oct 13."},
 {name:"Onepin",url:"https://onepin.ai",category:"Audio",pricing:"Free to start",desc:"QA layer for AI voiceover: fixes pronunciation, spells out prices and dates, and scores every line.",why:"Works on top of ElevenLabs, OpenAI, Google and 30+ voices, so you can fix single words without re-rendering the whole take."}];
-function card(t){return `<div class="card"><div class="cat">${t.category}</div><h3><a href="${t.url}" target="_blank" rel="noopener">${t.name} ↗</a></h3><p>${t.desc}</p>${t.pricing?`<p class="price">💰 ${t.pricing}</p>`:''}<p class="why"><b>Why it matters:</b> ${t.why}</p></div>`}
+function card(t){return `<div class="card"><div class="cat">${t.category}</div><h3><a href="${t.url}" target="_blank" rel="noopener">${t.name} ↗</a></h3><p>${t.desc}</p>${t.pricing?`<p class="price">Price: ${t.pricing}</p>`:''}<p class="why"><b>Why it matters:</b> ${t.why}</p></div>`}
 
 // Daily drop: Oct 14, 2026. Pricing left blank where unknown.
 const DROP_2026_10_14=[

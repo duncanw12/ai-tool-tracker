@@ -95,70 +95,82 @@ for x in data:
   if x["freeTier"] is None: del x["freeTier"]
   if not x["pricing"]: del x["pricing"]
 open("directory.js","w").write("// Directory data. Pricing/free tier only where verified on the official site (Oct 14-15, 2026); omitted otherwise.\nconst CATEGORIES="+json.dumps(C)+";\nconst DIRECTORY="+json.dumps(data,indent=0)+";\n")
-ICON={"coding":"💻","chat":"💬","image":"🖼️","video":"🎬","audio":"🎙️","writing":"✍️","agents":"🤖","research":"🔎","design":"🎨","itsec":"🛡️"}
 CNT={c:sum(1 for y in data if y["category"]==c) for c in C}
 DROP="/drop-2026-10-15.html"
-INTRO={"itsec":'<div class="card intro"><p><b>Breaking into IT?</b> Start with the learning tools here (TryHackMe\'s Echo tutor, HTB Coach) for cert study and labs. Practice scripting and PowerShell with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, run local models in your home lab with <a href="/tools/ollama.html">Ollama</a>, and turn study notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>'}
+VER="10/15"
+INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p>Start with the learning tools here (TryHackMe\'s Echo tutor, HTB Coach) for cert study and labs. Practice scripting and PowerShell with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, run local models in your home lab with <a href="/tools/ollama.html">Ollama</a>, and turn study notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>'}
+LOGO='<svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true" focusable="false"><path d="M5 6L14 14 23 8M14 14L9 23M14 14L23 21" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="5" cy="6" r="2.5" fill="currentColor"/><circle cx="23" cy="8" r="2.5" fill="currentColor"/><circle cx="9" cy="23" r="2.5" fill="currentColor"/><circle cx="23" cy="21" r="2.5" fill="currentColor"/><circle cx="14" cy="14" r="3.5" fill="#00ff9c"/></svg>'
+ICONS='<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0d1520">'
 def nav():
-  dd="".join(f'<a href="/categories/{k}.html">{ICON[k]} {e(v)} <span class="n">{CNT[k]}</span></a>' for k,v in C.items())
-  return ('<a class="skip" href="#main">Skip to content</a><header class="topnav"><div class="wrap navin"><a class="logo" href="/">⚡ <span data-sitename>AI Tool Tracker</span></a>'
-   '<div class="menu"><button class="burger" type="button" aria-label="Menu" aria-expanded="false" onclick="var m=this.parentNode;m.classList.toggle(&quot;open&quot;);this.setAttribute(&quot;aria-expanded&quot;,m.classList.contains(&quot;open&quot;))">☰</button><nav class="links" aria-label="Main">'
-   '<a href="/">Home</a><a href="/#directory">Directory</a>'
-   f'<details class="dd"><summary>Categories ▾</summary><div class="ddp">{dd}</div></details>'
-   f'<a href="{DROP}">Today\'s Drop</a><a href="/#newsletter">Newsletter</a><a class="btn sm" href="/#submit">Submit a tool</a></nav></div></div></header>')
+  return ('<a class="skip" href="#main">Skip to content</a><header class="bar"><a class="logo" href="/" aria-label="AI Tool Tracker home"><span class="lg-mark">'+LOGO+'</span><span data-sitename>AI Tool Tracker</span></a>'
+   f'<nav class="top" aria-label="Main"><a href="/#directory">Directory</a><a href="{DROP}">Today\'s drop</a><a href="/#newsletter">Newsletter</a><a class="cta" href="/#submit">Submit a tool</a></nav></header>')
+def side(cur=None,home=False):
+  it=[]
+  if home: it.append(f'<a class="chip fi on" href="#directory" data-c="all"><span class="fn">All tools</span><span class="n">{len(data)}</span></a>')
+  else: it.append(f'<a class="fi" href="/#directory"><span class="fn">All tools</span><span class="n">{len(data)}</span></a>')
+  for k,v in C.items():
+    on=k==cur
+    it.append(f'<a class="{"chip " if home else ""}fi{" on" if on else ""}" href="{"#cat-"+k if home else "/categories/"+k+".html"}" data-c="{k}"{" aria-current=\"page\"" if on else ""}><span class="fn">{e(v)}</span><span class="n">{CNT[k]}</span></a>')
+  return (f'<aside class="side" aria-label="Categories"><div class="side-h">Categories</div><nav class="tree"{" id=\"cats\"" if home else ""} aria-label="Categories">{"".join(it)}</nav>'
+   f'<div class="side-h sh2">Start here</div><nav class="tree t2" aria-label="Quick links"><a class="fi" href="/categories/itsec.html"><span class="fn">Breaking into IT</span></a><a class="fi" href="{DROP}"><span class="fn">Today\'s drop</span></a><a class="fi" href="/issue-001.html"><span class="fn">Newsletter issue #001</span></a></nav></aside>')
 def mkfoot():
   cl="".join(f'<li><a href="/categories/{k}.html">{e(v)}</a></li>' for k,v in C.items())
-  return (f'<footer class="site"><div class="wrap fgrid"><div><a class="logo" href="/">⚡ AI Tool Tracker</a><p class="mut">Daily, honest picks of useful AI tools for builders.</p><p><a href="https://x.com/AITRACKERTOOL" target="_blank" rel="noopener">@AITRACKERTOOL on X</a> · <a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Newsletter</a></p></div>'
-   f'<div><h4>Categories</h4><ul class="flist">{cl}</ul></div><div><h4>Site</h4><ul class="flist"><li><a href="/#directory">Directory</a></li><li><a href="{DROP}">Today\'s Drop</a></li><li><a href="/issue-001.html">Issue #001</a></li><li><a href="/#submit">Submit / Sponsor</a></li></ul></div></div>'
-   '<div class="wrap disc">© 2026 <span data-sitename>AI Tool Tracker</span>. <b>Affiliate disclosure:</b> some links on this site are affiliate links (marked "affiliate link"). If you sign up through them we may earn a commission at no extra cost to you. It never affects which tools we pick. This site uses Google Analytics to count visits.</div></footer>')
+  return (f'<footer class="site"><div class="fgrid"><div><a class="logo" href="/"><span class="lg-mark">{LOGO}</span>AI Tool Tracker</a><p class="mut">Hand-checked AI tools for builders and IT folks, updated daily.</p><p><a href="https://x.com/AITRACKERTOOL" target="_blank" rel="noopener">@AITRACKERTOOL on X</a> · <a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Newsletter</a></p></div>'
+   f'<div><h4>Categories</h4><ul class="flist">{cl}</ul></div><div><h4>Site</h4><ul class="flist one"><li><a href="/#directory">Directory</a></li><li><a href="{DROP}">Today\'s drop</a></li><li><a href="/issue-001.html">Issue #001</a></li><li><a href="/#submit">Submit / Sponsor</a></li></ul></div></div>'
+   '<div class="disc">© 2026 <span data-sitename>AI Tool Tracker</span>. <b>Affiliate disclosure:</b> some links on this site are affiliate links (marked "affiliate link"). If you sign up through them we may earn a commission at no extra cost to you. It never affects which tools we pick. This site uses Google Analytics to count visits.</div></footer>')
 FOOTER=mkfoot()
+SCROLL='<script>(function(){var a=document.querySelector(".side .fi.on");if(a&&innerWidth<900)a.parentNode.parentNode.scrollLeft=a.offsetLeft-12})()</script>'
+def shell(main,cur=None,home=False): return '<div class="shell">'+side(cur,home)+'<main id="main" class="main">'+main+FOOTER+'</main></div>'+SCROLL
 def head(t,d,path,ld):
-  return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script><link rel="stylesheet" href="/style.css">'+GA_TAG+'</head><body>'+nav()
-foot=FOOTER+'<script src="/config.js"></script></body></html>'
+  return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script>{ICONS}<link rel="stylesheet" href="/style.css">'+GA_TAG+'</head><body>'+nav()
+END='<script src="/config.js"></script></body></html>'
 def isaff(x): return "bolt.cello.so" in x["url"]
-def link(x):
-  aff=isaff(x)
-  return f'<a class="btn" href="{x["url"]}" target="_blank" rel="{"sponsored noopener" if aff else "noopener"}">Visit {e(x["name"])} ↗</a>'+(' <b class="afftag">(affiliate link)</b>' if aff else '')
-def badge(x):
-  b=[]
-  pb={"both":'<span class="badge free">Free tier</span><span class="badge paid">Paid</span>',"free":'<span class="badge free">Free</span>' if "freeTier" not in x else '<span class="badge free">Free tier</span>',"paid":'<span class="badge paid">Paid</span>'}.get(x["pf"],"")
-  if x.get("pricing"): pb+=f'<span class="badge price">{e(x["pricing"])}</span>'
-  return pb or '<span class="badge na">Pricing: see site</span>'
-  if "freeTier" in x: b.append('<span class="badge free">Free tier</span>')
-  if "pricing" in x: b.append(f'<span class="badge price">{e(x["pricing"])}</span>')
-  return "".join(b) or '<span class="badge na">Pricing: see site</span>'
-def card(x):
-  aff=isaff(x)
-  s=(x["name"]+" "+x["desc"]+" "+" ".join(x["tags"])+" "+x["catName"]+(" free" if "freeTier" in x else "")).lower()
-  return (f'<article class="card tool" data-c="{x["category"]}" data-p="{x["pf"]}" data-s="{e(s)}"><a class="tag" href="/categories/{x["category"]}.html">{ICON[x["category"]]} {e(x["catName"])}</a>'
-   f'<h3><a href="/tools/{x["slug"]}.html">{e(x["name"])}</a></h3><p class="desc">{e(x["desc"])}</p><div class="badges">{badge(x)}</div>'
-   f'<div class="acts"><a class="btn sm" href="{x["url"]}" target="_blank" rel="{"sponsored noopener" if aff else "noopener"}">Visit ↗</a><a class="btn sm ghost" href="/tools/{x["slug"]}.html">Details</a>'+('<span class="afftag">affiliate link</span>' if aff else '')+'</div></article>')
-def chipitems(cur=None,anchor=False):
-  return "".join(f'<a class="chip{" on" if k==cur else ""}" href="{"#cat-"+k if anchor else "/categories/"+k+".html"}" data-c="{k}"{" aria-current=page" if k==cur else ""}>{ICON[k]} {e(v)} <span class="n">{CNT[k]}</span></a>' for k,v in C.items())
-def chips(cur=None): return '<nav class="chips" aria-label="Categories">'+chipitems(cur)+'</nav>'
-def tiles():
-  return '<div class="tiles">'+"".join(f'<a class="tile" href="/categories/{k}.html"><span class="ico" aria-hidden="true">{ICON[k]}</span><span class="tn">{e(v)}</span><span class="tc">{CNT[k]} tools</span></a>' for k,v in C.items())+'</div>'
+AFFNOTE='<span class="affnote">Affiliate link: we may earn a commission if you sign up, at no extra cost to you.</span>'
+def tags(x):
+  p=x["pf"];t=[]
+  if p=="free": t.append('<span class="t free">[FREE]</span>')
+  elif p=="paid": t.append('<span class="t paid">[PAID]</span>')
+  elif p=="both": t+=['<span class="t free">[FREE TIER]</span>','<span class="t paid">[PAID]</span>']
+  else: t.append('<span class="t na">[PRICE: SEE SITE]</span>')
+  t.append(f'<span class="t ver">[VERIFIED {VER}]</span>' if (p or x.get("pricing")) else '<span class="t na">[CHECK SITE]</span>')
+  if isaff(x): t.append('<span class="t aff">[AFFILIATE]</span>')
+  return "".join(t)
+def visit(x,cls="go"):
+  return f'<a class="{cls}" href="{x["url"]}" target="_blank" rel="{"sponsored noopener" if isaff(x) else "noopener"}" aria-label="Visit {e(x["name"])} (opens in new tab)">Visit ↗</a>'
+def row(x,showcat=False,filt=True):
+  s=(x["name"]+" "+x["desc"]+" "+" ".join(x["tags"])+" "+x["catName"]+(" free" if "freeTier" in x or x["pf"]=="free" else "")).lower()
+  attrs=f' data-c="{x["category"]}" data-p="{x["pf"]}" data-s="{e(s)}"' if filt else ''
+  return (f'<div class="row{" tool" if filt else ""}" role="row"{attrs}><div class="c-name" role="cell"><a class="nm" href="/tools/{x["slug"]}.html">{e(x["name"])}</a><span class="ds">{e(x["desc"])}</span>'+(AFFNOTE if isaff(x) else '')+'</div>'
+   +(f'<div class="c-cat" role="cell"><a href="/categories/{x["category"]}.html">{e(x["catName"])}</a></div>' if showcat else '')+
+   f'<div class="c-price" role="cell"><span class="lbl">Price </span>{e(x.get("pricing") or "See site")}</div><div class="c-tags" role="cell">{tags(x)}</div><div class="c-go" role="cell">{visit(x)}</div></div>')
+def table(rows,showcat=False):
+  h='<div class="row head" role="row"><div role="columnheader">Tool</div>'+('<div role="columnheader">Category</div>' if showcat else '')+'<div role="columnheader">Price</div><div role="columnheader">Status</div><div role="columnheader"><span class="sr">Link</span></div></div>'
+  return f'<div class="tbl{" wcat" if showcat else ""}" role="table">{h}{"".join(rows)}</div>'
+def ctl(n):
+  return (f'<div class="ctl" role="search"><label class="prompt" for="q"><span class="ps" aria-hidden="true">$ find</span><span class="sr">Search tools</span><input id="q" type="search" placeholder="Search tools..." autocomplete="off"></label>'
+   '<div class="pf" role="group" aria-label="Filter by price"><button type="button" class="pfb on" data-p="all" aria-pressed="true">All</button><button type="button" class="pfb" data-p="free" aria-pressed="false">Free</button><button type="button" class="pfb" data-p="paid" aria-pressed="false">Paid</button></div></div>'
+   '<p id="none" class="none" hidden>No tools match. Try a different word or switch the filter to All.</p>')
 urls=[]
 for x in data:
-  pr=[]
-  if "freeTier" in x: pr.append("Free tier: yes")
-  if "pricing" in x: pr.append(x["pricing"])
   ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":x["catName"],"operatingSystem":"Web","description":x["desc"],"url":x["url"] if "cello" not in x["url"] else "https://bolt.new"}
   if "freeTier" in x: ld["offers"]={"@type":"Offer","price":"0","priceCurrency":"USD"}
   rel=[y for y in data if y["category"]==x["category"] and y is not x]
   b=head(f'{x["name"]}: pricing, free tier & alternatives | AI Tool Tracker',f'{x["name"]}: {x["desc"]} Pricing, free tier and related {x["catName"]} tools.',f'tools/{x["slug"]}.html',ld)
-  b+=(f'<main id="main" class="wrap page"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/categories/{x["category"]}.html">{e(x["catName"])}</a> › <span aria-current="page">{e(x["name"])}</span></nav>'+chips(x["category"])+
-   f'<div class="card detail"><a class="tag" href="/categories/{x["category"]}.html">{ICON[x["category"]]} {e(x["catName"])}</a><h1>{e(x["name"])}</h1><p class="lead">{e(x["desc"])}</p><div class="badges">{badge(x)}</div>'
-   '<p class="tags">'+"".join(f'<code>{e(t)}</code>' for t in x["tags"])+f'</p><p>{link(x)}</p>'+('<p class="note">This is an affiliate link: we may earn a commission if you sign up, at no extra cost to you.</p>' if isaff(x) else '')+
-   f'</div><h2>Related {e(x["catName"])} tools</h2><div class="grid">{"".join(map(card,rel))}</div><h2>Browse categories</h2>'+tiles()+'</main>'+foot)
-  open(f'tools/{x["slug"]}.html','w').write(b); urls.append(f'tools/{x["slug"]}.html')
+  free={"free":"Yes","both":"Yes","paid":"No"}.get(x["pf"],"Check site")
+  m=(f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/{x["category"]}.html">{e(x["catName"])}</a> / <span aria-current="page">{e(x["name"])}</span></nav>'
+   f'<article class="detail"><h1>{e(x["name"])}</h1><p class="lede">{e(x["desc"])}</p><div class="c-tags">{tags(x)}</div>'
+   f'<dl class="facts"><div><dt>Category</dt><dd><a href="/categories/{x["category"]}.html">{e(x["catName"])}</a></dd></div><div><dt>Price</dt><dd>{e(x.get("pricing") or "See official site")}</dd></div><div><dt>Free option</dt><dd>{free}</dd></div><div><dt>Last checked</dt><dd>Oct 15, 2026</dd></div></dl>'
+   '<p class="kw">'+"".join(f'<code>{e(t)}</code>' for t in x["tags"])+f'</p><p>{visit(x,"btn").replace("Visit ↗","Visit "+e(x["name"])+" ↗")}'+(' <b class="afftag">(affiliate link)</b>' if isaff(x) else '')+'</p>'+('<p class="note">This is an affiliate link: we may earn a commission if you sign up, at no extra cost to you.</p>' if isaff(x) else '')+
+   f'</article><section class="grp-s"><div class="gh"><h2>Related {e(x["catName"])} tools <span class="n">{len(rel)}</span></h2><a href="/categories/{x["category"]}.html">See all</a></div>{table([row(y,filt=False) for y in rel])}</section>')
+  open(f'tools/{x["slug"]}.html','w').write(b+shell(m,x["category"])+END); urls.append(f'tools/{x["slug"]}.html')
 for c,n in C.items():
-  m=[y for y in data if y["category"]==c]
+  mm=[y for y in data if y["category"]==c]
   lab=n if n.startswith("AI ") else f"{n} AI tools"
-  ld={"@context":"https://schema.org","@type":"CollectionPage","name":lab,"itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{S}/tools/{y["slug"]}.html',"name":y["name"]} for i,y in enumerate(m)]}
-  b=head(f'Best {lab} (2026) | AI Tool Tracker',f'{len(m)} {n} AI tools with pricing and free-tier info: '+", ".join(y["name"] for y in m)[:120],f'categories/{c}.html',ld)
-  b+=(f'<main id="main" class="wrap page"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/#categories">Categories</a> › <span aria-current="page">{e(n)}</span></nav><h1>{ICON[c]} {e(lab)}</h1><p class="mut">{len(m)} tools, with pricing and free-tier info where verified.</p>'+INTRO.get(c,'')+chips(c)+'<div class="pf" role="group" aria-label="Pricing filter"><button type="button" class="pfb on" data-p="all" aria-pressed="true">All</button><button type="button" class="pfb" data-p="free" aria-pressed="false">Free</button><button type="button" class="pfb" data-p="paid" aria-pressed="false">Paid</button></div>'+f'<p id="none" class="mut" hidden>No tools match.</p><div class="grid">{"".join(map(card,m))}</div><h2>Browse other categories</h2>'+tiles()+'</main>'+foot.replace('</body>','<script src="/filter.js"></script></body>'))
-  open(f'categories/{c}.html','w').write(b); urls.append(f'categories/{c}.html')
+  ld={"@context":"https://schema.org","@type":"CollectionPage","name":lab,"itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{S}/tools/{y["slug"]}.html',"name":y["name"]} for i,y in enumerate(mm)]}
+  b=head(f'Best {lab} (2026) | AI Tool Tracker',f'{len(mm)} {n} AI tools with pricing and free-tier info: '+", ".join(y["name"] for y in mm)[:120],f'categories/{c}.html',ld)
+  m=(f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/#directory">Categories</a> / <span aria-current="page">{e(n)}</span></nav><h1 class="ch1">{e(lab)}</h1><p class="lede">{len(mm)} tools. Prices and free tiers shown only where we checked them on the official site.</p>'+INTRO.get(c,'')+
+   '<div class="sticky">'+ctl(len(mm))+'</div>'+table([row(y) for y in mm]))
+  open(f'categories/{c}.html','w').write(b+shell(m,c)+'<script src="/filter.js"></script>'+END); urls.append(f'categories/{c}.html')
 sm=open("sitemap.xml").read()
 sm=re.sub(r'\s*<url><loc>https://aitrackertool.dev/(tools|categories)/[^<]*</loc>.*?</url>','',sm,flags=re.S)
 sm=sm.replace("</urlset>","".join(f"<url><loc>{S}/{u}</loc><lastmod>2026-10-15</lastmod></url>\n" for u in urls)+"</urlset>")
@@ -169,30 +181,35 @@ open("llms.txt","w").write(ll)
 print(len(data),len(urls))
 
 # ---- homepage + static pages ----
-PTH='<div class="pf" role="group" aria-label="Pricing filter"><button type="button" class="pfb on" data-p="all" aria-pressed="true">All</button><button type="button" class="pfb" data-p="free" aria-pressed="false">Free</button><button type="button" class="pfb" data-p="paid" aria-pressed="false">Paid</button></div>'
 ix=open("index.html").read()
-hd=ix[:ix.index("<body>")+6].replace('href="style.css"','href="/style.css"')
-if "G-VMR6RG9R83" not in hd:
-  hd=hd.replace("</head>",GA_TAG+"</head>",1)
-groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{ICON[k]} {e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">View category →</a></div><div class="grid">{"".join(card(y) for y in data if y["category"]==k)}</div></section>' for k,v in C.items())
-body=nav()+f'''<main id="main"><section class="hero"><div class="wrap"><span class="kicker">// new daily drop · oct 15, 2026</span><h1>Find the right AI tool, fast.</h1><p class="tag">{len(data)} hand-checked AI tools in {len(C)} categories, plus a daily drop of new launches. No hype.</p>
-<form class="hsearch" role="search" onsubmit="event.preventDefault();var q=document.getElementById('q');q.value=this.q.value;q.dispatchEvent(new Event('input'));document.getElementById('directory').scrollIntoView()"><input name="q" type="search" placeholder="Search tools, e.g. video, agent, free" aria-label="Search tools"><button class="btn" type="submit">Search</button></form></div></section>
-<section class="wrap" id="categories"><h2 class="sec">Browse by category</h2>{tiles()}</section>
-<section class="wrap" id="drop"><div class="gh"><h2 class="sec">Today's drop · Oct 15, 2026</h2><a href="{DROP}">Read the full drop →</a></div><div class="grid" id="preview"></div>
-<h2 class="sec">Featured picks</h2><div class="grid" id="builders-pick"><article class="card tool"><span class="tag">🆕 New · Agents &amp; Automation</span><h3><a href="/tools/muse-meta.html">Muse (Meta)</a></h3><p class="desc">Meta's personal AI agent that can send emails, book travel and shop for you through its app, muse.ai or WhatsApp. Launched Sept 8, 2026, US only for now.</p><div class="badges"><span class="badge free">Free tier</span><span class="badge paid">Paid</span></div><div class="acts"><a class="btn sm" href="https://muse.ai" target="_blank" rel="noopener">Visit ↗</a><a class="btn sm ghost" href="/tools/muse-meta.html">Details</a></div></article><article class="card tool"><span class="tag">⭐ Builder's pick · <b>affiliate link</b></span><h3><a href="/tools/bolt-new.html">Bolt.new</a></h3><p class="desc">Prompt, run, edit and deploy full-stack web apps right in your browser.</p><p class="note">This is an affiliate link: we may earn a commission if you sign up, at no extra cost to you.</p><div class="acts"><a class="btn sm" href="https://bolt.cello.so/MFwNDwJhlUB" target="_blank" rel="sponsored noopener">Visit Bolt.new ↗</a><a class="btn sm ghost" href="/tools/bolt-new.html">Details</a></div></article></div></section>
-<section class="wrap" id="directory"><h2 class="sec">AI tool directory</h2><div class="dirbar"><div class="dtop"><input id="q" type="search" placeholder="Filter {len(data)} tools…" aria-label="Filter tools">{PTH}</div><div class="chips" id="cats" role="toolbar" aria-label="Filter by category"><a class="chip on" href="#directory" data-c="all">All <span class="n">{len(data)}</span></a>{chipitems(anchor=True)}</div></div><p id="none" class="mut" hidden>No tools match.</p>{groups}</section>
-<section class="wrap" id="newsletter"><div class="card nl"><div><h2>Get the weekly drop</h2><p class="mut">One email a week with the best new AI tools. Unsubscribe anytime.</p></div><div class="signup"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="6370ffac-0fdf-4341-bc97-5159de9c02fd"></script></div><p class="note"><a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on beehiiv</a> · <a href="/issue-001.html">Read Issue #001</a></p></div></section>
-'''
-sub=ix[ix.index('<section class="wrap" id="submit">'):]
-sub=sub[:sub.index('</section>')+10].replace('<section class="wrap" id="submit"><h2>','<section class="wrap" id="submit"><h2 class="sec">')
-js='''<script src="/config.js"></script><script src="/tools.js"></script><script>document.getElementById('preview').innerHTML=DROP_2026_10_15.map(card).join('')</script>
+hd=ix[:ix.index("<body>")]
+hd=re.sub(r'<link rel="(icon|apple-touch-icon)"[^>]*>|<meta name="theme-color"[^>]*>','',hd).replace('<link rel="stylesheet" href="/style.css">',ICONS+'<link rel="stylesheet" href="/style.css">')
+if "G-VMR6RG9R83" not in hd: hd=hd.replace("</head>",GA_TAG+"</head>",1)
+hd+="<body>"
+sub=ix[ix.index('<section class="wrap" id="submit">') if '<section class="wrap" id="submit">' in ix else ix.index('<section id="submit"'):]
+sub=sub[:sub.index('</section>')+10]
+sub=re.sub(r'^<section[^>]*>','<section id="submit" class="blk">',sub).replace('<h2 class="sec">','<h2>').replace('<div class="grid">','<div class="two">').replace('<div class="card">','<div class="panel">')
+nfree=sum(1 for y in data if y["pf"] in("free","both"));npaid=sum(1 for y in data if y["pf"] in("paid","both"))
+groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">Open category</a></div>{table([row(y) for y in data if y["category"]==k])}</section>' for k,v in C.items())
+feat=[y for y in data if y["slug"] in("muse-meta","bolt-new")]
+body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated Oct 15, 2026 · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
+<dl class="stats"><div><dt>Tools</dt><dd>{len(data)}</dd></div><div><dt>Free option</dt><dd>{nfree}</dd></div><div><dt>Paid</dt><dd>{npaid}</dd></div><div><dt>Updated</dt><dd>{VER}</dd></div></dl><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
+<section id="drop" class="grp-s"><div class="gh"><h2>Today's drop · Oct 15, 2026</h2><a href="{DROP}">Read the full drop</a></div><div class="tbl" role="table" id="preview"></div></section>
+<section class="grp-s" id="featured"><div class="gh"><h2>Featured picks</h2><a href="{DROP}">More new tools</a></div>{table([row(y,True,False) for y in feat],True)}</section>
+<section id="directory" class="dir"><h2 class="dh">AI tool directory</h2><div class="sticky">{ctl(len(data))}</div>{groups}</section>
+<section id="newsletter" class="blk nl"><div><h2>Get the weekly drop</h2><p class="mut">One email a week with the best new AI tools. Unsubscribe anytime.</p></div><div class="signup"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="6370ffac-0fdf-4341-bc97-5159de9c02fd"></script></div><p class="note"><a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on beehiiv</a> · <a href="/issue-001.html">Read Issue #001</a></p></section>
+{sub}''',None,True)
+js='''<script src="/config.js"></script><script src="/tools.js"></script><script>(function(){function x(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}document.getElementById('preview').innerHTML='<div class="row head drop" role="row"><div role="columnheader">Tool</div><div role="columnheader">Type</div><div role="columnheader">Price</div><div role="columnheader"><span class="sr">Link</span></div></div>'+DROP_2026_10_15.map(function(t){return '<div class="row drop" role="row"><div class="c-name" role="cell"><a class="nm" href="'+x(t.url)+'" target="_blank" rel="noopener">'+x(t.name)+'</a><span class="ds">'+x(t.desc)+'</span></div><div class="c-cat" role="cell">'+x(t.category)+'</div><div class="c-price" role="cell"><span class="lbl">Price </span>'+x(t.pricing||'See site')+'</div><div class="c-go" role="cell"><a class="go" href="'+x(t.url)+'" target="_blank" rel="noopener">Visit ↗</a></div></div>'}).join('')})()</script>
 <script src="/filter.js"></script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script></body></html>'''
-open("index.html","w").write(hd+"\n"+body+sub+"</main>"+FOOTER+js)
+open("index.html","w").write(hd+"\n"+body+js)
 for p in ["drop-2026-10-15.html","drop-2026-10-14.html","issue-001.html","thanks.html"]:
   h=open(p).read()
-  h=re.sub(r'(<a class="skip".*?</header>|<nav class="wrap">.*?</nav>)',lambda m:nav(),h,count=1,flags=re.S)
-  h=re.sub(r'<footer.*?</footer>',lambda m:FOOTER,h,count=1,flags=re.S)
-  h=h.replace('href="style.css"','href="/style.css"')
-  if "G-VMR6RG9R83" not in h:
-    h=h.replace("</head>",GA_TAG+"</head>",1)
-  open(p,"w").write(h)
+  pre=h[:h.index("<body")]; pre=re.sub(r'<link rel="(icon|apple-touch-icon)"[^>]*>|<meta name="theme-color"[^>]*>','',pre).replace('href="style.css"','href="/style.css"').replace('<link rel="stylesheet" href="/style.css">',ICONS+'<link rel="stylesheet" href="/style.css">')
+  if "G-VMR6RG9R83" not in pre: pre=pre.replace("</head>",GA_TAG+"</head>",1)
+  if "<!--c-->" in h: content=h[h.index("<!--c-->")+8:h.index("<!--/c-->")]
+  else:
+    a=h.index("</header>")+9; z=h.index("<footer"); content=h[a:z].strip()
+  if "</footer>" in h: tail=h[h.index("</footer>")+9:]
+  content=content.replace('<header class="hero wrap" style="padding:40px 0 20px">','<header class="phero">').replace('<header class="hero wrap">','<header class="phero">').replace(' style="font-size:2.6rem"','').replace('<section class="wrap">','<section class="pc">').replace("RECEIVED ✓","RECEIVED").replace("Today's Loot Drop","Today's drop: 5 new AI tools").replace("This Week's Loot Drop","Issue #001: this week's new AI tools").replace('href="index.html"','href="/"').replace('href="issue-001.html"','href="/issue-001.html"')
+  tail=re.sub(r'^.*?(?=<script|</main>|</body>)','',tail,flags=re.S).replace('</main></div>','')
+  open(p,"w").write(pre+'<body>'+nav()+'<div class="shell">'+side()+'<main id="main" class="main"><!--c-->'+content+'<!--/c-->'+FOOTER+'</main></div>'+tail)
