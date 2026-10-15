@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Issue #001 — AI Tool Tracker</title><link rel="stylesheet" href="style.css"></head><body>
+<nav class="wrap"><a class="logo" href="index.html">⚡ <span data-sitename>AI Tool Tracker</span></a><div class="links"><a href="issue-001.html">Latest Issue</a><a href="index.html#about">About</a><a href="index.html#submit">Submit / Sponsor</a></div></nav>
+<header class="hero wrap" style="padding:40px 0 20px"><span class="badge">ISSUE #001 · OCT 14, 2026</span><h1 style="font-size:2.6rem">This Week's Loot Drop</h1><p class="tag">8 new AI tools for builders, launched or trending Oct 7–14, 2026.</p></header>
+<section class="wrap"><div class="filters" id="filters"></div><div class="grid" id="tools"></div></section>
+<footer><div class="wrap">© 2026 <span data-sitename>AI Tool Tracker</span>. Some links may become affiliate links; we will always disclose them.</div></footer><script src="config.js"></script><script src="tools.js"></script><script>
+const cats=['All',...new Set(TOOLS.map(t=>t.category))];const F=document.getElementById('filters'),G=document.getElementById('tools');
+function show(c){G.innerHTML=TOOLS.filter(t=>c==='All'||t.category===c).map(card).join('');[...F.children].forEach(b=>b.classList.toggle('on',b.textContent===c))}
+F.innerHTML=cats.map(c=>'<button>'+c+'</button>').join('');F.onclick=e=>{if(e.target.tagName==='BUTTON')show(e.target.textContent)};show('All');</script></body></html>
