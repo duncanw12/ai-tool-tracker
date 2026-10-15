@@ -97,7 +97,12 @@ for x in data:
 open("directory.js","w").write("// Directory data. Pricing/free tier only where verified on the official site (Oct 14-15, 2026); omitted otherwise.\nconst CATEGORIES="+json.dumps(C)+";\nconst DIRECTORY="+json.dumps(data,indent=0)+";\n")
 CNT={c:sum(1 for y in data if y["category"]==c) for c in C}
 DROP="/drop-2026-10-15.html"
-VER="10/15"
+import datetime
+# Build date: override with BUILD_DATE=YYYY-MM-DD; a tool can carry its own "verified":"YYYY-MM-DD".
+BUILD=datetime.date.fromisoformat(os.environ["BUILD_DATE"]) if os.environ.get("BUILD_DATE") else datetime.date.today()
+def vdate(x): return datetime.date.fromisoformat(x["verified"]) if x.get("verified") else BUILD
+def mdy(d): return d.strftime("%b ")+str(d.day)+d.strftime(", %Y")
+VER=BUILD.strftime("%m/%d")
 INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p>Start with the learning tools here (TryHackMe\'s Echo tutor, HTB Coach) for cert study and labs. Practice scripting and PowerShell with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, run local models in your home lab with <a href="/tools/ollama.html">Ollama</a>, and turn study notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>'}
 LOGO='<svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true" focusable="false"><path d="M5 6L14 14 23 8M14 14L9 23M14 14L23 21" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="5" cy="6" r="2.5" fill="currentColor"/><circle cx="23" cy="8" r="2.5" fill="currentColor"/><circle cx="9" cy="23" r="2.5" fill="currentColor"/><circle cx="23" cy="21" r="2.5" fill="currentColor"/><circle cx="14" cy="14" r="3.5" fill="#00ff9c"/></svg>'
 ICONS='<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0d1520">'
@@ -132,7 +137,7 @@ def tags(x):
   elif p=="paid": t.append('<span class="t paid">[PAID]</span>')
   elif p=="both": t+=['<span class="t free">[FREE TIER]</span>','<span class="t paid">[PAID]</span>']
   else: t.append('<span class="t na">[PRICE: SEE SITE]</span>')
-  t.append(f'<span class="t ver">[VERIFIED {VER}]</span>' if (p or x.get("pricing")) else '<span class="t na">[CHECK SITE]</span>')
+  t.append(f'<span class="t ver">[VERIFIED {vdate(x).strftime("%m/%d")}]</span>' if (p or x.get("pricing")) else '<span class="t na">[CHECK SITE]</span>')
   if isaff(x): t.append('<span class="t aff">[AFFILIATE]</span>')
   return "".join(t)
 def visit(x,cls="go"):
@@ -159,7 +164,7 @@ for x in data:
   free={"free":"Yes","both":"Yes","paid":"No"}.get(x["pf"],"Check site")
   m=(f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/{x["category"]}.html">{e(x["catName"])}</a> / <span aria-current="page">{e(x["name"])}</span></nav>'
    f'<article class="detail"><h1>{e(x["name"])}</h1><p class="lede">{e(x["desc"])}</p><div class="c-tags">{tags(x)}</div>'
-   f'<dl class="facts"><div><dt>Category</dt><dd><a href="/categories/{x["category"]}.html">{e(x["catName"])}</a></dd></div><div><dt>Price</dt><dd>{e(x.get("pricing") or "See official site")}</dd></div><div><dt>Free option</dt><dd>{free}</dd></div><div><dt>Last checked</dt><dd>Oct 15, 2026</dd></div></dl>'
+   f'<dl class="facts"><div><dt>Category</dt><dd><a href="/categories/{x["category"]}.html">{e(x["catName"])}</a></dd></div><div><dt>Price</dt><dd>{e(x.get("pricing") or "See official site")}</dd></div><div><dt>Free option</dt><dd>{free}</dd></div><div><dt>Last checked</dt><dd>{mdy(vdate(x))}</dd></div></dl>'
    '<p class="kw">'+"".join(f'<code>{e(t)}</code>' for t in x["tags"])+f'</p><p>{visit(x,"btn").replace("Visit ↗","Visit "+e(x["name"])+" ↗")}'+(' <b class="afftag">(affiliate link)</b>' if isaff(x) else '')+'</p>'+('<p class="note">This is an affiliate link: we may earn a commission if you sign up, at no extra cost to you.</p>' if isaff(x) else '')+
    f'</article><section class="grp-s"><div class="gh"><h2>Related {e(x["catName"])} tools <span class="n">{len(rel)}</span></h2><a href="/categories/{x["category"]}.html">See all</a></div>{table([row(y,filt=False) for y in rel])}</section>')
   open(f'tools/{x["slug"]}.html','w').write(b+shell(m,x["category"])+END); urls.append(f'tools/{x["slug"]}.html')
@@ -173,7 +178,7 @@ for c,n in C.items():
   open(f'categories/{c}.html','w').write(b+shell(m,c)+'<script src="/filter.js"></script>'+END); urls.append(f'categories/{c}.html')
 sm=open("sitemap.xml").read()
 sm=re.sub(r'\s*<url><loc>https://aitrackertool.dev/(tools|categories)/[^<]*</loc>.*?</url>','',sm,flags=re.S)
-sm=sm.replace("</urlset>","".join(f"<url><loc>{S}/{u}</loc><lastmod>2026-10-15</lastmod></url>\n" for u in urls)+"</urlset>")
+sm=sm.replace("</urlset>","".join(f"<url><loc>{S}/{u}</loc><lastmod>{BUILD.isoformat()}</lastmod></url>\n" for u in urls)+"</urlset>")
 open("sitemap.xml","w").write(sm)
 ll=open("llms.txt").read().split("\n## Directory")[0].rstrip()
 ll+="\n\n## Directory\n"+"".join(f"\n### {n}\n"+"".join(f'- [{y["name"]}]({S}/tools/{y["slug"]}.html): {y["desc"]}'+(f' Pricing: {y["pricing"]}.' if "pricing" in y else '')+(' Free tier: yes.' if "freeTier" in y else '')+"\n" for y in data if y["category"]==c) for c,n in C.items())
@@ -192,7 +197,7 @@ sub=re.sub(r'^<section[^>]*>','<section id="submit" class="blk">',sub).replace('
 nfree=sum(1 for y in data if y["pf"] in("free","both"));npaid=sum(1 for y in data if y["pf"] in("paid","both"))
 groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">Open category</a></div>{table([row(y) for y in data if y["category"]==k])}</section>' for k,v in C.items())
 feat=[y for y in data if y["slug"] in("muse-meta","bolt-new")]
-body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated Oct 15, 2026 · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
+body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated {mdy(BUILD)} · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
 <dl class="stats"><div><dt>Tools</dt><dd>{len(data)}</dd></div><div><dt>Free option</dt><dd>{nfree}</dd></div><div><dt>Paid</dt><dd>{npaid}</dd></div><div><dt>Updated</dt><dd>{VER}</dd></div></dl><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
 <section id="drop" class="grp-s"><div class="gh"><h2>Today's drop · Oct 15, 2026</h2><a href="{DROP}">Read the full drop</a></div><div class="tbl" role="table" id="preview"></div></section>
 <section class="grp-s" id="featured"><div class="gh"><h2>Featured picks</h2><a href="{DROP}">More new tools</a></div>{table([row(y,True,False) for y in feat],True)}</section>
