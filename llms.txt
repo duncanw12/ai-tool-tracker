@@ -1,0 +1,9 @@
+# AI Tool Tracker
+> Daily drops of genuinely useful new AI tools for vibe coders and AI builders. X: @AITRACKERTOOL
+
+## Drops
+- [Daily Drop Oct 14, 2026](https://effulgent-crumble-d448c5.netlify.app/drop-2026-10-14.html): Vani Code Agent, Graphicle, Command Code Codemode, Parsimony
+- [Issue #001](https://effulgent-crumble-d448c5.netlify.app/issue-001.html): 8 AI tools launched or trending Oct 7-14, 2026
+
+## Notes
+- Some links are affiliate links and are labeled "affiliate link".
