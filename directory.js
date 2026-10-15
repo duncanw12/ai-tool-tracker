@@ -14,7 +14,8 @@ const DIRECTORY=[
 "editor",
 "agent",
 "ide"
-]
+],
+"pf": "both"
 },
 {
 "name": "Bolt.new",
@@ -27,7 +28,8 @@ const DIRECTORY=[
 "vibe coding",
 "web apps",
 "browser"
-]
+],
+"pf": ""
 },
 {
 "name": "v0",
@@ -42,7 +44,8 @@ const DIRECTORY=[
 "vibe coding",
 "react",
 "ui"
-]
+],
+"pf": "both"
 },
 {
 "name": "Lovable",
@@ -55,7 +58,8 @@ const DIRECTORY=[
 "vibe coding",
 "web apps",
 "no-code"
-]
+],
+"pf": ""
 },
 {
 "name": "Replit",
@@ -69,7 +73,8 @@ const DIRECTORY=[
 "vibe coding",
 "ide",
 "deploy"
-]
+],
+"pf": "free"
 },
 {
 "name": "GitHub Copilot",
@@ -84,7 +89,8 @@ const DIRECTORY=[
 "autocomplete",
 "agent",
 "github"
-]
+],
+"pf": "both"
 },
 {
 "name": "Windsurf",
@@ -99,7 +105,8 @@ const DIRECTORY=[
 "editor",
 "agent",
 "ide"
-]
+],
+"pf": "both"
 },
 {
 "name": "Claude Code",
@@ -113,7 +120,8 @@ const DIRECTORY=[
 "agent",
 "terminal",
 "cli"
-]
+],
+"pf": "paid"
 },
 {
 "name": "OpenAI Codex",
@@ -126,7 +134,8 @@ const DIRECTORY=[
 "agent",
 "cli",
 "openai"
-]
+],
+"pf": ""
 },
 {
 "name": "Warp",
@@ -139,7 +148,8 @@ const DIRECTORY=[
 "tags": [
 "terminal",
 "agent"
-]
+],
+"pf": "free"
 },
 {
 "name": "Tabnine",
@@ -151,7 +161,8 @@ const DIRECTORY=[
 "tags": [
 "autocomplete",
 "enterprise"
-]
+],
+"pf": ""
 },
 {
 "name": "Cline",
@@ -165,7 +176,8 @@ const DIRECTORY=[
 "agent",
 "open source",
 "vs code"
-]
+],
+"pf": "free"
 },
 {
 "name": "Aider",
@@ -179,7 +191,8 @@ const DIRECTORY=[
 "cli",
 "open source",
 "git"
-]
+],
+"pf": "free"
 },
 {
 "name": "ChatGPT",
@@ -192,7 +205,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "openai"
-]
+],
+"pf": "free"
 },
 {
 "name": "Claude",
@@ -206,7 +220,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "anthropic"
-]
+],
+"pf": "both"
 },
 {
 "name": "Gemini",
@@ -218,7 +233,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "google"
-]
+],
+"pf": ""
 },
 {
 "name": "Grok",
@@ -230,7 +246,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "xai"
-]
+],
+"pf": ""
 },
 {
 "name": "Microsoft Copilot",
@@ -242,7 +259,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "microsoft"
-]
+],
+"pf": ""
 },
 {
 "name": "Le Chat (Mistral)",
@@ -255,7 +273,8 @@ const DIRECTORY=[
 "assistant",
 "mistral",
 "europe"
-]
+],
+"pf": ""
 },
 {
 "name": "DeepSeek",
@@ -267,7 +286,8 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "open weights"
-]
+],
+"pf": ""
 },
 {
 "name": "Midjourney",
@@ -279,7 +299,8 @@ const DIRECTORY=[
 "tags": [
 "image generation",
 "art"
-]
+],
+"pf": ""
 },
 {
 "name": "Ideogram",
@@ -291,7 +312,8 @@ const DIRECTORY=[
 "tags": [
 "image generation",
 "typography"
-]
+],
+"pf": ""
 },
 {
 "name": "Leonardo.Ai",
@@ -303,7 +325,8 @@ const DIRECTORY=[
 "tags": [
 "image generation",
 "assets"
-]
+],
+"pf": ""
 },
 {
 "name": "Krea",
@@ -317,7 +340,8 @@ const DIRECTORY=[
 "image generation",
 "upscaling",
 "real-time"
-]
+],
+"pf": "free"
 },
 {
 "name": "Adobe Firefly",
@@ -329,7 +353,8 @@ const DIRECTORY=[
 "tags": [
 "image generation",
 "adobe"
-]
+],
+"pf": ""
 },
 {
 "name": "Black Forest Labs (FLUX)",
@@ -341,7 +366,8 @@ const DIRECTORY=[
 "tags": [
 "image models",
 "api"
-]
+],
+"pf": ""
 },
 {
 "name": "Recraft",
@@ -355,7 +381,8 @@ const DIRECTORY=[
 "vector",
 "design",
 "image generation"
-]
+],
+"pf": "free"
 },
 {
 "name": "Runway",
@@ -369,7 +396,8 @@ const DIRECTORY=[
 "tags": [
 "video generation",
 "editing"
-]
+],
+"pf": "both"
 },
 {
 "name": "Synthesia",
@@ -382,7 +410,8 @@ const DIRECTORY=[
 "avatars",
 "video generation",
 "training"
-]
+],
+"pf": ""
 },
 {
 "name": "Pika",
@@ -396,7 +425,8 @@ const DIRECTORY=[
 "tags": [
 "video generation",
 "effects"
-]
+],
+"pf": "both"
 },
 {
 "name": "Luma AI",
@@ -408,7 +438,8 @@ const DIRECTORY=[
 "pricing": "Plus from $30/mo",
 "tags": [
 "video generation"
-]
+],
+"pf": "paid"
 },
 {
 "name": "HeyGen",
@@ -422,7 +453,8 @@ const DIRECTORY=[
 "tags": [
 "avatars",
 "translation"
-]
+],
+"pf": "both"
 },
 {
 "name": "Descript",
@@ -436,7 +468,8 @@ const DIRECTORY=[
 "editing",
 "podcast",
 "transcription"
-]
+],
+"pf": "free"
 },
 {
 "name": "Kling AI",
@@ -447,7 +480,8 @@ const DIRECTORY=[
 "desc": "Kuaishou's AI video generation model and app.",
 "tags": [
 "video generation"
-]
+],
+"pf": ""
 },
 {
 "name": "ElevenLabs",
@@ -461,7 +495,8 @@ const DIRECTORY=[
 "tags": [
 "text to speech",
 "voice cloning"
-]
+],
+"pf": "both"
 },
 {
 "name": "Suno",
@@ -473,7 +508,8 @@ const DIRECTORY=[
 "freeTier": true,
 "tags": [
 "music generation"
-]
+],
+"pf": "free"
 },
 {
 "name": "Udio",
@@ -484,7 +520,8 @@ const DIRECTORY=[
 "desc": "AI music generation and remixing.",
 "tags": [
 "music generation"
-]
+],
+"pf": ""
 },
 {
 "name": "Murf AI",
@@ -496,7 +533,8 @@ const DIRECTORY=[
 "tags": [
 "text to speech",
 "voiceover"
-]
+],
+"pf": ""
 },
 {
 "name": "Jasper",
@@ -509,7 +547,8 @@ const DIRECTORY=[
 "tags": [
 "marketing",
 "content"
-]
+],
+"pf": "paid"
 },
 {
 "name": "Writesonic",
@@ -521,7 +560,8 @@ const DIRECTORY=[
 "tags": [
 "seo",
 "content"
-]
+],
+"pf": ""
 },
 {
 "name": "Copy.ai",
@@ -533,7 +573,8 @@ const DIRECTORY=[
 "tags": [
 "marketing",
 "copywriting"
-]
+],
+"pf": ""
 },
 {
 "name": "Grammarly",
@@ -547,7 +588,8 @@ const DIRECTORY=[
 "tags": [
 "grammar",
 "editing"
-]
+],
+"pf": "both"
 },
 {
 "name": "QuillBot",
@@ -559,7 +601,8 @@ const DIRECTORY=[
 "tags": [
 "paraphrasing",
 "summarizing"
-]
+],
+"pf": ""
 },
 {
 "name": "n8n",
@@ -572,7 +615,8 @@ const DIRECTORY=[
 "automation",
 "self-hosted",
 "agents"
-]
+],
+"pf": ""
 },
 {
 "name": "Zapier",
@@ -586,7 +630,8 @@ const DIRECTORY=[
 "automation",
 "no-code",
 "integrations"
-]
+],
+"pf": "free"
 },
 {
 "name": "Make",
@@ -599,7 +644,8 @@ const DIRECTORY=[
 "automation",
 "no-code",
 "visual"
-]
+],
+"pf": ""
 },
 {
 "name": "Relay.app",
@@ -611,7 +657,25 @@ const DIRECTORY=[
 "tags": [
 "automation",
 "agents"
-]
+],
+"pf": ""
+},
+{
+"name": "Muse (Meta)",
+"slug": "muse-meta",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://muse.ai",
+"desc": "Meta's personal AI agent that uses apps for you: email, travel, shopping and more, via app, web or WhatsApp. US-only at launch (Sept 8, 2026).",
+"freeTier": true,
+"pricing": "Paid plans for heavier use",
+"tags": [
+"personal agent",
+"meta",
+"whatsapp",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Lindy",
@@ -623,7 +687,8 @@ const DIRECTORY=[
 "tags": [
 "agents",
 "assistant"
-]
+],
+"pf": ""
 },
 {
 "name": "Perplexity",
@@ -636,7 +701,8 @@ const DIRECTORY=[
 "search",
 "research",
 "citations"
-]
+],
+"pf": ""
 },
 {
 "name": "NotebookLM",
@@ -649,7 +715,8 @@ const DIRECTORY=[
 "research",
 "notes",
 "google"
-]
+],
+"pf": ""
 },
 {
 "name": "Notion AI",
@@ -663,7 +730,8 @@ const DIRECTORY=[
 "tags": [
 "notes",
 "workspace"
-]
+],
+"pf": "both"
 },
 {
 "name": "Otter.ai",
@@ -676,7 +744,8 @@ const DIRECTORY=[
 "tags": [
 "meetings",
 "transcription"
-]
+],
+"pf": "free"
 },
 {
 "name": "Fireflies.ai",
@@ -689,7 +758,8 @@ const DIRECTORY=[
 "tags": [
 "meetings",
 "transcription"
-]
+],
+"pf": "free"
 },
 {
 "name": "Elicit",
@@ -702,7 +772,8 @@ const DIRECTORY=[
 "tags": [
 "academic",
 "papers"
-]
+],
+"pf": "paid"
 },
 {
 "name": "Consensus",
@@ -714,7 +785,8 @@ const DIRECTORY=[
 "tags": [
 "academic",
 "search"
-]
+],
+"pf": ""
 },
 {
 "name": "Gamma",
@@ -726,7 +798,8 @@ const DIRECTORY=[
 "tags": [
 "presentations",
 "slides"
-]
+],
+"pf": ""
 },
 {
 "name": "Framer",
@@ -740,7 +813,8 @@ const DIRECTORY=[
 "tags": [
 "websites",
 "no-code"
-]
+],
+"pf": "both"
 },
 {
 "name": "Figma",
@@ -752,7 +826,8 @@ const DIRECTORY=[
 "tags": [
 "ui design",
 "prototyping"
-]
+],
+"pf": ""
 },
 {
 "name": "Canva",
@@ -764,7 +839,8 @@ const DIRECTORY=[
 "tags": [
 "graphic design",
 "templates"
-]
+],
+"pf": ""
 },
 {
 "name": "Webflow",
@@ -777,7 +853,8 @@ const DIRECTORY=[
 "websites",
 "cms",
 "no-code"
-]
+],
+"pf": ""
 },
 {
 "name": "Uizard",
@@ -789,6 +866,7 @@ const DIRECTORY=[
 "tags": [
 "ui design",
 "prototyping"
-]
+],
+"pf": ""
 }
 ];

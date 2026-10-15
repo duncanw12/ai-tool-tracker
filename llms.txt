@@ -70,6 +70,7 @@
 - [Zapier](https://aitrackertool.dev/tools/zapier.html): Automate work across 7,000+ apps with Zaps and AI agents. Free tier: yes.
 - [Make](https://aitrackertool.dev/tools/make.html): Visual automation platform with AI agents.
 - [Relay.app](https://aitrackertool.dev/tools/relay-app.html): AI workflow automation with human-in-the-loop steps.
+- [Muse (Meta)](https://aitrackertool.dev/tools/muse-meta.html): Meta's personal AI agent that uses apps for you: email, travel, shopping and more, via app, web or WhatsApp. US-only at launch (Sept 8, 2026). Pricing: Paid plans for heavier use. Free tier: yes.
 - [Lindy](https://aitrackertool.dev/tools/lindy.html): Build AI agents that handle email, meetings and workflows.
 
 ### Productivity & Research
