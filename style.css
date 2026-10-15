@@ -139,3 +139,6 @@ footer h4{font:600 .78rem var(--mono);text-transform:uppercase;color:var(--acc);
 .grp-s{margin-top:22px}#drop .gh{padding-bottom:4px}
 @media (max-width:900px){.intro .stats{display:grid;margin-right:0}.intro{padding:18px 16px}}
 .intro .stats{grid-template-columns:repeat(4,auto);max-width:none}.intro .stats div{padding:8px 16px}.intro .stats dd{font-size:1.25rem}@media (max-width:900px){.intro .stats{grid-template-columns:1fr 1fr}}
+.nlembed{flex:1;max-width:400px;min-width:260px;min-height:52px}
+.nlembed iframe{width:100%!important;max-width:400px!important;height:52px;border:0!important;display:block;background:transparent}
+@media (max-width:900px){.nlembed{max-width:none;min-width:0;width:100%}.nlembed iframe{max-width:100%!important}}
