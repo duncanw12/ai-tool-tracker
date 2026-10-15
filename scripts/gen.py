@@ -84,10 +84,10 @@ DROP="/drop-2026-10-14.html"
 def nav():
   dd="".join(f'<a href="/categories/{k}.html">{ICON[k]} {e(v)} <span class="n">{CNT[k]}</span></a>' for k,v in C.items())
   return ('<a class="skip" href="#main">Skip to content</a><header class="topnav"><div class="wrap navin"><a class="logo" href="/">⚡ <span data-sitename>AI Tool Tracker</span></a>'
-   '<details class="menu"><summary aria-label="Menu"><span class="burger" aria-hidden="true">☰</span></summary><nav class="links" aria-label="Main">'
+   '<div class="menu"><button class="burger" type="button" aria-label="Menu" aria-expanded="false" onclick="var m=this.parentNode;m.classList.toggle(&quot;open&quot;);this.setAttribute(&quot;aria-expanded&quot;,m.classList.contains(&quot;open&quot;))">☰</button><nav class="links" aria-label="Main">'
    '<a href="/">Home</a><a href="/#directory">Directory</a>'
    f'<details class="dd"><summary>Categories ▾</summary><div class="ddp">{dd}</div></details>'
-   f'<a href="{DROP}">Today\'s Drop</a><a href="/#newsletter">Newsletter</a><a class="btn sm" href="/#submit">Submit a tool</a></nav></details></div></header>')
+   f'<a href="{DROP}">Today\'s Drop</a><a href="/#newsletter">Newsletter</a><a class="btn sm" href="/#submit">Submit a tool</a></nav></div></div></header>')
 def mkfoot():
   cl="".join(f'<li><a href="/categories/{k}.html">{e(v)}</a></li>' for k,v in C.items())
   return (f'<footer class="site"><div class="wrap fgrid"><div><a class="logo" href="/">⚡ AI Tool Tracker</a><p class="mut">Daily, honest picks of useful AI tools for builders.</p><p><a href="https://x.com/AITRACKERTOOL" target="_blank" rel="noopener">@AITRACKERTOOL on X</a> · <a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Newsletter</a></p></div>'
