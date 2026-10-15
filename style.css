@@ -110,7 +110,7 @@ footer h4{font:600 .78rem var(--mono);text-transform:uppercase;color:var(--pink)
 button:not([class]){background:var(--panel);color:var(--txt);border:1px solid var(--line);border-radius:999px;padding:6px 12px;margin:0 6px 12px 0;font:500 .85rem Inter,sans-serif;cursor:pointer}button:not([class]):hover{border-color:var(--cyan)}
 
 h1,h2,h3,h4,.sec{font-family:'Space Grotesk','Inter',sans-serif;letter-spacing:-.01em}
-body{background:radial-gradient(ellipse at 50% 0,#0b0d24 0,#05060f 70%) fixed}
+html{background:radial-gradient(ellipse at 50% 0,#0b0d24 0,#05060f 70%) fixed #05060f}body{background:transparent}
 body:before,body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background-repeat:repeat}
 body:before{background-image:radial-gradient(1px 1px at 20px 30px,#fff,transparent),radial-gradient(1px 1px at 120px 80px,#cfd8ff,transparent),radial-gradient(1.5px 1.5px at 200px 150px,#fff,transparent),radial-gradient(1px 1px at 300px 40px,#e9d5ff,transparent),radial-gradient(1px 1px at 380px 220px,#fff,transparent);background-size:420px 260px;opacity:.55;animation:tw 5s ease-in-out infinite alternate}
 body:after{background-image:radial-gradient(1px 1px at 60px 180px,#fff,transparent),radial-gradient(1.5px 1.5px at 250px 90px,#a5f3fc,transparent),radial-gradient(1px 1px at 340px 300px,#fff,transparent);background-size:520px 340px;opacity:.35;animation:tw 7s ease-in-out infinite alternate-reverse}
