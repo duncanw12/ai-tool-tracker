@@ -1,4 +1,4 @@
-import json,re,html,os
+import json,re,html,os,hashlib
 S="https://aitrackertool.dev"
 GA_TAG='<script async src="https://www.googletagmanager.com/gtag/js?id=G-VMR6RG9R83"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'G-VMR6RG9R83\');</script>'
 C={"coding":"Coding & Vibe Coding","chat":"Chat Assistants","image":"Image","video":"Video","audio":"Voice & Audio","writing":"Writing","agents":"Agents & Automation","research":"Productivity & Research","design":"Design & Websites","itsec":"AI for IT & Cybersecurity"}
@@ -106,10 +106,16 @@ VER=BUILD.strftime("%m/%d")
 INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p>Start with the learning tools here (TryHackMe\'s Echo tutor, HTB Coach) for cert study and labs. Practice scripting and PowerShell with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, run local models in your home lab with <a href="/tools/ollama.html">Ollama</a>, and turn study notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>'}
 LOGO='<svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true" focusable="false"><path d="M5 6L14 14 23 8M14 14L9 23M14 14L23 21" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="5" cy="6" r="2.5" fill="currentColor"/><circle cx="23" cy="8" r="2.5" fill="currentColor"/><circle cx="9" cy="23" r="2.5" fill="currentColor"/><circle cx="23" cy="21" r="2.5" fill="currentColor"/><circle cx="14" cy="14" r="3.5" fill="#00ff9c"/></svg>'
 ICONS='<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0d1520">'
-MENUJS='<script>(function(){var b=document.querySelector(".mbtn"),n=document.getElementById("topnav");if(!b)return;function t(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o)}b.addEventListener("click",function(e){e.stopPropagation();t(!n.classList.contains("open"))});n.addEventListener("click",function(e){if(e.target.closest("a"))t(false)});document.addEventListener("click",function(e){if(!n.contains(e.target))t(false)});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&n.classList.contains("open")){t(false);b.focus()}})})()</script>'
+MENUJS='<script>(function(){var d=document.querySelector(".mmenu");if(!d)return;function c(){d.open=false}d.addEventListener("click",function(e){if(e.target.closest(".mpanel a"))c()});document.addEventListener("pointerdown",function(e){if(d.open&&!d.contains(e.target))c()});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.open){c();d.querySelector("summary").focus()}})})()</script>'
+def _h(f): return hashlib.md5(open(f,'rb').read()).hexdigest()[:8]
+AV={f:_h(f) for f in ['style.css','filter.js','config.js','tools.js']}
+def bust(h):
+  for f,v in AV.items(): h=re.sub(r'((?:href|src)="/?'+re.escape(f)+r')(\?v=[0-9a-f]+)?"',lambda m:m.group(1)+'?v='+v+'"',h)
+  return h
 def nav():
   return ('<a class="skip" href="#main">Skip to content</a><header class="bar"><a class="logo" href="/" aria-label="AI Tool Tracker home"><span class="lg-mark">'+LOGO+'</span><span data-sitename>AI Tool Tracker</span></a>'
-   '<button class="mbtn" type="button" aria-expanded="false" aria-controls="topnav" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>menu</span></button>'
+   '<details class="mmenu"><summary class="mbtn" aria-label="Menu"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" fill="none"/></svg><span>menu</span></summary>'
+   f'<nav class="mpanel" aria-label="Mobile"><a href="/#directory">Directory</a><a href="{DROP}">Today\'s drop</a><a href="/#newsletter">Newsletter</a><a class="cta" href="/#submit">Submit a tool</a></nav></details>'
    f'<nav class="top" id="topnav" aria-label="Main"><a href="/#directory">Directory</a><a href="{DROP}">Today\'s drop</a><a href="/#newsletter">Newsletter</a><a class="cta" href="/#submit">Submit a tool</a></nav></header>'+MENUJS)
 def side(cur=None,home=False):
   it=[]
@@ -220,3 +226,8 @@ for p in ["drop-2026-10-15.html","drop-2026-10-14.html","issue-001.html","thanks
   content=content.replace('<header class="hero wrap" style="padding:40px 0 20px">','<header class="phero">').replace('<header class="hero wrap">','<header class="phero">').replace(' style="font-size:2.6rem"','').replace('<section class="wrap">','<section class="pc">').replace("RECEIVED ✓","RECEIVED").replace("Today's Loot Drop","Today's drop: 5 new AI tools").replace("This Week's Loot Drop","Issue #001: this week's new AI tools").replace('href="index.html"','href="/"').replace('href="issue-001.html"','href="/issue-001.html"')
   tail=re.sub(r'^.*?(?=<script|</main>|</body>)','',tail,flags=re.S).replace('</main></div>','')
   open(p,"w").write(pre+'<body>'+nav()+'<div class="shell">'+side()+'<main id="main" class="main"><!--c-->'+content+'<!--/c-->'+FOOTER+'</main></div>'+tail)
+# cache-bust static asset links on every page
+import glob as _g
+for _f in _g.glob("*.html")+_g.glob("tools/*.html")+_g.glob("categories/*.html"):
+  _s=open(_f).read();_b=bust(_s)
+  if _b!=_s: open(_f,"w").write(_b)
