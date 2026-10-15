@@ -35,7 +35,7 @@ filter:drop-shadow(0 0 10px #ff2bd6aa) drop-shadow(0 0 2px #22d3ee)}
 .btn.alt{background:transparent;color:var(--cyan);border-color:var(--cyan);box-shadow:0 0 12px #22d3ee55}.btn.alt:hover{box-shadow:0 0 22px var(--cyan)}
 /* newsletter panel */
 .signup{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:28px auto 8px;max-width:560px;padding:16px;background:rgba(11,6,32,.82);backdrop-filter:blur(6px);border:1px solid var(--pink);border-radius:16px;box-shadow:0 0 20px #ff2bd655,inset 0 0 20px #22d3ee22}
-.signup iframe{max-width:100%!important;border-radius:12px!important;border:1px solid var(--cyan)!important;overflow:hidden;box-shadow:0 0 12px #22d3ee66;display:block}
+.signup iframe{max-width:100%!important;max-height:220px!important;border-radius:12px!important;border:1px solid var(--cyan)!important;overflow:hidden;box-shadow:0 0 12px #22d3ee66;display:block}
 .signup > div,.signup form{max-width:100%;border-radius:12px;overflow:hidden}
 .signup input{padding:12px;border-radius:8px;border:1px solid var(--line);background:#0b0620;color:var(--txt);min-width:260px}
 .note{font:12px 'Outfit',sans-serif;color:#ffd1f5;text-shadow:0 1px 4px #000}
