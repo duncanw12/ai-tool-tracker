@@ -2,6 +2,7 @@
 > Daily drops of genuinely useful new AI tools for vibe coders and AI builders. X: @AITRACKERTOOL
 
 ## Drops
+- [Daily Drop Oct 15, 2026](https://aitrackertool.dev/drop-2026-10-15.html): Deep Review (Google Research), Hermes Agent v0.22, Inworld Inference, withHuman, AI Sandboxes by Buddy
 - [Daily Drop Oct 14, 2026](https://aitrackertool.dev/drop-2026-10-14.html): Vani Code Agent, Graphicle, Command Code Codemode, Parsimony
 - [Issue #001](https://aitrackertool.dev/issue-001.html): 8 AI tools launched or trending Oct 7-14, 2026
 
@@ -14,78 +15,96 @@
 - [Cursor](https://aitrackertool.dev/tools/cursor.html): AI-first code editor with agent mode, codebase chat and tab completion. Pricing: Paid plans from $8/mo. Free tier: yes.
 - [Bolt.new](https://aitrackertool.dev/tools/bolt-new.html): Prompt, run, edit and deploy full-stack web apps right in your browser.
 - [v0](https://aitrackertool.dev/tools/v0.html): Vercel's AI app builder that turns prompts into React/Next.js apps and UI. Pricing: Plus from $30/mo. Free tier: yes.
-- [Lovable](https://aitrackertool.dev/tools/lovable.html): Build full-stack web apps by chatting with an AI engineer.
-- [Replit](https://aitrackertool.dev/tools/replit.html): Browser IDE with Replit Agent that builds and deploys apps from a prompt. Free tier: yes.
+- [Lovable](https://aitrackertool.dev/tools/lovable.html): Build full-stack web apps by chatting with an AI engineer. Free tier: yes.
+- [Replit](https://aitrackertool.dev/tools/replit.html): Browser IDE with Replit Agent that builds and deploys apps from a prompt. Pricing: Core from $20/mo ($18/mo billed annually). Free tier: yes.
 - [GitHub Copilot](https://aitrackertool.dev/tools/github-copilot.html): AI pair programmer and coding agent inside VS Code, JetBrains and GitHub. Pricing: Pro from $10/mo. Free tier: yes.
-- [Windsurf](https://aitrackertool.dev/tools/windsurf.html): Agentic AI code editor with the Cascade coding agent. Pricing: Pro from $20/mo. Free tier: yes.
+- [Devin](https://aitrackertool.dev/tools/devin.html): Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents. Pricing: Pro from $20/mo. Free tier: yes.
+- [Zed](https://aitrackertool.dev/tools/zed.html): Fast open-source code editor with AI edit predictions, an agent panel and bring-your-own-key support. Pricing: Pro from $10/mo. Free tier: yes.
+- [OpenRouter](https://aitrackertool.dev/tools/openrouter.html): One OpenAI-compatible API for 500+ models from 80+ providers, with fallback routing. Pricing: Pay-as-you-go; 5.5% fee on credit purchases. Free tier: yes.
+- [Hugging Face](https://aitrackertool.dev/tools/hugging-face.html): The hub for open models, datasets and Spaces demos, plus hosted inference. Pricing: PRO from $9/mo. Free tier: yes.
 - [Claude Code](https://aitrackertool.dev/tools/claude-code.html): Anthropic's agentic coding tool for the terminal, IDE and web. Pricing: Included with paid Claude plans.
 - [OpenAI Codex](https://aitrackertool.dev/tools/openai-codex.html): OpenAI's coding agent for the CLI, IDE and cloud tasks.
-- [Warp](https://aitrackertool.dev/tools/warp.html): Agentic terminal and development environment with built-in AI agents. Free tier: yes.
-- [Tabnine](https://aitrackertool.dev/tools/tabnine.html): AI code assistant focused on privacy and enterprise deployment.
+- [Warp](https://aitrackertool.dev/tools/warp.html): Agentic terminal and development environment with built-in AI agents. Pricing: Build from $20/mo. Free tier: yes.
 - [Cline](https://aitrackertool.dev/tools/cline.html): Open-source autonomous coding agent for VS Code. Pricing: Open source.
 - [Aider](https://aitrackertool.dev/tools/aider.html): Open-source AI pair programming in your terminal, with git integration. Pricing: Open source.
 
 ### Chat Assistants
 - [ChatGPT](https://aitrackertool.dev/tools/chatgpt.html): OpenAI's general-purpose AI assistant for chat, writing, code and images. Free tier: yes.
 - [Claude](https://aitrackertool.dev/tools/claude.html): Anthropic's AI assistant for writing, analysis and coding. Pricing: Pro from $17/mo billed annually ($20 monthly). Free tier: yes.
-- [Gemini](https://aitrackertool.dev/tools/gemini.html): Google's AI assistant, connected to Google apps and search.
+- [Gemini](https://aitrackertool.dev/tools/gemini.html): Google's AI assistant, connected to Google apps and search. Pricing: Google AI Plus from $4.99/mo (US). Free tier: yes.
 - [Grok](https://aitrackertool.dev/tools/grok.html): xAI's AI assistant with real-time knowledge from X and the web.
 - [Microsoft Copilot](https://aitrackertool.dev/tools/microsoft-copilot.html): Microsoft's AI companion for chat, search and creation.
 - [Le Chat (Mistral)](https://aitrackertool.dev/tools/le-chat-mistral.html): Mistral AI's chat assistant.
+- [Ollama](https://aitrackertool.dev/tools/ollama.html): Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Pricing: Paid plans from $20/mo. Free tier: yes.
+- [LM Studio](https://aitrackertool.dev/tools/lm-studio.html): Desktop app (now with the Bionic agent) for downloading and running local LLMs via llama.cpp and MLX. Pricing: Bionic+ from $20/mo. Free tier: yes.
 - [DeepSeek](https://aitrackertool.dev/tools/deepseek.html): Chat assistant powered by DeepSeek's open-weight models.
 
 ### Image
 - [Midjourney](https://aitrackertool.dev/tools/midjourney.html): AI image generator known for its distinctive artistic style.
 - [Ideogram](https://aitrackertool.dev/tools/ideogram.html): AI image generator that's strong at rendering text in images.
 - [Leonardo.Ai](https://aitrackertool.dev/tools/leonardo-ai.html): AI image and video generation platform for creators and game assets.
-- [Krea](https://aitrackertool.dev/tools/krea.html): Real-time AI image and video generation and enhancement. Free tier: yes.
+- [Krea](https://aitrackertool.dev/tools/krea.html): Real-time AI image and video generation and enhancement. Pricing: Pro from $21/mo billed yearly ($35 monthly). Free tier: yes.
 - [Adobe Firefly](https://aitrackertool.dev/tools/adobe-firefly.html): Adobe's generative AI for images, video and design, built into Creative Cloud.
 - [Black Forest Labs (FLUX)](https://aitrackertool.dev/tools/black-forest-labs-flux.html): Makers of the FLUX image generation models.
 - [Recraft](https://aitrackertool.dev/tools/recraft.html): AI image generator for designers, with vector and brand-style output. Free tier: yes.
 
 ### Video
 - [Runway](https://aitrackertool.dev/tools/runway.html): AI video generation and editing tools for filmmakers and creators. Pricing: Standard from $12/mo billed annually. Free tier: yes.
-- [Synthesia](https://aitrackertool.dev/tools/synthesia.html): Create videos with AI avatars and voiceovers from text.
+- [Synthesia](https://aitrackertool.dev/tools/synthesia.html): Create videos with AI avatars and voiceovers from text. Pricing: Starter from $29/mo. Free tier: yes.
 - [Pika](https://aitrackertool.dev/tools/pika.html): AI video generator for short creative clips and effects. Pricing: Starter from $10/mo. Free tier: yes.
 - [Luma AI](https://aitrackertool.dev/tools/luma-ai.html): AI video generation with the Dream Machine and Ray models. Pricing: Plus from $30/mo.
 - [HeyGen](https://aitrackertool.dev/tools/heygen.html): AI avatar videos, translation and lip-sync. Pricing: Creator from $29/mo. Free tier: yes.
-- [Descript](https://aitrackertool.dev/tools/descript.html): Edit video and podcasts by editing the transcript, with AI tools. Free tier: yes.
+- [Descript](https://aitrackertool.dev/tools/descript.html): Edit video and podcasts by editing the transcript, with AI tools. Pricing: Hobbyist from $16/mo billed annually ($24 monthly). Free tier: yes.
 - [Kling AI](https://aitrackertool.dev/tools/kling-ai.html): Kuaishou's AI video generation model and app.
 
 ### Voice & Audio
 - [ElevenLabs](https://aitrackertool.dev/tools/elevenlabs.html): AI voice generation, cloning, dubbing and speech-to-text. Pricing: Creator from $22/mo. Free tier: yes.
-- [Suno](https://aitrackertool.dev/tools/suno.html): Generate full songs with vocals from a text prompt. Free tier: yes.
+- [Suno](https://aitrackertool.dev/tools/suno.html): Generate full songs with vocals from a text prompt. Pricing: Pro from $8/mo billed yearly. Free tier: yes.
 - [Udio](https://aitrackertool.dev/tools/udio.html): AI music generation and remixing.
 - [Murf AI](https://aitrackertool.dev/tools/murf-ai.html): AI voiceover studio with a library of voices.
 
 ### Writing
 - [Jasper](https://aitrackertool.dev/tools/jasper.html): AI content platform for marketing teams. Pricing: Pro from $59/mo.
-- [Writesonic](https://aitrackertool.dev/tools/writesonic.html): AI writing and SEO/AI-search visibility platform.
-- [Copy.ai](https://aitrackertool.dev/tools/copy-ai.html): AI platform for go-to-market copy and workflows.
+- [Writesonic](https://aitrackertool.dev/tools/writesonic.html): AI writing and SEO/AI-search visibility platform. Pricing: Starter from $79/mo billed annually.
+- [Copy.ai](https://aitrackertool.dev/tools/copy-ai.html): AI platform for go-to-market copy and workflows. Pricing: Paid plans from $29/mo.
 - [Grammarly](https://aitrackertool.dev/tools/grammarly.html): AI writing assistant for grammar, tone and rewriting. Pricing: Pro from $12/mo. Free tier: yes.
 - [QuillBot](https://aitrackertool.dev/tools/quillbot.html): AI paraphrasing, grammar checking and summarizing.
 
 ### Agents & Automation
-- [n8n](https://aitrackertool.dev/tools/n8n.html): Workflow automation with AI agents; self-hostable and fair-code.
-- [Zapier](https://aitrackertool.dev/tools/zapier.html): Automate work across 7,000+ apps with Zaps and AI agents. Free tier: yes.
+- [n8n](https://aitrackertool.dev/tools/n8n.html): Workflow automation with AI agents; self-hostable and fair-code. Pricing: Cloud Starter from €20/mo billed annually; self-hosted Community Edition free. Free tier: yes.
+- [Zapier](https://aitrackertool.dev/tools/zapier.html): Automate work across 7,000+ apps with Zaps and AI agents. Pricing: Professional from $19.99/mo. Free tier: yes.
 - [Make](https://aitrackertool.dev/tools/make.html): Visual automation platform with AI agents.
 - [Relay.app](https://aitrackertool.dev/tools/relay-app.html): AI workflow automation with human-in-the-loop steps.
 - [Muse (Meta)](https://aitrackertool.dev/tools/muse-meta.html): Meta's personal AI agent that uses apps for you: email, travel, shopping and more, via app, web or WhatsApp. US-only at launch (Sept 8, 2026). Pricing: Paid plans for heavier use. Free tier: yes.
-- [Lindy](https://aitrackertool.dev/tools/lindy.html): Build AI agents that handle email, meetings and workflows.
+- [Hermes Agent](https://aitrackertool.dev/tools/hermes-agent.html): Nous Research's open-source personal agent with app connectors, a plugin catalog and one-click local models. Pricing: Open source (MIT).
+- [Lindy](https://aitrackertool.dev/tools/lindy.html): Build AI agents that handle email, meetings and workflows. Pricing: Team from $29.99/mo; $50 in starter credits.
 
 ### Productivity & Research
 - [Perplexity](https://aitrackertool.dev/tools/perplexity.html): AI answer engine that searches the web and cites sources.
-- [NotebookLM](https://aitrackertool.dev/tools/notebooklm.html): Google's AI research notebook grounded in your own sources, with audio overviews.
+- [Gemini Notebook](https://aitrackertool.dev/tools/gemini-notebook.html): Google's AI research notebook (formerly NotebookLM), grounded in your own sources, with audio overviews.
+- [Granola](https://aitrackertool.dev/tools/granola.html): Bot-free AI meeting notes that enhance your own jottings, with chat across meetings. Pricing: Business from $14/user/mo. Free tier: yes.
 - [Notion AI](https://aitrackertool.dev/tools/notion-ai.html): Notion's workspace with built-in AI for writing, search and agents. Pricing: Plus from $10/mo. Free tier: yes.
-- [Otter.ai](https://aitrackertool.dev/tools/otter-ai.html): AI meeting notes, transcription and summaries. Free tier: yes.
-- [Fireflies.ai](https://aitrackertool.dev/tools/fireflies-ai.html): AI notetaker that records, transcribes and summarizes meetings. Free tier: yes.
+- [Otter.ai](https://aitrackertool.dev/tools/otter-ai.html): AI meeting notes, transcription and summaries. Pricing: Pro $16.99/user/mo billed monthly. Free tier: yes.
+- [Fireflies.ai](https://aitrackertool.dev/tools/fireflies-ai.html): AI notetaker that records, transcribes and summarizes meetings. Pricing: Pro from $10/seat/mo billed annually ($18 monthly). Free tier: yes.
 - [Elicit](https://aitrackertool.dev/tools/elicit.html): AI research assistant for finding and analyzing papers. Pricing: Plus from $11/mo.
 - [Consensus](https://aitrackertool.dev/tools/consensus.html): AI search engine for scientific research.
 
 ### Design & Websites
 - [Gamma](https://aitrackertool.dev/tools/gamma.html): Create presentations, docs and websites with AI.
 - [Framer](https://aitrackertool.dev/tools/framer.html): Design and publish websites, with AI site generation. Pricing: Basic from $10/mo. Free tier: yes.
-- [Figma](https://aitrackertool.dev/tools/figma.html): Collaborative design platform with Figma AI and Figma Make.
+- [Figma](https://aitrackertool.dev/tools/figma.html): Collaborative design platform with Figma AI and Figma Make. Pricing: Professional from $16/mo per full seat. Free tier: yes.
 - [Canva](https://aitrackertool.dev/tools/canva.html): Online design tool with Magic Studio AI features.
-- [Webflow](https://aitrackertool.dev/tools/webflow.html): Visual website builder and CMS with AI tools.
-- [Uizard](https://aitrackertool.dev/tools/uizard.html): AI UI design tool that turns prompts and sketches into mockups.
+- [Webflow](https://aitrackertool.dev/tools/webflow.html): Visual website builder and CMS with AI tools. Pricing: Basic site plan from $15/mo billed yearly. Free tier: yes.
+- [Napkin AI](https://aitrackertool.dev/tools/napkin-ai.html): Turns text into editable diagrams, flowcharts, mind maps and charts. Pricing: Plus from $9/person/mo. Free tier: yes.
+- [Uizard](https://aitrackertool.dev/tools/uizard.html): AI UI design tool that turns prompts and sketches into mockups. Pricing: Pro from $12/mo billed annually. Free tier: yes.
+
+### AI for IT & Cybersecurity
+- [TryHackMe (Echo)](https://aitrackertool.dev/tools/tryhackme-echo.html): Hands-on cyber training labs with Echo, a built-in AI tutor that gives context-aware hints without handing you the answer.
+- [HTB Academy (HTB Coach)](https://aitrackertool.dev/tools/htb-academy-htb-coach.html): Hack The Box's training modules with HTB Coach (beta): AI explanations, section summaries and quizzes tied to what you're studying.
+- [PentestGPT](https://aitrackertool.dev/tools/pentestgpt.html): Open-source autonomous pentesting agent from USENIX Security 2024 research, with staged recon-to-exploit runs for CTFs and lab targets. Pricing: Open source (MIT).
+- [Burp AI (PortSwigger)](https://aitrackertool.dev/tools/burp-ai-portswigger.html): AI pentesting partner built into Repeater in Burp Suite Professional for validating findings and cutting scan noise.
+- [Microsoft Security Copilot](https://aitrackertool.dev/tools/microsoft-security-copilot.html): Generative AI for security teams across Microsoft Defender, Sentinel, Entra, Intune and Purview: summarize incidents, write queries and reverse-engineer malicious scripts in plain English. Pricing: Pay-as-you-go: $4 per provisioned SCU/hour.
+- [Google Security Operations](https://aitrackertool.dev/tools/google-security-operations.html): Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation.
+- [CrowdStrike Charlotte AI](https://aitrackertool.dev/tools/crowdstrike-charlotte-ai.html): Agentic security analyst in the CrowdStrike platform that triages detections and speeds up investigations.
+- [Splunk AI Assistant](https://aitrackertool.dev/tools/splunk-ai-assistant.html): Natural-language assistant in Splunk for finding dashboards, reports and data and getting help with searches over your logs.
+- [Elastic Security AI](https://aitrackertool.dev/tools/elastic-security-ai.html): AI in Elastic Security: automated alert triage and hypothesis-driven threat hunts with ES|QL over your SIEM data.

@@ -1,5 +1,5 @@
-// Directory data. Pricing/free tier only where verified on the official site (Oct 14, 2026); omitted otherwise.
-const CATEGORIES={"coding": "Coding & Vibe Coding", "chat": "Chat Assistants", "image": "Image", "video": "Video", "audio": "Voice & Audio", "writing": "Writing", "agents": "Agents & Automation", "research": "Productivity & Research", "design": "Design & Websites"};
+// Directory data. Pricing/free tier only where verified on the official site (Oct 14-15, 2026); omitted otherwise.
+const CATEGORIES={"coding": "Coding & Vibe Coding", "chat": "Chat Assistants", "image": "Image", "video": "Video", "audio": "Voice & Audio", "writing": "Writing", "agents": "Agents & Automation", "research": "Productivity & Research", "design": "Design & Websites", "itsec": "AI for IT & Cybersecurity"};
 const DIRECTORY=[
 {
 "name": "Cursor",
@@ -54,12 +54,13 @@ const DIRECTORY=[
 "catName": "Coding & Vibe Coding",
 "url": "https://lovable.dev",
 "desc": "Build full-stack web apps by chatting with an AI engineer.",
+"freeTier": true,
 "tags": [
 "vibe coding",
 "web apps",
 "no-code"
 ],
-"pf": ""
+"pf": "free"
 },
 {
 "name": "Replit",
@@ -69,12 +70,13 @@ const DIRECTORY=[
 "url": "https://replit.com",
 "desc": "Browser IDE with Replit Agent that builds and deploys apps from a prompt.",
 "freeTier": true,
+"pricing": "Core from $20/mo ($18/mo billed annually)",
 "tags": [
 "vibe coding",
 "ide",
 "deploy"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "GitHub Copilot",
@@ -93,18 +95,67 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
-"name": "Windsurf",
-"slug": "windsurf",
+"name": "Devin",
+"slug": "devin",
 "category": "coding",
 "catName": "Coding & Vibe Coding",
-"url": "https://windsurf.com",
-"desc": "Agentic AI code editor with the Cascade coding agent.",
+"url": "https://devin.ai",
+"desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents.",
 "freeTier": true,
 "pricing": "Pro from $20/mo",
 "tags": [
 "editor",
 "agent",
+"ide",
+"cloud agents"
+],
+"pf": "both"
+},
+{
+"name": "Zed",
+"slug": "zed",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://zed.dev",
+"desc": "Fast open-source code editor with AI edit predictions, an agent panel and bring-your-own-key support.",
+"freeTier": true,
+"pricing": "Pro from $10/mo",
+"tags": [
+"editor",
+"open source",
 "ide"
+],
+"pf": "both"
+},
+{
+"name": "OpenRouter",
+"slug": "openrouter",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://openrouter.ai",
+"desc": "One OpenAI-compatible API for 500+ models from 80+ providers, with fallback routing.",
+"freeTier": true,
+"pricing": "Pay-as-you-go; 5.5% fee on credit purchases",
+"tags": [
+"api",
+"models",
+"routing"
+],
+"pf": "both"
+},
+{
+"name": "Hugging Face",
+"slug": "hugging-face",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://huggingface.co",
+"desc": "The hub for open models, datasets and Spaces demos, plus hosted inference.",
+"freeTier": true,
+"pricing": "PRO from $9/mo",
+"tags": [
+"open models",
+"hosting",
+"ml"
 ],
 "pf": "both"
 },
@@ -113,7 +164,7 @@ const DIRECTORY=[
 "slug": "claude-code",
 "category": "coding",
 "catName": "Coding & Vibe Coding",
-"url": "https://www.anthropic.com/claude-code",
+"url": "https://claude.com/product/claude-code",
 "desc": "Anthropic's agentic coding tool for the terminal, IDE and web.",
 "pricing": "Included with paid Claude plans",
 "tags": [
@@ -145,24 +196,12 @@ const DIRECTORY=[
 "url": "https://www.warp.dev",
 "desc": "Agentic terminal and development environment with built-in AI agents.",
 "freeTier": true,
+"pricing": "Build from $20/mo",
 "tags": [
 "terminal",
 "agent"
 ],
-"pf": "free"
-},
-{
-"name": "Tabnine",
-"slug": "tabnine",
-"category": "coding",
-"catName": "Coding & Vibe Coding",
-"url": "https://www.tabnine.com",
-"desc": "AI code assistant focused on privacy and enterprise deployment.",
-"tags": [
-"autocomplete",
-"enterprise"
-],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Cline",
@@ -230,11 +269,13 @@ const DIRECTORY=[
 "catName": "Chat Assistants",
 "url": "https://gemini.google.com",
 "desc": "Google's AI assistant, connected to Google apps and search.",
+"freeTier": true,
+"pricing": "Google AI Plus from $4.99/mo (US)",
 "tags": [
 "assistant",
 "google"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Grok",
@@ -275,6 +316,38 @@ const DIRECTORY=[
 "europe"
 ],
 "pf": ""
+},
+{
+"name": "Ollama",
+"slug": "ollama",
+"category": "chat",
+"catName": "Chat Assistants",
+"url": "https://ollama.com",
+"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough.",
+"freeTier": true,
+"pricing": "Paid plans from $20/mo",
+"tags": [
+"local models",
+"open weights",
+"privacy"
+],
+"pf": "both"
+},
+{
+"name": "LM Studio",
+"slug": "lm-studio",
+"category": "chat",
+"catName": "Chat Assistants",
+"url": "https://lmstudio.ai",
+"desc": "Desktop app (now with the Bionic agent) for downloading and running local LLMs via llama.cpp and MLX.",
+"freeTier": true,
+"pricing": "Bionic+ from $20/mo",
+"tags": [
+"local models",
+"desktop",
+"privacy"
+],
+"pf": "both"
 },
 {
 "name": "DeepSeek",
@@ -336,12 +409,13 @@ const DIRECTORY=[
 "url": "https://www.krea.ai",
 "desc": "Real-time AI image and video generation and enhancement.",
 "freeTier": true,
+"pricing": "Pro from $21/mo billed yearly ($35 monthly)",
 "tags": [
 "image generation",
 "upscaling",
 "real-time"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Adobe Firefly",
@@ -389,7 +463,7 @@ const DIRECTORY=[
 "slug": "runway",
 "category": "video",
 "catName": "Video",
-"url": "https://runwayml.com",
+"url": "https://runway.com",
 "desc": "AI video generation and editing tools for filmmakers and creators.",
 "freeTier": true,
 "pricing": "Standard from $12/mo billed annually",
@@ -406,12 +480,14 @@ const DIRECTORY=[
 "catName": "Video",
 "url": "https://www.synthesia.io",
 "desc": "Create videos with AI avatars and voiceovers from text.",
+"freeTier": true,
+"pricing": "Starter from $29/mo",
 "tags": [
 "avatars",
 "video generation",
 "training"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Pika",
@@ -464,19 +540,20 @@ const DIRECTORY=[
 "url": "https://www.descript.com",
 "desc": "Edit video and podcasts by editing the transcript, with AI tools.",
 "freeTier": true,
+"pricing": "Hobbyist from $16/mo billed annually ($24 monthly)",
 "tags": [
 "editing",
 "podcast",
 "transcription"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Kling AI",
 "slug": "kling-ai",
 "category": "video",
 "catName": "Video",
-"url": "https://klingai.com",
+"url": "https://kling.ai",
 "desc": "Kuaishou's AI video generation model and app.",
 "tags": [
 "video generation"
@@ -506,10 +583,11 @@ const DIRECTORY=[
 "url": "https://suno.com",
 "desc": "Generate full songs with vocals from a text prompt.",
 "freeTier": true,
+"pricing": "Pro from $8/mo billed yearly",
 "tags": [
 "music generation"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Udio",
@@ -557,11 +635,12 @@ const DIRECTORY=[
 "catName": "Writing",
 "url": "https://writesonic.com",
 "desc": "AI writing and SEO/AI-search visibility platform.",
+"pricing": "Starter from $79/mo billed annually",
 "tags": [
 "seo",
 "content"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Copy.ai",
@@ -570,11 +649,12 @@ const DIRECTORY=[
 "catName": "Writing",
 "url": "https://www.copy.ai",
 "desc": "AI platform for go-to-market copy and workflows.",
+"pricing": "Paid plans from $29/mo",
 "tags": [
 "marketing",
 "copywriting"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Grammarly",
@@ -611,12 +691,14 @@ const DIRECTORY=[
 "catName": "Agents & Automation",
 "url": "https://n8n.io",
 "desc": "Workflow automation with AI agents; self-hostable and fair-code.",
+"freeTier": true,
+"pricing": "Cloud Starter from \u20ac20/mo billed annually; self-hosted Community Edition free",
 "tags": [
 "automation",
 "self-hosted",
 "agents"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Zapier",
@@ -626,12 +708,13 @@ const DIRECTORY=[
 "url": "https://zapier.com",
 "desc": "Automate work across 7,000+ apps with Zaps and AI agents.",
 "freeTier": true,
+"pricing": "Professional from $19.99/mo",
 "tags": [
 "automation",
 "no-code",
 "integrations"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Make",
@@ -678,17 +761,33 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Hermes Agent",
+"slug": "hermes-agent",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://hermes-agent.nousresearch.com",
+"desc": "Nous Research's open-source personal agent with app connectors, a plugin catalog and one-click local models.",
+"pricing": "Open source (MIT)",
+"tags": [
+"open source",
+"agents",
+"local models"
+],
+"pf": "free"
+},
+{
 "name": "Lindy",
 "slug": "lindy",
 "category": "agents",
 "catName": "Agents & Automation",
 "url": "https://www.lindy.ai",
 "desc": "Build AI agents that handle email, meetings and workflows.",
+"pricing": "Team from $29.99/mo; $50 in starter credits",
 "tags": [
 "agents",
 "assistant"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Perplexity",
@@ -705,18 +804,33 @@ const DIRECTORY=[
 "pf": ""
 },
 {
-"name": "NotebookLM",
-"slug": "notebooklm",
+"name": "Gemini Notebook",
+"slug": "gemini-notebook",
 "category": "research",
 "catName": "Productivity & Research",
-"url": "https://notebooklm.google",
-"desc": "Google's AI research notebook grounded in your own sources, with audio overviews.",
+"url": "https://notebook.google",
+"desc": "Google's AI research notebook (formerly NotebookLM), grounded in your own sources, with audio overviews.",
 "tags": [
 "research",
 "notes",
 "google"
 ],
 "pf": ""
+},
+{
+"name": "Granola",
+"slug": "granola",
+"category": "research",
+"catName": "Productivity & Research",
+"url": "https://www.granola.ai",
+"desc": "Bot-free AI meeting notes that enhance your own jottings, with chat across meetings.",
+"freeTier": true,
+"pricing": "Business from $14/user/mo",
+"tags": [
+"meetings",
+"notes"
+],
+"pf": "both"
 },
 {
 "name": "Notion AI",
@@ -741,11 +855,12 @@ const DIRECTORY=[
 "url": "https://otter.ai",
 "desc": "AI meeting notes, transcription and summaries.",
 "freeTier": true,
+"pricing": "Pro $16.99/user/mo billed monthly",
 "tags": [
 "meetings",
 "transcription"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Fireflies.ai",
@@ -755,11 +870,12 @@ const DIRECTORY=[
 "url": "https://fireflies.ai",
 "desc": "AI notetaker that records, transcribes and summarizes meetings.",
 "freeTier": true,
+"pricing": "Pro from $10/seat/mo billed annually ($18 monthly)",
 "tags": [
 "meetings",
 "transcription"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Elicit",
@@ -823,11 +939,13 @@ const DIRECTORY=[
 "catName": "Design & Websites",
 "url": "https://www.figma.com",
 "desc": "Collaborative design platform with Figma AI and Figma Make.",
+"freeTier": true,
+"pricing": "Professional from $16/mo per full seat",
 "tags": [
 "ui design",
 "prototyping"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Canva",
@@ -849,12 +967,30 @@ const DIRECTORY=[
 "catName": "Design & Websites",
 "url": "https://webflow.com",
 "desc": "Visual website builder and CMS with AI tools.",
+"freeTier": true,
+"pricing": "Basic site plan from $15/mo billed yearly",
 "tags": [
 "websites",
 "cms",
 "no-code"
 ],
-"pf": ""
+"pf": "both"
+},
+{
+"name": "Napkin AI",
+"slug": "napkin-ai",
+"category": "design",
+"catName": "Design & Websites",
+"url": "https://www.napkin.ai",
+"desc": "Turns text into editable diagrams, flowcharts, mind maps and charts.",
+"freeTier": true,
+"pricing": "Plus from $9/person/mo",
+"tags": [
+"diagrams",
+"visuals",
+"slides"
+],
+"pf": "both"
 },
 {
 "name": "Uizard",
@@ -863,9 +999,139 @@ const DIRECTORY=[
 "catName": "Design & Websites",
 "url": "https://uizard.io",
 "desc": "AI UI design tool that turns prompts and sketches into mockups.",
+"freeTier": true,
+"pricing": "Pro from $12/mo billed annually",
 "tags": [
 "ui design",
 "prototyping"
+],
+"pf": "both"
+},
+{
+"name": "TryHackMe (Echo)",
+"slug": "tryhackme-echo",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://tryhackme.com/echo",
+"desc": "Hands-on cyber training labs with Echo, a built-in AI tutor that gives context-aware hints without handing you the answer.",
+"tags": [
+"cert study",
+"labs",
+"beginner"
+],
+"pf": ""
+},
+{
+"name": "HTB Academy (HTB Coach)",
+"slug": "htb-academy-htb-coach",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://academy.hackthebox.com",
+"desc": "Hack The Box's training modules with HTB Coach (beta): AI explanations, section summaries and quizzes tied to what you're studying.",
+"tags": [
+"cert study",
+"labs",
+"pentesting"
+],
+"pf": ""
+},
+{
+"name": "PentestGPT",
+"slug": "pentestgpt",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/GreyDGL/PentestGPT",
+"desc": "Open-source autonomous pentesting agent from USENIX Security 2024 research, with staged recon-to-exploit runs for CTFs and lab targets.",
+"pricing": "Open source (MIT)",
+"tags": [
+"pentesting",
+"open source",
+"home lab"
+],
+"pf": "free"
+},
+{
+"name": "Burp AI (PortSwigger)",
+"slug": "burp-ai-portswigger",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://portswigger.net/burp/ai",
+"desc": "AI pentesting partner built into Repeater in Burp Suite Professional for validating findings and cutting scan noise.",
+"tags": [
+"web security",
+"pentesting",
+"bug bounty"
+],
+"pf": ""
+},
+{
+"name": "Microsoft Security Copilot",
+"slug": "microsoft-security-copilot",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot",
+"desc": "Generative AI for security teams across Microsoft Defender, Sentinel, Entra, Intune and Purview: summarize incidents, write queries and reverse-engineer malicious scripts in plain English.",
+"pricing": "Pay-as-you-go: $4 per provisioned SCU/hour",
+"tags": [
+"soc",
+"microsoft",
+"incident response"
+],
+"pf": "paid"
+},
+{
+"name": "Google Security Operations",
+"slug": "google-security-operations",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://cloud.google.com/security/products/security-operations",
+"desc": "Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation.",
+"tags": [
+"siem",
+"soc",
+"gemini"
+],
+"pf": ""
+},
+{
+"name": "CrowdStrike Charlotte AI",
+"slug": "crowdstrike-charlotte-ai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.crowdstrike.com/en-us/platform/charlotte-ai/",
+"desc": "Agentic security analyst in the CrowdStrike platform that triages detections and speeds up investigations.",
+"tags": [
+"soc",
+"edr",
+"triage"
+],
+"pf": ""
+},
+{
+"name": "Splunk AI Assistant",
+"slug": "splunk-ai-assistant",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.splunk.com/en_us/products/splunk-ai-assistant.html",
+"desc": "Natural-language assistant in Splunk for finding dashboards, reports and data and getting help with searches over your logs.",
+"tags": [
+"log analysis",
+"spl",
+"siem"
+],
+"pf": ""
+},
+{
+"name": "Elastic Security AI",
+"slug": "elastic-security-ai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.elastic.co/security/ai",
+"desc": "AI in Elastic Security: automated alert triage and hypothesis-driven threat hunts with ES|QL over your SIEM data.",
+"tags": [
+"log analysis",
+"siem",
+"threat hunting"
 ],
 "pf": ""
 }
