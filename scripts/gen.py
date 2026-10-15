@@ -134,14 +134,11 @@ END='<script src="/config.js"></script><script type="text/javascript" async src=
 def isaff(x): return "bolt.cello.so" in x["url"]
 AFFNOTE='<span class="affnote">Affiliate link: we may earn a commission if you sign up, at no extra cost to you.</span>'
 def tags(x):
-  p=x["pf"];t=[]
-  if p=="free": t.append('<span class="t free">[FREE]</span>')
-  elif p=="paid": t.append('<span class="t paid">[PAID]</span>')
-  elif p=="both": t+=['<span class="t free">[FREE TIER]</span>','<span class="t paid">[PAID]</span>']
-  else: t.append('<span class="t na">[PRICE: SEE SITE]</span>')
-  t.append(f'<span class="t ver">[VERIFIED {vdate(x).strftime("%m/%d")}]</span>' if (p or x.get("pricing")) else '<span class="t na">[CHECK SITE]</span>')
-  if isaff(x): t.append('<span class="t aff">[AFFILIATE]</span>')
-  return "".join(t)
+  p=x["pf"]
+  t={"free":'<span class="t free">FREE</span>',"both":'<span class="t free">FREE TIER</span>',"paid":'<span class="t paid">PAID</span>'}.get(p,'<span class="t na">See site</span>')
+  if isaff(x): t+='<span class="t aff">AFFILIATE</span>'
+  if p or x.get("pricing"): t+=f'<span class="chk">checked {vdate(x).strftime("%m/%d")}</span>'
+  return t
 def visit(x,cls="go"):
   return f'<a class="{cls}" href="{x["url"]}" target="_blank" rel="{"sponsored noopener" if isaff(x) else "noopener"}" aria-label="Visit {e(x["name"])} (opens in new tab)">Visit ↗</a>'
 def row(x,showcat=False,filt=True):
@@ -200,7 +197,7 @@ nfree=sum(1 for y in data if y["pf"] in("free","both"));npaid=sum(1 for y in dat
 groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">Open category</a></div>{table([row(y) for y in data if y["category"]==k])}</section>' for k,v in C.items())
 feat=[y for y in data if y["slug"] in("muse-meta","bolt-new")]
 body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated {mdy(BUILD)} · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
-<dl class="stats"><div><dt>Tools</dt><dd>{len(data)}</dd></div><div><dt>Free option</dt><dd>{nfree}</dd></div><div><dt>Paid</dt><dd>{npaid}</dd></div><div><dt>Updated</dt><dd>{VER}</dd></div></dl><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
+<p class="statline">{len(data)} tools · {nfree} with a free option · {npaid} paid · updated {VER}</p><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
 {NLBAND(' id="newsletter"')}
 <section id="drop" class="grp-s"><div class="gh"><h2>Today's drop · Oct 15, 2026</h2><a href="{DROP}">See full drop →</a></div><div class="tbl compact" role="table" id="preview"></div></section>
 <section id="directory" class="dir"><h2 class="dh">AI tool directory</h2><div class="sticky">{ctl(len(data))}</div>{groups}</section>
