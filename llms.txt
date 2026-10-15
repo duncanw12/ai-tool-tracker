@@ -7,3 +7,84 @@
 
 ## Notes
 - Some links are affiliate links and are labeled "affiliate link".
+
+## Directory
+
+### Coding & Vibe Coding
+- [Cursor](https://aitrackertool.dev/tools/cursor.html): AI-first code editor with agent mode, codebase chat and tab completion. Pricing: Paid plans from $8/mo. Free tier: yes.
+- [Bolt.new](https://aitrackertool.dev/tools/bolt-new.html): Prompt, run, edit and deploy full-stack web apps right in your browser.
+- [v0](https://aitrackertool.dev/tools/v0.html): Vercel's AI app builder that turns prompts into React/Next.js apps and UI. Pricing: Plus from $30/mo. Free tier: yes.
+- [Lovable](https://aitrackertool.dev/tools/lovable.html): Build full-stack web apps by chatting with an AI engineer.
+- [Replit](https://aitrackertool.dev/tools/replit.html): Browser IDE with Replit Agent that builds and deploys apps from a prompt. Free tier: yes.
+- [GitHub Copilot](https://aitrackertool.dev/tools/github-copilot.html): AI pair programmer and coding agent inside VS Code, JetBrains and GitHub. Pricing: Pro from $10/mo. Free tier: yes.
+- [Windsurf](https://aitrackertool.dev/tools/windsurf.html): Agentic AI code editor with the Cascade coding agent. Pricing: Pro from $20/mo. Free tier: yes.
+- [Claude Code](https://aitrackertool.dev/tools/claude-code.html): Anthropic's agentic coding tool for the terminal, IDE and web. Pricing: Included with paid Claude plans.
+- [OpenAI Codex](https://aitrackertool.dev/tools/openai-codex.html): OpenAI's coding agent for the CLI, IDE and cloud tasks.
+- [Warp](https://aitrackertool.dev/tools/warp.html): Agentic terminal and development environment with built-in AI agents. Free tier: yes.
+- [Tabnine](https://aitrackertool.dev/tools/tabnine.html): AI code assistant focused on privacy and enterprise deployment.
+- [Cline](https://aitrackertool.dev/tools/cline.html): Open-source autonomous coding agent for VS Code. Pricing: Open source.
+- [Aider](https://aitrackertool.dev/tools/aider.html): Open-source AI pair programming in your terminal, with git integration. Pricing: Open source.
+
+### Chat Assistants
+- [ChatGPT](https://aitrackertool.dev/tools/chatgpt.html): OpenAI's general-purpose AI assistant for chat, writing, code and images. Free tier: yes.
+- [Claude](https://aitrackertool.dev/tools/claude.html): Anthropic's AI assistant for writing, analysis and coding. Pricing: Pro from $17/mo billed annually ($20 monthly). Free tier: yes.
+- [Gemini](https://aitrackertool.dev/tools/gemini.html): Google's AI assistant, connected to Google apps and search.
+- [Grok](https://aitrackertool.dev/tools/grok.html): xAI's AI assistant with real-time knowledge from X and the web.
+- [Microsoft Copilot](https://aitrackertool.dev/tools/microsoft-copilot.html): Microsoft's AI companion for chat, search and creation.
+- [Le Chat (Mistral)](https://aitrackertool.dev/tools/le-chat-mistral.html): Mistral AI's chat assistant.
+- [DeepSeek](https://aitrackertool.dev/tools/deepseek.html): Chat assistant powered by DeepSeek's open-weight models.
+
+### Image
+- [Midjourney](https://aitrackertool.dev/tools/midjourney.html): AI image generator known for its distinctive artistic style.
+- [Ideogram](https://aitrackertool.dev/tools/ideogram.html): AI image generator that's strong at rendering text in images.
+- [Leonardo.Ai](https://aitrackertool.dev/tools/leonardo-ai.html): AI image and video generation platform for creators and game assets.
+- [Krea](https://aitrackertool.dev/tools/krea.html): Real-time AI image and video generation and enhancement. Free tier: yes.
+- [Adobe Firefly](https://aitrackertool.dev/tools/adobe-firefly.html): Adobe's generative AI for images, video and design, built into Creative Cloud.
+- [Black Forest Labs (FLUX)](https://aitrackertool.dev/tools/black-forest-labs-flux.html): Makers of the FLUX image generation models.
+- [Recraft](https://aitrackertool.dev/tools/recraft.html): AI image generator for designers, with vector and brand-style output. Free tier: yes.
+
+### Video
+- [Runway](https://aitrackertool.dev/tools/runway.html): AI video generation and editing tools for filmmakers and creators. Pricing: Standard from $12/mo billed annually. Free tier: yes.
+- [Synthesia](https://aitrackertool.dev/tools/synthesia.html): Create videos with AI avatars and voiceovers from text.
+- [Pika](https://aitrackertool.dev/tools/pika.html): AI video generator for short creative clips and effects. Pricing: Starter from $10/mo. Free tier: yes.
+- [Luma AI](https://aitrackertool.dev/tools/luma-ai.html): AI video generation with the Dream Machine and Ray models. Pricing: Plus from $30/mo.
+- [HeyGen](https://aitrackertool.dev/tools/heygen.html): AI avatar videos, translation and lip-sync. Pricing: Creator from $29/mo. Free tier: yes.
+- [Descript](https://aitrackertool.dev/tools/descript.html): Edit video and podcasts by editing the transcript, with AI tools. Free tier: yes.
+- [Kling AI](https://aitrackertool.dev/tools/kling-ai.html): Kuaishou's AI video generation model and app.
+
+### Voice & Audio
+- [ElevenLabs](https://aitrackertool.dev/tools/elevenlabs.html): AI voice generation, cloning, dubbing and speech-to-text. Pricing: Creator from $22/mo. Free tier: yes.
+- [Suno](https://aitrackertool.dev/tools/suno.html): Generate full songs with vocals from a text prompt. Free tier: yes.
+- [Udio](https://aitrackertool.dev/tools/udio.html): AI music generation and remixing.
+- [Murf AI](https://aitrackertool.dev/tools/murf-ai.html): AI voiceover studio with a library of voices.
+
+### Writing
+- [Jasper](https://aitrackertool.dev/tools/jasper.html): AI content platform for marketing teams. Pricing: Pro from $59/mo.
+- [Writesonic](https://aitrackertool.dev/tools/writesonic.html): AI writing and SEO/AI-search visibility platform.
+- [Copy.ai](https://aitrackertool.dev/tools/copy-ai.html): AI platform for go-to-market copy and workflows.
+- [Grammarly](https://aitrackertool.dev/tools/grammarly.html): AI writing assistant for grammar, tone and rewriting. Pricing: Pro from $12/mo. Free tier: yes.
+- [QuillBot](https://aitrackertool.dev/tools/quillbot.html): AI paraphrasing, grammar checking and summarizing.
+
+### Agents & Automation
+- [n8n](https://aitrackertool.dev/tools/n8n.html): Workflow automation with AI agents; self-hostable and fair-code.
+- [Zapier](https://aitrackertool.dev/tools/zapier.html): Automate work across 7,000+ apps with Zaps and AI agents. Free tier: yes.
+- [Make](https://aitrackertool.dev/tools/make.html): Visual automation platform with AI agents.
+- [Relay.app](https://aitrackertool.dev/tools/relay-app.html): AI workflow automation with human-in-the-loop steps.
+- [Lindy](https://aitrackertool.dev/tools/lindy.html): Build AI agents that handle email, meetings and workflows.
+
+### Productivity & Research
+- [Perplexity](https://aitrackertool.dev/tools/perplexity.html): AI answer engine that searches the web and cites sources.
+- [NotebookLM](https://aitrackertool.dev/tools/notebooklm.html): Google's AI research notebook grounded in your own sources, with audio overviews.
+- [Notion AI](https://aitrackertool.dev/tools/notion-ai.html): Notion's workspace with built-in AI for writing, search and agents. Pricing: Plus from $10/mo. Free tier: yes.
+- [Otter.ai](https://aitrackertool.dev/tools/otter-ai.html): AI meeting notes, transcription and summaries. Free tier: yes.
+- [Fireflies.ai](https://aitrackertool.dev/tools/fireflies-ai.html): AI notetaker that records, transcribes and summarizes meetings. Free tier: yes.
+- [Elicit](https://aitrackertool.dev/tools/elicit.html): AI research assistant for finding and analyzing papers. Pricing: Plus from $11/mo.
+- [Consensus](https://aitrackertool.dev/tools/consensus.html): AI search engine for scientific research.
+
+### Design & Websites
+- [Gamma](https://aitrackertool.dev/tools/gamma.html): Create presentations, docs and websites with AI.
+- [Framer](https://aitrackertool.dev/tools/framer.html): Design and publish websites, with AI site generation. Pricing: Basic from $10/mo. Free tier: yes.
+- [Figma](https://aitrackertool.dev/tools/figma.html): Collaborative design platform with Figma AI and Figma Make.
+- [Canva](https://aitrackertool.dev/tools/canva.html): Online design tool with Magic Studio AI features.
+- [Webflow](https://aitrackertool.dev/tools/webflow.html): Visual website builder and CMS with AI tools.
+- [Uizard](https://aitrackertool.dev/tools/uizard.html): AI UI design tool that turns prompts and sketches into mockups.
