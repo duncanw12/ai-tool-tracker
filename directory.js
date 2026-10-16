@@ -902,7 +902,7 @@ const DIRECTORY=[
 "slug": "fireflies-ai",
 "category": "research",
 "catName": "Productivity & Research",
-"url": "https://fireflies.ai",
+"url": "https://fireflies.ai/?fpr=duncan-873b18",
 "desc": "AI notetaker that records, transcribes and summarizes meetings.",
 "freeTier": true,
 "pricing": "Pro from $10/seat/mo billed annually ($18 monthly)",
