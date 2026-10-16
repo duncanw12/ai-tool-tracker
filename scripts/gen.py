@@ -5,7 +5,7 @@ C={"coding":"Coding & Vibe Coding","chat":"Chat Assistants","image":"Image","vid
 # name,cat,url,desc,free(True/None),price,tags
 T=[
 ("Cursor","coding","https://cursor.com","AI-first code editor with agent mode, codebase chat and tab completion.",True,"Paid plans from $8/mo","editor,agent,ide"),
-("Bolt.new","coding","https://bolt.cello.so/MFwNDwJhlUB","Prompt, run, edit and deploy full-stack web apps right in your browser.",None,"","vibe coding,web apps,browser"),
+("Bolt.new","coding","https://bolt.cello.so/MFwNDwJhlUB","Prompt, run, edit and deploy full-stack web apps right in your browser.",True,"Pro from $25/mo","vibe coding,web apps,browser"),
 ("v0","coding","https://v0.app","Vercel's AI app builder that turns prompts into React/Next.js apps and UI.",True,"Plus from $30/mo","vibe coding,react,ui"),
 ("Lovable","coding","https://lovable.dev","Build full-stack web apps by chatting with an AI engineer.",True,"","vibe coding,web apps,no-code"),
 ("Replit","coding","https://replit.com","Browser IDE with Replit Agent that builds and deploys apps from a prompt.",True,"Core from $20/mo ($18/mo billed annually)","vibe coding,ide,deploy"),
@@ -13,9 +13,10 @@ T=[
 ("Devin","coding","https://devin.ai","Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents.",True,"Pro from $20/mo","editor,agent,ide,cloud agents"),
 ("Zed","coding","https://zed.dev","Fast open-source code editor with AI edit predictions, an agent panel and bring-your-own-key support.",True,"Pro from $10/mo","editor,open source,ide"),
 ("OpenRouter","coding","https://openrouter.ai","One OpenAI-compatible API for 500+ models from 80+ providers, with fallback routing.",True,"Pay-as-you-go; 5.5% fee on credit purchases","api,models,routing"),
+("Muse Spark Open (Meta)","coding","https://dev.meta.ai/models/muse-spark-open","Meta's open-weight multimodal MoE model (816B total, 42B active, 1M context) built for coding and agent work. Released Oct 15, 2026.",True,"Free open weights (Muse Model License); hosted via OpenRouter, Groq, Together and others","open weights,models,meta,new"),
 ("Hugging Face","coding","https://huggingface.co","The hub for open models, datasets and Spaces demos, plus hosted inference.",True,"PRO from $9/mo","open models,hosting,ml"),
 ("Claude Code","coding","https://claude.com/product/claude-code","Anthropic's agentic coding tool for the terminal, IDE and web.",None,"Included with paid Claude plans","agent,terminal,cli"),
-("OpenAI Codex","coding","https://openai.com/codex/","OpenAI's coding agent for the CLI, IDE and cloud tasks.",None,"","agent,cli,openai"),
+("OpenAI Codex","coding","https://openai.com/codex/","OpenAI's coding agent for the CLI, IDE and cloud tasks.",True,"Included with ChatGPT plans (limited on Free and Go)","agent,cli,openai"),
 ("Warp","coding","https://www.warp.dev","Agentic terminal and development environment with built-in AI agents.",True,"Build from $20/mo","terminal,agent"),
 ("Cline","coding","https://cline.bot","Open-source autonomous coding agent for VS Code.",None,"Open source","agent,open source,vs code"),
 ("Aider","coding","https://aider.chat","Open-source AI pair programming in your terminal, with git integration.",None,"Open source","cli,open source,git"),
@@ -24,16 +25,16 @@ T=[
 ("Gemini","chat","https://gemini.google.com","Google's AI assistant, connected to Google apps and search.",True,"Google AI Plus from $4.99/mo (US)","assistant,google"),
 ("Grok","chat","https://grok.com","xAI's AI assistant with real-time knowledge from X and the web.",None,"","assistant,xai"),
 ("Microsoft Copilot","chat","https://copilot.microsoft.com","Microsoft's AI companion for chat, search and creation.",None,"","assistant,microsoft"),
-("Le Chat (Mistral)","chat","https://chat.mistral.ai","Mistral AI's chat assistant.",None,"","assistant,mistral,europe"),
+("Le Chat (Mistral)","chat","https://chat.mistral.ai","Mistral AI's chat assistant, with Mistral Vibe for coding in the CLI, IDE or web.",True,"Pro from $14.99/mo","assistant,mistral,europe"),
 ("Ollama","chat","https://ollama.com","Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough.",True,"Paid plans from $20/mo","local models,open weights,privacy"),
 ("LM Studio","chat","https://lmstudio.ai","Desktop app (now with the Bionic agent) for downloading and running local LLMs via llama.cpp and MLX.",True,"Bionic+ from $20/mo","local models,desktop,privacy"),
 ("DeepSeek","chat","https://chat.deepseek.com","Chat assistant powered by DeepSeek's open-weight models.",None,"","assistant,open weights"),
-("Midjourney","image","https://www.midjourney.com","AI image generator known for its distinctive artistic style.",None,"","image generation,art"),
-("Ideogram","image","https://ideogram.ai","AI image generator that's strong at rendering text in images.",None,"","image generation,typography"),
-("Leonardo.Ai","image","https://leonardo.ai","AI image and video generation platform for creators and game assets.",None,"","image generation,assets"),
+("Midjourney","image","https://www.midjourney.com","AI image and video generator known for its distinctive artistic style.",None,"Basic from $10/mo ($8/mo billed annually)","image generation,art"),
+("Ideogram","image","https://ideogram.ai","AI image generator that's strong at rendering text in images.",True,"Plus from $15/mo billed annually ($20 monthly)","image generation,typography"),
+("Leonardo.Ai","image","https://leonardo.ai","AI image and video generation platform for creators and game assets.",True,"Essential from $12/mo; free plan has 150 tokens/day","image generation,assets"),
 ("Krea","image","https://www.krea.ai","Real-time AI image and video generation and enhancement.",True,"Pro from $21/mo billed yearly ($35 monthly)","image generation,upscaling,real-time"),
 ("Adobe Firefly","image","https://www.adobe.com/products/firefly.html","Adobe's generative AI for images, video and design, built into Creative Cloud.",None,"","image generation,adobe"),
-("Black Forest Labs (FLUX)","image","https://bfl.ai","Makers of the FLUX image generation models.",None,"","image models,api"),
+("Black Forest Labs (FLUX)","image","https://bfl.ai","Makers of the FLUX image models, including FLUX 3 Image Klein (Oct 15, 2026): open weights, native 4K, runs on consumer GPUs.",True,"API from $0.009/image (FLUX 3 Image Klein at 1K); open weights free for individuals and companies under $5M revenue","image models,api"),
 ("Recraft","image","https://www.recraft.ai","AI image generator for designers, with vector and brand-style output.",True,"","vector,design,image generation"),
 ("Runway","video","https://runway.com","AI video generation and editing tools for filmmakers and creators.",True,"Standard from $12/mo billed annually","video generation,editing"),
 ("Synthesia","video","https://www.synthesia.io","Create videos with AI avatars and voiceovers from text.",True,"Starter from $29/mo","avatars,video generation,training"),
@@ -44,8 +45,8 @@ T=[
 ("Kling AI","video","https://kling.ai","Kuaishou's AI video generation model and app.",None,"","video generation"),
 ("ElevenLabs","audio","https://elevenlabs.io","AI voice generation, cloning, dubbing and speech-to-text.",True,"Creator from $22/mo","text to speech,voice cloning"),
 ("Suno","audio","https://suno.com","Generate full songs with vocals from a text prompt.",True,"Pro from $8/mo billed yearly","music generation"),
-("Udio","audio","https://www.udio.com","AI music generation and remixing.",None,"","music generation"),
-("Murf AI","audio","https://murf.ai","AI voiceover studio with a library of voices.",None,"","text to speech,voiceover"),
+("Udio","audio","https://www.udio.com","AI music generation and remixing.",True,"Standard from $10/mo ($8/mo billed annually)","music generation"),
+("Murf AI","audio","https://murf.ai","AI voiceover studio and text-to-speech API with 150+ voices in 35+ languages.",None,"API from $0.01 per 1,000 characters (Falcon); $10 free API credit","text to speech,voiceover"),
 ("Jasper","writing","https://www.jasper.ai","AI content platform for marketing teams.",None,"Pro from $59/mo","marketing,content"),
 ("Writesonic","writing","https://writesonic.com","AI writing and SEO/AI-search visibility platform.",None,"Starter from $79/mo billed annually","seo,content"),
 ("Copy.ai","writing","https://www.copy.ai","AI platform for go-to-market copy and workflows.",None,"Paid plans from $29/mo","marketing,copywriting"),
@@ -53,7 +54,7 @@ T=[
 ("QuillBot","writing","https://quillbot.com","AI paraphrasing, grammar checking and summarizing.",None,"","paraphrasing,summarizing"),
 ("n8n","agents","https://n8n.io","Workflow automation with AI agents; self-hostable and fair-code.",True,"Cloud Starter from €20/mo billed annually; self-hosted Community Edition free","automation,self-hosted,agents"),
 ("Zapier","agents","https://zapier.com","Automate work across 7,000+ apps with Zaps and AI agents.",True,"Professional from $19.99/mo","automation,no-code,integrations"),
-("Make","agents","https://www.make.com","Visual automation platform with AI agents.",None,"","automation,no-code,visual"),
+("Make","agents","https://www.make.com/?pc=aitrackertool","Visual automation platform with AI agents.",True,"Free plan with 1,000 credits/mo; paid plans priced by credits","automation,no-code,visual"),
 ("Relay.app","agents","https://www.relay.app","AI workflow automation with human-in-the-loop steps.",None,"","automation,agents"),
 ("Muse (Meta)","agents","https://muse.ai","Meta's personal AI agent that uses apps for you: email, travel, shopping and more, via app, web or WhatsApp. US-only at launch (Sept 8, 2026).",True,"Paid plans for heavier use","personal agent,meta,whatsapp,new"),
 ("Hermes Agent","agents","https://hermes-agent.nousresearch.com","Nous Research's open-source personal agent with app connectors, a plugin catalog and one-click local models.",None,"Open source (MIT)","open source,agents,local models"),
@@ -77,6 +78,12 @@ T=[
 ("HTB Academy (HTB Coach)","itsec","https://academy.hackthebox.com","Hack The Box's training modules with HTB Coach (beta): AI explanations, section summaries and quizzes tied to what you're studying.",None,"","cert study,labs,pentesting"),
 ("PentestGPT","itsec","https://github.com/GreyDGL/PentestGPT","Open-source autonomous pentesting agent from USENIX Security 2024 research, with staged recon-to-exploit runs for CTFs and lab targets.",None,"Open source (MIT)","pentesting,open source,home lab"),
 ("Burp AI (PortSwigger)","itsec","https://portswigger.net/burp/ai","AI pentesting partner built into Repeater in Burp Suite Professional for validating findings and cutting scan noise.",None,"","web security,pentesting,bug bounty"),
+("Snyk","itsec","https://snyk.io","Developer security platform that scans your code, open-source dependencies, containers and IaC from the IDE, CLI and repos.",True,"Team from $25/mo (up to 10 developers)","code security,sca,sast,beginner"),
+("Semgrep","itsec","https://semgrep.dev","Fast code scanner (SAST, supply chain, secrets) with AI-powered detection, triage and autofix. Great for scanning your own home-lab scripts.",True,"Free for up to 10 contributors (60 AI credits); Teams Code from $30/contributor/mo","code security,sast,open source,autofix"),
+("GitHub Copilot Autofix","itsec","https://docs.github.com/en/code-security/concepts/code-scanning/autofix-for-code-scanning","AI fixes for CodeQL code scanning alerts. Agentic autofix (GA Oct 15, 2026) investigates alerts and opens a draft PR with a validated fix.",True,"Free on public repos; private repos need GitHub Code Security","code scanning,github,autofix,codeql"),
+("VirusTotal Code Insight","itsec","https://www.virustotal.com","AI summaries in VirusTotal that explain what a suspicious script (starting with PowerShell) or decompiled code actually does. Handy for malware-analysis practice.",True,"Free for community users on eligible uploads; Code Insight API limited to 50 requests/day","malware analysis,soc,beginner,threat intel"),
+("Tines","itsec","https://www.tines.com","Security and IT workflow automation (SOAR) with built-in AI and bring-your-own-model support, used by SOC and IT teams.",True,"Free edition: 3 live workflows + one-time $50 AI allowance; paid editions on request","soar,automation,soc,it ops"),
+("SentinelOne Purple AI","itsec","https://www.sentinelone.com/platform/purple/","Agentic AI security analyst in the SentinelOne Singularity Platform: ask questions in plain English, auto-triage alerts and run guided investigations.",None,"","soc,edr,triage,incident response"),
 ("Microsoft Security Copilot","itsec","https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot","Generative AI for security teams across Microsoft Defender, Sentinel, Entra, Intune and Purview: summarize incidents, write queries and reverse-engineer malicious scripts in plain English.",None,"Pay-as-you-go: $4 per provisioned SCU/hour","soc,microsoft,incident response"),
 ("Google Security Operations","itsec","https://cloud.google.com/security/products/security-operations","Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation.",None,"","siem,soc,gemini"),
 ("CrowdStrike Charlotte AI","itsec","https://www.crowdstrike.com/en-us/platform/charlotte-ai/","Agentic security analyst in the CrowdStrike platform that triages detections and speeds up investigations.",None,"","soc,edr,triage"),
@@ -96,14 +103,17 @@ for x in data:
   if not x["pricing"]: del x["pricing"]
 open("directory.js","w").write("// Directory data. Pricing/free tier only where verified on the official site (Oct 14-15, 2026); omitted otherwise.\nconst CATEGORIES="+json.dumps(C)+";\nconst DIRECTORY="+json.dumps(data,indent=0)+";\n")
 CNT={c:sum(1 for y in data if y["category"]==c) for c in C}
-DROP="/drop-2026-10-15.html"
+DROP="/drop-2026-10-16.html"
+DROPDATE="Oct 16, 2026"
+PREVDROP="/drop-2026-10-15.html"
 import datetime
 # Build date: override with BUILD_DATE=YYYY-MM-DD; a tool can carry its own "verified":"YYYY-MM-DD".
 BUILD=datetime.date.fromisoformat(os.environ["BUILD_DATE"]) if os.environ.get("BUILD_DATE") else datetime.date.today()
 def vdate(x): return datetime.date.fromisoformat(x["verified"]) if x.get("verified") else BUILD
 def mdy(d): return d.strftime("%b ")+str(d.day)+d.strftime(", %Y")
 VER=BUILD.strftime("%m/%d")
-INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p>Start with the learning tools here (TryHackMe\'s Echo tutor, HTB Coach) for cert study and labs. Practice scripting and PowerShell with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, run local models in your home lab with <a href="/tools/ollama.html">Ollama</a>, and turn study notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>'}
+INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p><b>Cert study and labs:</b> TryHackMe\'s Echo tutor and HTB Coach. <b>Scripting and PowerShell:</b> practice with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, then scan your own scripts for free with <a href="/tools/semgrep.html">Semgrep</a> or <a href="/tools/snyk.html">Snyk</a>. <b>SOC and malware practice:</b> paste a suspicious PowerShell sample into <a href="/tools/virustotal-code-insight.html">VirusTotal Code Insight</a> and build a small alert workflow on the <a href="/tools/tines.html">Tines</a> free edition. <b>Home lab:</b> run local models with <a href="/tools/ollama.html">Ollama</a> and turn notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down (Security Copilot, Purple AI, Charlotte AI) are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>',
+ "coding":'<div class="note-box"><div class="nb-h">Rethinking your Cursor plan?</div><p>See our side-by-side <a href="/cursor-alternatives.html">Cursor alternatives (2026)</a> page: editors, terminal agents and open-source options with checked pricing.</p></div>'}
 LOGO='<svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true" focusable="false"><path d="M5 6L14 14 23 8M14 14L9 23M14 14L23 21" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="5" cy="6" r="2.5" fill="currentColor"/><circle cx="23" cy="8" r="2.5" fill="currentColor"/><circle cx="9" cy="23" r="2.5" fill="currentColor"/><circle cx="23" cy="21" r="2.5" fill="currentColor"/><circle cx="14" cy="14" r="3.5" fill="#00ff9c"/></svg>'
 ICONS='<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0d1520">'
 MENUJS='<script>(function(){var d=document.querySelector(".mmenu");if(!d)return;function c(){d.open=false}d.addEventListener("click",function(e){if(e.target.closest(".mpanel a"))c()});document.addEventListener("pointerdown",function(e){if(d.open&&!d.contains(e.target))c()});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&d.open){c();d.querySelector("summary").focus()}})})()</script>'
@@ -125,11 +135,11 @@ def side(cur=None,home=False):
     on=k==cur
     it.append(f'<a class="{"chip " if home else ""}fi{" on" if on else ""}" href="{"#cat-"+k if home else "/categories/"+k+".html"}" data-c="{k}"{" aria-current=\"page\"" if on else ""}><span class="fn">{e(v)}</span><span class="n">{CNT[k]}</span></a>')
   return (f'<aside class="side" aria-label="Categories"><div class="side-h">Categories</div><nav class="tree"{" id=\"cats\"" if home else ""} aria-label="Categories">{"".join(it)}</nav>'
-   f'<div class="side-h sh2">Start here</div><nav class="tree t2" aria-label="Quick links"><a class="fi" href="/categories/itsec.html"><span class="fn">Breaking into IT</span></a><a class="fi" href="{DROP}"><span class="fn">Today\'s drop</span></a><a class="fi" href="/issue-001.html"><span class="fn">Newsletter issue #001</span></a></nav></aside>')
+   f'<div class="side-h sh2">Start here</div><nav class="tree t2" aria-label="Quick links"><a class="fi" href="/categories/itsec.html"><span class="fn">Breaking into IT</span></a><a class="fi" href="/cursor-alternatives.html"><span class="fn">Cursor alternatives</span></a><a class="fi" href="{DROP}"><span class="fn">Today\'s drop</span></a><a class="fi" href="/issue-001.html"><span class="fn">Newsletter issue #001</span></a></nav></aside>')
 def mkfoot():
   cl="".join(f'<li><a href="/categories/{k}.html">{e(v)}</a></li>' for k,v in C.items())
   return (f'<footer class="site"><div class="fgrid"><div><a class="logo" href="/"><span class="lg-mark">{LOGO}</span>AI Tool Tracker</a><p class="mut">Hand-checked AI tools for builders and IT folks, updated daily.</p><p><a href="https://x.com/AITRACKERTOOL" target="_blank" rel="noopener">@AITRACKERTOOL on X</a> · <a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Newsletter</a></p></div>'
-   f'<div><h4>Categories</h4><ul class="flist">{cl}</ul></div><div><h4>Site</h4><ul class="flist one"><li><a href="/#directory">Directory</a></li><li><a href="{DROP}">Today\'s drop</a></li><li><a href="/issue-001.html">Issue #001</a></li><li><a href="/#submit">Submit / Sponsor</a></li></ul></div></div>'
+   f'<div><h4>Categories</h4><ul class="flist">{cl}</ul></div><div><h4>Site</h4><ul class="flist one"><li><a href="/#directory">Directory</a></li><li><a href="{DROP}">Today\'s drop</a></li><li><a href="/cursor-alternatives.html">Cursor alternatives</a></li><li><a href="/issue-001.html">Issue #001</a></li><li><a href="/#submit">Submit / Sponsor</a></li></ul></div></div>'
    '<div class="disc">© 2026 <span data-sitename>AI Tool Tracker</span>. <b>Affiliate disclosure:</b> some links on this site are affiliate links (marked "affiliate link"). If you sign up through them we may earn a commission at no extra cost to you. It never affects which tools we pick. This site uses Google Analytics to count visits.</div></footer>')
 FOOTER=mkfoot()
 SCROLL='<script>(function(){var a=document.querySelector(".side .fi.on");if(a&&innerWidth<900)a.parentNode.parentNode.scrollLeft=a.offsetLeft-12})()</script>'
@@ -139,7 +149,9 @@ def shell(main,cur=None,home=False): return '<div class="shell">'+side(cur,home)
 def head(t,d,path,ld):
   return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script>{ICONS}<link rel="stylesheet" href="/style.css">'+GA_TAG+'</head><body>'+nav()
 END='<script src="/config.js"></script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script></body></html>'
-def isaff(x): return "bolt.cello.so" in x["url"]
+def isaff(x): return "bolt.cello.so" in x["url"] or "make.com/?pc=" in x["url"]
+CLEAN={"bolt.cello.so":"https://bolt.new","make.com/?pc=":"https://www.make.com"}
+def clean(u): return next((v for k,v in CLEAN.items() if k in u),u)
 AFFNOTE='<span class="affnote">Affiliate link: we may earn a commission if you sign up, at no extra cost to you.</span>'
 def tags(x):
   p=x["pf"]
@@ -164,7 +176,7 @@ def ctl(n):
    '<p id="none" class="none" hidden>No tools match. Try a different word or switch the filter to All.</p>')
 urls=[]
 for x in data:
-  ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":x["catName"],"operatingSystem":"Web","description":x["desc"],"url":x["url"] if "cello" not in x["url"] else "https://bolt.new"}
+  ld={"@context":"https://schema.org","@type":"SoftwareApplication","name":x["name"],"applicationCategory":x["catName"],"operatingSystem":"Web","description":x["desc"],"url":clean(x["url"])}
   if "freeTier" in x: ld["offers"]={"@type":"Offer","price":"0","priceCurrency":"USD"}
   rel=[y for y in data if y["category"]==x["category"] and y is not x]
   b=head(f'{x["name"]}: pricing, free tier & alternatives | AI Tool Tracker',f'{x["name"]}: {x["desc"]} Pricing, free tier and related {x["catName"]} tools.',f'tools/{x["slug"]}.html',ld)
@@ -183,11 +195,50 @@ for c,n in C.items():
   m=(f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/#directory">Categories</a> / <span aria-current="page">{e(n)}</span></nav><h1 class="ch1">{e(lab)}</h1><p class="lede">{len(mm)} tools. Prices and free tiers shown only where we checked them on the official site.</p>'+INTRO.get(c,'')+NLBAND()+
    '<div class="sticky">'+ctl(len(mm))+'</div>'+table([row(y) for y in mm]))
   open(f'categories/{c}.html','w').write(b+shell(m,c)+'<script src="/filter.js"></script>'+END); urls.append(f'categories/{c}.html')
+# ---- daily drop page (static) ----
+BY={y["slug"]:y for y in data}
+NEWS=["snyk","semgrep","github-copilot-autofix","virustotal-code-insight","tines","sentinelone-purple-ai","muse-spark-open-meta"]
+PFIX=["bolt-new","make","openai-codex","le-chat-mistral","midjourney","ideogram","leonardo-ai","black-forest-labs-flux","udio","murf-ai"]
+nit=CNT["itsec"]
+dt=f"Daily Drop {DROPDATE}: Snyk, Semgrep, GitHub Copilot Autofix, VirusTotal Code Insight, Tines, Purple AI, Muse Spark Open | AI Tool Tracker"
+dd=f"{len(NEWS)} tools added on {DROPDATE}, mostly for IT and cybersecurity learners (free code scanners, malware analysis, SOAR), plus Meta's Muse Spark Open and {len(PFIX)} pricing checks."
+ld={"@context":"https://schema.org","@type":"Article","headline":f"Daily Drop · {DROPDATE}","datePublished":BUILD.isoformat(),"publisher":{"@type":"Organization","name":"AI Tool Tracker"},"url":f"{S}{DROP}","about":[{"@type":"SoftwareApplication","name":BY[k]["name"],"url":clean(BY[k]["url"])} for k in NEWS]}
+plist="".join(f'<li><a href="/tools/{k}.html">{e(BY[k]["name"])}</a>: {e(BY[k]["pricing"])}'+(' <span class="afftag">(affiliate link on the tool page)</span>' if isaff(BY[k]) else '')+'</li>' for k in PFIX)
+m=(f'<header class="phero"><span class="badge">DAILY DROP · {DROPDATE.upper()}</span><h1>Today\'s drop: {len(NEWS)} new tools, {len(PFIX)} pricing checks</h1><p class="tag">The directory now lists {len(data)} hand-checked tools. Today leans into <a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> ({nit} tools): free code scanners you can run on your own home-lab scripts, AI malware explanations, a free SOAR sandbox, and two SOC copilots. Pricing only where the official page states it.</p><p class="mut">Previous drop: <a href="{PREVDROP}">Oct 15, 2026 →</a></p></header>'
+ +NLBAND()+
+ f'<section class="grp-s"><div class="gh"><h2>New in the directory <span class="n">{len(NEWS)}</span></h2><a href="/#directory">Browse all {len(data)}</a></div>{table([row(BY[k],True,False) for k in NEWS],True)}</section>'
+ f'<section class="pc"><h2>Pricing filled in today</h2><p class="mut">These listings showed "See site" yesterday. We checked each official pricing page on {mdy(BUILD)}.</p><ul>{plist}</ul>'
+ f'<h2>Category and page changes</h2><ul><li><a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> grows from 9 to {nit} tools, and its <b>Breaking into IT</b> guide now covers free code scanning (Semgrep, Snyk), malware-analysis practice (VirusTotal Code Insight) and a free SOAR sandbox (Tines).</li><li>New page: <a href="/cursor-alternatives.html">Cursor alternatives (2026)</a>, a side-by-side of editors, terminal agents and open-source options.</li><li><a href="/tools/black-forest-labs-flux.html">Black Forest Labs (FLUX)</a> updated for FLUX 3 Image Klein (open weights, released Oct 15).</li><li><a href="/tools/make.html">Make</a> now uses our affiliate link (clearly labeled). It doesn\'t change which tools we pick.</li></ul>'
+ f'<h2>Checked, not listed</h2><ul><li><b>Qwen3.8-Flash-Next</b>: real and popular, but it came out Aug 26, 2026. This week\'s news is a third-party FP4 quant, not a new tool.</li><li><b>Microsoft AI Shell</b> (PowerShell): archived by Microsoft in January 2026, so we\'re not recommending it to new learners.</li></ul></section>')
+open(DROP.lstrip("/"),"w").write(head(dt,dd,DROP.lstrip("/"),ld)+shell(m)+END)
+# ---- Cursor alternatives page ----
+GRP=[("AI code editors","Closest to the Cursor experience: an editor with AI built in.",["devin","zed","github-copilot"]),
+ ("Terminal and CLI coding agents","Hand a task to an agent that edits files and runs commands. Pair with any editor.",["claude-code","openai-codex","warp","aider"]),
+ ("Open source and bring-your-own-key","Pay model providers directly, or run models locally, so a plan change can\'t cut your quota.",["cline","aider","zed","openrouter","ollama","muse-spark-open-meta"]),
+ ("Prompt-to-app builders","For vibe coders who'd rather describe an app than edit files.",["replit","bolt-new","lovable","v0"])]
+seen=[]
+for _,_,ks in GRP:
+  for k in ks:
+    if k not in seen: seen.append(k)
+ld={"@context":"https://schema.org","@type":"ItemList","name":"Cursor alternatives (2026)","itemListElement":[{"@type":"ListItem","position":i+1,"url":f'{S}/tools/{k}.html',"name":BY[k]["name"]} for i,k in enumerate(seen)]}
+m=(f'<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/categories/coding.html">Coding &amp; Vibe Coding</a> / <span aria-current="page">Cursor alternatives</span></nav><h1 class="ch1">Cursor alternatives (2026)</h1>'
+ f'<p class="lede">Cursor is still a strong AI editor. If its plans no longer fit how you work, these are the alternatives we track, grouped by how you like to code. Prices come from each official pricing page (checked {mdy(BUILD)}). Always confirm before you buy.</p>'
+ '<div class="note-box"><div class="nb-h">How to choose</div><p><b>Want the same feel?</b> Try an AI editor first. <b>Mostly use agent mode?</b> A terminal agent plus the editor you already like covers most of it. <b>Worried about quota changes?</b> Pick a tool that lets you bring your own API key or run local models. Try one on a real task for a week before you switch everything.</p></div>'
+ +NLBAND()+
+ "".join(f'<section class="grp-s"><div class="gh"><h2>{e(t)} <span class="n">{len(ks)}</span></h2></div><p class="mut">{e(d)}</p>{table([row(BY[k],filt=False) for k in ks])}</section>' for t,d,ks in GRP)+
+ f'<section class="grp-s"><div class="gh"><h2>For reference: Cursor</h2><a href="/categories/coding.html">All coding tools</a></div>{table([row(BY["cursor"],filt=False)])}</section>')
+open("cursor-alternatives.html","w").write(head("Cursor alternatives 2026: AI editors, coding agents & open-source options | AI Tool Tracker",f"{len(seen)} Cursor alternatives with checked pricing: Devin Desktop, Zed, GitHub Copilot, Claude Code, Codex, Warp, Aider, Cline and more, grouped by how you code.","cursor-alternatives.html",ld)+shell(m,"coding")+END)
 sm=open("sitemap.xml").read()
 sm=re.sub(r'\s*<url><loc>https://aitrackertool.dev/(tools|categories)/[^<]*</loc>.*?</url>','',sm,flags=re.S)
 sm=sm.replace("</urlset>","".join(f"<url><loc>{S}/{u}</loc><lastmod>{BUILD.isoformat()}</lastmod></url>\n" for u in urls)+"</urlset>")
+for u in ["",DROP.lstrip("/"),"cursor-alternatives.html"]:
+  sm=re.sub(r'\s*<url><loc>'+re.escape(S+"/"+u)+r'</loc>.*?</url>','',sm,flags=re.S)
+sm=sm.replace('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"\n<url><loc>{S}/{u}</loc><lastmod>{BUILD.isoformat()}</lastmod></url>" for u in ["",DROP.lstrip("/"),"cursor-alternatives.html"]),1)
 open("sitemap.xml","w").write(sm)
 ll=open("llms.txt").read().split("\n## Directory")[0].rstrip()
+_dl=f"- [Daily Drop {DROPDATE}]({S}{DROP}): "+", ".join(BY[k]["name"] for k in NEWS)
+if DROP not in ll: ll=ll.replace("## Drops\n","## Drops\n"+_dl+"\n",1)
+if "cursor-alternatives" not in ll: ll=ll.replace("## Notes","## Guides\n- [Cursor alternatives (2026)]("+S+"/cursor-alternatives.html): AI editors, terminal coding agents, open-source/BYOK options and app builders, with checked pricing.\n\n## Notes",1)
 ll+="\n\n## Directory\n"+"".join(f"\n### {n}\n"+"".join(f'- [{y["name"]}]({S}/tools/{y["slug"]}.html): {y["desc"]}'+(f' Pricing: {y["pricing"]}.' if "pricing" in y else '')+(' Free tier: yes.' if "freeTier" in y else '')+"\n" for y in data if y["category"]==c) for c,n in C.items())
 open("llms.txt","w").write(ll)
 print(len(data),len(urls))
@@ -205,16 +256,16 @@ sub=sub[:sub.index('</section>')+10]
 sub=re.sub(r'^<section[^>]*>','<section id="submit" class="blk">',sub).replace('<h2 class="sec">','<h2>').replace('<div class="grid">','<div class="two">').replace('<div class="card">','<div class="panel">')
 nfree=sum(1 for y in data if y["pf"] in("free","both"));npaid=sum(1 for y in data if y["pf"] in("paid","both"))
 groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">Open category</a></div>{table([row(y) for y in data if y["category"]==k])}</section>' for k,v in C.items())
-feat=[y for y in data if y["slug"] in("muse-meta","bolt-new")]
+feat=[y for y in data if y["slug"] in("semgrep","muse-spark-open-meta","bolt-new","make")]
 body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated {mdy(BUILD)} · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
 <p class="statline">{len(data)} tools · {nfree} with a free option · {npaid} paid · updated {VER}</p><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
 {NLBAND(' id="newsletter"')}
-<section id="drop" class="grp-s"><div class="gh"><h2>Today's drop · Oct 15, 2026</h2><a href="{DROP}">See full drop →</a></div><div class="tbl compact" role="table" id="preview"></div></section>
+<section id="drop" class="grp-s"><div class="gh"><h2>Today's drop · {DROPDATE}</h2><a href="{DROP}">See full drop →</a></div><div class="tbl compact" role="table" id="preview"></div></section>
 <section id="directory" class="dir"><h2 class="dh">AI tool directory</h2><div class="sticky">{ctl(len(data))}</div>{groups}</section>
 <section class="grp-s" id="featured"><div class="gh"><h2>Featured picks</h2><a href="{DROP}">More new tools</a></div>{table([row(y,True,False) for y in feat],True)}</section>
 <section id="subscribe" class="blk nl"><div><h2>Get the weekly drop</h2><p class="mut">One email a week with the best new AI tools. Unsubscribe anytime.</p></div><p><a class="btn ghost" href="#newsletter">Sign up at the top of the page</a></p><p class="note"><a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on beehiiv</a> · <a href="/issue-001.html">Read Issue #001</a></p></section>
 {sub}''',None,True)
-js='''<script src="/config.js"></script><script src="/tools.js"></script><script>(function(){function x(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}document.getElementById('preview').innerHTML='<div class="row head drop" role="row"><div role="columnheader">Tool</div><div role="columnheader">Type</div><div role="columnheader">Price</div><div role="columnheader"><span class="sr">Link</span></div></div>'+DROP_2026_10_15.slice(0,3).map(function(t){return '<div class="row drop" role="row"><div class="c-name" role="cell"><a class="nm" href="'+x(t.url)+'" target="_blank" rel="noopener">'+x(t.name)+'</a><span class="ds">'+x(t.desc)+'</span></div><div class="c-cat" role="cell">'+x(t.category)+'</div><div class="c-price" role="cell"><span class="lbl">Price </span>'+x(t.pricing||'See site')+'</div><div class="c-go" role="cell"><a class="go" href="'+x(t.url)+'" target="_blank" rel="noopener">Visit ↗</a></div></div>'}).join('')})()</script>
+js='''<script src="/config.js"></script><script src="/tools.js"></script><script>(function(){function x(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}document.getElementById('preview').innerHTML='<div class="row head drop" role="row"><div role="columnheader">Tool</div><div role="columnheader">Type</div><div role="columnheader">Price</div><div role="columnheader"><span class="sr">Link</span></div></div>'+DROP_2026_10_16.slice(0,3).map(function(t){return '<div class="row drop" role="row"><div class="c-name" role="cell"><a class="nm" href="'+x(t.url)+'" target="_blank" rel="noopener">'+x(t.name)+'</a><span class="ds">'+x(t.desc)+'</span></div><div class="c-cat" role="cell">'+x(t.category)+'</div><div class="c-price" role="cell"><span class="lbl">Price </span>'+x(t.pricing||'See site')+'</div><div class="c-go" role="cell"><a class="go" href="'+x(t.url)+'" target="_blank" rel="noopener">Visit ↗</a></div></div>'}).join('')})()</script>
 <script src="/filter.js"></script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script></body></html>'''
 open("index.html","w").write(hd+"\n"+body+js)
 for p in ["drop-2026-10-15.html","drop-2026-10-14.html","issue-001.html","thanks.html"]:

@@ -24,12 +24,14 @@ const DIRECTORY=[
 "catName": "Coding & Vibe Coding",
 "url": "https://bolt.cello.so/MFwNDwJhlUB",
 "desc": "Prompt, run, edit and deploy full-stack web apps right in your browser.",
+"freeTier": true,
+"pricing": "Pro from $25/mo",
 "tags": [
 "vibe coding",
 "web apps",
 "browser"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "v0",
@@ -144,6 +146,23 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Muse Spark Open (Meta)",
+"slug": "muse-spark-open-meta",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://dev.meta.ai/models/muse-spark-open",
+"desc": "Meta's open-weight multimodal MoE model (816B total, 42B active, 1M context) built for coding and agent work. Released Oct 15, 2026.",
+"freeTier": true,
+"pricing": "Free open weights (Muse Model License); hosted via OpenRouter, Groq, Together and others",
+"tags": [
+"open weights",
+"models",
+"meta",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Hugging Face",
 "slug": "hugging-face",
 "category": "coding",
@@ -181,12 +200,14 @@ const DIRECTORY=[
 "catName": "Coding & Vibe Coding",
 "url": "https://openai.com/codex/",
 "desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks.",
+"freeTier": true,
+"pricing": "Included with ChatGPT plans (limited on Free and Go)",
 "tags": [
 "agent",
 "cli",
 "openai"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Warp",
@@ -309,13 +330,15 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://chat.mistral.ai",
-"desc": "Mistral AI's chat assistant.",
+"desc": "Mistral AI's chat assistant, with Mistral Vibe for coding in the CLI, IDE or web.",
+"freeTier": true,
+"pricing": "Pro from $14.99/mo",
 "tags": [
 "assistant",
 "mistral",
 "europe"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Ollama",
@@ -368,12 +391,13 @@ const DIRECTORY=[
 "category": "image",
 "catName": "Image",
 "url": "https://www.midjourney.com",
-"desc": "AI image generator known for its distinctive artistic style.",
+"desc": "AI image and video generator known for its distinctive artistic style.",
+"pricing": "Basic from $10/mo ($8/mo billed annually)",
 "tags": [
 "image generation",
 "art"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Ideogram",
@@ -382,11 +406,13 @@ const DIRECTORY=[
 "catName": "Image",
 "url": "https://ideogram.ai",
 "desc": "AI image generator that's strong at rendering text in images.",
+"freeTier": true,
+"pricing": "Plus from $15/mo billed annually ($20 monthly)",
 "tags": [
 "image generation",
 "typography"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Leonardo.Ai",
@@ -395,11 +421,13 @@ const DIRECTORY=[
 "catName": "Image",
 "url": "https://leonardo.ai",
 "desc": "AI image and video generation platform for creators and game assets.",
+"freeTier": true,
+"pricing": "Essential from $12/mo; free plan has 150 tokens/day",
 "tags": [
 "image generation",
 "assets"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Krea",
@@ -436,12 +464,14 @@ const DIRECTORY=[
 "category": "image",
 "catName": "Image",
 "url": "https://bfl.ai",
-"desc": "Makers of the FLUX image generation models.",
+"desc": "Makers of the FLUX image models, including FLUX 3 Image Klein (Oct 15, 2026): open weights, native 4K, runs on consumer GPUs.",
+"freeTier": true,
+"pricing": "API from $0.009/image (FLUX 3 Image Klein at 1K); open weights free for individuals and companies under $5M revenue",
 "tags": [
 "image models",
 "api"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Recraft",
@@ -596,10 +626,12 @@ const DIRECTORY=[
 "catName": "Voice & Audio",
 "url": "https://www.udio.com",
 "desc": "AI music generation and remixing.",
+"freeTier": true,
+"pricing": "Standard from $10/mo ($8/mo billed annually)",
 "tags": [
 "music generation"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Murf AI",
@@ -607,12 +639,13 @@ const DIRECTORY=[
 "category": "audio",
 "catName": "Voice & Audio",
 "url": "https://murf.ai",
-"desc": "AI voiceover studio with a library of voices.",
+"desc": "AI voiceover studio and text-to-speech API with 150+ voices in 35+ languages.",
+"pricing": "API from $0.01 per 1,000 characters (Falcon); $10 free API credit",
 "tags": [
 "text to speech",
 "voiceover"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Jasper",
@@ -721,14 +754,16 @@ const DIRECTORY=[
 "slug": "make",
 "category": "agents",
 "catName": "Agents & Automation",
-"url": "https://www.make.com",
+"url": "https://www.make.com/?pc=aitrackertool",
 "desc": "Visual automation platform with AI agents.",
+"freeTier": true,
+"pricing": "Free plan with 1,000 credits/mo; paid plans priced by credits",
 "tags": [
 "automation",
 "no-code",
 "visual"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Relay.app",
@@ -1061,6 +1096,106 @@ const DIRECTORY=[
 "web security",
 "pentesting",
 "bug bounty"
+],
+"pf": ""
+},
+{
+"name": "Snyk",
+"slug": "snyk",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://snyk.io",
+"desc": "Developer security platform that scans your code, open-source dependencies, containers and IaC from the IDE, CLI and repos.",
+"freeTier": true,
+"pricing": "Team from $25/mo (up to 10 developers)",
+"tags": [
+"code security",
+"sca",
+"sast",
+"beginner"
+],
+"pf": "both"
+},
+{
+"name": "Semgrep",
+"slug": "semgrep",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://semgrep.dev",
+"desc": "Fast code scanner (SAST, supply chain, secrets) with AI-powered detection, triage and autofix. Great for scanning your own home-lab scripts.",
+"freeTier": true,
+"pricing": "Free for up to 10 contributors (60 AI credits); Teams Code from $30/contributor/mo",
+"tags": [
+"code security",
+"sast",
+"open source",
+"autofix"
+],
+"pf": "both"
+},
+{
+"name": "GitHub Copilot Autofix",
+"slug": "github-copilot-autofix",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://docs.github.com/en/code-security/concepts/code-scanning/autofix-for-code-scanning",
+"desc": "AI fixes for CodeQL code scanning alerts. Agentic autofix (GA Oct 15, 2026) investigates alerts and opens a draft PR with a validated fix.",
+"freeTier": true,
+"pricing": "Free on public repos; private repos need GitHub Code Security",
+"tags": [
+"code scanning",
+"github",
+"autofix",
+"codeql"
+],
+"pf": "both"
+},
+{
+"name": "VirusTotal Code Insight",
+"slug": "virustotal-code-insight",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.virustotal.com",
+"desc": "AI summaries in VirusTotal that explain what a suspicious script (starting with PowerShell) or decompiled code actually does. Handy for malware-analysis practice.",
+"freeTier": true,
+"pricing": "Free for community users on eligible uploads; Code Insight API limited to 50 requests/day",
+"tags": [
+"malware analysis",
+"soc",
+"beginner",
+"threat intel"
+],
+"pf": "both"
+},
+{
+"name": "Tines",
+"slug": "tines",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.tines.com",
+"desc": "Security and IT workflow automation (SOAR) with built-in AI and bring-your-own-model support, used by SOC and IT teams.",
+"freeTier": true,
+"pricing": "Free edition: 3 live workflows + one-time $50 AI allowance; paid editions on request",
+"tags": [
+"soar",
+"automation",
+"soc",
+"it ops"
+],
+"pf": "both"
+},
+{
+"name": "SentinelOne Purple AI",
+"slug": "sentinelone-purple-ai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.sentinelone.com/platform/purple/",
+"desc": "Agentic AI security analyst in the SentinelOne Singularity Platform: ask questions in plain English, auto-triage alerts and run guided investigations.",
+"tags": [
+"soc",
+"edr",
+"triage",
+"incident response"
 ],
 "pf": ""
 },
