@@ -197,6 +197,8 @@ ix=open("index.html").read()
 hd=ix[:ix.index("<body>")]
 hd=re.sub(r'<link rel="(icon|apple-touch-icon)"[^>]*>|<meta name="theme-color"[^>]*>','',hd).replace('<link rel="stylesheet" href="/style.css">',ICONS+'<link rel="stylesheet" href="/style.css">')
 if "G-VMR6RG9R83" not in hd: hd=hd.replace("</head>",GA_TAG+"</head>",1)
+IMPACT="<meta name='impact-site-verification' value='d43de056-cf95-49c5-a795-7bb116df2f89'>"
+if IMPACT not in hd: hd=hd.replace("</head>",IMPACT+"</head>",1)
 hd+="<body>"
 sub=ix[ix.index('<section class="wrap" id="submit">') if '<section class="wrap" id="submit">' in ix else ix.index('<section id="submit"'):]
 sub=sub[:sub.index('</section>')+10]
