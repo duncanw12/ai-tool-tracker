@@ -7,22 +7,23 @@ T=[
 ("Cursor","coding","https://cursor.com","AI-first code editor with agent mode, codebase chat and tab completion.",True,"Paid plans from $8/mo","editor,agent,ide"),
 ("Bolt.new","coding","https://bolt.cello.so/MFwNDwJhlUB","Prompt, run, edit and deploy full-stack web apps right in your browser.",True,"Pro from $25/mo","vibe coding,web apps,browser"),
 ("v0","coding","https://v0.app","Vercel's AI app builder that turns prompts into React/Next.js apps and UI.",True,"Plus from $30/mo","vibe coding,react,ui"),
-("Lovable","coding","https://lovable.dev","Build full-stack web apps by chatting with an AI engineer.",True,"","vibe coding,web apps,no-code"),
+("Lovable","coding","https://lovable.dev","Build full-stack web apps by chatting with an AI engineer.",True,"Pro from $25/mo ($21/mo billed annually); free plan has 5 daily credits","vibe coding,web apps,no-code"),
 ("Replit","coding","https://replit.com","Browser IDE with Replit Agent that builds and deploys apps from a prompt.",True,"Core from $20/mo ($18/mo billed annually)","vibe coding,ide,deploy"),
 ("GitHub Copilot","coding","https://github.com/features/copilot","AI pair programmer and coding agent inside VS Code, JetBrains and GitHub.",True,"Pro from $10/mo","autocomplete,agent,github"),
 ("Devin","coding","https://devin.ai","Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents.",True,"Pro from $20/mo","editor,agent,ide,cloud agents"),
 ("Zed","coding","https://zed.dev","Fast open-source code editor with AI edit predictions, an agent panel and bring-your-own-key support.",True,"Pro from $10/mo","editor,open source,ide"),
 ("OpenRouter","coding","https://openrouter.ai","One OpenAI-compatible API for 500+ models from 80+ providers, with fallback routing.",True,"Pay-as-you-go; 5.5% fee on credit purchases","api,models,routing"),
 ("Muse Spark Open (Meta)","coding","https://dev.meta.ai/models/muse-spark-open","Meta's open-weight multimodal MoE model (816B total, 42B active, 1M context) built for coding and agent work. Released Oct 15, 2026.",True,"Free open weights (Muse Model License); hosted via OpenRouter, Groq, Together and others","open weights,models,meta,new"),
+("NVIDIA Nemotron 3.5 Bolt","coding","https://ollama.com/library/nemotron-3.5-bolt","NVIDIA's open local model (74B total, 9B active, 256K context) for coding, reasoning, vision and tool use. Fits about 24GB of GPU memory via Ollama, llama.cpp or LM Studio (NVIDIA GPUs; no Apple silicon yet). Released Oct 15, 2026.",True,"Free open weights (OpenMDW License 1.1)","open weights,local models,nvidia,new"),
 ("Hugging Face","coding","https://huggingface.co","The hub for open models, datasets and Spaces demos, plus hosted inference.",True,"PRO from $9/mo","open models,hosting,ml"),
 ("Claude Code","coding","https://claude.com/product/claude-code","Anthropic's agentic coding tool for the terminal, IDE and web.",None,"Included with paid Claude plans","agent,terminal,cli"),
 ("OpenAI Codex","coding","https://openai.com/codex/","OpenAI's coding agent for the CLI, IDE and cloud tasks.",True,"Included with ChatGPT plans (limited on Free and Go)","agent,cli,openai"),
 ("Warp","coding","https://www.warp.dev","Agentic terminal and development environment with built-in AI agents.",True,"Build from $20/mo","terminal,agent"),
 ("Cline","coding","https://cline.bot","Open-source autonomous coding agent for VS Code.",None,"Open source","agent,open source,vs code"),
 ("Aider","coding","https://aider.chat","Open-source AI pair programming in your terminal, with git integration.",None,"Open source","cli,open source,git"),
-("ChatGPT","chat","https://chatgpt.com","OpenAI's general-purpose AI assistant for chat, writing, code and images.",True,"","assistant,openai"),
+("ChatGPT","chat","https://chatgpt.com","OpenAI's general-purpose AI assistant for chat, writing, code and images.",True,"Plus $20/mo; lower-cost Go plan also available","assistant,openai"),
 ("Claude","chat","https://claude.ai","Anthropic's AI assistant for writing, analysis and coding.",True,"Pro from $17/mo billed annually ($20 monthly)","assistant,anthropic"),
-("Gemini","chat","https://gemini.google.com","Google's AI assistant, connected to Google apps and search.",True,"Google AI Plus from $4.99/mo (US)","assistant,google"),
+("Gemini","chat","https://gemini.google.com","Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar.",True,"Google AI Plus from $4.99/mo (US)","assistant,google"),
 ("Grok","chat","https://grok.com","xAI's AI assistant with real-time knowledge from X and the web.",None,"","assistant,xai"),
 ("Microsoft Copilot","chat","https://copilot.microsoft.com","Microsoft's AI companion for chat, search and creation.",None,"","assistant,microsoft"),
 ("Le Chat (Mistral)","chat","https://chat.mistral.ai","Mistral AI's chat assistant, with Mistral Vibe for coding in the CLI, IDE or web.",True,"Pro from $14.99/mo","assistant,mistral,europe"),
@@ -84,6 +85,9 @@ T=[
 ("VirusTotal Code Insight","itsec","https://www.virustotal.com","AI summaries in VirusTotal that explain what a suspicious script (starting with PowerShell) or decompiled code actually does. Handy for malware-analysis practice.",True,"Free for community users on eligible uploads; Code Insight API limited to 50 requests/day","malware analysis,soc,beginner,threat intel"),
 ("Tines","itsec","https://www.tines.com","Security and IT workflow automation (SOAR) with built-in AI and bring-your-own-model support, used by SOC and IT teams.",True,"Free edition: 3 live workflows + one-time $50 AI allowance; paid editions on request","soar,automation,soc,it ops"),
 ("SentinelOne Purple AI","itsec","https://www.sentinelone.com/platform/purple/","Agentic AI security analyst in the SentinelOne Singularity Platform: ask questions in plain English, auto-triage alerts and run guided investigations.",None,"","soc,edr,triage,incident response"),
+("Wazuh","itsec","https://wazuh.com","Free, open-source SIEM and XDR used by home labbers and SOC teams for log analysis, threat detection and compliance. Wazuh documents AI threat hunting with local models via Ollama, and Wazuh 5.0 (now in release candidate) adds a built-in AI Assistant.",True,"Free and open source (self-hosted); Wazuh Cloud is a paid hosted option","siem,xdr,open source,home lab,beginner"),
+("CyberStrikeAI","itsec","https://github.com/AIPentest/CyberStrikeAI","Open-source AI pentesting platform written in Go: agents run 100+ security tools over MCP, with human approval steps, audit logs and CTF roles. Only for labs and systems you're authorized to test.",None,"Open source (Apache-2.0)","pentesting,open source,mcp,ctf"),
+("Sophos AI Defense","itsec","https://www.sophos.com/en-us/products/ai-defense","Finds the AI tools employees and apps are using, including unapproved shadow AI, and enforces real-time guardrails on prompts and data across endpoint, network, identity and browser. Generally available Oct 16, 2026.",None,"Quote-based add-on for Sophos EDR, XDR and MDR customers","shadow ai,governance,msp,data protection"),
 ("Microsoft Security Copilot","itsec","https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot","Generative AI for security teams across Microsoft Defender, Sentinel, Entra, Intune and Purview: summarize incidents, write queries and reverse-engineer malicious scripts in plain English.",None,"Pay-as-you-go: $4 per provisioned SCU/hour","soc,microsoft,incident response"),
 ("Google Security Operations","itsec","https://cloud.google.com/security/products/security-operations","Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation.",None,"","siem,soc,gemini"),
 ("CrowdStrike Charlotte AI","itsec","https://www.crowdstrike.com/en-us/platform/charlotte-ai/","Agentic security analyst in the CrowdStrike platform that triages detections and speeds up investigations.",None,"","soc,edr,triage"),
@@ -103,16 +107,17 @@ for x in data:
   if not x["pricing"]: del x["pricing"]
 open("directory.js","w").write("// Directory data. Pricing/free tier only where verified on the official site (Oct 14-15, 2026); omitted otherwise.\nconst CATEGORIES="+json.dumps(C)+";\nconst DIRECTORY="+json.dumps(data,indent=0)+";\n")
 CNT={c:sum(1 for y in data if y["category"]==c) for c in C}
-DROP="/drop-2026-10-16.html"
-DROPDATE="Oct 16, 2026"
-PREVDROP="/drop-2026-10-15.html"
+DROP="/drop-2026-10-17.html"
+DROPDATE="Oct 17, 2026"
+PREVDROP="/drop-2026-10-16.html"
+PREVDATE="Oct 16, 2026"
 import datetime
 # Build date: override with BUILD_DATE=YYYY-MM-DD; a tool can carry its own "verified":"YYYY-MM-DD".
 BUILD=datetime.date.fromisoformat(os.environ["BUILD_DATE"]) if os.environ.get("BUILD_DATE") else datetime.date.today()
 def vdate(x): return datetime.date.fromisoformat(x["verified"]) if x.get("verified") else BUILD
 def mdy(d): return d.strftime("%b ")+str(d.day)+d.strftime(", %Y")
 VER=BUILD.strftime("%m/%d")
-INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p><b>Cert study and labs:</b> TryHackMe\'s Echo tutor and HTB Coach. <b>Scripting and PowerShell:</b> practice with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, then scan your own scripts for free with <a href="/tools/semgrep.html">Semgrep</a> or <a href="/tools/snyk.html">Snyk</a>. <b>SOC and malware practice:</b> paste a suspicious PowerShell sample into <a href="/tools/virustotal-code-insight.html">VirusTotal Code Insight</a> and build a small alert workflow on the <a href="/tools/tines.html">Tines</a> free edition. <b>Home lab:</b> run local models with <a href="/tools/ollama.html">Ollama</a> and turn notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down (Security Copilot, Purple AI, Charlotte AI) are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>',
+INTRO={"itsec":'<div class="note-box"><div class="nb-h">Breaking into IT? Start here</div><p><b>Cert study and labs:</b> TryHackMe\'s Echo tutor and HTB Coach. <b>Scripting and PowerShell:</b> practice with <a href="/tools/github-copilot.html">GitHub Copilot</a> or <a href="/tools/warp.html">Warp</a>, then scan your own scripts for free with <a href="/tools/semgrep.html">Semgrep</a> or <a href="/tools/snyk.html">Snyk</a>. <b>SOC and malware practice:</b> stand up <a href="/tools/wazuh.html">Wazuh</a>, the free open-source SIEM, in your home lab and point it at a few VMs, paste a suspicious PowerShell sample into <a href="/tools/virustotal-code-insight.html">VirusTotal Code Insight</a> and build a small alert workflow on the <a href="/tools/tines.html">Tines</a> free edition. <b>Home lab:</b> run local models with <a href="/tools/ollama.html">Ollama</a> and turn notes into quizzes with <a href="/tools/gemini-notebook.html">Gemini Notebook</a>. The SOC copilots further down (Security Copilot, Purple AI, Charlotte AI) are enterprise tools you\'ll likely meet on the job, so their docs are worth a read even before you can use them.</p></div>',
  "coding":'<div class="note-box"><div class="nb-h">Rethinking your Cursor plan?</div><p>See our side-by-side <a href="/cursor-alternatives.html">Cursor alternatives (2026)</a> page: editors, terminal agents and open-source options with checked pricing.</p></div>'}
 LOGO='<svg viewBox="0 0 28 28" width="26" height="26" aria-hidden="true" focusable="false"><path d="M5 6L14 14 23 8M14 14L9 23M14 14L23 21" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="5" cy="6" r="2.5" fill="currentColor"/><circle cx="23" cy="8" r="2.5" fill="currentColor"/><circle cx="9" cy="23" r="2.5" fill="currentColor"/><circle cx="23" cy="21" r="2.5" fill="currentColor"/><circle cx="14" cy="14" r="3.5" fill="#00ff9c"/></svg>'
 ICONS='<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0d1520">'
@@ -197,19 +202,19 @@ for c,n in C.items():
   open(f'categories/{c}.html','w').write(b+shell(m,c)+'<script src="/filter.js"></script>'+END); urls.append(f'categories/{c}.html')
 # ---- daily drop page (static) ----
 BY={y["slug"]:y for y in data}
-NEWS=["snyk","semgrep","github-copilot-autofix","virustotal-code-insight","tines","sentinelone-purple-ai","muse-spark-open-meta"]
-PFIX=["bolt-new","make","openai-codex","le-chat-mistral","midjourney","ideogram","leonardo-ai","black-forest-labs-flux","udio","murf-ai"]
+NEWS=["wazuh","cyberstrikeai","sophos-ai-defense","nvidia-nemotron-3-5-bolt"]
+PFIX=["lovable","chatgpt"]
 nit=CNT["itsec"]
-dt=f"Daily Drop {DROPDATE}: Snyk, Semgrep, GitHub Copilot Autofix, VirusTotal Code Insight, Tines, Purple AI, Muse Spark Open | AI Tool Tracker"
-dd=f"{len(NEWS)} tools added on {DROPDATE}, mostly for IT and cybersecurity learners (free code scanners, malware analysis, SOAR), plus Meta's Muse Spark Open and {len(PFIX)} pricing checks."
+dt=f"Daily Drop {DROPDATE}: Wazuh, CyberStrikeAI, Sophos AI Defense, NVIDIA Nemotron 3.5 Bolt | AI Tool Tracker"
+dd=f"{len(NEWS)} tools added on {DROPDATE}: a free open-source SIEM for your home lab, an open-source AI pentesting platform, shadow-AI controls from Sophos and NVIDIA's new local model, plus {len(PFIX)} pricing checks."
 ld={"@context":"https://schema.org","@type":"Article","headline":f"Daily Drop · {DROPDATE}","datePublished":BUILD.isoformat(),"publisher":{"@type":"Organization","name":"AI Tool Tracker"},"url":f"{S}{DROP}","about":[{"@type":"SoftwareApplication","name":BY[k]["name"],"url":clean(BY[k]["url"])} for k in NEWS]}
 plist="".join(f'<li><a href="/tools/{k}.html">{e(BY[k]["name"])}</a>: {e(BY[k]["pricing"])}'+(' <span class="afftag">(affiliate link on the tool page)</span>' if isaff(BY[k]) else '')+'</li>' for k in PFIX)
-m=(f'<header class="phero"><span class="badge">DAILY DROP · {DROPDATE.upper()}</span><h1>Today\'s drop: {len(NEWS)} new tools, {len(PFIX)} pricing checks</h1><p class="tag">The directory now lists {len(data)} hand-checked tools. Today leans into <a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> ({nit} tools): free code scanners you can run on your own home-lab scripts, AI malware explanations, a free SOAR sandbox, and two SOC copilots. Pricing only where the official page states it.</p><p class="mut">Previous drop: <a href="{PREVDROP}">Oct 15, 2026 →</a></p></header>'
+m=(f'<header class="phero"><span class="badge">DAILY DROP · {DROPDATE.upper()}</span><h1>Today\'s drop: {len(NEWS)} new tools, {len(PFIX)} pricing checks</h1><p class="tag">The directory now lists {len(data)} hand-checked tools. <a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> grows to {nit} tools with Wazuh, the free SIEM most home labs start with, an open-source AI pentesting platform and Sophos\' new shadow-AI controls. NVIDIA\'s Nemotron 3.5 Bolt brings a strong local model to a single 24GB GPU. Pricing only where the official page states it.</p><p class="mut">Previous drop: <a href="{PREVDROP}">{PREVDATE} →</a></p></header>'
  +NLBAND()+
  f'<section class="grp-s"><div class="gh"><h2>New in the directory <span class="n">{len(NEWS)}</span></h2><a href="/#directory">Browse all {len(data)}</a></div>{table([row(BY[k],True,False) for k in NEWS],True)}</section>'
  f'<section class="pc"><h2>Pricing filled in today</h2><p class="mut">These listings showed "See site" yesterday. We checked each official pricing page on {mdy(BUILD)}.</p><ul>{plist}</ul>'
- f'<h2>Category and page changes</h2><ul><li><a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> grows from 9 to {nit} tools, and its <b>Breaking into IT</b> guide now covers free code scanning (Semgrep, Snyk), malware-analysis practice (VirusTotal Code Insight) and a free SOAR sandbox (Tines).</li><li>New page: <a href="/cursor-alternatives.html">Cursor alternatives (2026)</a>, a side-by-side of editors, terminal agents and open-source options.</li><li><a href="/tools/black-forest-labs-flux.html">Black Forest Labs (FLUX)</a> updated for FLUX 3 Image Klein (open weights, released Oct 15).</li><li><a href="/tools/make.html">Make</a> now uses our affiliate link (clearly labeled). It doesn\'t change which tools we pick.</li></ul>'
- f'<h2>Checked, not listed</h2><ul><li><b>Qwen3.8-Flash-Next</b>: real and popular, but it came out Aug 26, 2026. This week\'s news is a third-party FP4 quant, not a new tool.</li><li><b>Microsoft AI Shell</b> (PowerShell): archived by Microsoft in January 2026, so we\'re not recommending it to new learners.</li></ul></section>')
+ f'<h2>Category and page changes</h2><ul><li><a href="/categories/itsec.html">AI for IT &amp; Cybersecurity</a> grows from 15 to {nit} tools. Its <b>Breaking into IT</b> guide now suggests standing up <a href="/tools/wazuh.html">Wazuh</a> in your home lab for SOC practice: real alerts, real logs, and a skill that shows up in SOC analyst job posts.</li><li><a href="/tools/gemini.html">Gemini</a> updated for the new Gemini agent for work (announced Oct 8), which runs inside Gmail, Docs, Sheets and Calendar.</li><li>A note on CyberStrikeAI: it can run real attack tools, so only point it at your own lab or systems you have written permission to test.</li></ul>'
+ f'<h2>Checked, not listed</h2><ul><li><b>Cantina Apex Flash-1</b>: an open-weights security research model released Oct 16. Interesting, but the only results so far are the vendor\'s own evaluation, so we\'re waiting for outside testing.</li><li><b>Chainguard Workspaces and Checks</b>: secure sandboxes and CI for AI coding agents, announced Oct 16 as 30-day beta trials. We\'ll revisit when they\'re generally available.</li><li><b>ThreatBook RedAgents</b>: an enterprise AI pentest aggregator launched Oct 16, trial by application only.</li><li><b>Jira Service Management Free</b>: a good free help desk to practice ticketing on (up to 3 agents), but its Rovo AI features need a paid plan, so it doesn\'t fit an AI directory yet.</li></ul></section>')
 open(DROP.lstrip("/"),"w").write(head(dt,dd,DROP.lstrip("/"),ld)+shell(m)+END)
 # ---- Cursor alternatives page ----
 GRP=[("AI code editors","Closest to the Cursor experience: an editor with AI built in.",["devin","zed","github-copilot"]),
@@ -265,7 +270,7 @@ sub=sub[:sub.index('</section>')+10]
 sub=re.sub(r'^<section[^>]*>','<section id="submit" class="blk">',sub).replace('<h2 class="sec">','<h2>').replace('<div class="grid">','<div class="two">').replace('<div class="card">','<div class="panel">')
 nfree=sum(1 for y in data if y["pf"] in("free","both"));npaid=sum(1 for y in data if y["pf"] in("paid","both"))
 groups="".join(f'<section class="grp" id="cat-{k}" data-c="{k}"><div class="gh"><h3>{e(v)} <span class="n">{CNT[k]}</span></h3><a href="/categories/{k}.html">Open category</a></div>{table([row(y) for y in data if y["category"]==k])}</section>' for k,v in C.items())
-feat=[y for y in data if y["slug"] in("semgrep","muse-spark-open-meta","bolt-new","make")]
+feat=[y for y in data if y["slug"] in("wazuh","nvidia-nemotron-3-5-bolt","bolt-new","make")]
 body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated {mdy(BUILD)} · {len(data)} tools checked by hand</div><h1>AI tools people actually use. Checked by hand.</h1><p class="lede">A clean, current index for vibe coders and IT and security folks: real pricing, Free or Paid at a glance, and the date we last checked every listing.</p>
 <p class="statline">{len(data)} tools · {nfree} with a free option · {npaid} paid · updated {VER}</p><p class="jump"><a class="btn" href="#directory">Browse all tools</a> <a class="btn ghost" href="/categories/itsec.html">Breaking into IT</a></p></section>
 {NLBAND(' id="newsletter"')}
@@ -274,10 +279,10 @@ body=nav()+shell(f'''<section class="intro"><div class="kicker">Updated {mdy(BUI
 <section class="grp-s" id="featured"><div class="gh"><h2>Featured picks</h2><a href="{DROP}">More new tools</a></div>{table([row(y,True,False) for y in feat],True)}</section>
 <section id="subscribe" class="blk nl"><div><h2>Get the weekly drop</h2><p class="mut">One email a week with the best new AI tools. Unsubscribe anytime.</p></div><p><a class="btn ghost" href="#newsletter">Sign up at the top of the page</a></p><p class="note"><a href="https://aitrackertool.beehiiv.com/subscribe" target="_blank" rel="noopener">Subscribe on beehiiv</a> · <a href="/issue-001.html">Read Issue #001</a></p></section>
 {sub}''',None,True)
-js='''<script src="/config.js"></script><script src="/tools.js"></script><script>(function(){function x(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}document.getElementById('preview').innerHTML='<div class="row head drop" role="row"><div role="columnheader">Tool</div><div role="columnheader">Type</div><div role="columnheader">Price</div><div role="columnheader"><span class="sr">Link</span></div></div>'+DROP_2026_10_16.slice(0,3).map(function(t){return '<div class="row drop" role="row"><div class="c-name" role="cell"><a class="nm" href="'+x(t.url)+'" target="_blank" rel="noopener">'+x(t.name)+'</a><span class="ds">'+x(t.desc)+'</span></div><div class="c-cat" role="cell">'+x(t.category)+'</div><div class="c-price" role="cell"><span class="lbl">Price </span>'+x(t.pricing||'See site')+'</div><div class="c-go" role="cell"><a class="go" href="'+x(t.url)+'" target="_blank" rel="noopener">Visit ↗</a></div></div>'}).join('')})()</script>
+js='''<script src="/config.js"></script><script src="/tools.js"></script><script>(function(){function x(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}document.getElementById('preview').innerHTML='<div class="row head drop" role="row"><div role="columnheader">Tool</div><div role="columnheader">Type</div><div role="columnheader">Price</div><div role="columnheader"><span class="sr">Link</span></div></div>'+DROP_2026_10_17.slice(0,3).map(function(t){return '<div class="row drop" role="row"><div class="c-name" role="cell"><a class="nm" href="'+x(t.url)+'" target="_blank" rel="noopener">'+x(t.name)+'</a><span class="ds">'+x(t.desc)+'</span></div><div class="c-cat" role="cell">'+x(t.category)+'</div><div class="c-price" role="cell"><span class="lbl">Price </span>'+x(t.pricing||'See site')+'</div><div class="c-go" role="cell"><a class="go" href="'+x(t.url)+'" target="_blank" rel="noopener">Visit ↗</a></div></div>'}).join('')})()</script>
 <script src="/filter.js"></script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script></body></html>'''
 open("index.html","w").write(hd+"\n"+body+js)
-for p in ["drop-2026-10-15.html","drop-2026-10-14.html","issue-001.html","thanks.html"]:
+for p in ["drop-2026-10-16.html","drop-2026-10-15.html","drop-2026-10-14.html","issue-001.html","thanks.html"]:
   h=open(p).read()
   pre=h[:h.index("<body")]; pre=re.sub(r'<link rel="(icon|apple-touch-icon)"[^>]*>|<meta name="theme-color"[^>]*>','',pre).replace('href="style.css"','href="/style.css"').replace('<link rel="stylesheet" href="/style.css">',ICONS+'<link rel="stylesheet" href="/style.css">')
   if "G-VMR6RG9R83" not in pre: pre=pre.replace("</head>",GA_TAG+"</head>",1)
@@ -293,3 +298,17 @@ import glob as _g
 for _f in _g.glob("*.html")+_g.glob("tools/*.html")+_g.glob("categories/*.html"):
   _s=open(_f).read();_b=bust(_s)
   if _b!=_s: open(_f,"w").write(_b)
+
+# ---- canonical/OG/sitemap/llms URLs: extensionless (Cloudflare Pages 308-redirects .html) ----
+_ex=lambda t: re.sub(r'(https://aitrackertool\.dev/[A-Za-z0-9/_-]+)\.html\b',r'\1',t)
+for _f in _g.glob("*.html")+_g.glob("tools/*.html")+_g.glob("categories/*.html")+["llms.txt"]:
+  _s=open(_f).read();_b=_ex(_s)
+  if _b!=_s: open(_f,"w").write(_b)
+_sm=_ex(open("sitemap.xml").read());_seen=set();_out=[]
+for _ln in _sm.split("\n"):
+  _m=re.search(r'<loc>([^<]+)</loc>',_ln)
+  if _m:
+    if _m.group(1) in _seen: continue
+    _seen.add(_m.group(1))
+  _out.append(_ln)
+open("sitemap.xml","w").write("\n".join(_out))

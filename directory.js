@@ -57,12 +57,13 @@ const DIRECTORY=[
 "url": "https://lovable.dev",
 "desc": "Build full-stack web apps by chatting with an AI engineer.",
 "freeTier": true,
+"pricing": "Pro from $25/mo ($21/mo billed annually); free plan has 5 daily credits",
 "tags": [
 "vibe coding",
 "web apps",
 "no-code"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Replit",
@@ -158,6 +159,23 @@ const DIRECTORY=[
 "open weights",
 "models",
 "meta",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "NVIDIA Nemotron 3.5 Bolt",
+"slug": "nvidia-nemotron-3-5-bolt",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://ollama.com/library/nemotron-3.5-bolt",
+"desc": "NVIDIA's open local model (74B total, 9B active, 256K context) for coding, reasoning, vision and tool use. Fits about 24GB of GPU memory via Ollama, llama.cpp or LM Studio (NVIDIA GPUs; no Apple silicon yet). Released Oct 15, 2026.",
+"freeTier": true,
+"pricing": "Free open weights (OpenMDW License 1.1)",
+"tags": [
+"open weights",
+"local models",
+"nvidia",
 "new"
 ],
 "pf": "both"
@@ -262,11 +280,12 @@ const DIRECTORY=[
 "url": "https://chatgpt.com",
 "desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images.",
 "freeTier": true,
+"pricing": "Plus $20/mo; lower-cost Go plan also available",
 "tags": [
 "assistant",
 "openai"
 ],
-"pf": "free"
+"pf": "both"
 },
 {
 "name": "Claude",
@@ -289,7 +308,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://gemini.google.com",
-"desc": "Google's AI assistant, connected to Google apps and search.",
+"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar.",
 "freeTier": true,
 "pricing": "Google AI Plus from $4.99/mo (US)",
 "tags": [
@@ -1198,6 +1217,56 @@ const DIRECTORY=[
 "incident response"
 ],
 "pf": ""
+},
+{
+"name": "Wazuh",
+"slug": "wazuh",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://wazuh.com",
+"desc": "Free, open-source SIEM and XDR used by home labbers and SOC teams for log analysis, threat detection and compliance. Wazuh documents AI threat hunting with local models via Ollama, and Wazuh 5.0 (now in release candidate) adds a built-in AI Assistant.",
+"freeTier": true,
+"pricing": "Free and open source (self-hosted); Wazuh Cloud is a paid hosted option",
+"tags": [
+"siem",
+"xdr",
+"open source",
+"home lab",
+"beginner"
+],
+"pf": "both"
+},
+{
+"name": "CyberStrikeAI",
+"slug": "cyberstrikeai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/AIPentest/CyberStrikeAI",
+"desc": "Open-source AI pentesting platform written in Go: agents run 100+ security tools over MCP, with human approval steps, audit logs and CTF roles. Only for labs and systems you're authorized to test.",
+"pricing": "Open source (Apache-2.0)",
+"tags": [
+"pentesting",
+"open source",
+"mcp",
+"ctf"
+],
+"pf": "free"
+},
+{
+"name": "Sophos AI Defense",
+"slug": "sophos-ai-defense",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.sophos.com/en-us/products/ai-defense",
+"desc": "Finds the AI tools employees and apps are using, including unapproved shadow AI, and enforces real-time guardrails on prompts and data across endpoint, network, identity and browser. Generally available Oct 16, 2026.",
+"pricing": "Quote-based add-on for Sophos EDR, XDR and MDR customers",
+"tags": [
+"shadow ai",
+"governance",
+"msp",
+"data protection"
+],
+"pf": "paid"
 },
 {
 "name": "Microsoft Security Copilot",
