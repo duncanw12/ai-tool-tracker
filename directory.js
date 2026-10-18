@@ -181,6 +181,23 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "OpenCode",
+"slug": "opencode",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://opencode.ai",
+"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro.",
+"freeTier": true,
+"pricing": "Open source (MIT); optional Zen pay-as-you-go models",
+"tags": [
+"agent",
+"terminal",
+"open source",
+"cli"
+],
+"pf": "free"
+},
+{
 "name": "Hugging Face",
 "slug": "hugging-face",
 "category": "coding",
@@ -1265,6 +1282,38 @@ const DIRECTORY=[
 "governance",
 "msp",
 "data protection"
+],
+"pf": "paid"
+},
+{
+"name": "garak (NVIDIA)",
+"slug": "garak-nvidia",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/NVIDIA/garak",
+"desc": "NVIDIA's open-source LLM vulnerability scanner: probes chatbots and AI apps for prompt injection, jailbreaks, data leakage, hallucination and toxicity, then reports what got through. v0.17.1 shipped Oct 16, 2026.",
+"pricing": "Open source (Apache-2.0)",
+"tags": [
+"ai red teaming",
+"llm security",
+"open source",
+"home lab"
+],
+"pf": "free"
+},
+{
+"name": "Atera",
+"slug": "atera",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.atera.com",
+"desc": "All-in-one IT management (RMM, help desk, ticketing and patching) priced per technician, with AI Copilot built into every plan for scripts, ticket summaries and knowledge-base drafts. Robin, its end-user AI agent, is sold separately.",
+"pricing": "Professional from $149/technician/mo billed annually ($169 monthly); 30-day free trial",
+"tags": [
+"rmm",
+"help desk",
+"msp",
+"it ops"
 ],
 "pf": "paid"
 },

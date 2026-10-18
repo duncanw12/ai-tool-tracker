@@ -14,6 +14,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/openrouter https://openrouter.ai 302
 /go/muse-spark-open-meta https://dev.meta.ai/models/muse-spark-open 302
 /go/nvidia-nemotron-3-5-bolt https://ollama.com/library/nemotron-3.5-bolt 302
+/go/opencode https://opencode.ai 302
 /go/hugging-face https://huggingface.co 302
 /go/claude-code https://claude.com/product/claude-code 302
 /go/openai-codex https://openai.com/codex/ 302
@@ -87,6 +88,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/wazuh https://wazuh.com 302
 /go/cyberstrikeai https://github.com/AIPentest/CyberStrikeAI 302
 /go/sophos-ai-defense https://www.sophos.com/en-us/products/ai-defense 302
+/go/garak-nvidia https://github.com/NVIDIA/garak 302
+/go/atera https://www.atera.com 302
 /go/microsoft-security-copilot https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot 302
 /go/google-security-operations https://cloud.google.com/security/products/security-operations 302
 /go/crowdstrike-charlotte-ai https://www.crowdstrike.com/en-us/platform/charlotte-ai/ 302
