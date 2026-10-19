@@ -38,6 +38,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/krea https://www.krea.ai 302
 /go/adobe-firefly https://www.adobe.com/products/firefly.html 302
 /go/black-forest-labs-flux https://bfl.ai 302
+/go/invokeai https://github.com/invoke-ai/InvokeAI 302
 /go/recraft https://www.recraft.ai 302
 /go/runway https://runway.com 302
 /go/synthesia https://www.synthesia.io 302
@@ -92,6 +93,10 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/sophos-ai-defense https://www.sophos.com/en-us/products/ai-defense 302
 /go/garak-nvidia https://github.com/NVIDIA/garak 302
 /go/atera https://www.atera.com 302
+/go/security-onion https://securityonion.net 302
+/go/promptfoo https://www.promptfoo.dev 302
+/go/nuclei-projectdiscovery https://github.com/projectdiscovery/nuclei 302
+/go/freshservice https://www.freshworks.com/freshservice/ 302
 /go/microsoft-security-copilot https://www.microsoft.com/en-us/security/business/ai-machine-learning/microsoft-security-copilot 302
 /go/google-security-operations https://cloud.google.com/security/products/security-operations 302
 /go/crowdstrike-charlotte-ai https://www.crowdstrike.com/en-us/platform/charlotte-ai/ 302
@@ -100,4 +105,5 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
 /go/garak https://github.com/NVIDIA/garak 302
+/go/nuclei https://github.com/projectdiscovery/nuclei 302
 # END go-links

@@ -186,7 +186,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://opencode.ai",
-"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro.",
+"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro. Security note: on Oct 17, 2026 OpenCode disclosed a breach of a legacy system behind its hosted Console that may have exposed provider API keys saved in Console workspaces (1.4% of Console users, all notified by email). Keys you add locally in the CLI or desktop app weren't part of it; if you were notified, revoke and replace those keys at each provider.",
 "freeTier": true,
 "pricing": "Open source (MIT); optional Zen pay-as-you-go models",
 "tags": [
@@ -341,11 +341,13 @@ const DIRECTORY=[
 "catName": "Chat Assistants",
 "url": "https://grok.com",
 "desc": "xAI's AI assistant with real-time knowledge from X and the web.",
+"freeTier": true,
+"pricing": "Free on the web and in the apps; SuperGrok paid upgrade for higher limits",
 "tags": [
 "assistant",
 "xai"
 ],
-"pf": ""
+"pf": "both"
 },
 {
 "name": "Microsoft Copilot",
@@ -510,6 +512,22 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "InvokeAI",
+"slug": "invokeai",
+"category": "image",
+"catName": "Image",
+"url": "https://github.com/invoke-ai/InvokeAI",
+"desc": "Free, open-source AI image studio you run on your own GPU: a unified canvas for inpainting and outpainting, node-based workflows and a gallery, with support for SDXL, SD 3.5, FLUX.1, FLUX.2, Qwen Image and more. About 28,700 GitHub stars; v7.0 is in alpha.",
+"pricing": "Open source (Apache-2.0)",
+"tags": [
+"local models",
+"open source",
+"canvas",
+"stable diffusion"
+],
+"pf": "free"
+},
+{
 "name": "Recraft",
 "slug": "recraft",
 "category": "image",
@@ -634,7 +652,7 @@ const DIRECTORY=[
 "url": "https://elevenlabs.io",
 "desc": "AI voice generation, cloning, dubbing and speech-to-text.",
 "freeTier": true,
-"pricing": "Creator from $22/mo",
+"pricing": "Starter from $6/mo; Creator $22/mo (first month 50% off)",
 "tags": [
 "text to speech",
 "voice cloning"
@@ -1318,6 +1336,72 @@ const DIRECTORY=[
 "pf": "paid"
 },
 {
+"name": "Security Onion",
+"slug": "security-onion",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://securityonion.net",
+"desc": "Free and open platform for threat hunting, network security monitoring and log management (2+ million downloads), a staple of SOC home labs. Security Onion 3 shipped in 2026. Onion AI, its assistant for alert analysis and detection tuning (now with local model support), comes with Security Onion Pro.",
+"freeTier": true,
+"pricing": "Free and open; Onion AI is part of Security Onion Pro (contact sales)",
+"tags": [
+"siem",
+"nsm",
+"threat hunting",
+"home lab"
+],
+"pf": "both"
+},
+{
+"name": "promptfoo",
+"slug": "promptfoo",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.promptfoo.dev",
+"desc": "Open-source CLI for testing and red-teaming LLM apps and agents: write evals in YAML, compare models side by side and scan for prompt injection, jailbreaks and data leaks. About 26,000 GitHub stars; the site says 300,000+ developers use it.",
+"freeTier": true,
+"pricing": "Community edition free and open source (MIT), red teaming up to 10k probes/mo; Enterprise custom",
+"tags": [
+"ai red teaming",
+"llm security",
+"evals",
+"open source"
+],
+"pf": "both"
+},
+{
+"name": "Nuclei (ProjectDiscovery)",
+"slug": "nuclei-projectdiscovery",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/projectdiscovery/nuclei",
+"desc": "Fast open-source vulnerability scanner built on thousands of community YAML templates, with an -ai option that generates and runs a template from a plain-English prompt. About 32,000 GitHub stars. Only scan systems you own or are authorized to test.",
+"pricing": "Open source (MIT); free AI template editor on ProjectDiscovery Cloud",
+"tags": [
+"vulnerability scanning",
+"pentesting",
+"open source",
+"home lab"
+],
+"pf": "free"
+},
+{
+"name": "Freshservice",
+"slug": "freshservice",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.freshworks.com/freshservice/",
+"desc": "Cloud IT service desk (ITSM) from Freshworks: ticket and incident queues, knowledge base, self-service portal and service catalog, with Freddy AI Copilot as an add-on. A common help desk platform you can practice on with the free trial.",
+"pricing": "Starter from $19/agent/mo billed annually; Freddy AI Copilot add-on $29/agent/mo; free trial",
+"tags": [
+"help desk",
+"itsm",
+"ticketing",
+"it ops"
+],
+"pf": "paid"
+},
+{
 "name": "Microsoft Security Copilot",
 "slug": "microsoft-security-copilot",
 "category": "itsec",
@@ -1367,12 +1451,13 @@ const DIRECTORY=[
 "catName": "AI for IT & Cybersecurity",
 "url": "https://www.splunk.com/en_us/products/splunk-ai-assistant.html",
 "desc": "Natural-language assistant in Splunk for finding dashboards, reports and data and getting help with searches over your logs.",
+"pricing": "No additional fee for Splunk Cloud Platform and Splunk Enterprise customers",
 "tags": [
 "log analysis",
 "spl",
 "siem"
 ],
-"pf": ""
+"pf": "paid"
 },
 {
 "name": "Elastic Security AI",
@@ -1381,11 +1466,12 @@ const DIRECTORY=[
 "catName": "AI for IT & Cybersecurity",
 "url": "https://www.elastic.co/security/ai",
 "desc": "AI in Elastic Security: automated alert triage and hypothesis-driven threat hunts with ES|QL over your SIEM data.",
+"pricing": "Elastic AI Assistant included in Serverless Security Analytics Complete, from $0.11/GB ingested plus retention",
 "tags": [
 "log analysis",
 "siem",
 "threat hunting"
 ],
-"pf": ""
+"pf": "paid"
 }
 ];
