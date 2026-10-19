@@ -998,7 +998,7 @@ const DIRECTORY=[
 "slug": "gamma",
 "category": "design",
 "catName": "Design & Websites",
-"url": "https://gamma.app",
+"url": "https://try.gamma.app/74bhdc77mraq",
 "desc": "Create presentations, docs and websites with AI.",
 "tags": [
 "presentations",

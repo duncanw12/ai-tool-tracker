@@ -70,7 +70,7 @@ T=[
 ("Fireflies.ai","research","https://fireflies.ai/?fpr=duncan-873b18","AI notetaker that records, transcribes and summarizes meetings.",True,"Pro from $10/seat/mo billed annually ($18 monthly)","meetings,transcription"),
 ("Elicit","research","https://elicit.com","AI research assistant for finding and analyzing papers.",None,"Plus from $11/mo","academic,papers"),
 ("Consensus","research","https://consensus.app","AI search engine for scientific research.",None,"","academic,search"),
-("Gamma","design","https://gamma.app","Create presentations, docs and websites with AI.",None,"","presentations,slides"),
+("Gamma","design","https://try.gamma.app/74bhdc77mraq","Create presentations, docs and websites with AI.",None,"","presentations,slides"),
 ("Framer","design","https://www.framer.com","Design and publish websites, with AI site generation.",True,"Basic from $10/mo","websites,no-code"),
 ("Figma","design","https://www.figma.com","Collaborative design platform with Figma AI and Figma Make.",True,"Professional from $16/mo per full seat","ui design,prototyping"),
 ("Canva","design","https://www.canva.com","Online design tool with Magic Studio AI features.",None,"","graphic design,templates"),
@@ -162,8 +162,8 @@ def shell(main,cur=None,home=False): return '<div class="shell">'+side(cur,home)
 def head(t,d,path,ld):
   return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(t)}</title><meta name="description" content="{e(d)}"><link rel="canonical" href="{S}/{path}"><meta property="og:title" content="{e(t)}"><meta property="og:description" content="{e(d)}"><meta property="og:url" content="{S}/{path}"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@AITRACKERTOOL"><script type="application/ld+json">{json.dumps(ld)}</script>{ICONS}<link rel="stylesheet" href="/style.css">'+GA_TAG+'</head><body>'+nav()
 END='<script src="/config.js"></script><script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script></body></html>'
-def isaff(x): return "bolt.cello.so" in x["url"] or "make.com/?pc=" in x["url"] or "fireflies.ai/?fpr=" in x["url"]
-CLEAN={"bolt.cello.so":"https://bolt.new","make.com/?pc=":"https://www.make.com","fireflies.ai/?fpr=":"https://fireflies.ai"}
+def isaff(x): return "bolt.cello.so" in x["url"] or "make.com/?pc=" in x["url"] or "fireflies.ai/?fpr=" in x["url"] or "try.gamma.app" in x["url"]
+CLEAN={"bolt.cello.so":"https://bolt.new","make.com/?pc=":"https://www.make.com","fireflies.ai/?fpr=":"https://fireflies.ai","try.gamma.app":"https://gamma.app"}
 def clean(u): return next((v for k,v in CLEAN.items() if k in u),u)
 AFFNOTE='<span class="affnote">Affiliate link: we may earn a commission if you sign up, at no extra cost to you.</span>'
 def tags(x):
