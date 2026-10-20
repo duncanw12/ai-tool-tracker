@@ -27,6 +27,11 @@ const DROP_2026_10_15=[
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
 // Daily drop: Oct 19, 2026. Pricing only where the official page states it.
+const DROP_2026_10_20=[
+{name:"Jira Service Management",url:"https://www.atlassian.com/software/jira/service-management",category:"IT & Security",pricing:"Free for up to 3 agents; Standard adds Rovo AI agents",desc:"Atlassian's IT service desk: request portal, queues, SLAs, knowledge base and incident management.",why:"Shows up in a lot of help desk job posts. The free plan is enough to build a practice service desk."},
+{name:"Mantis (Google)",url:"https://github.com/google/mantis",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Google's open-source skills and harness for AI coding agents that find, reproduce and patch vulnerabilities.",why:"About 2,500 GitHub stars. Run it only in an isolated VM and verify every finding by hand."},
+{name:"Fish Audio",url:"https://fish.audio",category:"Voice & Audio",pricing:"Free plan; Plus from $11/mo billed annually",desc:"AI text-to-speech and voice cloning. Drama 3 (Oct 13) takes plain-language direction and has open weights.",why:"Drama 3 weights are free for commercial use under $500K revenue; the hosted app has a free plan."},
+{name:"Harness2 (Google Research)",url:"https://github.com/google-research/harness2",category:"Agents",pricing:"Open source (Apache-2.0)",desc:"Framework that improves an agent's prompts, tools, memory and skills instead of its model.",why:"About 13,500 GitHub stars in two weeks. Research code, not an official Google product."}];
 const DROP_2026_10_19=[
 {name:"Security Onion",url:"https://securityonion.net",category:"IT & Security",pricing:"Free and open; Onion AI is part of Security Onion Pro (contact sales)",desc:"Free, open platform for network security monitoring, threat hunting and log management, with 2+ million downloads.",why:"A SOC home-lab staple. Onion AI (alert analysis, detection tuning, local models) comes with Pro."},
 {name:"promptfoo",url:"https://www.promptfoo.dev",category:"IT & Security",pricing:"Community edition free (MIT); Enterprise custom",desc:"Open-source CLI to test and red-team LLM apps and agents for prompt injection, jailbreaks and data leaks.",why:"About 26,000 GitHub stars. Free red teaming up to 10k probes a month."},

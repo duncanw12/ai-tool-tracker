@@ -7,9 +7,9 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://cursor.com",
-"desc": "AI-first code editor with agent mode, codebase chat and tab completion.",
+"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans.",
 "freeTier": true,
-"pricing": "Paid plans from $8/mo",
+"pricing": "Plus from $8/mo (Grok models only); Premium $30/mo adds cloud agents and third-party models at API list price",
 "tags": [
 "editor",
 "agent",
@@ -103,7 +103,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://devin.ai",
-"desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents.",
+"desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents. Fusion mode in Devin Desktop and CLI pairs a frontier lead model with a cheaper sidekick; with Opus 5.5 and GPT-6 Luna it scores 68.1 on the Artificial Analysis Coding Agent Index.",
 "freeTier": true,
 "pricing": "Pro from $20/mo",
 "tags": [
@@ -186,7 +186,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://opencode.ai",
-"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro. Security note: on Oct 17, 2026 OpenCode disclosed a breach of a legacy system behind its hosted Console that may have exposed provider API keys saved in Console workspaces (1.4% of Console users, all notified by email). Keys you add locally in the CLI or desktop app weren't part of it; if you were notified, revoke and replace those keys at each provider.",
+"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro. Security note: on Oct 17, 2026 OpenCode disclosed a breach of a legacy system behind its hosted Console that may have exposed provider API keys saved in Console workspaces (1.4% of Console users, all notified by email). Keys you add locally in the CLI or desktop app weren't part of it. Since then Anthropic has revoked affected Claude keys, Google has blocked exposed Gemini keys, OpenAI has refunded API credits used in the attack and OpenCode says its own refunds are underway. If you were notified, replace those keys and check usage back to Oct 16.",
 "freeTier": true,
 "pricing": "Open source (MIT); optional Zen pay-as-you-go models",
 "tags": [
@@ -650,12 +650,13 @@ const DIRECTORY=[
 "category": "audio",
 "catName": "Voice & Audio",
 "url": "https://elevenlabs.io",
-"desc": "AI voice generation, cloning, dubbing and speech-to-text.",
+"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects.",
 "freeTier": true,
 "pricing": "Starter from $6/mo; Creator $22/mo (first month 50% off)",
 "tags": [
 "text to speech",
-"voice cloning"
+"voice cloning",
+"music"
 ],
 "pf": "both"
 },
@@ -684,6 +685,22 @@ const DIRECTORY=[
 "pricing": "Standard from $10/mo ($8/mo billed annually)",
 "tags": [
 "music generation"
+],
+"pf": "both"
+},
+{
+"name": "Fish Audio",
+"slug": "fish-audio",
+"category": "audio",
+"catName": "Voice & Audio",
+"url": "https://fish.audio",
+"desc": "AI text-to-speech and voice cloning with a web studio, mobile apps and an API. Its Drama 3 model (Oct 13, 2026) takes plain-language direction (whisper this line, laugh here) and voices multi-character scenes, and the weights are open: free for commercial use under $500K annual revenue (Fish Audio Community License). Its fish-speech repo has about 33,000 GitHub stars. Self-hosting needs a 48GB NVIDIA GPU.",
+"freeTier": true,
+"pricing": "Plus from $11/mo billed annually ($15 monthly); free plan has 8,000 credits/mo",
+"tags": [
+"text to speech",
+"voice cloning",
+"open weights"
 ],
 "pf": "both"
 },
@@ -861,6 +878,22 @@ const DIRECTORY=[
 "open source",
 "agents",
 "local models"
+],
+"pf": "free"
+},
+{
+"name": "Harness2 (Google Research)",
+"slug": "harness2-google-research",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://github.com/google-research/harness2",
+"desc": "Open-source framework from Google Cloud AI Research that improves an agent's harness (prompts, tools, memory, skills, subagents) instead of its model: it proposes edits, tests them on the same task and keeps what worked for next time. Runs OpenCode or Codex as the executor. About 13,500 GitHub stars two weeks after release; research code, not an official Google product.",
+"pricing": "Open source (Apache-2.0)",
+"tags": [
+"agents",
+"open source",
+"self-improving",
+"research"
 ],
 "pf": "free"
 },
@@ -1458,6 +1491,39 @@ const DIRECTORY=[
 "siem"
 ],
 "pf": "paid"
+},
+{
+"name": "Mantis (Google)",
+"slug": "mantis-google",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/google/mantis",
+"desc": "Google's open-source toolkit of skills that lets AI coding agents find, reproduce and patch vulnerabilities in your code, from threat modelling to the final report, plus a reference harness you can point at a repo with a plain-English focus like look for IDOR. About 2,500 GitHub stars. Google says to run it only in isolated environments and to verify every finding by hand.",
+"pricing": "Open source (Apache-2.0); model usage billed by your AI provider",
+"tags": [
+"code security",
+"appsec",
+"ai agents",
+"open source"
+],
+"pf": "free"
+},
+{
+"name": "Jira Service Management",
+"slug": "jira-service-management",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.atlassian.com/software/jira/service-management",
+"desc": "Atlassian's IT service desk: request portal, queues, SLAs, knowledge base, incident and change management, with Rovo AI agents and search on paid plans. One of the most common ticketing tools in help desk job posts, and the free plan is enough to build a practice service desk.",
+"freeTier": true,
+"pricing": "Free for up to 3 agents; Standard adds Rovo AI agents (per-agent pricing, 14-day free trial)",
+"tags": [
+"help desk",
+"itsm",
+"ticketing",
+"it ops"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",
