@@ -26,7 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
-// Daily drop: Oct 19, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 21, 2026. Pricing only where the official page states it.
+const DROP_2026_10_21=[
+{name:"ServiceNow ITSM (Now Assist)",url:"https://www.servicenow.com/products/itsm.html",category:"IT & Security",pricing:"Quote-based; free Personal Developer Instance for learning",desc:"ServiceNow's IT service management platform with Now Assist AI for incident summaries, suggested fixes and drafted responses.",why:"Behind a huge share of help desk job posts. The free developer instance is an admin sandbox to practice on."},
+{name:"GhidraMCP",url:"https://github.com/LaurieWired/GhidraMCP",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"MCP server and plugin that lets an AI assistant decompile and analyze binaries in Ghidra.",why:"About 11,400 GitHub stars; v2.0 shipped Oct 10. Open malware samples only in an isolated VM."},
+{name:"Pocket TTS (Kyutai)",url:"https://github.com/kyutai-labs/pocket-tts",category:"Voice & Audio",pricing:"Open source (MIT code; CC-BY-4.0 weights)",desc:"CPU-only text-to-speech with voice cloning. v4.0 (Oct 20) adds 18.2M, 6.9M and 1.9M English models.",why:"About 10,000 GitHub stars. No GPU needed; standalone binaries skip Python."}];
 const DROP_2026_10_20=[
 {name:"Jira Service Management",url:"https://www.atlassian.com/software/jira/service-management",category:"IT & Security",pricing:"Free for up to 3 agents; Standard adds Rovo AI agents",desc:"Atlassian's IT service desk: request portal, queues, SLAs, knowledge base and incident management.",why:"Shows up in a lot of help desk job posts. The free plan is enough to build a practice service desk."},
 {name:"Mantis (Google)",url:"https://github.com/google/mantis",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Google's open-source skills and harness for AI coding agents that find, reproduce and patch vulnerabilities.",why:"About 2,500 GitHub stars. Run it only in an isolated VM and verify every finding by hand."},

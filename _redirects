@@ -51,6 +51,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/suno https://suno.com 302
 /go/udio https://www.udio.com 302
 /go/fish-audio https://fish.audio 302
+/go/pocket-tts-kyutai https://github.com/kyutai-labs/pocket-tts 302
 /go/murf-ai https://murf.ai 302
 /go/jasper https://www.jasper.ai 302
 /go/writesonic https://writesonic.com 302
@@ -105,6 +106,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/splunk-ai-assistant https://www.splunk.com/en_us/products/splunk-ai-assistant.html 302
 /go/mantis-google https://github.com/google/mantis 302
 /go/jira-service-management https://www.atlassian.com/software/jira/service-management 302
+/go/servicenow-itsm-now-assist https://www.servicenow.com/products/itsm.html 302
+/go/ghidramcp https://github.com/LaurieWired/GhidraMCP 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -114,4 +117,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/harness2 https://github.com/google-research/harness2 302
 /go/jira https://www.atlassian.com/software/jira/service-management 302
 /go/jsm https://www.atlassian.com/software/jira/service-management 302
+/go/servicenow https://www.servicenow.com/products/itsm.html 302
+/go/ghidra https://github.com/LaurieWired/GhidraMCP 302
+/go/pocket-tts https://github.com/kyutai-labs/pocket-tts 302
 # END go-links

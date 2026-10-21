@@ -105,7 +105,7 @@ const DIRECTORY=[
 "url": "https://devin.ai",
 "desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents. Fusion mode in Devin Desktop and CLI pairs a frontier lead model with a cheaper sidekick; with Opus 5.5 and GPT-6 Luna it scores 68.1 on the Artificial Analysis Coding Agent Index.",
 "freeTier": true,
-"pricing": "Pro from $20/mo",
+"pricing": "Free plan; Pro $20/mo; Max $200/mo; Teams from $80/mo",
 "tags": [
 "editor",
 "agent",
@@ -416,7 +416,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://chat.deepseek.com",
-"desc": "Chat assistant powered by DeepSeek's open-weight models.",
+"desc": "Chat assistant powered by DeepSeek's open-weight models. DeepSeek has also open-sourced DeepInfer (Apache-2.0), the inference framework behind its own DeepSeek V4.1 Flash service; it targets data-center GPUs (NVIDIA SM100, Huawei Ascend 950), not home PCs.",
 "tags": [
 "assistant",
 "open weights"
@@ -703,6 +703,22 @@ const DIRECTORY=[
 "open weights"
 ],
 "pf": "both"
+},
+{
+"name": "Pocket TTS (Kyutai)",
+"slug": "pocket-tts-kyutai",
+"category": "audio",
+"catName": "Voice & Audio",
+"url": "https://github.com/kyutai-labs/pocket-tts",
+"desc": "Kyutai's open-source text-to-speech that runs on a plain CPU, no GPU needed, with voice cloning from a short audio clip and streaming output. Version 4.0 (Oct 20, 2026) adds small English models of 18.2M, 6.9M and 1.9M parameters (the 1.9M ones are experimental) plus standalone binaries that don't need Python. About 10,000 GitHub stars. Only clone voices you have permission to use.",
+"pricing": "Open source (MIT code; CC-BY-4.0 weights); voice cloning weights need a free Hugging Face terms click-through",
+"tags": [
+"text to speech",
+"voice cloning",
+"local models",
+"open source"
+],
+"pf": "free"
 },
 {
 "name": "Murf AI",
@@ -1524,6 +1540,38 @@ const DIRECTORY=[
 "it ops"
 ],
 "pf": "both"
+},
+{
+"name": "ServiceNow ITSM (Now Assist)",
+"slug": "servicenow-itsm-now-assist",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.servicenow.com/products/itsm.html",
+"desc": "ServiceNow's IT service management platform (incident, problem, change and request management) with Now Assist AI that summarizes incidents, suggests fixes and drafts responses, plus AI agents on higher tiers. Shows up in a huge share of help desk and IT job posts. Anyone can get a free Personal Developer Instance with admin access to learn the platform.",
+"pricing": "Quote-based packages (Foundation, Advanced, Prime); free Personal Developer Instance for learning",
+"tags": [
+"help desk",
+"itsm",
+"ticketing",
+"it ops"
+],
+"pf": "paid"
+},
+{
+"name": "GhidraMCP",
+"slug": "ghidramcp",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/LaurieWired/GhidraMCP",
+"desc": "Open-source MCP server and plugin that lets an AI assistant drive Ghidra, the NSA's free reverse-engineering suite: decompile binaries, list functions, imports and exports, and rename methods and data as it works. About 11,400 GitHub stars; v2.0 shipped Oct 10, 2026 for Ghidra 12.1.4. Analyze malware samples only inside an isolated VM.",
+"pricing": "Open source (Apache-2.0); Ghidra is free; model usage billed by your AI provider",
+"tags": [
+"malware analysis",
+"reverse engineering",
+"mcp",
+"open source"
+],
+"pf": "free"
 },
 {
 "name": "Elastic Security AI",
