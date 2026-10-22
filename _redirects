@@ -108,6 +108,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/jira-service-management https://www.atlassian.com/software/jira/service-management 302
 /go/servicenow-itsm-now-assist https://www.servicenow.com/products/itsm.html 302
 /go/ghidramcp https://github.com/LaurieWired/GhidraMCP 302
+/go/strix https://github.com/usestrix/strix 302
+/go/shannon-keygraph https://github.com/KeygraphHQ/shannon 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -120,4 +122,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/servicenow https://www.servicenow.com/products/itsm.html 302
 /go/ghidra https://github.com/LaurieWired/GhidraMCP 302
 /go/pocket-tts https://github.com/kyutai-labs/pocket-tts 302
+/go/shannon https://github.com/KeygraphHQ/shannon 302
+/go/keygraph https://github.com/KeygraphHQ/shannon 302
 # END go-links

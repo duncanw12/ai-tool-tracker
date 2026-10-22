@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 22, 2026. Pricing only where the official page states it.
+const DROP_2026_10_22=[
+{name:"Strix",url:"https://github.com/usestrix/strix",category:"IT & Security",pricing:"Open source (Apache-2.0); Strix Cloud Pro $29/seat/mo",desc:"Open-source AI pentesting agents that find vulnerabilities in your app and confirm each one with a working proof of concept.",why:"About 71,000 GitHub stars; v1.7.0 shipped Oct 5. Runs locally in Docker with your own LLM key. Test only apps you own or are authorized to test."},
+{name:"Shannon (Keygraph)",url:"https://github.com/KeygraphHQ/shannon",category:"IT & Security",pricing:"Free open source (AGPL-3.0); Keygraph Pro $50/developer/mo",desc:"Whitebox AI pentester for web apps and APIs: reads your source, then runs real exploits and reports only what it proves.",why:"About 49,000 GitHub stars; v3.4.0 shipped Oct 6. Never point it at production."}];
 // Daily drop: Oct 21, 2026. Pricing only where the official page states it.
 const DROP_2026_10_21=[
 {name:"ServiceNow ITSM (Now Assist)",url:"https://www.servicenow.com/products/itsm.html",category:"IT & Security",pricing:"Quote-based; free Personal Developer Instance for learning",desc:"ServiceNow's IT service management platform with Now Assist AI for incident summaries, suggested fixes and drafted responses.",why:"Behind a huge share of help desk job posts. The free developer instance is an admin sandbox to practice on."},

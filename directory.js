@@ -103,7 +103,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://devin.ai",
-"desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents. Fusion mode in Devin Desktop and CLI pairs a frontier lead model with a cheaper sidekick; with Opus 5.5 and GPT-6 Luna it scores 68.1 on the Artificial Analysis Coding Agent Index.",
+"desc": "Cognition's coding agents: Devin Desktop (the editor formerly called Windsurf) plus Devin cloud agents. Fusion mode in Devin Desktop and CLI pairs a frontier lead model with a cheaper sidekick; with Opus 5.5 and GPT-6 Luna it scores 68.1 on the Artificial Analysis Coding Agent Index. Pro includes free use of Cognition's own SWE-2 model.",
 "freeTier": true,
 "pricing": "Free plan; Pro $20/mo; Max $200/mo; Teams from $80/mo",
 "tags": [
@@ -186,7 +186,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://opencode.ai",
-"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro. Security note: on Oct 17, 2026 OpenCode disclosed a breach of a legacy system behind its hosted Console that may have exposed provider API keys saved in Console workspaces (1.4% of Console users, all notified by email). Keys you add locally in the CLI or desktop app weren't part of it. Since then Anthropic has revoked affected Claude keys, Google has blocked exposed Gemini keys, OpenAI has refunded API credits used in the attack and OpenCode says its own refunds are underway. If you were notified, replace those keys and check usage back to Oct 16.",
+"desc": "Open-source AI coding agent for the terminal, desktop app and IDE. Use its free included models, connect 75+ providers (including local models), or sign in with GitHub Copilot or ChatGPT Plus/Pro. Security note: on Oct 17, 2026 OpenCode disclosed a breach of a legacy system behind its hosted Console that may have exposed provider API keys saved in Console workspaces (1.4% of Console users, all notified by email). Keys you add locally in the CLI or desktop app weren't part of it. Since then Anthropic has revoked affected Claude keys, Google has blocked exposed Gemini keys, OpenAI has refunded API credits used in the attack and OpenCode says its own refunds are underway. If you were notified, replace those keys and check usage back to Oct 16. OpenCode 2.0 (announced Oct 12) runs one shared background service for the terminal, web and desktop apps, with a rebuilt API and background subagents. It ships as a separate package (@opencode/cli); the default install still gives you 1.x, and V1 plugins don't work on 2.0.",
 "freeTier": true,
 "pricing": "Open source (MIT); optional Zen pay-as-you-go models",
 "tags": [
@@ -1572,6 +1572,40 @@ const DIRECTORY=[
 "open source"
 ],
 "pf": "free"
+},
+{
+"name": "Strix",
+"slug": "strix",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/usestrix/strix",
+"desc": "Open-source AI penetration testing agents that run your app, look for vulnerabilities such as injection, broken access control, SSRF and XSS, and confirm each one with a working proof of concept before reporting it, with suggested fixes. Runs locally in Docker with your own LLM API key, and can scan pull requests in CI. About 71,000 GitHub stars; v1.7.0 shipped Oct 5, 2026. Only test apps you own or have written permission to test.",
+"freeTier": true,
+"pricing": "Open source (Apache-2.0); Strix Cloud Pro $29/seat/mo, pentests billed separately",
+"tags": [
+"pentesting",
+"appsec",
+"ai agents",
+"open source"
+],
+"pf": "free"
+},
+{
+"name": "Shannon (Keygraph)",
+"slug": "shannon-keygraph",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/KeygraphHQ/shannon",
+"desc": "Open-source autonomous AI pentester for web apps and APIs from Keygraph. It reads your source code to find likely attack paths, then runs real exploits against the running app and reports only what it could prove ('no exploit, no report'). Runs from the command line with npx and Docker on your own model provider account. About 49,000 GitHub stars; v3.4.0 shipped Oct 6, 2026. Keygraph says never to point it at production or at anything you aren't authorized to test.",
+"freeTier": true,
+"pricing": "Shannon open source free (AGPL-3.0); Keygraph Pro $50/developer/mo",
+"tags": [
+"pentesting",
+"appsec",
+"ai agents",
+"open source"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",
