@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 23, 2026. Pricing only where the official page states it.
+const DROP_2026_10_23=[
+{name:"PentAGI",url:"https://github.com/vxcontrol/pentagi",category:"IT & Security",pricing:"Open source (MIT); Enterprise available",desc:"Self-hosted multi-agent AI pentesting: agents plan, run nmap, Metasploit and sqlmap in a Docker sandbox and write a report.",why:"About 32,000 GitHub stars; v2.2.0 shipped Oct 5. Works with local models via Ollama. Authorized targets only."},
+{name:"Recursive Flint",url:"https://huggingface.co/RecursiveSI/flint",category:"Coding",pricing:"Free open weights (Apache-2.0)",desc:"Local mixture-of-experts coding model: 40B total, about 2.5B active per token.",why:"Released Oct 21. Runs via Ollama (flint:40b), llama.cpp and LM Studio; Recursive reports 125+ tokens/sec on an M4 Pro MacBook Pro."},
+{name:"OpenAI Decisions API",url:"https://openai.com/index/decisions-api/",category:"Agents",pricing:"$0.10 per 1M input tokens; no output charges",desc:"Fast probability, choice or score answers for routing, triage and agent decisions, built on GPT-6 Luna.",why:"Generally available Oct 22. OpenAI says up to 10x faster than Luna via the Responses API."}];
 // Daily drop: Oct 22, 2026. Pricing only where the official page states it.
 const DROP_2026_10_22=[
 {name:"Strix",url:"https://github.com/usestrix/strix",category:"IT & Security",pricing:"Open source (Apache-2.0); Strix Cloud Pro $29/seat/mo",desc:"Open-source AI pentesting agents that find vulnerabilities in your app and confirm each one with a working proof of concept.",why:"About 71,000 GitHub stars; v1.7.0 shipped Oct 5. Runs locally in Docker with your own LLM key. Test only apps you own or are authorized to test."},

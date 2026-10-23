@@ -198,6 +198,23 @@ const DIRECTORY=[
 "pf": "free"
 },
 {
+"name": "Recursive Flint",
+"slug": "recursive-flint",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://huggingface.co/RecursiveSI/flint",
+"desc": "Recursive's first model: an open-weight mixture-of-experts coding model (39.8B total, about 2.5B active per token) built for fast agentic coding on your own machine. Recursive says it leads MoE models under 50B parameters on SWE-Bench Pro v2, Terminal-Bench 2.1 and SWE-Bench Verified, and runs at 125+ tokens/sec on an M4 Pro MacBook Pro. Runs via Ollama (flint:40b), llama.cpp, LM Studio, Unsloth, vLLM or SGLang; the INT4 GGUF needs a 48GB Apple Silicon Mac and Unsloth's 3-bit GGUF fits 24GB RAM. Released Oct 21, 2026; Recursive says it may need more step-by-step guidance than big closed models.",
+"freeTier": true,
+"pricing": "Free open weights (Apache-2.0)",
+"tags": [
+"open weights",
+"local models",
+"coding",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Hugging Face",
 "slug": "hugging-face",
 "category": "coding",
@@ -384,7 +401,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://ollama.com",
-"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough.",
+"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Recursive's new Flint coding model is in the library (ollama run flint:40b).",
 "freeTier": true,
 "pricing": "Paid plans from $20/mo",
 "tags": [
@@ -912,6 +929,23 @@ const DIRECTORY=[
 "research"
 ],
 "pf": "free"
+},
+{
+"name": "OpenAI Decisions API",
+"slug": "openai-decisions-api",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://openai.com/index/decisions-api/",
+"desc": "OpenAI API for the small, frequent decisions inside apps and agents: classify an input, pick a route or choose the next action. You define a question and the allowed answers, send text, images or JSON, and get back a probability, a choice or a score instead of free text. Built on GPT-6 Luna; OpenAI says it's up to 10x faster than Luna through the Responses API. Generally available Oct 22, 2026, with up to 400 questions per request, prompt caching and GPT-Live integration.",
+"pricing": "$0.10 per 1M input tokens ($0.01 cached); no output-token charges",
+"tags": [
+"api",
+"openai",
+"routing",
+"classification",
+"new"
+],
+"pf": "paid"
 },
 {
 "name": "Lindy",
@@ -1606,6 +1640,23 @@ const DIRECTORY=[
 "open source"
 ],
 "pf": "both"
+},
+{
+"name": "PentAGI",
+"slug": "pentagi",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/vxcontrol/pentagi",
+"desc": "Open-source, self-hosted multi-agent system for autonomous penetration testing from VXControl. Describe a target and goal in plain language and a team of AI agents plans the work, runs 20+ tools such as nmap, Metasploit and sqlmap inside an isolated Docker sandbox, remembers what worked and writes a report, with a web UI plus REST and GraphQL APIs. Works with 10+ cloud model providers or local models through Ollama or vLLM. About 32,000 GitHub stars; v2.2.0 shipped Oct 5, 2026. For authorized testing only.",
+"pricing": "Open source (MIT); PentAGI Enterprise available",
+"tags": [
+"pentesting",
+"open source",
+"self-hosted",
+"home lab",
+"local models"
+],
+"pf": "free"
 },
 {
 "name": "Elastic Security AI",

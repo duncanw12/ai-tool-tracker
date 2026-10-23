@@ -17,6 +17,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/muse-spark-open-meta https://dev.meta.ai/models/muse-spark-open 302
 /go/nvidia-nemotron-3-5-bolt https://ollama.com/library/nemotron-3.5-bolt 302
 /go/opencode https://opencode.ai 302
+/go/recursive-flint https://huggingface.co/RecursiveSI/flint 302
 /go/hugging-face https://huggingface.co 302
 /go/claude-code https://claude.com/product/claude-code 302
 /go/openai-codex https://openai.com/codex/ 302
@@ -65,6 +66,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/muse-meta https://muse.ai 302
 /go/hermes-agent https://hermes-agent.nousresearch.com 302
 /go/harness2-google-research https://github.com/google-research/harness2 302
+/go/openai-decisions-api https://openai.com/index/decisions-api/ 302
 /go/lindy https://www.lindy.ai 302
 /go/perplexity https://www.perplexity.ai 302
 /go/gemini-notebook https://notebook.google 302
@@ -110,6 +112,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/ghidramcp https://github.com/LaurieWired/GhidraMCP 302
 /go/strix https://github.com/usestrix/strix 302
 /go/shannon-keygraph https://github.com/KeygraphHQ/shannon 302
+/go/pentagi https://github.com/vxcontrol/pentagi 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -124,4 +127,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/pocket-tts https://github.com/kyutai-labs/pocket-tts 302
 /go/shannon https://github.com/KeygraphHQ/shannon 302
 /go/keygraph https://github.com/KeygraphHQ/shannon 302
+/go/flint https://huggingface.co/RecursiveSI/flint 302
+/go/decisions https://openai.com/index/decisions-api/ 302
+/go/decisions-api https://openai.com/index/decisions-api/ 302
 # END go-links
