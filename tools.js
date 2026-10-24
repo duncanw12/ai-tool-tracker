@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 24, 2026. Pricing only where the official page states it.
+const DROP_2026_10_24=[
+{name:"SkillSpector (NVIDIA)",url:"https://github.com/NVIDIA/SkillSpector",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Scans AI agent skills and MCP servers for prompt injection, data exfiltration and supply-chain risk before you install them.",why:"About 21,000 GitHub stars; v2.13.1 shipped Oct 23. 71 patterns, 0-100 risk score, offline static scan."},
+{name:"Exa",url:"https://exa.ai",category:"Research",pricing:"Lite search $4 per 1,000 requests; $10/mo free credits",desc:"Web search API for AI apps and agents, with its own index and clean page text or highlights.",why:"Exa 3.0 shipped Oct 19 with a cheaper Lite search type and billions of new documents."},
+{name:"MiniMax M3.1 Flash",url:"https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",category:"Coding",pricing:"Free open weights (MiniMax Community License)",desc:"Open-weight multimodal MoE model (about 428B total, 23B active, 1M context) for coding, agents and computer use.",why:"New in October. A data-center model; commercial use needs a credit line and a notice to MiniMax."}];
 // Daily drop: Oct 23, 2026. Pricing only where the official page states it.
 const DROP_2026_10_23=[
 {name:"PentAGI",url:"https://github.com/vxcontrol/pentagi",category:"IT & Security",pricing:"Open source (MIT); Enterprise available",desc:"Self-hosted multi-agent AI pentesting: agents plan, run nmap, Metasploit and sqlmap in a Docker sandbox and write a report.",why:"About 32,000 GitHub stars; v2.2.0 shipped Oct 5. Works with local models via Ollama. Authorized targets only."},

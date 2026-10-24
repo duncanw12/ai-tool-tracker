@@ -215,6 +215,23 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "MiniMax M3.1 Flash",
+"slug": "minimax-m3-1-flash",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+"desc": "MiniMax's open-weight multimodal mixture-of-experts model (about 428B total, 23B active per token, up to 1M tokens of context) for coding, agentic work, computer use and cybersecurity tasks. Takes text, image and video input. MiniMax's own benchmarks put it at 73.7% on DeepSWE v1.1 and 61.7 on OSWorld 2.0, close to big closed models on several agent tests. Too big for a home PC: MiniMax recommends serving it with SGLang, vLLM or TokenSpeed, or using it through MiniMax Agent and the MiniMax API. New in October 2026.",
+"freeTier": true,
+"pricing": "Free open weights (MiniMax Community License: commercial use needs a 'Built with MiniMax M3.1-Flash' credit and a notice to MiniMax; written approval above $20M yearly revenue)",
+"tags": [
+"open weights",
+"models",
+"agents",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Hugging Face",
 "slug": "hugging-face",
 "category": "coding",
@@ -327,7 +344,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://claude.ai",
-"desc": "Anthropic's AI assistant for writing, analysis and coding.",
+"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits.",
 "freeTier": true,
 "pricing": "Pro from $17/mo billed annually ($20 monthly)",
 "tags": [
@@ -655,7 +672,7 @@ const DIRECTORY=[
 "category": "video",
 "catName": "Video",
 "url": "https://kling.ai",
-"desc": "Kuaishou's AI video generation model and app.",
+"desc": "Kuaishou's AI video generation model and app. Kling 4.0 (fully available Oct 15, 2026) generates up to 30 seconds in one pass with steadier fast motion, and Omni Reference combines up to 15 reference assets and 10 keyframes. It also works through Kling MCP and CLI; 10-bit HDR output and developer API access are coming soon.",
 "tags": [
 "video generation"
 ],
@@ -1046,6 +1063,23 @@ const DIRECTORY=[
 "tags": [
 "meetings",
 "transcription"
+],
+"pf": "both"
+},
+{
+"name": "Exa",
+"slug": "exa",
+"category": "research",
+"catName": "Productivity & Research",
+"url": "https://exa.ai",
+"desc": "Web search API built for AI apps and agents: runs its own crawler and index, returns ranked results with clean page text or short highlights, and adds deep research, monitors and an agent API. Exa 3.0 (Oct 19, 2026) brings a larger embedding model, generally available Dynamic Highlights and billions of new documents such as products, local businesses and events, plus a cheaper Lite search type. Exa says it ranks #1 on the Artificial Analysis Search Index. Also available as a hosted MCP server.",
+"freeTier": true,
+"pricing": "Pay-as-you-go: Lite search $4 per 1,000 requests, Auto $7 per 1,000; free tier $10 in credits each month",
+"tags": [
+"search api",
+"agents",
+"mcp",
+"research"
 ],
 "pf": "both"
 },
@@ -1655,6 +1689,22 @@ const DIRECTORY=[
 "self-hosted",
 "home lab",
 "local models"
+],
+"pf": "free"
+},
+{
+"name": "SkillSpector (NVIDIA)",
+"slug": "skillspector-nvidia",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/NVIDIA/SkillSpector",
+"desc": "NVIDIA's open-source scanner that checks AI agent skills (for Claude Code, Codex, Gemini CLI and MCP) before you install them. It looks for 71 vulnerability patterns across 17 categories, including prompt injection, data exfiltration, privilege escalation, supply-chain risk and MCP tool poisoning, then gives a 0-100 risk score with JSON, Markdown or SARIF reports. Fast static checks work offline; an optional LLM pass adds deeper review. Scans Git repos, URLs, zip files or folders, and runs in Docker. About 21,000 GitHub stars; v2.13.1 shipped Oct 23, 2026.",
+"pricing": "Open source (Apache-2.0); optional LLM analysis billed by your AI provider",
+"tags": [
+"ai security",
+"agent skills",
+"supply chain",
+"open source"
 ],
 "pf": "free"
 },

@@ -18,6 +18,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/nvidia-nemotron-3-5-bolt https://ollama.com/library/nemotron-3.5-bolt 302
 /go/opencode https://opencode.ai 302
 /go/recursive-flint https://huggingface.co/RecursiveSI/flint 302
+/go/minimax-m3-1-flash https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
 /go/hugging-face https://huggingface.co 302
 /go/claude-code https://claude.com/product/claude-code 302
 /go/openai-codex https://openai.com/codex/ 302
@@ -74,6 +75,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/notion-ai https://www.notion.com 302
 /go/otter-ai https://otter.ai 302
 /go/fireflies-ai https://fireflies.ai/?fpr=duncan-873b18 302
+/go/exa https://exa.ai 302
 /go/elicit https://elicit.com 302
 /go/consensus https://consensus.app 302
 /go/gamma https://try.gamma.app/74bhdc77mraq 302
@@ -113,6 +115,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/strix https://github.com/usestrix/strix 302
 /go/shannon-keygraph https://github.com/KeygraphHQ/shannon 302
 /go/pentagi https://github.com/vxcontrol/pentagi 302
+/go/skillspector-nvidia https://github.com/NVIDIA/SkillSpector 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -130,4 +133,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/flint https://huggingface.co/RecursiveSI/flint 302
 /go/decisions https://openai.com/index/decisions-api/ 302
 /go/decisions-api https://openai.com/index/decisions-api/ 302
+/go/skillspector https://github.com/NVIDIA/SkillSpector 302
+/go/minimax https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
+/go/minimax-m3 https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
 # END go-links
