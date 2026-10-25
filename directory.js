@@ -169,7 +169,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://ollama.com/library/nemotron-3.5-bolt",
-"desc": "NVIDIA's open local model (74B total, 9B active, 256K context) for coding, reasoning, vision and tool use. Fits about 24GB of GPU memory via Ollama, llama.cpp or LM Studio (NVIDIA GPUs; no Apple silicon yet). Released Oct 15, 2026.",
+"desc": "NVIDIA's open local model (74B total, 9B active, 256K context) for coding, reasoning, vision and tool use. Fits about 24GB of GPU memory via Ollama, llama.cpp or LM Studio (NVIDIA GPUs; no Apple silicon yet). Released Oct 15, 2026. New Oct 23: Nemotron 3.5 Bolt E4B, a small 4B-effective model (built on Gemma 4 E4B) for fast local voice and device assistants with multi-turn tool use, a conversational mode and switchable reasoning. NVIDIA's 4GB Q4_K_M GGUF used about 3.5-4.3GB of VRAM on an RTX 5070 in its tests; in Ollama it's nemotron-3.5-bolt:e4b (7.2-7.9GB download with image input, plus MLX builds for Apple silicon).",
 "freeTier": true,
 "pricing": "Free open weights (OpenMDW License 1.1)",
 "tags": [
@@ -380,6 +380,24 @@ const DIRECTORY=[
 "tags": [
 "assistant",
 "xai"
+],
+"pf": "both"
+},
+{
+"name": "Off Grid AI",
+"slug": "off-grid-ai",
+"category": "chat",
+"catName": "Chat Assistants",
+"url": "https://getoffgridai.co",
+"desc": "Open-source AI assistant that runs entirely on your own phone or computer: chat with local GGUF models, ask about photos, transcribe speech with Whisper, generate images with Stable Diffusion, chat with your documents and call tools or MCP servers, with no account, no API key and no cloud inference. Apps for iPhone, Android and Mac, plus a desktop app for macOS, Windows and Linux with a local OpenAI-compatible API. Built by Wednesday Solutions; the developer reports 250,000+ downloads, and the mobile repo has about 3,300 GitHub stars (v0.0.118 shipped Oct 23, 2026). Optional paid Pro adds voice replies, on-device memory, phone-to-Mac sync and actions in Gmail, Linear, Jira and Notion that wait for your approval.",
+"freeTier": true,
+"pricing": "Free and open source (mobile MIT, desktop AGPL-3.0); Pro $119 lifetime or $7.99/mo",
+"tags": [
+"local models",
+"offline",
+"privacy",
+"open source",
+"new"
 ],
 "pf": "both"
 },
@@ -641,7 +659,7 @@ const DIRECTORY=[
 "category": "video",
 "catName": "Video",
 "url": "https://www.heygen.com",
-"desc": "AI avatar videos, translation and lip-sync.",
+"desc": "AI avatar videos, translation and lip-sync. For developers: the HeyGen Voice Turbo Free API model (heygen-voice-1-turbo-free) is free until Nov 30, 2026 with no credit balance needed, for public voices and instant clones (not professional clones). Capacity is shared, so expect occasional 429 errors; HeyGen pitches it for tests and prototypes.",
 "freeTier": true,
 "pricing": "Creator from $29/mo",
 "tags": [
@@ -684,7 +702,7 @@ const DIRECTORY=[
 "category": "audio",
 "catName": "Voice & Audio",
 "url": "https://elevenlabs.io",
-"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects.",
+"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects. New Oct 21: Eleven Realtime Translation, live speech-to-speech translation into 90+ languages in a voice you choose, in alpha for ElevenAPI enterprise customers only (contact sales; no public price).",
 "freeTier": true,
 "pricing": "Starter from $6/mo; Creator $22/mo (first month 50% off)",
 "tags": [
@@ -1705,6 +1723,41 @@ const DIRECTORY=[
 "agent skills",
 "supply chain",
 "open source"
+],
+"pf": "free"
+},
+{
+"name": "Snyk Agent Scan",
+"slug": "snyk-agent-scan",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/snyk/agent-scan",
+"desc": "Snyk's open-source scanner that finds the AI agents, MCP servers and skills already installed on your machine (Claude Code and Desktop, Cursor, VS Code, GitHub Copilot, Windsurf, Gemini CLI, Codex, OpenCode and more) and checks them for prompt injection, tool poisoning, private-data exposure, destructive capabilities, malicious code and hardcoded secrets. Asks before it starts or contacts each MCP server, and Snyk recommends a sandbox or VM for untrusted configs. Runs with uvx or a signed standalone binary and needs a free Snyk API token; component details are sent to Snyk's Agent Scan API for analysis, with secrets redacted. About 3,200 GitHub stars; v0.6.9 shipped Oct 20, 2026.",
+"freeTier": true,
+"pricing": "Open source (Apache-2.0); free Snyk account and API token required",
+"tags": [
+"ai security",
+"mcp",
+"agent skills",
+"open source",
+"new"
+],
+"pf": "free"
+},
+{
+"name": "Cisco Skill Scanner",
+"slug": "cisco-skill-scanner",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/cisco-ai-defense/skill-scanner",
+"desc": "Cisco AI Defense's open-source scanner for AI agent skills (Agent Skills format used by Codex and Cursor, plus Claude Code commands with --lenient). It combines YAML and YARA-X rules, code and dataflow analysis and an optional LLM judge that can use cloud or local models, and outputs SARIF for GitHub Code Scanning with a ready-made GitHub Action and a pre-commit hook. Cisco publishes its own measured detection and false-positive rates: rules alone caught 7.7% of malicious test skills at HIGH, and with the LLM judge 66.7% reached MEDIUM or above at a 15.4% false-positive rate, so it says a clean scan is not a guarantee. About 2,600 GitHub stars; 2.3.1 shipped Oct 21, 2026.",
+"pricing": "Open source (Apache-2.0); optional LLM judge billed by your AI provider",
+"tags": [
+"ai security",
+"agent skills",
+"ci",
+"open source",
+"new"
 ],
 "pf": "free"
 },

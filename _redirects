@@ -29,6 +29,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/claude https://claude.ai 302
 /go/gemini https://gemini.google.com 302
 /go/grok https://grok.com 302
+/go/off-grid-ai https://getoffgridai.co 302
 /go/microsoft-copilot https://copilot.microsoft.com 302
 /go/le-chat-mistral https://chat.mistral.ai 302
 /go/ollama https://ollama.com 302
@@ -116,6 +117,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/shannon-keygraph https://github.com/KeygraphHQ/shannon 302
 /go/pentagi https://github.com/vxcontrol/pentagi 302
 /go/skillspector-nvidia https://github.com/NVIDIA/SkillSpector 302
+/go/snyk-agent-scan https://github.com/snyk/agent-scan 302
+/go/cisco-skill-scanner https://github.com/cisco-ai-defense/skill-scanner 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -136,4 +139,9 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/skillspector https://github.com/NVIDIA/SkillSpector 302
 /go/minimax https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
 /go/minimax-m3 https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
+/go/agent-scan https://github.com/snyk/agent-scan 302
+/go/snyk-agent https://github.com/snyk/agent-scan 302
+/go/skill-scanner https://github.com/cisco-ai-defense/skill-scanner 302
+/go/cisco-skills https://github.com/cisco-ai-defense/skill-scanner 302
+/go/offgrid https://getoffgridai.co 302
 # END go-links

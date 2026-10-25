@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 25, 2026. Pricing only where the official page states it.
+const DROP_2026_10_25=[
+{name:"Snyk Agent Scan",url:"https://github.com/snyk/agent-scan",category:"IT & Security",pricing:"Open source (Apache-2.0); free Snyk API token",desc:"Finds the MCP servers and skills your AI agents already have installed and checks them for prompt injection, tool poisoning and secrets.",why:"About 3,200 GitHub stars; v0.6.9 shipped Oct 20. Covers Claude Code, Cursor, VS Code, Copilot, Codex and more."},
+{name:"Cisco Skill Scanner",url:"https://github.com/cisco-ai-defense/skill-scanner",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Scans AI agent skills with rules, dataflow analysis and an optional LLM judge; SARIF, GitHub Action and pre-commit hook.",why:"2.3.1 shipped Oct 21. Cisco publishes its own detection and false-positive rates."},
+{name:"Off Grid AI",url:"https://getoffgridai.co",category:"Chat",pricing:"Free (open source); Pro $119 lifetime or $7.99/mo",desc:"Open-source AI assistant that runs fully on your phone or computer: local chat, vision, speech, images and tools.",why:"Developer reports 250,000+ downloads; about 3,300 GitHub stars, v0.0.118 shipped Oct 23."}];
 // Daily drop: Oct 24, 2026. Pricing only where the official page states it.
 const DROP_2026_10_24=[
 {name:"SkillSpector (NVIDIA)",url:"https://github.com/NVIDIA/SkillSpector",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Scans AI agent skills and MCP servers for prompt injection, data exfiltration and supply-chain risk before you install them.",why:"About 21,000 GitHub stars; v2.13.1 shipped Oct 23. 71 patterns, 0-100 risk score, offline static scan."},
