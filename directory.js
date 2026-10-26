@@ -232,6 +232,23 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Nanbeige4.3-33B",
+"slug": "nanbeige4-3-33b",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+"desc": "Open-weight 33B dense model from the Nanbeige team, built for agentic coding and office-style agent tasks (tool use, planning, multi-step work), with a thinking mode you can switch off and up to 512K tokens of context. On Nanbeige's own benchmark table it beats Qwen3.8-27B, Muse-Glimmer-30B and Gemma4-31B on most agent tests (for example 80.9 on Terminal-Bench 2.1 and 65.5 on DeepSWE), though Qwen3.8-27B edges it on SWE-Bench Pro and GDPval. Runs with Transformers, SGLang or vLLM (Nanbeige's server examples use four GPUs); community GGUF quants exist for smaller setups. Released Oct 24, 2026; about 500 likes on Hugging Face in its first two days.",
+"freeTier": true,
+"pricing": "Free open weights (Apache-2.0)",
+"tags": [
+"open weights",
+"models",
+"agents",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Hugging Face",
 "slug": "hugging-face",
 "category": "coding",
@@ -554,7 +571,7 @@ const DIRECTORY=[
 "category": "image",
 "catName": "Image",
 "url": "https://bfl.ai",
-"desc": "Makers of the FLUX image models, including FLUX 3 Image Klein (Oct 15, 2026): open weights, native 4K, runs on consumer GPUs.",
+"desc": "Makers of the FLUX image models, including FLUX 3 Image Klein (Oct 15, 2026): open weights, native 4K, runs on consumer GPUs. New Oct 19: FLUX 3 Max, a video model post-trained by fal with Black Forest Labs, on fal's API for text-, image- and keyframes-to-video (5-20 seconds, 720p or 1080p, audio on by default). fal measured a 10-second clip in about 12 seconds. Launch pricing on fal is 75% off until Nov 7 ($0.0425/s at 720p, $0.0725/s at 1080p), then $0.17/s and $0.29/s.",
 "freeTier": true,
 "pricing": "API from $0.009/image (FLUX 3 Image Klein at 1K); open weights free for individuals and companies under $5M revenue",
 "tags": [
@@ -978,6 +995,23 @@ const DIRECTORY=[
 "openai",
 "routing",
 "classification",
+"new"
+],
+"pf": "paid"
+},
+{
+"name": "Cloudflare Clairic",
+"slug": "cloudflare-clairic",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://developers.cloudflare.com/workers-ai/models/clairic/",
+"desc": "Cloudflare's extraction model on Workers AI (@cf/cloudflare/clairic). You send text (plus up to four images) and a list of typed fields, and it returns each value as the type you asked for (text span, number, date, duration, list, estimate or forecast) with a confidence score, or null if it isn't there. It answers in one pass without generating tokens, so it's fast and can't return malformed JSON, though it can still be wrong. Preview since Oct 19, 2026, 65,536-token context; Cloudflare says open weights are coming. Inputs are processed on Cloudflare.",
+"pricing": "$0.10 per 1M input tokens; no output-token charges (preview)",
+"tags": [
+"api",
+"extraction",
+"cloudflare",
+"structured data",
 "new"
 ],
 "pf": "paid"
@@ -1756,6 +1790,23 @@ const DIRECTORY=[
 "ai security",
 "agent skills",
 "ci",
+"open source",
+"new"
+],
+"pf": "free"
+},
+{
+"name": "Strands Box",
+"slug": "strands-box",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/strands-agents/box",
+"desc": "Open-source sandbox for AI agents from the Strands Agents project. It runs any agent program inside OS-level isolation and checks its shell commands, Python, network requests and MCP tool calls against default-deny policies (written in the Dogwood policy language), so an agent can only do what a rule permits. Rules can depend on earlier actions, for example blocking an outbound request after the agent read a secrets file. API keys are injected by Box's gateway, so the agent never sees them, and every decision is logged. Written in Rust; preview for Apple silicon Macs only (Linux planned). About 475 GitHub stars; v0.1.0 shipped Oct 7, 2026, with commits daily.",
+"pricing": "Open source (Apache-2.0)",
+"tags": [
+"ai security",
+"sandbox",
+"agents",
 "open source",
 "new"
 ],

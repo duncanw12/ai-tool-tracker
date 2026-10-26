@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 26, 2026. Pricing only where the official page states it.
+const DROP_2026_10_26=[
+{name:"Strands Box",url:"https://github.com/strands-agents/box",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Sandbox for AI agents: OS isolation plus default-deny policies on shell, Python, network and MCP calls, with keys kept out of the agent.",why:"v0.1.0 shipped Oct 7 with daily commits since; about 475 GitHub stars. Preview for Apple silicon Macs."},
+{name:"Nanbeige4.3-33B",url:"https://huggingface.co/Nanbeige/Nanbeige4.3-33B",category:"Coding",pricing:"Free open weights (Apache-2.0)",desc:"Open-weight 33B model for agentic coding and multi-step agent work, 512K context, switchable thinking mode.",why:"Released Oct 24; about 500 Hugging Face likes in two days. Vendor benchmarks beat Qwen3.8-27B on most agent tests."},
+{name:"Cloudflare Clairic",url:"https://developers.cloudflare.com/workers-ai/models/clairic/",category:"Agents",pricing:"$0.10 per 1M input tokens; no output charge",desc:"Extraction model on Workers AI: declare typed fields, get back values with confidence scores or null, in one pass.",why:"Preview since Oct 19. No generated tokens, so no malformed JSON; open weights promised."}];
 // Daily drop: Oct 25, 2026. Pricing only where the official page states it.
 const DROP_2026_10_25=[
 {name:"Snyk Agent Scan",url:"https://github.com/snyk/agent-scan",category:"IT & Security",pricing:"Open source (Apache-2.0); free Snyk API token",desc:"Finds the MCP servers and skills your AI agents already have installed and checks them for prompt injection, tool poisoning and secrets.",why:"About 3,200 GitHub stars; v0.6.9 shipped Oct 20. Covers Claude Code, Cursor, VS Code, Copilot, Codex and more."},

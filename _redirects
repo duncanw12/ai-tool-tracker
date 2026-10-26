@@ -19,6 +19,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/opencode https://opencode.ai 302
 /go/recursive-flint https://huggingface.co/RecursiveSI/flint 302
 /go/minimax-m3-1-flash https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
+/go/nanbeige4-3-33b https://huggingface.co/Nanbeige/Nanbeige4.3-33B 302
 /go/hugging-face https://huggingface.co 302
 /go/claude-code https://claude.com/product/claude-code 302
 /go/openai-codex https://openai.com/codex/ 302
@@ -69,6 +70,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/hermes-agent https://hermes-agent.nousresearch.com 302
 /go/harness2-google-research https://github.com/google-research/harness2 302
 /go/openai-decisions-api https://openai.com/index/decisions-api/ 302
+/go/cloudflare-clairic https://developers.cloudflare.com/workers-ai/models/clairic/ 302
 /go/lindy https://www.lindy.ai 302
 /go/perplexity https://www.perplexity.ai 302
 /go/gemini-notebook https://notebook.google 302
@@ -119,6 +121,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/skillspector-nvidia https://github.com/NVIDIA/SkillSpector 302
 /go/snyk-agent-scan https://github.com/snyk/agent-scan 302
 /go/cisco-skill-scanner https://github.com/cisco-ai-defense/skill-scanner 302
+/go/strands-box https://github.com/strands-agents/box 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -144,4 +147,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/skill-scanner https://github.com/cisco-ai-defense/skill-scanner 302
 /go/cisco-skills https://github.com/cisco-ai-defense/skill-scanner 302
 /go/offgrid https://getoffgridai.co 302
+/go/box https://github.com/strands-agents/box 302
+/go/strands https://github.com/strands-agents/box 302
+/go/nanbeige https://huggingface.co/Nanbeige/Nanbeige4.3-33B 302
+/go/clairic https://developers.cloudflare.com/workers-ai/models/clairic/ 302
 # END go-links
