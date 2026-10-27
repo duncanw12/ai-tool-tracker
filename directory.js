@@ -55,7 +55,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://lovable.dev",
-"desc": "Build full-stack web apps by chatting with an AI engineer.",
+"desc": "Build full-stack web apps by chatting with an AI engineer. New Oct 20, 2026: Lovable can create a Supabase project for an app with no backend (you pick the organization and region, and Supabase bills your own organization), and companies with several Lovable workspaces can group them into one organization with shared SSO and SCIM.",
 "freeTier": true,
 "pricing": "Pro from $25/mo ($21/mo billed annually); free plan has 5 daily credits",
 "tags": [
@@ -71,7 +71,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://replit.com",
-"desc": "Browser IDE with Replit Agent that builds and deploys apps from a prompt.",
+"desc": "Browser IDE with Replit Agent that builds and deploys apps from a prompt. New Oct 22, 2026: Monitoring Agent, an on-call agent for published apps. Turn on monitoring alerts and Auto-fix and it investigates production issues from your app's logs and metrics, attempts and validates a fix and emails you a summary; with the experimental Auto-republish setting it can also publish the fix. Replit hasn't published fix-accuracy numbers.",
 "freeTier": true,
 "pricing": "Core from $20/mo ($18/mo billed annually)",
 "tags": [
@@ -1211,7 +1211,7 @@ const DIRECTORY=[
 "category": "design",
 "catName": "Design & Websites",
 "url": "https://www.canva.com",
-"desc": "Online design tool with Magic Studio AI features.",
+"desc": "Online design tool with Magic Studio AI features. New Oct 22, 2026: Canva Craft, Canva's first in-house image model (built by Canva Research), in Dream Lab for all users. It plans the layout before rendering, makes images up to 2K in 30+ aspect ratios, writes text in 55 languages, and its output converts to editable layers with Magic Layers. Developers can call it through Canva's preview Connect API (model craft_v1_2k, about 50-60 seconds per job, using the user's AI credits).",
 "tags": [
 "graphic design",
 "templates"
@@ -1808,6 +1808,41 @@ const DIRECTORY=[
 "sandbox",
 "agents",
 "open source",
+"new"
+],
+"pf": "free"
+},
+{
+"name": "1Password for Agents",
+"slug": "1password-for-agents",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://1password.com/personal-ai-agent-integrations",
+"desc": "1Password's sign-in layer for personal AI agents, launched Oct 22, 2026. When an agent reaches a login page it asks 1Password for the credential; you see which login it wants and approve or deny on your own device, and 1Password fills the password or one-time code straight into the site, so the agent never sees or stores it. You can disconnect an agent at any time. Integrations for Meta's Muse and Grok Bot are rolling out first; Anthropic's Claude Duet, OpenAI's ChatGPT Work and dots and Town's Townie are listed as coming soon, with Browserbase, Browser Use, Perplexity and others planned. 1Password.com accounts only (not 1Password.eu or .ca), and safeguards vary by integration.",
+"pricing": "No extra cost with 1Password Individual and Families plans",
+"tags": [
+"ai security",
+"password manager",
+"agents",
+"credentials",
+"new"
+],
+"pf": "paid"
+},
+{
+"name": "CVEngine",
+"slug": "cvengine",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/hevnsnt/CVEngine",
+"desc": "Free, self-hosted external attack-surface scanner with optional AI triage. Add a domain, IP range or URL and it discovers subdomains (bbot), sweeps ports (naabu), fingerprints services (nmap), runs nuclei checks and matches what you run against exploited CVEs from CISA KEV, EPSS, Exploit-DB, Metasploit and other feeds, then confirms what it can with read-only checks that record the exact command they ran. Bring your own AI (Anthropic, OpenAI, OpenRouter, or local Ollama or vLLM) or run it without one; AI-drafted nuclei templates never run until a person approves them. Includes an MCP server and REST API with read-only tokens for agents. One Docker Compose stack on Linux (4GB RAM minimum, 8GB recommended). A fork of reNgine 2.x from a single maintainer, published Oct 24, 2026 and at about 400 GitHub stars two days later. Only scan systems you own or are authorized to test.",
+"pricing": "Open source (GPL-3.0)",
+"tags": [
+"attack surface",
+"vulnerability scanning",
+"self-hosted",
+"open source",
+"mcp",
 "new"
 ],
 "pf": "free"

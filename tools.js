@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 27, 2026. Pricing only where the official page states it.
+const DROP_2026_10_27=[
+{name:"1Password for Agents",url:"https://1password.com/personal-ai-agent-integrations",category:"IT & Security",pricing:"No extra cost with 1Password Individual and Families",desc:"Lets personal AI agents sign in for you: you approve each login on your device and 1Password fills it in, so the agent never sees the password.",why:"Launched Oct 22. Muse and Grok Bot integrations rolling out first; Claude Duet and ChatGPT Work listed as coming soon."},
+{name:"CVEngine",url:"https://github.com/hevnsnt/CVEngine",category:"IT & Security",pricing:"Open source (GPL-3.0)",desc:"Self-hosted attack-surface scanner: discovery, port scans, nuclei and exploited-CVE matching, with optional AI triage and an MCP server.",why:"Published Oct 24; about 400 GitHub stars in two days. Read-only validation records every command it runs."}];
 // Daily drop: Oct 26, 2026. Pricing only where the official page states it.
 const DROP_2026_10_26=[
 {name:"Strands Box",url:"https://github.com/strands-agents/box",category:"IT & Security",pricing:"Open source (Apache-2.0)",desc:"Sandbox for AI agents: OS isolation plus default-deny policies on shell, Python, network and MCP calls, with keys kept out of the agent.",why:"v0.1.0 shipped Oct 7 with daily commits since; about 475 GitHub stars. Preview for Apple silicon Macs."},

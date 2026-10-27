@@ -122,6 +122,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/snyk-agent-scan https://github.com/snyk/agent-scan 302
 /go/cisco-skill-scanner https://github.com/cisco-ai-defense/skill-scanner 302
 /go/strands-box https://github.com/strands-agents/box 302
+/go/1password-for-agents https://1password.com/personal-ai-agent-integrations 302
+/go/cvengine https://github.com/hevnsnt/CVEngine 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -151,4 +153,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/strands https://github.com/strands-agents/box 302
 /go/nanbeige https://huggingface.co/Nanbeige/Nanbeige4.3-33B 302
 /go/clairic https://developers.cloudflare.com/workers-ai/models/clairic/ 302
+/go/1password https://1password.com/personal-ai-agent-integrations 302
+/go/1password-agents https://1password.com/personal-ai-agent-integrations 302
+/go/cve-engine https://github.com/hevnsnt/CVEngine 302
 # END go-links
