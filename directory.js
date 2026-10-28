@@ -7,7 +7,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://cursor.com",
-"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans.",
+"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans. The Cursor Agent SDK (announced Oct 20, 2026, GA in v0.3.0 on Oct 23) lets you write your own agents as code, with prompts in Markdown and tools as TypeScript functions, built-in evals and a local playground, then deploy them to Cursor or self-host them in a container; it is the framework behind Cursor's own Bugbot and Security Review. DeepSeek V4.1 Flash, an open-weight model with a 1M-token context, was added Oct 26 and is billed as a third-party model.",
 "freeTier": true,
 "pricing": "Plus from $8/mo (Grok models only); Premium $30/mo adds cloud agents and third-party models at API list price",
 "tags": [
@@ -55,7 +55,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://lovable.dev",
-"desc": "Build full-stack web apps by chatting with an AI engineer. New Oct 20, 2026: Lovable can create a Supabase project for an app with no backend (you pick the organization and region, and Supabase bills your own organization), and companies with several Lovable workspaces can group them into one organization with shared SSO and SCIM.",
+"desc": "Build full-stack web apps by chatting with an AI engineer. New Oct 20, 2026: Lovable can create a Supabase project for an app with no backend (you pick the organization and region, and Supabase bills your own organization), and companies with several Lovable workspaces can group them into one organization with shared SSO and SCIM. Also Oct 20: n8n and LlamaParse connectors, plus ByteDance's Seedream 5 Pro image model and Seedance 2.5 video model for app features (an admin enables ByteDance in Connectors first).",
 "freeTier": true,
 "pricing": "Pro from $25/mo ($21/mo billed annually); free plan has 5 daily credits",
 "tags": [
@@ -1846,6 +1846,40 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "free"
+},
+{
+"name": "HOL Guard",
+"slug": "hol-guard",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/hashgraph-online/hol-guard",
+"desc": "Free, local-first guard for the AI coding agents you already use. It checks shell commands, file access, package installs and MCP tool calls before they run, flags secret exposure, destructive commands, prompt injection and supply-chain risk, and allows, blocks or asks you to approve each action based on your policy. Works with Claude Code, Codex, Cursor, GitHub Copilot CLI, Gemini CLI, Cline, OpenCode and others through their hooks, so coverage depends on what each agent exposes. Runs without an account, keeps a local history of every decision, can produce an AI bill of materials and SARIF output for CI, and has an optional Guard Cloud for team policies. Install with pipx (Python 3.10+). About 1,000 GitHub stars and roughly 76,000 PyPI downloads in the past month; v3.58.0 shipped Oct 27, 2026.",
+"pricing": "Open source (Apache-2.0); optional Guard Cloud for teams",
+"tags": [
+"ai security",
+"agents",
+"mcp",
+"open source",
+"new"
+],
+"pf": "free"
+},
+{
+"name": "Zendesk",
+"slug": "zendesk",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.zendesk.com/employee-service/",
+"desc": "Widely used help desk and ticketing platform with an employee service (internal IT and HR) edition. On Oct 26, 2026 Zendesk announced employee service AI agents and advanced action flows that handle onboarding and offboarding, access approvals, laptop lifecycle and badge requests from the help center, Slack or Microsoft Teams, with automations written in plain language. Zendesk says 300 early-access customers ran 6 million workflow executions in five weeks. General availability rolls out Nov 3 to Dec 1, 2026, with 20+ knowledge connectors (Google Drive, SharePoint, Confluence, Notion and more) and automatic escalation to a ticket. From Nov 3, Growth and Professional plans include 10 automated resolutions per AI agent per month, then $0.99 each.",
+"pricing": "Support Team from $19/agent/mo billed annually ($25 monthly); Suite Team $55/agent/mo; 14-day free trial",
+"tags": [
+"help desk",
+"itsm",
+"ticketing",
+"employee service",
+"new"
+],
+"pf": "paid"
 },
 {
 "name": "Elastic Security AI",

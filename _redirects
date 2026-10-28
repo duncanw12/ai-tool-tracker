@@ -124,6 +124,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/strands-box https://github.com/strands-agents/box 302
 /go/1password-for-agents https://1password.com/personal-ai-agent-integrations 302
 /go/cvengine https://github.com/hevnsnt/CVEngine 302
+/go/hol-guard https://github.com/hashgraph-online/hol-guard 302
+/go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -156,4 +158,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/1password https://1password.com/personal-ai-agent-integrations 302
 /go/1password-agents https://1password.com/personal-ai-agent-integrations 302
 /go/cve-engine https://github.com/hevnsnt/CVEngine 302
+/go/holguard https://github.com/hashgraph-online/hol-guard 302
+/go/hol https://github.com/hashgraph-online/hol-guard 302
+/go/zendesk-ai https://www.zendesk.com/employee-service/ 302
+/go/zendesk-employee https://www.zendesk.com/employee-service/ 302
 # END go-links
