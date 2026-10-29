@@ -346,7 +346,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://chatgpt.com",
-"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images.",
+"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images. Since Oct 20, 2026 you can lock a chat behind a four-digit PIN or device sign-in so it drops out of your history and search (it is hidden, not end-to-end encrypted).",
 "freeTier": true,
 "pricing": "Plus $20/mo; lower-cost Go plan also available",
 "tags": [
@@ -453,7 +453,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://ollama.com",
-"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Recursive's new Flint coding model is in the library (ollama run flint:40b).",
+"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Recursive's new Flint coding model is in the library (ollama run flint:40b), and so is Liquid AI's new LFM3 family of small on-device models.",
 "freeTier": true,
 "pricing": "Paid plans from $20/mo",
 "tags": [
@@ -1880,6 +1880,55 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "paid"
+},
+{
+"name": "BotGauge",
+"slug": "botgauge",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.botgauge.com",
+"desc": "Security and reliability testing for AI agents you build. It runs adaptive red-team attacks (prompt injection, policy bypass, tool misuse, multi-turn manipulation), replays each failure with a full trace and turns it into a regression test, then keeps watching the agent in production. Connects through an SDK to OpenAI, Anthropic, LangChain, LangGraph, LlamaIndex, CrewAI and AutoGen. Launched as the #3 product of the day on Product Hunt on Oct 28, 2026.",
+"tags": [
+"ai security",
+"red teaming",
+"agent testing",
+"evals"
+],
+"pf": ""
+},
+{
+"name": "Project Quarry (Cisco)",
+"slug": "project-quarry-cisco",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/cisco-ai-defense/project-quarry",
+"desc": "Open-source detection rules for AI agent sessions, from Cisco AI Defense. You write rules that match patterns across messages, tool calls, MCP activity and the order they happen in (for example, a read of a sensitive file followed by an outbound send), and a match returns the evidence with secrets masked. Use it as a runtime guardrail, to review past agent traces or during incident response; it ships a plugin for Codex, Claude Code and MCP hosts plus a starter rule pack. Apache-2.0, released Oct 28, 2026, and still alpha, so the rule syntax may change before v1.0.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0)",
+"tags": [
+"ai security",
+"detection",
+"agent monitoring",
+"open source"
+],
+"pf": "both"
+},
+{
+"name": "LFM3 (Liquid AI)",
+"slug": "lfm3-liquid-ai",
+"category": "chat",
+"catName": "Chat Assistants",
+"url": "https://www.liquid.ai/blog/lfm3",
+"desc": "Liquid AI's family of six small open-weight models (about 2B parameters each) for text, vision with video input, audio, combined voice and vision, and fast yes/no style decisions. The text model fits in about 1 GB at 4-bit, has a 256K-token context and is tuned for local agents; every model can be fine-tuned on a single GPU. Runs with llama.cpp, Ollama, LM Studio, MLX and vLLM. Released Oct 27, 2026; benchmark claims are Liquid AI's own.",
+"freeTier": true,
+"pricing": "Free open weights (LFM Open License 1.0); Liquid API also available",
+"tags": [
+"local models",
+"open weights",
+"small models",
+"on-device"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",

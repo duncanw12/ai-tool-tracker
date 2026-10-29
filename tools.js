@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 29, 2026. Pricing only where the official page states it.
+const DROP_2026_10_29=[
+{name:"BotGauge",url:"https://www.botgauge.com",category:"IT & Security",pricing:"",desc:"Red-teams the AI agents you build: prompt injection, policy bypass and tool misuse attacks, full-trace replays, regression tests and production monitoring.",why:"#3 on Product Hunt Oct 28; SDK for OpenAI, Anthropic, LangChain, LangGraph, LlamaIndex, CrewAI and AutoGen."},
+{name:"Project Quarry (Cisco)",url:"https://github.com/cisco-ai-defense/project-quarry",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Cisco AI Defense's open-source detection rules for AI agent sessions, matching patterns across messages, tool calls and MCP activity.",why:"Released Oct 28 with a Codex, Claude Code and MCP plugin and a starter rule pack; alpha."},
+{name:"LFM3 (Liquid AI)",url:"https://www.liquid.ai/blog/lfm3",category:"Models",pricing:"Free open weights (LFM Open License 1.0)",desc:"Six small open-weight models (about 2B parameters) for text, vision, audio and on-device decisions; the text model fits in about 1 GB at 4-bit.",why:"Released Oct 27; runs in llama.cpp, Ollama, LM Studio, MLX and vLLM, and fine-tunes on one GPU."}];
 // Daily drop: Oct 28, 2026. Pricing only where the official page states it.
 const DROP_2026_10_28=[
 {name:"HOL Guard",url:"https://github.com/hashgraph-online/hol-guard",category:"IT & Security",pricing:"Open source (Apache-2.0); optional Guard Cloud for teams",desc:"Free, local guard that checks your AI coding agent's shell commands, file reads, package installs and MCP calls before they run.",why:"Works inside Claude Code, Codex, Cursor, Copilot CLI and more; about 1,000 GitHub stars and v3.58.0 on Oct 27."},

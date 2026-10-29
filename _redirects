@@ -126,6 +126,9 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/cvengine https://github.com/hevnsnt/CVEngine 302
 /go/hol-guard https://github.com/hashgraph-online/hol-guard 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
+/go/botgauge https://www.botgauge.com 302
+/go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
+/go/lfm3-liquid-ai https://www.liquid.ai/blog/lfm3 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
 /go/fireflies https://fireflies.ai/?fpr=duncan-873b18 302
 /go/bolt https://bolt.cello.so/MFwNDwJhlUB 302
@@ -162,4 +165,10 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/hol https://github.com/hashgraph-online/hol-guard 302
 /go/zendesk-ai https://www.zendesk.com/employee-service/ 302
 /go/zendesk-employee https://www.zendesk.com/employee-service/ 302
+/go/quarry https://github.com/cisco-ai-defense/project-quarry 302
+/go/project-quarry https://github.com/cisco-ai-defense/project-quarry 302
+/go/cisco-quarry https://github.com/cisco-ai-defense/project-quarry 302
+/go/lfm3 https://www.liquid.ai/blog/lfm3 302
+/go/liquid-ai https://www.liquid.ai/blog/lfm3 302
+/go/bot-gauge https://www.botgauge.com 302
 # END go-links
