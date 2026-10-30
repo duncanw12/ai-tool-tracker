@@ -376,7 +376,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://gemini.google.com",
-"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar.",
+"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar. New Oct 29, 2026: Gemini can generate, preview and edit files right in the chat (type edits in full screen, or highlight a section and ask for changes). PDFs work on web and mobile; Google Docs, Sheets, slide decks, Markdown, TXT and code are web only. Available to all Gemini users.",
 "freeTier": true,
 "pricing": "Google AI Plus from $4.99/mo (US)",
 "tags": [
@@ -719,7 +719,7 @@ const DIRECTORY=[
 "category": "audio",
 "catName": "Voice & Audio",
 "url": "https://elevenlabs.io",
-"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects. New Oct 21: Eleven Realtime Translation, live speech-to-speech translation into 90+ languages in a voice you choose, in alpha for ElevenAPI enterprise customers only (contact sales; no public price).",
+"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects. New Oct 21: Eleven Realtime Translation, live speech-to-speech translation into 90+ languages in a voice you choose, in alpha for ElevenAPI enterprise customers only (contact sales; no public price). New Oct 29: SFX v3, the newest sound effects model, follows prompts that describe several sounds more reliably, handles music and vocals better and cuts harsh artifacts on sounds like gongs and whistles. It's in ElevenCreative (Sound Effects tab, Flows, Studio, Music Editor, mobile app) and ElevenAPI.",
 "freeTier": true,
 "pricing": "Starter from $6/mo; Creator $22/mo (first month 50% off)",
 "tags": [
@@ -1929,6 +1929,42 @@ const DIRECTORY=[
 "on-device"
 ],
 "pf": "both"
+},
+{
+"name": "Mistral Large 4",
+"slug": "mistral-large-4",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://mistral.ai/news/mistral-large-4-oss/",
+"desc": "Mistral's flagship open-weight model (about 1 trillion parameters total, 49B active per token, 1M-token context, text and image input), released as open weights on Oct 29, 2026 and pitched at coding and defensive cybersecurity: finding, reproducing and patching vulnerabilities, malware analysis and writing detection rules. Mistral reports 51% on the Artificial Analysis Cyber Index and a 96.6% average refusal rate on malicious cyber prompts; these are Mistral's own figures. Three reasoning levels (low, medium, high). Far too big for a home PC: self-host on data-center GPUs with vLLM or SGLang, or use it through Mistral Studio, the Mistral API or OpenRouter.",
+"freeTier": true,
+"pricing": "API $0.70/M input, $2.10/M output tokens; open weights free (Mistral Ecosystem Open-Weight License; Model-as-a-Service businesses need a commercial license)",
+"tags": [
+"open weights",
+"models",
+"cybersecurity",
+"mistral",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Radar (Skyhook)",
+"slug": "radar-skyhook",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://radarhq.io",
+"desc": "Free, open-source Kubernetes UI with a built-in MCP server for AI agents. One binary on your laptop (or a Helm install in-cluster) shows topology, live traffic, an event timeline, Helm and GitOps state, image filesystems and a 44-check cluster audit, with no account. Point Claude Code, Codex, Cursor, Copilot or any MCP client at it and the agent gets trimmed, secret-redacted cluster context instead of raw kubectl YAML; diagnosis is read-only by default and write actions follow your Kubernetes RBAC (or run it with --mcp-read-only). About 4,000 GitHub stars; v1.19.0 shipped Oct 29, 2026, the day it made the Product Hunt top 10. Optional Radar Cloud adds alerts and hosted AI investigations.",
+"freeTier": true,
+"pricing": "Open source (Apache-2.0); Radar Cloud free for up to 3 clusters, Team from $149/cluster/mo",
+"tags": [
+"kubernetes",
+"devops",
+"mcp",
+"open source",
+"new"
+],
+"pf": "free"
 },
 {
 "name": "Elastic Security AI",

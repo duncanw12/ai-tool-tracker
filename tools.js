@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 30, 2026. Pricing only where the official page states it.
+const DROP_2026_10_30=[
+{name:"Mistral Large 4",url:"https://mistral.ai/news/mistral-large-4-oss/",category:"IT & Security",pricing:"Open weights; API $0.70/M input, $2.10/M output",desc:"Mistral's ~1T-parameter open-weight model, pitched at coding and defensive security: reproducing and patching vulnerabilities, malware analysis, detection rules.",why:"Weights released Oct 29; self-host on data-center GPUs or use the Mistral API or OpenRouter."},
+{name:"Radar (Skyhook)",url:"https://radarhq.io",category:"IT & Security",pricing:"Open source (Apache-2.0); Radar Cloud free up to 3 clusters",desc:"Free, open-source Kubernetes UI with a built-in MCP server that gives AI agents a trimmed, secret-redacted view of your cluster.",why:"About 4,000 GitHub stars; v1.19.0 and a Product Hunt top-10 launch on Oct 29."}];
 // Daily drop: Oct 29, 2026. Pricing only where the official page states it.
 const DROP_2026_10_29=[
 {name:"BotGauge",url:"https://www.botgauge.com",category:"IT & Security",pricing:"",desc:"Red-teams the AI agents you build: prompt injection, policy bypass and tool misuse attacks, full-trace replays, regression tests and production monitoring.",why:"#3 on Product Hunt Oct 28; SDK for OpenAI, Anthropic, LangChain, LangGraph, LlamaIndex, CrewAI and AutoGen."},
