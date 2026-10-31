@@ -87,7 +87,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://github.com/features/copilot",
-"desc": "AI pair programmer and coding agent inside VS Code, JetBrains and GitHub.",
+"desc": "AI pair programmer and coding agent inside VS Code, JetBrains and GitHub. New at GitHub Universe (Oct 28, 2026): Copilot Fusion is generally available. Pick Fusion instead of a model and Copilot routes each step of a task across one or more models (GitHub says Fusion Max scored within two points of Opus 5.5 Max on the Artificial Analysis Coding Agent Index at half the cost; that is GitHub's claim). Also new: a redesigned GitHub Copilot app for issue-to-merge agent work, Copilot projects that run parallel agent sessions across several repos, automations that propose improvements from past runs, and Copilot code review Max, which runs several review agents on different models and merges their findings. GitHub Enterprise customers can now use every Copilot feature without a separate Copilot subscription and pay for the AI credits they use (through GitHub Sales for now).",
 "freeTier": true,
 "pricing": "Pro from $10/mo",
 "tags": [
@@ -361,9 +361,9 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://claude.ai",
-"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits.",
+"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits. Plan rename Oct 30, 2026: Max 5x is now Max ($100/mo, 5x Pro's weekly usage) and Max 20x is now Ultra ($200/mo, 10x Pro's weekly usage), with no price change and nothing for existing subscribers to do. Verified Ultra accounts no longer have the rolling five-hour limit, but the weekly limit still applies; Anthropic verifies accounts automatically, and newer accounts keep a temporary limit until then (if you don't see a Current session bar in Settings > Usage, you're verified).",
 "freeTier": true,
-"pricing": "Pro from $17/mo billed annually ($20 monthly)",
+"pricing": "Pro from $17/mo billed annually ($20 monthly); Max $100/mo; Ultra $200/mo",
 "tags": [
 "assistant",
 "anthropic"
@@ -1965,6 +1965,42 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "free"
+},
+{
+"name": "REA (Reverse Engineer Anything)",
+"slug": "rea-reverse-engineer-anything",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://rea.tools",
+"desc": "Free, open-source (MIT) MCP server and CLI that lets your AI coding agent reverse engineer software: native binaries, JavaScript and Electron apps, .NET assemblies and websites, with findings that include the evidence and limits behind each conclusion. Native analysis drives a Ghidra, Hopper, IDA or Kuna install you already have; static JavaScript analysis needs no extra engine, and analysis runs locally. One command (npx rea-agents setup) registers it with Claude Code, Codex, Cursor, Gemini CLI and other agents. The rea-agents npm package was downloaded about 538,000 times in the week of Oct 23-29, 2026 (v6.8.0, Oct 25), and Scientific American profiled it on Oct 30. Only reverse engineer software you own or are allowed to analyze; some users report OpenAI and Anthropic blocking reverse-engineering requests, so check your model provider's terms.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); you pay for your own agent or model",
+"tags": [
+"reverse engineering",
+"mcp",
+"malware analysis",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "HackAgent",
+"slug": "hackagent",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://docs.hackagent.dev",
+"desc": "Open-source (Apache-2.0) red-team toolkit for AI models and agents you own. It runs research-backed jailbreak, prompt-injection and tool-misuse attacks, has judge models score every reply and reports a measured success rate per attack, so you can see whether a fix helped. Use the terminal UI, YAML campaign files you can run in CI, or the hackagent web dashboard. Runs fully local with Ollama and needs no API key; results stay in a local database by default. About 530 GitHub stars; v0.16.0 shipped Oct 20, 2026. For authorized testing only.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0)",
+"tags": [
+"red team",
+"ai security",
+"prompt injection",
+"open source",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",

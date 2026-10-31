@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Oct 31, 2026. Pricing only where the official page states it.
+const DROP_2026_10_31=[
+{name:"REA (Reverse Engineer Anything)",url:"https://rea.tools",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Open-source MCP server and CLI that lets AI coding agents reverse engineer native binaries, JavaScript/Electron apps, .NET assemblies and websites, with evidence for each finding.",why:"About 538,000 npm downloads in the week of Oct 23-29; profiled by Scientific American Oct 30. Analyze only software you own or may analyze."},
+{name:"HackAgent",url:"https://docs.hackagent.dev",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Open-source red-team toolkit that runs jailbreak, prompt-injection and tool-misuse attacks on AI agents you own and scores each attack's success rate.",why:"About 530 GitHub stars; v0.16.0 on Oct 20. Runs fully local with Ollama, no API key needed."}];
 // Daily drop: Oct 30, 2026. Pricing only where the official page states it.
 const DROP_2026_10_30=[
 {name:"Mistral Large 4",url:"https://mistral.ai/news/mistral-large-4-oss/",category:"IT & Security",pricing:"Open weights; API $0.70/M input, $2.10/M output",desc:"Mistral's ~1T-parameter open-weight model, pitched at coding and defensive security: reproducing and patching vulnerabilities, malware analysis, detection rules.",why:"Weights released Oct 29; self-host on data-center GPUs or use the Mistral API or OpenRouter."},
