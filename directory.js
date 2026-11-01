@@ -270,7 +270,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -1036,7 +1036,7 @@ const DIRECTORY=[
 "category": "research",
 "catName": "Productivity & Research",
 "url": "https://www.perplexity.ai",
-"desc": "AI answer engine that searches the web and cites sources.",
+"desc": "AI answer engine that searches the web and cites sources. New Oct 30, 2026: a Chrome extension lets Perplexity Computer in the Mac and Windows apps work inside the Chrome (or other Chromium browser) you already use, on sites you're signed into, only during a task you start. Comet has the same browser control built in.",
 "tags": [
 "search",
 "research",
@@ -1999,6 +1999,41 @@ const DIRECTORY=[
 "prompt injection",
 "open source",
 "new"
+],
+"pf": "both"
+},
+{
+"name": "AiSOC",
+"slug": "aisoc",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/beenuar/AiSOC",
+"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 5,800 GitHub stars; v21.0.0 shipped Nov 1, 2026. The project publishes its own audit of what does and doesn't work yet.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"soc",
+"siem",
+"triage",
+"open source",
+"mcp"
+],
+"pf": "both"
+},
+{
+"name": "RedAmon",
+"slug": "redamon",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://www.redamon.org",
+"desc": "Free, open-source (MIT), self-hosted AI penetration testing framework. It runs recon tools in parallel and maps your attack surface into a Neo4j graph, then an AI agent tries to exploit what it found from a Kali sandbox, with human approval gates before risky steps, and a CodeFix agent can open GitHub pull requests that fix the issues. Works with MCP in both directions (plug in MCP servers as tools, or drive RedAmon from Claude Code). Runs in Docker; needs about 7 GB RAM and 80 GB disk without OpenVAS. The project reports solving 101 of 104 XBOW web-security benchmark challenges black-box; that is its own claim. About 3,300 GitHub stars. For systems you own or have written permission to test only.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"pentest",
+"red team",
+"open source",
+"mcp"
 ],
 "pf": "both"
 },

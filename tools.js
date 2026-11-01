@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 1, 2026. Pricing only where the official page states it.
+const DROP_2026_11_01=[
+{name:"AiSOC",url:"https://github.com/beenuar/AiSOC",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Self-hosted AI security operations center: ingests security telemetry, groups alerts into incidents and has an AI agent triage each one, logging every prompt and tool call in a replayable ledger.",why:"About 5,800 GitHub stars; v21.0.0 on Nov 1. Runs a small local model on CPU with no API key, and a human approves every response."},
+{name:"RedAmon",url:"https://www.redamon.org",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Self-hosted AI penetration testing framework: maps your attack surface into a graph, attempts exploits from a Kali sandbox with human approval gates and opens PRs with fixes.",why:"About 3,300 GitHub stars; drive it from Claude Code over MCP. Only test systems you own or have written permission to test."}];
 // Daily drop: Oct 31, 2026. Pricing only where the official page states it.
 const DROP_2026_10_31=[
 {name:"REA (Reverse Engineer Anything)",url:"https://rea.tools",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Open-source MCP server and CLI that lets AI coding agents reverse engineer native binaries, JavaScript/Electron apps, .NET assemblies and websites, with evidence for each finding.",why:"About 538,000 npm downloads in the week of Oct 23-29; profiled by Scientific American Oct 30. Analyze only software you own or may analyze."},
