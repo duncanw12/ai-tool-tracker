@@ -115,6 +115,22 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Factory Droid",
+"slug": "factory-droid",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://factory.com",
+"desc": "Factory's model-agnostic coding agent, in a desktop app for macOS and Windows, a terminal UI and a TypeScript SDK (@factory/droid-sdk), with cloud and local background agents. Droid 1.0 (Oct 29, 2026) makes Script mode the default on supported models: the model writes a small JavaScript program, run in a sandbox, that makes many tool calls in one request, so raw files and logs stay out of its context. Factory says this cut Droid's cost 15% on Claude Opus 5.5 and that Droid beat other harnesses on its own benchmark runs; those are Factory's numbers.",
+"pricing": "Pro $20/mo; Plus $100/mo; Max $200/mo; Teams $60/mo plus $40/seat",
+"tags": [
+"agent",
+"cli",
+"desktop",
+"sdk"
+],
+"pf": "paid"
+},
+{
 "name": "Zed",
 "slug": "zed",
 "category": "coding",
@@ -285,7 +301,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://openai.com/codex/",
-"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks.",
+"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens.",
 "freeTier": true,
 "pricing": "Included with ChatGPT plans (limited on Free and Go)",
 "tags": [
@@ -346,7 +362,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://chatgpt.com",
-"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images. Since Oct 20, 2026 you can lock a chat behind a four-digit PIN or device sign-in so it drops out of your history and search (it is hidden, not end-to-end encrypted).",
+"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images. Since Oct 20, 2026 you can lock a chat behind a four-digit PIN or device sign-in so it drops out of your history and search (it is hidden, not end-to-end encrypted). New Oct 30, 2026: account switching is rolling out in the iOS and Android apps. Stay signed in to up to two ChatGPT accounts and switch in Settings > Switch account; chats, memory, files and subscriptions stay separate, and it already works on the web.",
 "freeTier": true,
 "pricing": "Plus $20/mo; lower-cost Go plan also available",
 "tags": [
@@ -2036,6 +2052,22 @@ const DIRECTORY=[
 "mcp"
 ],
 "pf": "both"
+},
+{
+"name": "PyRIT (Microsoft)",
+"slug": "pyrit-microsoft",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/microsoft/PyRIT",
+"desc": "Microsoft's open-source AI red teaming toolkit (the Python Risk Identification Tool) for testing generative AI apps and models: automated scans, adaptive multi-turn attacks such as jailbreak and prompt-injection attempts, scoring of what got through, and CoPyRIT, a web UI. Built by Microsoft's AI Red Team. About 4,700 GitHub stars and active daily; v1.0 shipped Jul 2026 and v1.1.0 on Sep 4, 2026. Only test AI systems you own or are authorized to test.",
+"pricing": "Open source (MIT); model usage billed by your AI provider",
+"tags": [
+"ai red teaming",
+"llm security",
+"open source",
+"microsoft"
+],
+"pf": "free"
 },
 {
 "name": "Elastic Security AI",
