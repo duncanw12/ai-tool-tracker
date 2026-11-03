@@ -137,7 +137,15 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/aisoc https://github.com/beenuar/AiSOC 302
 /go/redamon https://www.redamon.org 302
 /go/pyrit-microsoft https://github.com/microsoft/PyRIT 302
+/go/deckard-arthur https://github.com/arthur-ai/deckard 302
+/go/failproof-ai https://github.com/FailproofAI/failproofai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/deckard https://github.com/arthur-ai/deckard 302
+/go/arthur-deckard https://github.com/arthur-ai/deckard 302
+/go/failproof https://github.com/FailproofAI/failproofai 302
+/go/failproofai https://github.com/FailproofAI/failproofai 302
+/go/secops-chat https://cloud.google.com/security/products/security-operations 302
+/go/hackagent-cloud https://docs.hackagent.dev 302
 /go/pyrit https://github.com/microsoft/PyRIT 302
 /go/droid https://factory.com 302
 /go/factory https://factory.com 302

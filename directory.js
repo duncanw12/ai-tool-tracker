@@ -1607,7 +1607,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://cloud.google.com/security/products/security-operations",
-"desc": "Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation.",
+"desc": "Google's SecOps platform (SIEM + SOAR) with Gemini for natural-language search, detection writing and investigation. New (week of Oct 26-Nov 1, 2026): Agentic Chat is in public preview, a rebuilt multi-turn chat for investigating incidents, built on ADK 2.0 with MCP access to SecOps inside the platform. Also in public preview: a Basic mode for SIEM search that shows matching events and field counts without waiting for charts, and the MITRE ATT&CK dashboard now supports ATT&CK v19.1. Preview features fall under Google's Pre-GA terms.",
 "tags": [
 "siem",
 "soc",
@@ -2006,7 +2006,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://docs.hackagent.dev",
-"desc": "Open-source (Apache-2.0) red-team toolkit for AI models and agents you own. It runs research-backed jailbreak, prompt-injection and tool-misuse attacks, has judge models score every reply and reports a measured success rate per attack, so you can see whether a fix helped. Use the terminal UI, YAML campaign files you can run in CI, or the hackagent web dashboard. Runs fully local with Ollama and needs no API key; results stay in a local database by default. About 530 GitHub stars; v0.16.0 shipped Oct 20, 2026. For authorized testing only.",
+"desc": "Open-source (Apache-2.0) red-team toolkit for AI models and agents you own. It runs research-backed jailbreak, prompt-injection and tool-misuse attacks, has judge models score every reply and reports a measured success rate per attack, so you can see whether a fix helped. Use the terminal UI, YAML campaign files you can run in CI, or the hackagent web dashboard. Runs fully local with Ollama and needs no API key; results stay in a local database by default. New in v0.17.0 (Nov 2, 2026): campaigns queued from the dashboard can run on a cloud worker (each run in its own process, with an allowlist of what a campaign may send to the cloud) or locally with hackagent run, plus two new attacks: ToolHijacker tool-document poisoning and execution-verified STAC tool chains. About 535 GitHub stars. For authorized testing only.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0)",
 "tags": [
@@ -2068,6 +2068,43 @@ const DIRECTORY=[
 "microsoft"
 ],
 "pf": "free"
+},
+{
+"name": "Deckard (Arthur)",
+"slug": "deckard-arthur",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/arthur-ai/deckard",
+"desc": "Free, open-source (MIT) scanner from Arthur that finds the AI agents running across your organization (shadow AI) and sends each one to your SIEM. It checks endpoints with osquery queries from Arthur's open ai-detection-spec catalog (Claude Code, Claude Desktop, Cursor and more), cloud AI platforms such as Vertex AI Agent Engine and AWS Bedrock and AgentCore, cloud network logs and your Splunk or Elastic data, then writes one event per agent found to Elasticsearch, Splunk HEC or any webhook. Headless and read-only, and it runs entirely in your environment; the quickstart scans your own machine with Docker Compose and osquery and shows the results in a local Kibana, no account needed. Launched Nov 3, 2026 (v0.2.1 Oct 27); about 170 GitHub stars on launch day, with commits daily.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"shadow ai",
+"soc",
+"siem",
+"osquery",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Failproof AI",
+"slug": "failproof-ai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/FailproofAI/failproofai",
+"desc": "Local guardrails and session history for the AI agents you already run. It hooks 12 agent harnesses (Claude Code, Codex, GitHub Copilot CLI, Cursor Agent, OpenCode, Factory Droid, Devin CLI, Antigravity CLI, Goose, Pi, Hermes and OpenClaw), records every run and blocks dangerous tool calls before they execute using 40 built-in policies or rules you write in TypeScript. A local dashboard on localhost:8020 needs no account, and failproofai audit scans your history for risky patterns and suggests policies. Blocking is verified on all 12 harnesses; what else it can stop varies by harness. Install with npm. About 7,600 GitHub stars and about 2,300 npm downloads in the week of Oct 27-Nov 2, 2026; v1.0.13 (Nov 2) fixed policies that had silently stopped applying on newer OpenClaw and Antigravity versions. A hosted Observability product for teams is sold by demo.",
+"freeTier": true,
+"pricing": "Free for personal and internal use (MIT with Commons Clause); hosted Observability for teams by demo",
+"tags": [
+"ai security",
+"agents",
+"guardrails",
+"observability",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",

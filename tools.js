@@ -26,6 +26,16 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 3, 2026. Pricing only where the official page states it.
+const DROP_2026_11_03=[
+{name:"Deckard (Arthur)",url:"https://github.com/arthur-ai/deckard",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Open-source scanner that finds AI agents across endpoints (osquery), cloud AI platforms, network logs and your SIEM, and sends one event per agent to Elasticsearch, Splunk or a webhook.",why:"Launched by Arthur on Nov 3; read-only and self-hosted. The quickstart scans your own machine and shows findings in a local Kibana."},
+{name:"Failproof AI",url:"https://github.com/FailproofAI/failproofai",category:"IT & Security",pricing:"Free for personal and internal use (MIT with Commons Clause)",desc:"Local guardrails and run history for 12 agent harnesses, including Claude Code, Codex, Copilot CLI and Cursor Agent. Blocks dangerous tool calls with 40 built-in policies.",why:"About 7,600 GitHub stars; v1.0.13 on Nov 2. Local dashboard with no account needed."},
+];
+// Daily drop: Nov 2, 2026. Pricing only where the official page states it.
+const DROP_2026_11_02=[
+{name:"PyRIT (Microsoft)",url:"https://github.com/microsoft/PyRIT",category:"IT & Security",pricing:"Open source (MIT); model usage billed by your AI provider",desc:"Microsoft's open-source Python framework for red teaming generative AI apps: sends attack prompts, converts them, and scores the responses.",why:"About 4,700 GitHub stars; from Microsoft's AI Red Team."},
+{name:"Factory Droid",url:"https://factory.com",category:"Coding",pricing:"Pro $20/mo; Plus $100/mo; Max $200/mo; Teams $60/mo plus $40/seat",desc:"Model-agnostic coding agent with a desktop app, terminal UI and TypeScript SDK. Droid 1.0 (Oct 29) makes Script mode the default on supported models.",why:"Script mode keeps raw files and logs out of the model's context by running many tool calls in one sandboxed program."},
+];
 // Daily drop: Nov 1, 2026. Pricing only where the official page states it.
 const DROP_2026_11_01=[
 {name:"AiSOC",url:"https://github.com/beenuar/AiSOC",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Self-hosted AI security operations center: ingests security telemetry, groups alerts into incidents and has an AI agent triage each one, logging every prompt and tool call in a replayable ledger.",why:"About 5,800 GitHub stars; v21.0.0 on Nov 1. Runs a small local model on CPU with no API key, and a human approves every response."},
