@@ -1526,7 +1526,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://securityonion.net",
-"desc": "Free and open platform for threat hunting, network security monitoring and log management (2+ million downloads), a staple of SOC home labs. Security Onion 3 shipped in 2026. Onion AI, its assistant for alert analysis and detection tuning (now with local model support), comes with Security Onion Pro.",
+"desc": "Free and open platform for threat hunting, network security monitoring and log management (2+ million downloads), a staple of SOC home labs. Security Onion 3 shipped in 2026. Onion AI, its assistant for alert analysis and detection tuning (now with local model support), comes with Security Onion Pro. New in 3.4.0 (Nov 2, 2026): Agentic AI Automations for Pro users, plus updated Suricata 8.0.8, Zeek 8.0.11 and Elasticsearch 9.4.8. Security Onion 2.4 reached end of life on Oct 1, 2026.",
 "freeTier": true,
 "pricing": "Free and open; Onion AI is part of Security Onion Pro (contact sales)",
 "tags": [
@@ -2024,7 +2024,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/beenuar/AiSOC",
-"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 5,800 GitHub stars; v21.0.0 shipped Nov 1, 2026. The project publishes its own audit of what does and doesn't work yet.",
+"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 7,100 GitHub stars. v22.0.0 (Nov 4, 2026) fixes seven security advisories in its approval and authorization code, two rated critical (one let an approver with no tenant approve another tenant's actions; another accepted unsigned Slack and Teams approval replies), so update if you run it. Three fixes refuse calls that used to work (API keys can no longer enroll sign-in factors, tenant admins lose deployment-wide tenant pages, viewers can no longer run playbooks), so check the release notes first. The project publishes its own audit of what does and doesn't work yet.",
 "freeTier": true,
 "pricing": "Free and open source (MIT)",
 "tags": [
@@ -2102,6 +2102,45 @@ const DIRECTORY=[
 "agents",
 "guardrails",
 "observability",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "AI-Infra-Guard (Tencent)",
+"slug": "ai-infra-guard-tencent",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/Tencent/AI-Infra-Guard",
+"desc": "Free, open-source (Apache-2.0) AI red teaming platform from Tencent's Zhuque Lab, also called A.I.G. Five scanners in one web UI: AI infrastructure scanning that fingerprints AI services on a domain, IP or URL and matches known vulnerabilities, MCP server scanning, agent skill auditing, agent scanning that sends test prompts to a running agent, and LLM jailbreak evaluation of any OpenAI-compatible model. Start it with Docker Compose (4 GB RAM, 10 GB disk) and open localhost:8088, or pip install each scanner on its own (aig-infra-scan, aig-mcp-scan and others). The MCP, skill and agent scans use an LLM API key you supply. It has no login, so Tencent says never to expose it on a public network. About 7,400 GitHub stars, weekly releases (v4.6.8 on Oct 29, 2026) and a Black Hat Europe 2025 Arsenal demo. Only scan systems you own or are authorized to test.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0); LLM usage billed by your AI provider",
+"tags": [
+"ai security",
+"red teaming",
+"mcp",
+"vulnerability scanning",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "CISO Assistant",
+"slug": "ciso-assistant",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://intuitem.com",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars; v4.2.0 shipped Nov 1, 2026.",
+"freeTier": true,
+"pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
+"tags": [
+"grc",
+"compliance",
+"risk management",
+"iso 27001",
+"nist",
+"home lab",
 "new"
 ],
 "pf": "both"

@@ -139,7 +139,16 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/pyrit-microsoft https://github.com/microsoft/PyRIT 302
 /go/deckard-arthur https://github.com/arthur-ai/deckard 302
 /go/failproof-ai https://github.com/FailproofAI/failproofai 302
+/go/ai-infra-guard-tencent https://github.com/Tencent/AI-Infra-Guard 302
+/go/ciso-assistant https://intuitem.com 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/aig https://github.com/Tencent/AI-Infra-Guard 302
+/go/ai-infra-guard https://github.com/Tencent/AI-Infra-Guard 302
+/go/tencent-aig https://github.com/Tencent/AI-Infra-Guard 302
+/go/ciso https://intuitem.com 302
+/go/grc https://intuitem.com 302
+/go/aisoc-v22 https://github.com/beenuar/AiSOC 302
+/go/onion-automations https://securityonion.net 302
 /go/deckard https://github.com/arthur-ai/deckard 302
 /go/arthur-deckard https://github.com/arthur-ai/deckard 302
 /go/failproof https://github.com/FailproofAI/failproofai 302

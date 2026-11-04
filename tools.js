@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 4, 2026. Pricing only where the official page states it.
+const DROP_2026_11_04=[
+{name:"AI-Infra-Guard (Tencent)",url:"https://github.com/Tencent/AI-Infra-Guard",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Tencent's open-source AI red teaming platform: scans AI infrastructure, MCP servers, agent skills and agents, and runs jailbreak evaluations, from one web UI or standalone pip packages.",why:"About 7,400 GitHub stars and weekly releases (v4.6.8 on Oct 29). No login, so keep it on a lab network."},
+{name:"CISO Assistant",url:"https://intuitem.com",category:"IT & Security",pricing:"Community edition free (AGPLv3); Pro SaaS from €39/contributor/mo billed annually",desc:"Open-source GRC platform for risk, audits and compliance against 200+ frameworks (ISO 27001, NIST CSF, SOC 2, PCI DSS), with an optional AI chat on a local model.",why:"About 4,600 GitHub stars; v4.2.0 on Nov 1. A free way to practice GRC analyst work in a home lab."},
+];
 // Daily drop: Nov 3, 2026. Pricing only where the official page states it.
 const DROP_2026_11_03=[
 {name:"Deckard (Arthur)",url:"https://github.com/arthur-ai/deckard",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Open-source scanner that finds AI agents across endpoints (osquery), cloud AI platforms, network logs and your SIEM, and sends one event per agent to Elasticsearch, Splunk or a webhook.",why:"Launched by Arthur on Nov 3; read-only and self-hosted. The quickstart scans your own machine and shows findings in a local Kibana."},
