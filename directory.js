@@ -435,6 +435,24 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Frontier UI",
+"slug": "frontier-ui",
+"category": "chat",
+"catName": "Chat Assistants",
+"url": "https://github.com/Jumbomuffin777/Frontier-UI",
+"desc": "Free, open-source (MIT) Open WebUI tool that turns local-model answers into ChatGPT-style interactive cards: real photo galleries, live street maps with walking/driving routes, multi-day itineraries, budget sliders, live weather and stock charts, link previews, and one-click Word/Excel/PowerPoint/PDF exports via optional ArtCraft apps. Paste one Python file into Open WebUI Workspace \u2192 Tools and enable it for a tool-calling model (Open WebUI \u2265 0.6; tested on 0.12.5). Default setup needs no API keys and uses free public services for maps, photos and weather (not fully offline); optional self-hosted Protomaps planet (~140 GB) and Craft bridge for real Office files. About 60 GitHub stars; v1.3.2 shipped Nov 3, 2026, four days after the repo appeared.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"open webui",
+"local models",
+"generative ui",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Microsoft Copilot",
 "slug": "microsoft-copilot",
 "category": "chat",
@@ -2024,7 +2042,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/beenuar/AiSOC",
-"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 7,100 GitHub stars. v22.0.0 (Nov 4, 2026) fixes seven security advisories in its approval and authorization code, two rated critical (one let an approver with no tenant approve another tenant's actions; another accepted unsigned Slack and Teams approval replies), so update if you run it. Three fixes refuse calls that used to work (API keys can no longer enroll sign-in factors, tenant admins lose deployment-wide tenant pages, viewers can no longer run playbooks), so check the release notes first. The project publishes its own audit of what does and doesn't work yet.",
+"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 7,300 GitHub stars. v22.0.0 (Nov 4, 2026) fixed seven security advisories in its approval and authorization code (two critical). v22.1.0 (Nov 5) fixes more: a critical bug where the documented one-click demo deploy signed session tokens with the default SECRET_KEY published in the repo (anyone who could read the repo could mint any role on those demos), high-severity ways around the connector egress guard (including hostnames that were not shaped like full URLs), password resets that left existing sessions alive and a TOTP code that could open more than one session, plus medium issues around committed .env backups in git history and agent tool arguments that were not checked against each tool's schema. Update if you run it, and set your own SECRET_KEY on any deployed instance. The project publishes its own audit of what does and doesn't work yet.",
 "freeTier": true,
 "pricing": "Free and open source (MIT)",
 "tags": [
@@ -2112,7 +2130,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/Tencent/AI-Infra-Guard",
-"desc": "Free, open-source (Apache-2.0) AI red teaming platform from Tencent's Zhuque Lab, also called A.I.G. Five scanners in one web UI: AI infrastructure scanning that fingerprints AI services on a domain, IP or URL and matches known vulnerabilities, MCP server scanning, agent skill auditing, agent scanning that sends test prompts to a running agent, and LLM jailbreak evaluation of any OpenAI-compatible model. Start it with Docker Compose (4 GB RAM, 10 GB disk) and open localhost:8088, or pip install each scanner on its own (aig-infra-scan, aig-mcp-scan and others). The MCP, skill and agent scans use an LLM API key you supply. It has no login, so Tencent says never to expose it on a public network. About 7,400 GitHub stars, weekly releases (v4.6.8 on Oct 29, 2026) and a Black Hat Europe 2025 Arsenal demo. Only scan systems you own or are authorized to test.",
+"desc": "Free, open-source (Apache-2.0) AI red teaming platform from Tencent's Zhuque Lab, also called A.I.G. Five scanners in one web UI: AI infrastructure scanning that fingerprints AI services on a domain, IP or URL and matches known vulnerabilities, MCP server scanning, agent skill auditing, agent scanning that sends test prompts to a running agent, and LLM jailbreak evaluation of any OpenAI-compatible model. Start it with Docker Compose (4 GB RAM, 10 GB disk) and open localhost:8088, or pip install each scanner on its own (aig-infra-scan, aig-mcp-scan and others). The MCP, skill and agent scans use an LLM API key you supply. It has no login, so Tencent says never to expose it on a public network. About 7,400 GitHub stars, weekly releases (v4.6.9 on Nov 5, 2026 adds a CloudGPU provider preset for agent scans and MCP-scan fixes) and a Black Hat Europe 2025 Arsenal demo. Only scan systems you own or are authorized to test.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0); LLM usage billed by your AI provider",
 "tags": [
@@ -2144,6 +2162,26 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "both"
+},
+{
+"name": "Codex Security (OpenAI)",
+"slug": "codex-security-openai",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://developers.openai.com/codex/security",
+"desc": "OpenAI's security scanner for application code: find, validate and fix vulnerabilities with a Codex plugin, a terminal CLI (@openai/codex-security) and a TypeScript SDK, plus a research-preview Codex Security Cloud for connected GitHub repos. Scan a repo, selected paths or a git diff; deep scans repeat standard passes and dedupe findings; import Semgrep, Snyk or Wiz results; export SARIF, JSON or CSV. Runs with an OpenAI API key (or Codex API key) and can also use other providers such as Amazon Bedrock. About 11,300 GitHub stars (Apache-2.0); npm package at 0.8.3 as of Nov 3, 2026. Some cybersecurity requests need Trusted Access for Cyber. Only scan code you own or are authorized to review.",
+"freeTier": true,
+"pricing": "Open source (Apache-2.0); OpenAI inference needs Codex Security / API access (usage billed by your OpenAI account); other providers supported",
+"tags": [
+"code security",
+"appsec",
+"openai",
+"cli",
+"sdk",
+"open source",
+"new"
+],
+"pf": "free"
 },
 {
 "name": "Elastic Security AI",

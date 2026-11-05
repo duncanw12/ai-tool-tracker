@@ -32,6 +32,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/gemini https://gemini.google.com 302
 /go/grok https://grok.com 302
 /go/off-grid-ai https://getoffgridai.co 302
+/go/frontier-ui https://github.com/Jumbomuffin777/Frontier-UI 302
 /go/microsoft-copilot https://copilot.microsoft.com 302
 /go/le-chat-mistral https://chat.mistral.ai 302
 /go/ollama https://ollama.com 302
@@ -141,7 +142,15 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/failproof-ai https://github.com/FailproofAI/failproofai 302
 /go/ai-infra-guard-tencent https://github.com/Tencent/AI-Infra-Guard 302
 /go/ciso-assistant https://intuitem.com 302
+/go/codex-security-openai https://developers.openai.com/codex/security 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/frontier https://github.com/Jumbomuffin777/Frontier-UI 302
+/go/openwebui-frontier https://github.com/Jumbomuffin777/Frontier-UI 302
+/go/codex-security https://developers.openai.com/codex/security 302
+/go/cs-security https://developers.openai.com/codex/security 302
+/go/openai-codex-security https://developers.openai.com/codex/security 302
+/go/aisoc-v221 https://github.com/beenuar/AiSOC 302
+/go/aig-469 https://github.com/Tencent/AI-Infra-Guard 302
 /go/aig https://github.com/Tencent/AI-Infra-Guard 302
 /go/ai-infra-guard https://github.com/Tencent/AI-Infra-Guard 302
 /go/tencent-aig https://github.com/Tencent/AI-Infra-Guard 302

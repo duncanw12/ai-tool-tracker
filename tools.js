@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 5, 2026. Pricing only where the official page states it.
+const DROP_2026_11_05=[
+{name:"Frontier UI",url:"https://github.com/Jumbomuffin777/Frontier-UI",category:"Chat",pricing:"Free and open source (MIT)",desc:"Open WebUI tool that turns local-model answers into interactive cards: photo galleries, live street maps with routes, itineraries, charts and optional Office exports.",why:"One Python file to paste into Open WebUI Workspace → Tools. About 60 GitHub stars; v1.3.2 on Nov 3."},
+{name:"Codex Security (OpenAI)",url:"https://developers.openai.com/codex/security",category:"IT & Security",pricing:"Open source (Apache-2.0); OpenAI inference billed to your account",desc:"OpenAI's CLI, SDK and Codex plugin for finding, validating and fixing vulnerabilities in application code, with SARIF export for CI.",why:"About 11,300 GitHub stars; npm 0.8.3 as of Nov 3. Only scan code you own or are authorized to review."},
+];
 // Daily drop: Nov 4, 2026. Pricing only where the official page states it.
 const DROP_2026_11_04=[
 {name:"AI-Infra-Guard (Tencent)",url:"https://github.com/Tencent/AI-Infra-Guard",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Tencent's open-source AI red teaming platform: scans AI infrastructure, MCP servers, agent skills and agents, and runs jailbreak evaluations, from one web UI or standalone pip packages.",why:"About 7,400 GitHub stars and weekly releases (v4.6.8 on Oct 29). No login, so keep it on a lab network."},
