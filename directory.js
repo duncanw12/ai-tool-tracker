@@ -2042,7 +2042,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/beenuar/AiSOC",
-"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 7,300 GitHub stars. v22.0.0 (Nov 4, 2026) fixed seven security advisories in its approval and authorization code (two critical). v22.1.0 (Nov 5) fixes more: a critical bug where the documented one-click demo deploy signed session tokens with the default SECRET_KEY published in the repo (anyone who could read the repo could mint any role on those demos), high-severity ways around the connector egress guard (including hostnames that were not shaped like full URLs), password resets that left existing sessions alive and a TOTP code that could open more than one session, plus medium issues around committed .env backups in git history and agent tool arguments that were not checked against each tool's schema. Update if you run it, and set your own SECRET_KEY on any deployed instance. The project publishes its own audit of what does and doesn't work yet.",
+"desc": "Free, open-source (MIT), self-hosted AI Security Operations Center. It ingests telemetry from your security tools (87 connectors including Splunk, Sentinel, Elastic, CrowdStrike, Okta, AWS and Kubernetes audit, plus a syslog/CEF listener), runs detection rules, groups alerts into incidents and has an AI agent triage each one, recording every prompt and tool call in a replayable Investigation Ledger. A human approves any response before it reaches a vendor. It ships a small local model (Llama 3.2 3B via Ollama) so it runs on CPU with no API key, plus an MCP server for Claude, Cursor and Continue and a translator for Splunk SPL, Sentinel KQL and Elastic EQL rules. Needs Docker Compose with 8 GB memory and 20 GB disk. About 7,300 GitHub stars. v22.0.0 (Nov 4, 2026) fixed seven security advisories in its approval and authorization code (two critical). v22.1.0 (Nov 5) fixes more: a critical bug where the documented one-click demo deploy signed session tokens with the default SECRET_KEY published in the repo (anyone who could read the repo could mint any role on those demos), high-severity ways around the connector egress guard (including hostnames that were not shaped like full URLs), password resets that left existing sessions alive and a TOTP code that could open more than one session, plus medium issues around committed .env backups in git history and agent tool arguments that were not checked against each tool's schema. Update if you run it, and set your own SECRET_KEY on any deployed instance. v22.2.0 (Nov 5) is a reliability release: a fusion worker that lost its message broker now retries on its own instead of staying down until someone restarted the container, and a new CI check makes every connector read its full poll window (six connectors had shipped a paging bug that could drop alerts). The project publishes its own audit of what does and doesn't work yet.",
 "freeTier": true,
 "pricing": "Free and open source (MIT)",
 "tags": [
@@ -2182,6 +2182,46 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "free"
+},
+{
+"name": "CVE Intel",
+"slug": "cve-intel",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/Fazmin/cve-intel",
+"desc": "Free, open-source desktop app for vulnerability triage, written in native Rust, that is also a CLI, REST API and MCP server (41 tools) in one executable. Give it a CVE ID, a project folder, lockfile or SBOM, a container image, the software on your own computer, your own domains, or a suspicious IP, hash or domain; it queries up to 41 public sources (NVD, CISA KEV, FIRST EPSS, ENISA EUVD, OSV, GitHub Advisories and more, many with no API key) and returns a 0-100 risk score, whether attackers are already exploiting it, the evidence behind each signal and what to do next. Reads and writes CycloneDX SBOMs and keeps a decision ledger. An optional Ask AI assistant runs on a small local model (Qwen 2.5 3B via llama.cpp by default, about 6 GB RAM) or Ollama/LM Studio; remote providers are opt-in. Installers for Windows, macOS and Linux (not code-signed yet, so expect a first-launch warning). About 135 GitHub stars; v0.3.27 shipped Nov 2, 2026 (Arch Linux package scanning).",
+"freeTier": true,
+"pricing": "Free and open source (MIT or Apache-2.0)",
+"tags": [
+"vulnerability management",
+"cve",
+"sbom",
+"mcp",
+"local models",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Grim Prompter",
+"slug": "grim-prompter",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/jmanico/grim-prompter",
+"desc": "Free, open-source (MIT) threat-modeling skill for AI coding agents from Jim Manico, the application security trainer and longtime OWASP contributor. Link its threat-model skill into Claude Code or Codex (or add a snippet to AGENTS.md for any other agent), then ask for a quick model, a full six-stage deep analysis, one method such as STRIDE per element, or a review of how a branch changes an existing model. 36 architecture workflows and 29 method and analysis prompts; the runbook requires read-only inspection with file-and-line citations, and builds, tests, installs or network access need your explicit approval. Results land in a threat-model/ folder as a Markdown report plus JSON you can diff later. Also covers MCP servers and agent tools (credentials, permissions, tool-description poisoning). About 375 GitHub stars about a week after release (Oct 28, 2026). Output is a draft for you to review, not a security certification.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); you pay for your own coding agent",
+"tags": [
+"threat modeling",
+"appsec",
+"claude code",
+"codex",
+"stride",
+"open source",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Elastic Security AI",

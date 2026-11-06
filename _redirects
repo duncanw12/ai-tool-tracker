@@ -143,7 +143,14 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/ai-infra-guard-tencent https://github.com/Tencent/AI-Infra-Guard 302
 /go/ciso-assistant https://intuitem.com 302
 /go/codex-security-openai https://developers.openai.com/codex/security 302
+/go/cve-intel https://github.com/Fazmin/cve-intel 302
+/go/grim-prompter https://github.com/jmanico/grim-prompter 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/cveintel https://github.com/Fazmin/cve-intel 302
+/go/cve-triage https://github.com/Fazmin/cve-intel 302
+/go/grim https://github.com/jmanico/grim-prompter 302
+/go/threat-model https://github.com/jmanico/grim-prompter 302
+/go/aisoc-v222 https://github.com/beenuar/AiSOC 302
 /go/frontier https://github.com/Jumbomuffin777/Frontier-UI 302
 /go/openwebui-frontier https://github.com/Jumbomuffin777/Frontier-UI 302
 /go/codex-security https://developers.openai.com/codex/security 302

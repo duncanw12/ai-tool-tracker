@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 6, 2026. Pricing only where the official page states it.
+const DROP_2026_11_06=[
+{name:"CVE Intel",url:"https://github.com/Fazmin/cve-intel",category:"IT & Security",pricing:"Free and open source (MIT or Apache-2.0)",desc:"Desktop app, CLI and MCP server that scores CVEs, dependencies, SBOMs and your installed software against 41 public sources such as CISA KEV and EPSS, with an optional local AI assistant.",why:"Learn to decide what to patch first. About 135 GitHub stars; v0.3.27 on Nov 2."},
+{name:"Grim Prompter",url:"https://github.com/jmanico/grim-prompter",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"Jim Manico's threat-modeling skill for Claude Code, Codex or any agent: a read-only review of your repo with file-and-line citations and a JSON model to diff later.",why:"About 375 GitHub stars a week after its Oct 28 release. Output is a draft to review."}
+];
 // Daily drop: Nov 5, 2026. Pricing only where the official page states it.
 const DROP_2026_11_05=[
 {name:"Frontier UI",url:"https://github.com/Jumbomuffin777/Frontier-UI",category:"Chat",pricing:"Free and open source (MIT)",desc:"Open WebUI tool that turns local-model answers into interactive cards: photo galleries, live street maps with routes, itineraries, charts and optional Office exports.",why:"One Python file to paste into Open WebUI Workspace → Tools. About 60 GitHub stars; v1.3.2 on Nov 3."},
