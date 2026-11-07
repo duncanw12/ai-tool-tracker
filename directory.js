@@ -7,7 +7,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://cursor.com",
-"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans. The Cursor Agent SDK (announced Oct 20, 2026, GA in v0.3.0 on Oct 23) lets you write your own agents as code, with prompts in Markdown and tools as TypeScript functions, built-in evals and a local playground, then deploy them to Cursor or self-host them in a container; it is the framework behind Cursor's own Bugbot and Security Review. DeepSeek V4.1 Flash, an open-weight model with a 1M-token context, was added Oct 26 and is billed as a third-party model.",
+"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans. The Cursor Agent SDK (announced Oct 20, 2026, GA in v0.3.0 on Oct 23) lets you write your own agents as code, with prompts in Markdown and tools as TypeScript functions, built-in evals and a local playground, then deploy them to Cursor or self-host them in a container; it is the framework behind Cursor's own Bugbot and Security Review. DeepSeek V4.1 Flash, an open-weight model with a 1M-token context, was added Oct 26 and is billed as a third-party model. New Nov 5, 2026: Build Live Apps (Cursor Apps). On paid plans with cloud agents, a cloud agent can scaffold a web app, provision Postgres when needed, put team apps behind Cursor SSO, run security checks and publish a live URL you share with teammates (or publicly on individual plans). Deploy from a new Cursor Origin repo or an existing GitHub repo; nothing goes live until checks pass and you explicitly publish.",
 "freeTier": true,
 "pricing": "Plus from $8/mo (Grok models only); Premium $30/mo adds cloud agents and third-party models at API list price",
 "tags": [
@@ -62,6 +62,25 @@ const DIRECTORY=[
 "vibe coding",
 "web apps",
 "no-code"
+],
+"pf": "both"
+},
+{
+"name": "FlutterFlow",
+"slug": "flutterflow",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://www.flutterflow.io",
+"desc": "AI-native builder for native iOS and Android apps. Describe the app and an agent builds it, then you refine in threads and push changes yourself (the agent never publishes on its own). Backend, auth, analytics and App Store / Google Play deployment are built in. The visual builder continues as FlutterFlow Studio (AI Agent Panel with your own Claude, Codex, Antigravity or Gemini account, MCP server, Generate with Designer and Test Pilot). FlutterFlow says 3.3M people have built on the platform and 50,000+ apps have shipped. AI-native experience launched Nov 4, 2026; one subscription covers FlutterFlow and Studio.",
+"freeTier": true,
+"pricing": "Free plan with a one-time AI allowance; Basic from $39/mo ($29/mo billed yearly); Pro $80/mo ($60/mo yearly); Max $150/mo ($113/mo yearly)",
+"tags": [
+"vibe coding",
+"mobile",
+"ios",
+"android",
+"no-code",
+"new"
 ],
 "pf": "both"
 },
@@ -494,6 +513,25 @@ const DIRECTORY=[
 "local models",
 "open weights",
 "privacy"
+],
+"pf": "both"
+},
+{
+"name": "Foundry Local (Microsoft)",
+"slug": "foundry-local-microsoft",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://foundrylocal.ai",
+"desc": "Microsoft's on-device AI runtime and SDKs (C, C++, C#, JavaScript, Python, Rust) for shipping chat, tool calling and audio transcription inside your own apps with no Azure subscription, no API key and no per-token cloud bill. A ~20 MB runtime bundles with your installer, downloads a hardware-matched model from the Foundry catalog on first run (GPT OSS, Qwen, DeepSeek, Mistral, Phi, Whisper and others), accelerates on NPU, GPU or CPU, and exposes OpenAI-compatible chat and Responses APIs in-process or via an optional local server. Generally available since April 9, 2026; used by GitHub Copilot CLI voice input, Raycast, Foxit and others. SDK is MIT; CLI has separate Microsoft license terms; models keep their own licenses. About 2,640 GitHub stars; v2.3.1 shipped Nov 2, 2026. CUDA/cuDNN must be installed separately when you want NVIDIA GPU acceleration.",
+"freeTier": true,
+"pricing": "Free (SDK MIT; CLI under Microsoft Foundry Local license terms; model licenses vary)",
+"tags": [
+"local models",
+"on-device",
+"sdk",
+"microsoft",
+"open source",
+"new"
 ],
 "pf": "both"
 },
@@ -1784,7 +1822,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/NVIDIA/SkillSpector",
-"desc": "NVIDIA's open-source scanner that checks AI agent skills (for Claude Code, Codex, Gemini CLI and MCP) before you install them. It looks for 71 vulnerability patterns across 17 categories, including prompt injection, data exfiltration, privilege escalation, supply-chain risk and MCP tool poisoning, then gives a 0-100 risk score with JSON, Markdown or SARIF reports. Fast static checks work offline; an optional LLM pass adds deeper review. Scans Git repos, URLs, zip files or folders, and runs in Docker. About 21,000 GitHub stars; v2.13.1 shipped Oct 23, 2026.",
+"desc": "NVIDIA's open-source scanner that checks AI agent skills (for Claude Code, Codex, Gemini CLI and MCP) before you install them. It looks for 71 vulnerability patterns across 17 categories, including prompt injection, data exfiltration, privilege escalation, supply-chain risk and MCP tool poisoning, then gives a 0-100 risk score with JSON, Markdown or SARIF reports. Fast static checks work offline; an optional LLM pass adds deeper review. Scans Git repos, URLs, zip files or folders, and runs in Docker. About 24,700 GitHub stars; v2.13.4 shipped Nov 4, 2026 (provider compatibility and source-inspection fixes).",
 "pricing": "Open source (Apache-2.0); optional LLM analysis billed by your AI provider",
 "tags": [
 "ai security",
@@ -2189,7 +2227,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/Fazmin/cve-intel",
-"desc": "Free, open-source desktop app for vulnerability triage, written in native Rust, that is also a CLI, REST API and MCP server (41 tools) in one executable. Give it a CVE ID, a project folder, lockfile or SBOM, a container image, the software on your own computer, your own domains, or a suspicious IP, hash or domain; it queries up to 41 public sources (NVD, CISA KEV, FIRST EPSS, ENISA EUVD, OSV, GitHub Advisories and more, many with no API key) and returns a 0-100 risk score, whether attackers are already exploiting it, the evidence behind each signal and what to do next. Reads and writes CycloneDX SBOMs and keeps a decision ledger. An optional Ask AI assistant runs on a small local model (Qwen 2.5 3B via llama.cpp by default, about 6 GB RAM) or Ollama/LM Studio; remote providers are opt-in. Installers for Windows, macOS and Linux (not code-signed yet, so expect a first-launch warning). About 135 GitHub stars; v0.3.27 shipped Nov 2, 2026 (Arch Linux package scanning).",
+"desc": "Free, open-source desktop app for vulnerability triage, written in native Rust, that is also a CLI, REST API and MCP server (41 tools) in one executable. Give it a CVE ID, a project folder, lockfile or SBOM, a container image, the software on your own computer, your own domains, or a suspicious IP, hash or domain; it queries up to 41 public sources (NVD, CISA KEV, FIRST EPSS, ENISA EUVD, OSV, GitHub Advisories and more, many with no API key) and returns a 0-100 risk score, whether attackers are already exploiting it, the evidence behind each signal and what to do next. Reads and writes CycloneDX SBOMs and keeps a decision ledger. An optional Ask AI assistant runs on a small local model (Qwen 2.5 3B via llama.cpp by default, about 6 GB RAM) or Ollama/LM Studio; remote providers are opt-in. Installers for Windows, macOS and Linux (not code-signed yet, so expect a first-launch warning). About 137 GitHub stars. v0.3.27 shipped Nov 2, 2026 (Arch Linux package scanning). v0.3.28 (Nov 6, 2026 ET / Nov 7 UTC) adds OAuth 2.1 and HTTPS for `cve-intel serve` and refuses to start on a non-loopback address (including Docker's 0.0.0.0) unless OAuth is configured or you set CVE_INTEL_ALLOW_UNAUTHENTICATED=1; the desktop app and serve on 127.0.0.1 are unchanged.",
 "freeTier": true,
 "pricing": "Free and open source (MIT or Apache-2.0)",
 "tags": [

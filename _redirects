@@ -9,6 +9,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/bolt-new https://bolt.cello.so/MFwNDwJhlUB 302
 /go/v0 https://v0.app 302
 /go/lovable https://lovable.dev 302
+/go/flutterflow https://www.flutterflow.io 302
 /go/replit https://replit.com 302
 /go/github-copilot https://github.com/features/copilot 302
 /go/devin https://devin.ai 302
@@ -36,6 +37,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/microsoft-copilot https://copilot.microsoft.com 302
 /go/le-chat-mistral https://chat.mistral.ai 302
 /go/ollama https://ollama.com 302
+/go/foundry-local-microsoft https://foundrylocal.ai 302
 /go/lm-studio https://lmstudio.ai 302
 /go/deepseek https://chat.deepseek.com 302
 /go/midjourney https://www.midjourney.com 302
@@ -146,6 +148,15 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/cve-intel https://github.com/Fazmin/cve-intel 302
 /go/grim-prompter https://github.com/jmanico/grim-prompter 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/foundry https://foundrylocal.ai 302
+/go/foundry-local https://foundrylocal.ai 302
+/go/foundrylocal https://foundrylocal.ai 302
+/go/flutterflow-ai https://www.flutterflow.io 302
+/go/flutter-flow https://www.flutterflow.io 302
+/go/cve-oauth https://github.com/Fazmin/cve-intel 302
+/go/cveintel-0328 https://github.com/Fazmin/cve-intel 302
+/go/cursor-apps https://cursor.com 302
+/go/cursor-live-apps https://cursor.com 302
 /go/cveintel https://github.com/Fazmin/cve-intel 302
 /go/cve-triage https://github.com/Fazmin/cve-intel 302
 /go/grim https://github.com/jmanico/grim-prompter 302

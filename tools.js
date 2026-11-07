@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 7, 2026. Pricing only where the official page states it.
+const DROP_2026_11_07=[
+{name:"Foundry Local (Microsoft)",url:"https://foundrylocal.ai",category:"Coding",pricing:"Free (SDK MIT; CLI under Microsoft license terms; model licenses vary)",desc:"On-device AI runtime and SDKs for shipping chat, tool calling and audio transcription inside your apps with no Azure subscription and no per-token cloud bill.",why:"About 2,640 GitHub stars; generally available; v2.3.1 on Nov 2. Complements Ollama: embed models in software you ship."},
+{name:"FlutterFlow",url:"https://www.flutterflow.io",category:"Coding",pricing:"Free plan with a one-time AI allowance; Basic from $39/mo ($29/mo yearly)",desc:"AI-native builder for native iOS and Android apps: describe it, refine in threads, push when ready. Backend, auth, analytics and store deploy included; visual builder continues as Studio.",why:"Launched Nov 4, 2026. FlutterFlow reports 3.3M builders and 50,000+ apps shipped."}
+];
 // Daily drop: Nov 6, 2026. Pricing only where the official page states it.
 const DROP_2026_11_06=[
 {name:"CVE Intel",url:"https://github.com/Fazmin/cve-intel",category:"IT & Security",pricing:"Free and open source (MIT or Apache-2.0)",desc:"Desktop app, CLI and MCP server that scores CVEs, dependencies, SBOMs and your installed software against 41 public sources such as CISA KEV and EPSS, with an optional local AI assistant.",why:"Learn to decide what to patch first. About 135 GitHub stars; v0.3.27 on Nov 2."},
