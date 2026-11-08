@@ -361,6 +361,25 @@ const DIRECTORY=[
 "pf": "free"
 },
 {
+"name": "Orca",
+"slug": "orca",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://www.onorca.dev",
+"desc": "Free, open-source (MIT) desktop app from Stably AI (Y Combinator) for running several coding agents in parallel, each in its own git worktree. Bring the CLI agents and subscriptions you already have (Claude Code, Codex, Gemini, GitHub Copilot, OpenCode, Cline, Grok and any other terminal agent), use each in a chat view or the raw terminal, and review diffs, leave line notes and send PR review comments or failing checks back to an agent. A coordinator agent can split a big task across worker agents; workspaces can run locally, on an SSH host or a cloud VM, and an iOS and Android companion app pings you when an agent needs input. Prompts go straight to the providers you configure. Builds for macOS, Windows and Linux. About 119,000 GitHub stars; ships almost daily (v1.4.252 on Nov 6, 2026 added chat forking and Plan mode).",
+"freeTier": true,
+"pricing": "Free and open source (MIT); Enterprise rollout by contact",
+"tags": [
+"agents",
+"parallel",
+"worktrees",
+"open source",
+"byok",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Aider",
 "slug": "aider",
 "category": "coding",
@@ -1873,7 +1892,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/strands-agents/box",
-"desc": "Open-source sandbox for AI agents from the Strands Agents project. It runs any agent program inside OS-level isolation and checks its shell commands, Python, network requests and MCP tool calls against default-deny policies (written in the Dogwood policy language), so an agent can only do what a rule permits. Rules can depend on earlier actions, for example blocking an outbound request after the agent read a secrets file. API keys are injected by Box's gateway, so the agent never sees them, and every decision is logged. Written in Rust; preview for Apple silicon Macs only (Linux planned). About 475 GitHub stars; v0.1.0 shipped Oct 7, 2026, with commits daily.",
+"desc": "Open-source sandbox for AI agents from the Strands Agents project. It runs any agent program inside OS-level isolation and checks its shell commands, Python, network requests and MCP tool calls against default-deny policies (written in the Dogwood policy language), so an agent can only do what a rule permits. Rules can depend on earlier actions, for example blocking an outbound request after the agent read a secrets file. API keys are injected by Box's gateway, so the agent never sees them, and every decision is logged. Written in Rust; preview for Apple silicon Macs, and since v0.2.1 (Nov 5, 2026) also a Linux ARM64 build (glibc 2.34 or newer; the release notes give steps for Amazon Linux 2023). About 500 GitHub stars; v0.1.0 shipped Oct 7, 2026, v0.2.0 and v0.2.1 on Nov 5, with commits daily.",
 "pricing": "Open source (Apache-2.0)",
 "tags": [
 "ai security",
@@ -2187,7 +2206,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://intuitem.com",
-"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars; v4.2.0 shipped Nov 1, 2026.",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening.",
 "freeTier": true,
 "pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
 "tags": [
@@ -2256,6 +2275,25 @@ const DIRECTORY=[
 "claude code",
 "codex",
 "stride",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Stroq",
+"slug": "stroq",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/AGGIB/Stroq",
+"desc": "Free, open-source (Apache-2.0) local security CLI for AI coding agents. Run npx @stroq/cli and it reads your last 30 days of Claude Code and Codex sessions and shows how many commands came from text the agent read and which keys left your machine; stroq sent checks Claude Code, Codex CLI and Cursor sessions against the credential files on your computer and reports where each key went, printing key names, never values. stroq init installs hooks (Claude Code, Cursor, Codex, Copilot CLI, Windsurf, Antigravity, plus an MCP proxy) that deny curl-pipe-to-shell and outbound calls carrying a known secret, and ask you first when a command repeats text the agent read. A local console on 127.0.0.1 shows every decision with its reason. No account, no telemetry; needs Node.js 22+. Matching is text-level, so it is a filter, not a sandbox. About 210 GitHub stars and about 600 npm downloads in the week of Nov 1-7, 2026; v0.30.0 shipped Nov 5 alongside a Show HN post.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0)",
+"tags": [
+"ai security",
+"agents",
+"secrets",
+"guardrails",
 "open source",
 "new"
 ],

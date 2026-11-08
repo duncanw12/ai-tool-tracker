@@ -27,6 +27,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/openai-codex https://openai.com/codex/ 302
 /go/warp https://www.warp.dev 302
 /go/cline https://cline.bot 302
+/go/orca https://www.onorca.dev 302
 /go/aider https://aider.chat 302
 /go/chatgpt https://chatgpt.com 302
 /go/claude https://claude.ai 302
@@ -147,7 +148,16 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/codex-security-openai https://developers.openai.com/codex/security 302
 /go/cve-intel https://github.com/Fazmin/cve-intel 302
 /go/grim-prompter https://github.com/jmanico/grim-prompter 302
+/go/stroq https://github.com/AGGIB/Stroq 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/orca-ide https://www.onorca.dev 302
+/go/onorca https://www.onorca.dev 302
+/go/orca-agents https://www.onorca.dev 302
+/go/stroq-cli https://github.com/AGGIB/Stroq 302
+/go/stroq-sent https://github.com/AGGIB/Stroq 302
+/go/ciso-422 https://intuitem.com 302
+/go/strands-linux https://github.com/strands-agents/box 302
+/go/box-021 https://github.com/strands-agents/box 302
 /go/foundry https://foundrylocal.ai 302
 /go/foundry-local https://foundrylocal.ai 302
 /go/foundrylocal https://foundrylocal.ai 302

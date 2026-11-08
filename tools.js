@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 8, 2026. Pricing only where the official page states it.
+const DROP_2026_11_08=[
+{name:"Stroq",url:"https://github.com/AGGIB/Stroq",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Local CLI that reads your past Claude Code, Codex and Cursor sessions to show which keys left your machine (names, never values), then adds hooks that guard the next session.",why:"About 210 GitHub stars; v0.30.0 and a Show HN on Nov 5. No account, no telemetry; a filter, not a sandbox."},
+{name:"Orca",url:"https://www.onorca.dev",category:"Coding",pricing:"Free and open source (MIT); Enterprise by contact",desc:"Desktop app for running Claude Code, Codex and any other CLI agent in parallel, each in its own worktree, with diff review, remote workspaces and a phone companion.",why:"About 119,000 GitHub stars; ships almost daily. Bring the agent subscriptions you already pay for."}
+];
 // Daily drop: Nov 7, 2026. Pricing only where the official page states it.
 const DROP_2026_11_07=[
 {name:"Foundry Local (Microsoft)",url:"https://foundrylocal.ai",category:"Coding",pricing:"Free (SDK MIT; CLI under Microsoft license terms; model licenses vary)",desc:"On-device AI runtime and SDKs for shipping chat, tool calling and audio transcription inside your apps with no Azure subscription and no per-token cloud bill.",why:"About 2,640 GitHub stars; generally available; v2.3.1 on Nov 2. Complements Ollama: embed models in software you ship."},
