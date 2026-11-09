@@ -149,7 +149,17 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/cve-intel https://github.com/Fazmin/cve-intel 302
 /go/grim-prompter https://github.com/jmanico/grim-prompter 302
 /go/stroq https://github.com/AGGIB/Stroq 302
+/go/devvm https://devvm.dev 302
+/go/sandbox-mcp https://github.com/shanselman/sandbox-mcp 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/devvm-dev https://devvm.dev 302
+/go/devvm-vm https://devvm.dev 302
+/go/sbx https://github.com/shanselman/sandbox-mcp 302
+/go/sandbox-windows https://github.com/shanselman/sandbox-mcp 302
+/go/stroq-inspect https://github.com/AGGIB/Stroq 302
+/go/wazuh-41410 https://wazuh.com 302
+/go/claude-code-2319 https://claude.com/product/claude-code 302
+/go/grim-v1 https://github.com/jmanico/grim-prompter 302
 /go/orca-ide https://www.onorca.dev 302
 /go/onorca https://www.onorca.dev 302
 /go/orca-agents https://www.onorca.dev 302

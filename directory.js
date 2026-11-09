@@ -305,7 +305,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -1519,7 +1519,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://wazuh.com",
-"desc": "Free, open-source SIEM and XDR used by home labbers and SOC teams for log analysis, threat detection and compliance. Wazuh documents AI threat hunting with local models via Ollama, and Wazuh 5.0 (now in release candidate) adds a built-in AI Assistant.",
+"desc": "Free, open-source SIEM and XDR used by home labbers and SOC teams for log analysis, threat detection and compliance. Wazuh documents AI threat hunting with local models via Ollama, and Wazuh 5.0 (now in release candidate) adds a built-in AI Assistant. Wazuh 4.14.10 (Nov 9, 2026) is a maintenance release for 4.x with security fixes, including path traversal in the agent diff-folder cleanup and a root-level OS command injection in the rootcheck promiscuous-interface check, so home labs on 4.x should plan the upgrade. About 17,600 GitHub stars.",
 "freeTier": true,
 "pricing": "Free and open source (self-hosted); Wazuh Cloud is a paid hosted option",
 "tags": [
@@ -2266,7 +2266,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/jmanico/grim-prompter",
-"desc": "Free, open-source (MIT) threat-modeling skill for AI coding agents from Jim Manico, the application security trainer and longtime OWASP contributor. Link its threat-model skill into Claude Code or Codex (or add a snippet to AGENTS.md for any other agent), then ask for a quick model, a full six-stage deep analysis, one method such as STRIDE per element, or a review of how a branch changes an existing model. 36 architecture workflows and 29 method and analysis prompts; the runbook requires read-only inspection with file-and-line citations, and builds, tests, installs or network access need your explicit approval. Results land in a threat-model/ folder as a Markdown report plus JSON you can diff later. Also covers MCP servers and agent tools (credentials, permissions, tool-description poisoning). About 375 GitHub stars about a week after release (Oct 28, 2026). Output is a draft for you to review, not a security certification.",
+"desc": "Free, open-source (MIT) threat-modeling skill for AI coding agents from Jim Manico, the application security trainer and longtime OWASP contributor. Link its threat-model skill into Claude Code or Codex (or add a snippet to AGENTS.md for any other agent), then ask for a quick model, a full six-stage deep analysis, one method such as STRIDE per element, or a review of how a branch changes an existing model. 36 architecture workflows and 29 method and analysis prompts; the runbook requires read-only inspection with file-and-line citations, and builds, tests, installs or network access need your explicit approval. Results land in a threat-model/ folder as a Markdown report plus JSON you can diff later. Also covers MCP servers and agent tools (credentials, permissions, tool-description poisoning). About 400 GitHub stars. v1.0.0, the first stable release, shipped Nov 8, 2026, with engineering-first privacy workflows, optional LINDDUN methods and GDPR and CCPA/CPRA profiles. Output is a draft for you to review, not a security certification.",
 "freeTier": true,
 "pricing": "Free and open source (MIT); you pay for your own coding agent",
 "tags": [
@@ -2286,7 +2286,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/AGGIB/Stroq",
-"desc": "Free, open-source (Apache-2.0) local security CLI for AI coding agents. Run npx @stroq/cli and it reads your last 30 days of Claude Code and Codex sessions and shows how many commands came from text the agent read and which keys left your machine; stroq sent checks Claude Code, Codex CLI and Cursor sessions against the credential files on your computer and reports where each key went, printing key names, never values. stroq init installs hooks (Claude Code, Cursor, Codex, Copilot CLI, Windsurf, Antigravity, plus an MCP proxy) that deny curl-pipe-to-shell and outbound calls carrying a known secret, and ask you first when a command repeats text the agent read. A local console on 127.0.0.1 shows every decision with its reason. No account, no telemetry; needs Node.js 22+. Matching is text-level, so it is a filter, not a sandbox. About 210 GitHub stars and about 600 npm downloads in the week of Nov 1-7, 2026; v0.30.0 shipped Nov 5 alongside a Show HN post.",
+"desc": "Free, open-source (Apache-2.0) local security CLI for AI coding agents. Run npx @stroq/cli and it reads your last 30 days of Claude Code and Codex sessions and shows how many commands came from text the agent read and which keys left your machine; stroq sent checks Claude Code, Codex CLI and Cursor sessions against the credential files on your computer and reports where each key went, printing key names, never values. stroq init installs hooks (Claude Code, Cursor, Codex, Copilot CLI, Windsurf, Antigravity, plus an MCP proxy) that deny curl-pipe-to-shell and outbound calls carrying a known secret, and ask you first when a command repeats text the agent read. A local console on 127.0.0.1 shows every decision with its reason. No account, no telemetry; needs Node.js 22+. Matching is text-level, so it is a filter, not a sandbox. About 225 GitHub stars and about 600 npm downloads in the week of Nov 1-7, 2026; v0.30.0 shipped Nov 5 alongside a Show HN post. v0.31.0 (Nov 8) adds stroq inspect, which reads a folder someone sent you for code that runs when it is fetched or decoded, code hidden far to the right of a line, scripts that fetch into a shell and config files a tool runs by itself (places to read, not verdicts), and the hook now asks the first time an agent runs code in such a folder; v0.31.1 (Nov 9) fixes stroq sent missing an environment dump inside a Python f-string URL.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0)",
 "tags": [
@@ -2294,6 +2294,45 @@ const DIRECTORY=[
 "agents",
 "secrets",
 "guardrails",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "devvm",
+"slug": "devvm",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://devvm.dev",
+"desc": "Free, open-source (MIT) command-line tool that gives each project folder its own virtual machine, built for running coding agents (Claude Code, Codex, opencode and pi) away from your real files and keys. Run devvm in a project and it detects the toolchains your files call for (a package.json gets node), builds the VM on Lima, mounts only that project folder at the same path as on your machine and opens a shell in it. New VMs start on an allowlist network tier so they reach only the hosts you approve, and your secrets, such as your GitHub and Claude Code tokens, stay on your machine. Built-in docker, nix and desktop layers; releases are signed with a minisign key. Needs macOS 13 or newer, or Linux, on arm64 or x86_64 (tested on Apple silicon Macs and on Linux, not yet on Intel Macs). About 430 GitHub stars; v0.1.0 shipped Nov 6, 2026 (v0.1.1 is still a release candidate) and its Show HN reached about 190 points. Very new, so treat it as early software.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"sandbox",
+"agents",
+"virtual machine",
+"isolation",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "sandbox-mcp",
+"slug": "sandbox-mcp",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/shanselman/sandbox-mcp",
+"desc": "Free, open-source (MIT) tool from Scott Hanselman that gives you or an AI agent a fresh, disposable Windows 11 machine built on Windows Sandbox (needs Windows Pro or Enterprise): boot it, deploy an app or installer, drive the desktop with UI Automation, capture screenshots, recordings, crash events and exit codes, then throw the machine away. The sbx command-line tool works on its own and an optional MCP server exposes the same engine to agent clients. Guest networking can be off, firewalled or on, which makes it useful for the classic works-on-my-machine check on a clean PC and for looking at an untrusted installer without touching your real system. It runs one machine at a time and does not promise every Windows app will run in Sandbox. About 355 GitHub stars; v1.0.0 shipped Nov 6, 2026 and v1.2.0 on Nov 7. Very new.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); needs Windows Pro or Enterprise",
+"tags": [
+"windows",
+"sandbox",
+"mcp",
+"testing",
+"home lab",
 "open source",
 "new"
 ],

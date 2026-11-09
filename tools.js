@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 9, 2026. Pricing only where the official page states it.
+const DROP_2026_11_09=[
+{name:"devvm",url:"https://devvm.dev",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"CLI that gives each project folder its own VM for coding agents (Claude Code, Codex, opencode, pi): only the project folder is mounted, new VMs start on an allowlist network, and your tokens stay on your machine.",why:"About 430 GitHub stars; v0.1.0 on Nov 6 and a Show HN near 190 points. Very new: treat it as early software."},
+{name:"sandbox-mcp",url:"https://github.com/shanselman/sandbox-mcp",category:"IT & Security",pricing:"Free and open source (MIT); needs Windows Pro or Enterprise",desc:"Scott Hanselman's tool for a fresh, disposable Windows 11 machine on Windows Sandbox: deploy an app or installer, drive the desktop, keep screenshots and crash evidence, then delete the PC. CLI plus optional MCP server.",why:"About 355 GitHub stars; v1.2.0 on Nov 7. One machine at a time; very new."}
+];
 // Daily drop: Nov 8, 2026. Pricing only where the official page states it.
 const DROP_2026_11_08=[
 {name:"Stroq",url:"https://github.com/AGGIB/Stroq",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Local CLI that reads your past Claude Code, Codex and Cursor sessions to show which keys left your machine (names, never values), then adds hooks that guard the next session.",why:"About 210 GitHub stars; v0.30.0 and a Show HN on Nov 5. No account, no telemetry; a filter, not a sandbox."},
