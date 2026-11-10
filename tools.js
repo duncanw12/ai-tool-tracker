@@ -26,6 +26,11 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 10, 2026. Pricing only where the official page states it.
+const DROP_2026_11_10=[
+{name:"0 (0sec Labs)",url:"https://github.com/0sec-labs/0",category:"IT & Security",pricing:"Free and open source (MIT or Apache-2.0); you pay your model provider",desc:"Open-source AI security harness for code review, pentesting, vulnerability research and fixes: a local web console, a CLI that writes SARIF reports and an MCP server for coding agents. Bring your own model provider.",why:"About 1,190 GitHub stars; public open-source launch Nov 8, v0.28.9 on Nov 9. Very new; its default shell runs on your host, so use an isolated executor and only test what you're authorized to."},
+{name:"Neoverse (Neo)",url:"https://verse.neo.ai",category:"IT & Security",pricing:"Free catalog with email sign-in",desc:"Look up an MCP server, agent skill, desktop app or browser/IDE extension and see Neo's Malicious, Unsafe or Safe verdict with its key finding, summary and version history.",why:"Public launch Nov 9. Neo says it has classified 4M+ items; verdicts are Neo's own automated research, so treat them as one signal."}
+];
 // Daily drop: Nov 9, 2026. Pricing only where the official page states it.
 const DROP_2026_11_09=[
 {name:"devvm",url:"https://devvm.dev",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"CLI that gives each project folder its own VM for coding agents (Claude Code, Codex, opencode, pi): only the project folder is mounted, new VMs start on an allowlist network, and your tokens stay on your machine.",why:"About 430 GitHub stars; v0.1.0 on Nov 6 and a Show HN near 190 points. Very new: treat it as early software."},

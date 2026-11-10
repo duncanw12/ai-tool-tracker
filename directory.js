@@ -305,7 +305,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -415,7 +415,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://claude.ai",
-"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits. Plan rename Oct 30, 2026: Max 5x is now Max ($100/mo, 5x Pro's weekly usage) and Max 20x is now Ultra ($200/mo, 10x Pro's weekly usage), with no price change and nothing for existing subscribers to do. Verified Ultra accounts no longer have the rolling five-hour limit, but the weekly limit still applies; Anthropic verifies accounts automatically, and newer accounts keep a temporary limit until then (if you don't see a Current session bar in Settings > Usage, you're verified).",
+"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits. Plan rename Oct 30, 2026: Max 5x is now Max ($100/mo, 5x Pro's weekly usage) and Max 20x is now Ultra ($200/mo, 10x Pro's weekly usage), with no price change and nothing for existing subscribers to do. Verified Ultra accounts no longer have the rolling five-hour limit, but the weekly limit still applies; Anthropic verifies accounts automatically, and newer accounts keep a temporary limit until then (if you don't see a Current session bar in Settings > Usage, you're verified). New Nov 9, 2026: Claude Fable 5.2, Anthropic's model for the hardest reasoning and long-running agent work, is available on Pro, Max, Ultra, Team and Enterprise plans and in the API as claude-fable-5-2 ($8 per million input and $40 per million output tokens, down from $10 and $50 for Fable 5.1; 1M-token context). Anthropic still recommends starting most coding and knowledge work on Claude Opus 5.5. Claude Mythos 5.2 is the same underlying model; Fable carries strong cybersecurity and biology safeguards so it can be offered to everyone, while Mythos is limited to organizations verified through programs such as Anthropic's Cyber Verification Program.",
 "freeTier": true,
 "pricing": "Pro from $17/mo billed annually ($20 monthly); Max $100/mo; Ultra $200/mo",
 "tags": [
@@ -525,7 +525,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://ollama.com",
-"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Recursive's new Flint coding model is in the library (ollama run flint:40b), and so is Liquid AI's new LFM3 family of small on-device models.",
+"desc": "Run open models locally with one command, or use Ollama's cloud models when your machine isn't enough. Recursive's new Flint coding model is in the library (ollama run flint:40b), and so is Liquid AI's new LFM3 family of small on-device models. v0.40.16 (Nov 9, 2026) adds Ripple Preview, a 65B dense model for agentic coding (ollama run ripple-preview), and makes ollama launch claude always route Claude Code to the model you picked.",
 "freeTier": true,
 "pricing": "Paid plans from $20/mo",
 "tags": [
@@ -2334,6 +2334,44 @@ const DIRECTORY=[
 "testing",
 "home lab",
 "open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "0 (0sec Labs)",
+"slug": "0-0sec-labs",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/0sec-labs/0",
+"desc": "Free, open-source AI security harness from 0sec Labs (a Swiss lab backed by Y Combinator) for code review, pentesting, vulnerability research, reverse engineering, verifying findings and drafting fixes. Run 0 and it opens a local web console (no account needed) with chat, a findings queue and board, workflow templates for assessment, verification, fixes and research, reusable skills and source-linked memory; the same workflows run from a headless CLI (0 workflow run, with SARIF and other reports) or as an MCP server so Claude Code, Codex and other agents can call them. It is not a model: you connect your own model provider or a supported subscription. Binary analysis uses Ghidra through its 0verse add-on. Installs on Apple silicon Macs and x64/ARM64 Linux (npm, Windows, Docker and source installs are documented). Its README says the default shell runs on your host, so use an isolated executor for untrusted work, and only assess systems you are authorized to test; an optional scope plugin enforces target boundaries. About 1,190 GitHub stars; the repo dates from August 2026 but its public open-source launch was Nov 8, 2026, and it ships several releases a day (v0.28.9 on Nov 9). Very new, so treat it as early software.",
+"freeTier": true,
+"pricing": "Free and open source (MIT or Apache-2.0); you pay your model provider. Hosted 0cloud PR reviews: $100 free trial credits, then $1/credit ($5 per PR security test)",
+"tags": [
+"pentesting",
+"code security",
+"vulnerability research",
+"mcp",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Neoverse (Neo)",
+"slug": "neoverse-neo",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://verse.neo.ai",
+"desc": "Free searchable catalog from Neo Security that gives AI add-ons a security verdict before you install them: MCP servers, agent skills, desktop apps, and browser and IDE extensions (VS Code, JetBrains, Cursor, Windsurf, the Chrome, Edge and Firefox stores, GitHub, the MCP registry and package managers such as Homebrew, Winget and Chocolatey). Neo says it has classified more than 4 million items; each analyzed one is marked Malicious, Unsafe or Safe with the headline finding behind the verdict, a summary and version history, based on static analysis, a sandboxed run, a check of the app's behavior against its own docs, plus CVE and GitHub advisory data, repeated for each new version. Free with email sign-in; full findings, evidence and API access are for Neo customers or on request. Neo says signing up does not protect your machine: it is a lookup, not a blocker. Public launch Nov 9, 2026. Verdicts come from Neo's own automated research, so treat them as one signal and still read what a tool can access.",
+"freeTier": true,
+"pricing": "Free catalog with email sign-in; full findings and API access for Neo platform customers",
+"tags": [
+"supply chain",
+"mcp",
+"extensions",
+"ai security",
+"beginner",
 "new"
 ],
 "pf": "both"
