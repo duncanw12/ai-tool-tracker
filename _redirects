@@ -23,6 +23,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/minimax-m3-1-flash https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash 302
 /go/nanbeige4-3-33b https://huggingface.co/Nanbeige/Nanbeige4.3-33B 302
 /go/hugging-face https://huggingface.co 302
+/go/modern-web-guidance https://developer.chrome.com/docs/modern-web-guidance/get-started 302
 /go/claude-code https://claude.com/product/claude-code 302
 /go/openai-codex https://openai.com/codex/ 302
 /go/warp https://www.warp.dev 302
@@ -154,6 +155,14 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/mwg https://developer.chrome.com/docs/modern-web-guidance/get-started 302
+/go/modern-web https://developer.chrome.com/docs/modern-web-guidance/get-started 302
+/go/web-guidance https://developer.chrome.com/docs/modern-web-guidance/get-started 302
+/go/copilot-carbon https://github.com/features/copilot 302
+/go/gemini-carbon https://gemini.google.com 302
+/go/carbon https://gemini.google.com 302
+/go/cursor-projects https://cursor.com 302
+/go/stroq-032 https://github.com/AGGIB/Stroq 302
 /go/0sec https://github.com/0sec-labs/0 302
 /go/0security https://github.com/0sec-labs/0 302
 /go/zero-sec https://github.com/0sec-labs/0 302

@@ -7,7 +7,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://cursor.com",
-"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans. The Cursor Agent SDK (announced Oct 20, 2026, GA in v0.3.0 on Oct 23) lets you write your own agents as code, with prompts in Markdown and tools as TypeScript functions, built-in evals and a local playground, then deploy them to Cursor or self-host them in a container; it is the framework behind Cursor's own Bugbot and Security Review. DeepSeek V4.1 Flash, an open-weight model with a 1M-token context, was added Oct 26 and is billed as a third-party model. New Nov 5, 2026: Build Live Apps (Cursor Apps). On paid plans with cloud agents, a cloud agent can scaffold a web app, provision Postgres when needed, put team apps behind Cursor SSO, run security checks and publish a live URL you share with teammates (or publicly on individual plans). Deploy from a new Cursor Origin repo or an existing GitHub repo; nothing goes live until checks pass and you explicitly publish.",
+"desc": "AI-first code editor with agent mode, codebase chat and tab completion. Now sold as part of The X Subscription (Oct 13, 2026); existing Cursor plans keep working as legacy plans. The Cursor Agent SDK (announced Oct 20, 2026, GA in v0.3.0 on Oct 23) lets you write your own agents as code, with prompts in Markdown and tools as TypeScript functions, built-in evals and a local playground, then deploy them to Cursor or self-host them in a container; it is the framework behind Cursor's own Bugbot and Security Review. DeepSeek V4.1 Flash, an open-weight model with a 1M-token context, was added Oct 26 and is billed as a third-party model. New Nov 5, 2026: Build Live Apps (Cursor Apps). On paid plans with cloud agents, a cloud agent can scaffold a web app, provision Postgres when needed, put team apps behind Cursor SSO, run security checks and publish a live URL you share with teammates (or publicly on individual plans). Deploy from a new Cursor Origin repo or an existing GitHub repo; nothing goes live until checks pass and you explicitly publish. New Nov 10, 2026: Projects, Cursor's workspace for directing a fleet of agents through one coordinator, is now multiplayer (beta, rolling out to all users). Invite teammates into a Project to share requirements docs, specs and mockups as context every agent can read, track who and which agent is doing what on a shared task board, and let teammates' coordinator agents plan around each other's work.",
 "freeTier": true,
 "pricing": "Plus from $8/mo (Grok models only); Premium $30/mo adds cloud agents and third-party models at API list price",
 "tags": [
@@ -106,7 +106,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://github.com/features/copilot",
-"desc": "AI pair programmer and coding agent inside VS Code, JetBrains and GitHub. New at GitHub Universe (Oct 28, 2026): Copilot Fusion is generally available. Pick Fusion instead of a model and Copilot routes each step of a task across one or more models (GitHub says Fusion Max scored within two points of Opus 5.5 Max on the Artificial Analysis Coding Agent Index at half the cost; that is GitHub's claim). Also new: a redesigned GitHub Copilot app for issue-to-merge agent work, Copilot projects that run parallel agent sessions across several repos, automations that propose improvements from past runs, and Copilot code review Max, which runs several review agents on different models and merges their findings. GitHub Enterprise customers can now use every Copilot feature without a separate Copilot subscription and pay for the AI credits they use (through GitHub Sales for now).",
+"desc": "AI pair programmer and coding agent inside VS Code, JetBrains and GitHub. New at GitHub Universe (Oct 28, 2026): Copilot Fusion is generally available. Pick Fusion instead of a model and Copilot routes each step of a task across one or more models (GitHub says Fusion Max scored within two points of Opus 5.5 Max on the Artificial Analysis Coding Agent Index at half the cost; that is GitHub's claim). Also new: a redesigned GitHub Copilot app for issue-to-merge agent work, Copilot projects that run parallel agent sessions across several repos, automations that propose improvements from past runs, and Copilot code review Max, which runs several review agents on different models and merges their findings. GitHub Enterprise customers can now use every Copilot feature without a separate Copilot subscription and pay for the AI credits they use (through GitHub Sales for now). New Nov 10, 2026: Google's Gemini 4 Carbon is generally available in Copilot for Pro+, Max, Business and Enterprise users (gradual rollout), billed at provider list pricing under usage-based billing, in VS Code, Visual Studio, JetBrains, Xcode, Eclipse, Copilot CLI, the coding agent, the Copilot app, github.com and GitHub Mobile. GitHub describes it as built for complex coding, agentic and reasoning tasks with a focus on secure code generation.",
 "freeTier": true,
 "pricing": "Pro from $10/mo",
 "tags": [
@@ -300,6 +300,25 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Modern Web Guidance",
+"slug": "modern-web-guidance",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://developer.chrome.com/docs/modern-web-guidance/get-started",
+"desc": "Free, open-source (Apache-2.0) agent skill and CLI that feeds your coding agent current web-platform best practices so it stops writing 2019-style JavaScript: native dialogs and popovers, CSS anchor positioning, container queries, view transitions, field-sizing, INP performance fixes, accessibility patterns, passkeys and Chrome's built-in AI APIs, each with browser-compatibility guidance and lightweight fallbacks. Stewarded by the Google Chrome, Microsoft Edge, Mozilla Firefox and MDN teams. Install with npx modern-web-guidance@latest install (or npx skills add / gh skill install GoogleChrome/modern-web-guidance); it works with any coding agent that supports skills (Claude Code, Codex, Gemini CLI, Copilot and others). The CLI searches 200+ expert-reviewed guides offline (no API keys, no network calls for search), and the new legacy-scan command looks through your code for old patterns your agent can modernize. The Chrome team reports agents passing 92% of its 200-task eval with the skill versus 55% without (the team's own eval). The Show HN post runs its commands with DISABLE_TELEMETRY=1, so set that if you don't want usage telemetry. The 1.0 stable release was announced Nov 10, 2026 (preview since Google I/O in May); about 3,770 GitHub stars and a Show HN near 380 points.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0)",
+"tags": [
+"agent skills",
+"web development",
+"frontend",
+"cli",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Claude Code",
 "slug": "claude-code",
 "category": "coding",
@@ -430,7 +449,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://gemini.google.com",
-"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar. New Oct 29, 2026: Gemini can generate, preview and edit files right in the chat (type edits in full screen, or highlight a section and ask for changes). PDFs work on web and mobile; Google Docs, Sheets, slide decks, Markdown, TXT and code are web only. Available to all Gemini users.",
+"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar. New Oct 29, 2026: Gemini can generate, preview and edit files right in the chat (type edits in full screen, or highlight a section and ask for changes). PDFs work on web and mobile; Google Docs, Sheets, slide decks, Markdown, TXT and code are web only. Available to all Gemini users. New Nov 10, 2026: Gemini 4 Carbon, which Google calls its strongest model for long-running agent work and cybersecurity, is available to developers on the paid tier of the Gemini API in Google AI Studio and Android Studio; Google AI Ultra subscribers can try it in AI Studio and in Google Antigravity. It is also in GitHub Copilot on paid plans.",
 "freeTier": true,
 "pricing": "Google AI Plus from $4.99/mo (US)",
 "tags": [
@@ -2286,7 +2305,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/AGGIB/Stroq",
-"desc": "Free, open-source (Apache-2.0) local security CLI for AI coding agents. Run npx @stroq/cli and it reads your last 30 days of Claude Code and Codex sessions and shows how many commands came from text the agent read and which keys left your machine; stroq sent checks Claude Code, Codex CLI and Cursor sessions against the credential files on your computer and reports where each key went, printing key names, never values. stroq init installs hooks (Claude Code, Cursor, Codex, Copilot CLI, Windsurf, Antigravity, plus an MCP proxy) that deny curl-pipe-to-shell and outbound calls carrying a known secret, and ask you first when a command repeats text the agent read. A local console on 127.0.0.1 shows every decision with its reason. No account, no telemetry; needs Node.js 22+. Matching is text-level, so it is a filter, not a sandbox. About 225 GitHub stars and about 600 npm downloads in the week of Nov 1-7, 2026; v0.30.0 shipped Nov 5 alongside a Show HN post. v0.31.0 (Nov 8) adds stroq inspect, which reads a folder someone sent you for code that runs when it is fetched or decoded, code hidden far to the right of a line, scripts that fetch into a shell and config files a tool runs by itself (places to read, not verdicts), and the hook now asks the first time an agent runs code in such a folder; v0.31.1 (Nov 9) fixes stroq sent missing an environment dump inside a Python f-string URL.",
+"desc": "Free, open-source (Apache-2.0) local security CLI for AI coding agents. Run npx @stroq/cli and it reads your last 30 days of Claude Code and Codex sessions and shows how many commands came from text the agent read and which keys left your machine; stroq sent checks Claude Code, Codex CLI and Cursor sessions against the credential files on your computer and reports where each key went, printing key names, never values. stroq init installs hooks (Claude Code, Cursor, Codex, Copilot CLI, Windsurf, Antigravity, plus an MCP proxy) that deny curl-pipe-to-shell and outbound calls carrying a known secret, and ask you first when a command repeats text the agent read. A local console on 127.0.0.1 shows every decision with its reason. No account, no telemetry; needs Node.js 22+. Matching is text-level, so it is a filter, not a sandbox. About 225 GitHub stars and about 600 npm downloads in the week of Nov 1-7, 2026; v0.30.0 shipped Nov 5 alongside a Show HN post. v0.31.0 (Nov 8) adds stroq inspect, which reads a folder someone sent you for code that runs when it is fetched or decoded, code hidden far to the right of a line, scripts that fetch into a shell and config files a tool runs by itself (places to read, not verdicts), and the hook now asks the first time an agent runs code in such a folder; v0.31.1 (Nov 9) fixes stroq sent missing an environment dump inside a Python f-string URL. v0.32.0 (Nov 11) reads Cursor sessions on its card alongside Claude Code and Codex (read-only), and lets you mark a flagged moment as a false alarm from a terminal with stroq show --false-alarm; the mark is dropped again if the evidence changes, and the hook refuses marks made through an agent's shell.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0)",
 "tags": [
