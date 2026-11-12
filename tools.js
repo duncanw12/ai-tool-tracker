@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 12, 2026. Pricing only where the official page states it.
+const DROP_2026_11_12=[
+{name:"OpenBot (CopilotKit)",url:"https://open.bot",category:"Agents",pricing:"Free for personal use (MIT app plus a free local Intelligence license); you pay your model provider",desc:"Self-hostable workspace for AI coworkers: each Bot gets its own browser, files and tools, asks before it acts and keeps an audit trail. Any model, including local ones in Ollama; Mac and Windows desktop app.",why:"OpenBot 1.0 launched Nov 10 from the team behind AG-UI; about 11,200 GitHub stars. Production team deployments need a paid CopilotKit Intelligence license."},
+];
 // Daily drop: Nov 11, 2026. Pricing only where the official page states it.
 const DROP_2026_11_11=[
 {name:"Modern Web Guidance",url:"https://developer.chrome.com/docs/modern-web-guidance/get-started",category:"Coding",pricing:"Free and open source (Apache-2.0)",desc:"Agent skill and CLI from the Chrome, Edge, Firefox and MDN teams that gives your coding agent 200+ expert-reviewed guides to modern web APIs (dialog, popover, anchor positioning, container queries) plus a legacy-scan for old patterns.",why:"1.0 announced Nov 10; about 3,770 GitHub stars and a Show HN near 380 points. The 55% to 92% eval gain is the Chrome team's own figure."},

@@ -434,7 +434,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://claude.ai",
-"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits. Plan rename Oct 30, 2026: Max 5x is now Max ($100/mo, 5x Pro's weekly usage) and Max 20x is now Ultra ($200/mo, 10x Pro's weekly usage), with no price change and nothing for existing subscribers to do. Verified Ultra accounts no longer have the rolling five-hour limit, but the weekly limit still applies; Anthropic verifies accounts automatically, and newer accounts keep a temporary limit until then (if you don't see a Current session bar in Settings > Usage, you're verified). New Nov 9, 2026: Claude Fable 5.2, Anthropic's model for the hardest reasoning and long-running agent work, is available on Pro, Max, Ultra, Team and Enterprise plans and in the API as claude-fable-5-2 ($8 per million input and $40 per million output tokens, down from $10 and $50 for Fable 5.1; 1M-token context). Anthropic still recommends starting most coding and knowledge work on Claude Opus 5.5. Claude Mythos 5.2 is the same underlying model; Fable carries strong cybersecurity and biology safeguards so it can be offered to everyone, while Mythos is limited to organizations verified through programs such as Anthropic's Cyber Verification Program.",
+"desc": "Anthropic's AI assistant for writing, analysis and coding. New: Claude Duet (research preview, Oct 2026) is a proactive agent app that sends a morning brief from your email and calendar, works on tasks on its own cloud computer and asks before it sends, pays, signs or deletes anything. Waitlist only, for US Pro and Max plans; it uses your plan's usage limits. Plan rename Oct 30, 2026: Max 5x is now Max ($100/mo, 5x Pro's weekly usage) and Max 20x is now Ultra ($200/mo, 10x Pro's weekly usage), with no price change and nothing for existing subscribers to do. Verified Ultra accounts no longer have the rolling five-hour limit, but the weekly limit still applies; Anthropic verifies accounts automatically, and newer accounts keep a temporary limit until then (if you don't see a Current session bar in Settings > Usage, you're verified). New Nov 9, 2026: Claude Fable 5.2, Anthropic's model for the hardest reasoning and long-running agent work, is available on Pro, Max, Ultra, Team and Enterprise plans and in the API as claude-fable-5-2 ($8 per million input and $40 per million output tokens, down from $10 and $50 for Fable 5.1; 1M-token context). Anthropic still recommends starting most coding and knowledge work on Claude Opus 5.5. Claude Mythos 5.2 is the same underlying model; Fable carries strong cybersecurity and biology safeguards so it can be offered to everyone, while Mythos is limited to organizations verified through programs such as Anthropic's Cyber Verification Program. New Nov 10, 2026: Claude Sheets (spreadsheets Claude builds and edits with you, with tabs, formulas, formatting and drop-downs, outlining each edit; export to .xlsx or CSV) and Claude Whiteboards (shared boards where Claude groups ideas and turns a plan into a timeline with owners and dates, or a doc or deck) are in beta on all paid plans on web, desktop and mobile, and Claude Dashboards is now generally available as Claude Data (needs a data connector such as a warehouse or CRM). Claude Meetings, which joins Google Meet calls to take notes and start on tasks, is in beta for Team and Enterprise plans. On Enterprise plans, Sheets and Whiteboards are off by default until an admin turns them on.",
 "freeTier": true,
 "pricing": "Pro from $17/mo billed annually ($20 monthly); Max $100/mo; Ultra $200/mo",
 "tags": [
@@ -829,7 +829,7 @@ const DIRECTORY=[
 "category": "audio",
 "catName": "Voice & Audio",
 "url": "https://elevenlabs.io",
-"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects. New Oct 21: Eleven Realtime Translation, live speech-to-speech translation into 90+ languages in a voice you choose, in alpha for ElevenAPI enterprise customers only (contact sales; no public price). New Oct 29: SFX v3, the newest sound effects model, follows prompts that describe several sounds more reliably, handles music and vocals better and cuts harsh artifacts on sounds like gongs and whistles. It's in ElevenCreative (Sound Effects tab, Flows, Studio, Music Editor, mobile app) and ElevenAPI.",
+"desc": "AI voice generation, cloning, dubbing and speech-to-text. New Oct 15: Instant Soundtracks scores an uploaded video with original music and timed sound effects. New Oct 21: Eleven Realtime Translation, live speech-to-speech translation into 90+ languages in a voice you choose, in alpha for ElevenAPI enterprise customers only (contact sales; no public price). New Oct 29: SFX v3, the newest sound effects model, follows prompts that describe several sounds more reliably, handles music and vocals better and cuts harsh artifacts on sounds like gongs and whistles. It's in ElevenCreative (Sound Effects tab, Flows, Studio, Music Editor, mobile app) and ElevenAPI. New Nov 10, 2026: Scribe v3 (recorded audio) and Scribe v3 Live (realtime) speech-to-text models, now the defaults in the ElevenLabs app. ElevenLabs says Scribe v3 makes 27% fewer word errors than Scribe v2 across 102 languages and v3 Live 43% fewer than Scribe v2 Realtime (its own tests); v3 Live adds realtime speaker labels for the first time and better turn detection. In the API, switch by changing the model ID to scribe_v3 or scribe_v3_live.",
 "freeTier": true,
 "pricing": "Starter from $6/mo; Creator $22/mo (first month 50% off)",
 "tags": [
@@ -923,20 +923,6 @@ const DIRECTORY=[
 "pricing": "Pro from $59/mo",
 "tags": [
 "marketing",
-"content"
-],
-"pf": "paid"
-},
-{
-"name": "Writesonic",
-"slug": "writesonic",
-"category": "writing",
-"catName": "Writing",
-"url": "https://writesonic.com",
-"desc": "AI writing and SEO/AI-search visibility platform.",
-"pricing": "Starter from $79/mo billed annually",
-"tags": [
-"seo",
 "content"
 ],
 "pf": "paid"
@@ -1139,6 +1125,26 @@ const DIRECTORY=[
 "assistant"
 ],
 "pf": "paid"
+},
+{
+"name": "OpenBot (CopilotKit)",
+"slug": "openbot-copilotkit",
+"category": "agents",
+"catName": "Agents & Automation",
+"url": "https://open.bot",
+"desc": "Free, open-source (MIT) self-hostable workspace for AI coworkers from CopilotKit, the team behind the AG-UI agent protocol. Create a Bot with instructions and tools, pick a model (OpenAI, Anthropic, Google, xAI or any OpenAI-compatible endpoint, including a local model in Ollama or vLLM), and it works on a computer of its own with a browser, files and tools, asking for approval before actions and keeping an audit trail after. Bring agents you already built with LangGraph, Google ADK, the Claude Agent SDK and other frameworks through AG-UI; tools connect over MCP. The desktop app for Mac (Apple silicon and Intel) and Windows installs the whole workspace, backend included (it runs on Docker or Podman), with no terminal needed; teams can deploy it on Kubernetes. It depends on CopilotKit Intelligence, which is licensed separately: a free local license for personal use (desktop setup handles it), a free trial license for Kubernetes evaluation and a paid production license for teams. Optional skins copy the look of OpenAI dots, Meta Muse and Claude Duet. Web, iOS, Android, Slack and Teams access are early access only. OpenBot 1.0 launched Nov 10, 2026 (v1.0.2 on Nov 11); about 11,200 GitHub stars. Very new, so give each Bot only the tools and permissions it needs.",
+"freeTier": true,
+"pricing": "Free for personal use (MIT app plus a free local Intelligence license); you pay your model provider. OpenBot for Business needs a paid production license (see open.bot)",
+"tags": [
+"agents",
+"ai coworker",
+"self-hosted",
+"computer use",
+"mcp",
+"open source",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Perplexity",
@@ -2206,7 +2212,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/Tencent/AI-Infra-Guard",
-"desc": "Free, open-source (Apache-2.0) AI red teaming platform from Tencent's Zhuque Lab, also called A.I.G. Five scanners in one web UI: AI infrastructure scanning that fingerprints AI services on a domain, IP or URL and matches known vulnerabilities, MCP server scanning, agent skill auditing, agent scanning that sends test prompts to a running agent, and LLM jailbreak evaluation of any OpenAI-compatible model. Start it with Docker Compose (4 GB RAM, 10 GB disk) and open localhost:8088, or pip install each scanner on its own (aig-infra-scan, aig-mcp-scan and others). The MCP, skill and agent scans use an LLM API key you supply. It has no login, so Tencent says never to expose it on a public network. About 7,400 GitHub stars, weekly releases (v4.6.9 on Nov 5, 2026 adds a CloudGPU provider preset for agent scans and MCP-scan fixes) and a Black Hat Europe 2025 Arsenal demo. Only scan systems you own or are authorized to test.",
+"desc": "Free, open-source (Apache-2.0) AI red teaming platform from Tencent's Zhuque Lab, also called A.I.G. Five scanners in one web UI: AI infrastructure scanning that fingerprints AI services on a domain, IP or URL and matches known vulnerabilities, MCP server scanning, agent skill auditing, agent scanning that sends test prompts to a running agent, and LLM jailbreak evaluation of any OpenAI-compatible model. Start it with Docker Compose (4 GB RAM, 10 GB disk) and open localhost:8088, or pip install each scanner on its own (aig-infra-scan, aig-mcp-scan and others). The MCP, skill and agent scans use an LLM API key you supply. It has no login, so Tencent says never to expose it on a public network. About 7,500 GitHub stars, weekly releases (v4.6.9 on Nov 5, 2026 adds a CloudGPU provider preset for agent scans and MCP-scan fixes) and a Black Hat Europe 2025 Arsenal demo. v4.6.10 (Nov 12, 2026) adds a local generative AI safety self-check, one page that runs refusal checks and infrastructure scans and keeps a printable report without storing your API keys, plus about 135 new AI product CVE advisories from NVD and several MCP-scan and agent-scan fixes. Only scan systems you own or are authorized to test.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0); LLM usage billed by your AI provider",
 "tags": [
