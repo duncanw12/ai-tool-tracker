@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -1367,21 +1367,6 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
-"name": "Uizard",
-"slug": "uizard",
-"category": "design",
-"catName": "Design & Websites",
-"url": "https://uizard.io",
-"desc": "AI UI design tool that turns prompts and sketches into mockups.",
-"freeTier": true,
-"pricing": "Pro from $12/mo billed annually",
-"tags": [
-"ui design",
-"prototyping"
-],
-"pf": "both"
-},
-{
 "name": "TryHackMe (Echo)",
 "slug": "tryhackme-echo",
 "category": "itsec",
@@ -1461,7 +1446,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://semgrep.dev",
-"desc": "Fast code scanner (SAST, supply chain, secrets) with AI-powered detection, triage and autofix. Great for scanning your own home-lab scripts.",
+"desc": "Fast code scanner (SAST, supply chain, secrets) with AI-powered detection, triage and autofix. Great for scanning your own home-lab scripts. New Nov 12, 2026: Semgrep Mandoline, a research preview of program-analysis tools built for AI agents rather than people: call graphs and cross-file dataflow (taint) analysis across 50 languages that an agent can query while it hunts for vulnerabilities. Semgrep says it is 50x faster than its Pro engine for these agent-style analyses. Existing Semgrep customers get it inside Semgrep Agentic Workflows and the Context Layer; others can ask to join the research preview.",
 "freeTier": true,
 "pricing": "Free for up to 10 contributors (60 AI credits); Teams Code from $30/contributor/mo",
 "tags": [
@@ -1979,6 +1964,25 @@ const DIRECTORY=[
 "new"
 ],
 "pf": "free"
+},
+{
+"name": "Bumblebee (Perplexity)",
+"slug": "bumblebee-perplexity",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/perplexityai/bumblebee",
+"desc": "Free, open-source (Apache-2.0) read-only scanner from Perplexity that answers one incident-response question: when a supply-chain advisory names a bad package, extension or version, which developer machines have it right now? It inventories language packages (npm, pnpm, Yarn, Bun, PyPI, Go modules, RubyGems, Composer, Homebrew), VS Code, Cursor, Windsurf and VSCodium extensions, Chromium-family and Firefox browser extensions, MCP server configs (Cursor, Claude Code, Claude Desktop, Cline, Gemini CLI) and agent-skill lock files, writes NDJSON records and flags exact matches against an exposure catalog. It reads metadata only: it never runs npm, pip or install scripts and does not record the secrets in MCP config env blocks. One static Go binary for macOS and Linux (go install), run once or on a schedule with cron, launchd or MDM; Perplexity maintains exposure catalogs for recent npm supply-chain campaigns in the repo. It is not an EDR, and Codex TOML MCP configs are not parsed yet. About 5,100 GitHub stars; latest tagged release v0.1.2 (Jun 2026), with catalog updates through Oct 2026.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0)",
+"tags": [
+"supply chain",
+"incident response",
+"mcp",
+"open source",
+"perplexity",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "Zendesk",

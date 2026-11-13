@@ -2,6 +2,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/uizard.html /categories/design.html 301
+/tools/uizard /categories/design 301
 /tools/writesonic.html /categories/writing.html 301
 /tools/writesonic /categories/writing 301
 /breaking-into-it /categories/itsec 301
@@ -95,7 +97,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/canva https://www.canva.com 302
 /go/webflow https://webflow.com 302
 /go/napkin-ai https://www.napkin.ai 302
-/go/uizard https://uizard.io 302
 /go/tryhackme-echo https://tryhackme.com/echo 302
 /go/htb-academy-htb-coach https://academy.hackthebox.com 302
 /go/pentestgpt https://github.com/GreyDGL/PentestGPT 302
@@ -133,6 +134,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/1password-for-agents https://1password.com/personal-ai-agent-integrations 302
 /go/cvengine https://github.com/hevnsnt/CVEngine 302
 /go/hol-guard https://github.com/hashgraph-online/hol-guard 302
+/go/bumblebee-perplexity https://github.com/perplexityai/bumblebee 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -157,6 +159,13 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/bumblebee https://github.com/perplexityai/bumblebee 302
+/go/perplexity-bumblebee https://github.com/perplexityai/bumblebee 302
+/go/pplx-bumblebee https://github.com/perplexityai/bumblebee 302
+/go/claude-code-2323 https://claude.com/product/claude-code 302
+/go/code-mode https://claude.com/product/claude-code 302
+/go/mandoline https://semgrep.dev 302
+/go/semgrep-mandoline https://semgrep.dev 302
 /go/openbot https://open.bot 302
 /go/open-bot https://open.bot 302
 /go/copilotkit https://open.bot 302

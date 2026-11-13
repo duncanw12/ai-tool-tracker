@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 13, 2026. Pricing only where the official page states it.
+const DROP_2026_11_13=[
+{name:"Bumblebee (Perplexity)",url:"https://github.com/perplexityai/bumblebee",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Read-only scanner that checks developer machines for compromised packages, editor and browser extensions and MCP server configs, and flags exact matches against an exposure catalog. One Go binary for macOS and Linux.",why:"Never runs npm, pip or install scripts, so the scan cannot trigger the payload it is hunting. About 5,100 GitHub stars."},
+];
 // Daily drop: Nov 12, 2026. Pricing only where the official page states it.
 const DROP_2026_11_12=[
 {name:"OpenBot (CopilotKit)",url:"https://open.bot",category:"Agents",pricing:"Free for personal use (MIT app plus a free local Intelligence license); you pay your model provider",desc:"Self-hostable workspace for AI coworkers: each Bot gets its own browser, files and tools, asks before it acts and keeps an audit trail. Any model, including local ones in Ollama; Mac and Windows desktop app.",why:"OpenBot 1.0 launched Nov 10 from the team behind AG-UI; about 11,200 GitHub stars. Production team deployments need a paid CopilotKit Intelligence license."},
