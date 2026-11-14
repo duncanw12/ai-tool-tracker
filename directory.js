@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -339,7 +339,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://openai.com/codex/",
-"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens.",
+"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens. Codex CLI 0.169.0 (Nov 13, 2026) keeps project configuration and MCP servers disabled for codex exec in untrusted directories, even with --sandbox workspace-write (pass --trust to save project trust), lets you add or edit custom model providers from the terminal, adds multiple side-chat tabs in the opt-in terminal workspace and fixes Windows sandbox handling for quoted cmd.exe paths.",
 "freeTier": true,
 "pricing": "Included with ChatGPT plans (limited on Free and Go)",
 "tags": [
@@ -412,6 +412,25 @@ const DIRECTORY=[
 "git"
 ],
 "pf": "free"
+},
+{
+"name": "Qwen Code",
+"slug": "qwen-code",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://github.com/QwenLM/qwen-code",
+"desc": "Open-source (Apache-2.0) AI coding agent from Alibaba's Qwen team for the terminal, with IDE plugins (VS Code, Zed, JetBrains), a desktop app, a web UI, SDKs and chat integrations. It has memory, skills, subagents, agent teams and MCP support, and talks to OpenAI, Anthropic, Gemini and Qwen APIs, any compatible third-party provider or a local model in Ollama or vLLM, switchable at runtime. Sign in with a Qwen account or bring your own API key. Install with the standalone script, npm (Node.js 22+) or Homebrew. Qwen Code 1.0 Preview (tagged Nov 11, 2026; preview.1 on Nov 12) merges the agent harness of Alibaba's Qoder with Qwen Code and ships native packages for macOS, Linux and Windows with no separate Node.js install; interfaces and settings may still change during the preview. The stable line is v0.27.3 (Nov 13). About 30,100 GitHub stars.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0); bring your own API key or use a Qwen account",
+"tags": [
+"agent",
+"terminal",
+"cli",
+"open source",
+"multi-model",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "ChatGPT",
@@ -753,21 +772,6 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
-"name": "Pika",
-"slug": "pika",
-"category": "video",
-"catName": "Video",
-"url": "https://pika.art",
-"desc": "AI video generator for short creative clips and effects.",
-"freeTier": true,
-"pricing": "Starter from $10/mo",
-"tags": [
-"video generation",
-"effects"
-],
-"pf": "both"
-},
-{
 "name": "Luma AI",
 "slug": "luma-ai",
 "category": "video",
@@ -1016,19 +1020,6 @@ const DIRECTORY=[
 "visual"
 ],
 "pf": "both"
-},
-{
-"name": "Relay.app",
-"slug": "relay-app",
-"category": "agents",
-"catName": "Agents & Automation",
-"url": "https://www.relay.app",
-"desc": "AI workflow automation with human-in-the-loop steps.",
-"tags": [
-"automation",
-"agents"
-],
-"pf": ""
 },
 {
 "name": "Muse (Meta)",
@@ -1985,6 +1976,25 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Vigilo (CERT-EU)",
+"slug": "vigilo-cert-eu",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/certeu/vigilo",
+"desc": "Open-source AI penetration-testing and code-review harness built by CERT-EU, the cybersecurity service for the EU institutions, and open-sourced on Nov 13, 2026. Point it at a web application you own: specialised agents, one per vulnerability class (injection, XSS, authentication, SSRF, authorization, GraphQL, WebSocket, cryptography and supply chain), map the target, share findings through a common knowledge base and try to exploit them with captured evidence, then an adversarial critic re-checks every finding, challenges its severity and merges duplicates before it reaches the report. White-box mode reads the source (plus an optional running instance) and proposes a fix branch per confirmed finding; grey-box mode tests only the running app with valid credentials and adds detection hints for the blue team. Runs as a multi-user web platform (Docker Compose, optional GitLab integration) or a command-line pipeline, and drives an agentic coding CLI (Claude Code, OpenAI Codex or OpenCode) with cloud or on-premises models, so you supply the model access. CERT-EU says findings and patches must be validated by the code owners, and it was part of an ENISA proof of concept on AI source-code testing. EUPL-1.2 licence; new on GitHub (only a handful of stars so far). Only test systems you own or are authorized to test.",
+"freeTier": true,
+"pricing": "Free and open source (EUPL-1.2); you pay for the model access it uses",
+"tags": [
+"pentesting",
+"code review",
+"appsec",
+"open source",
+"agents",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Zendesk",
 "slug": "zendesk",
 "category": "itsec",
@@ -2235,7 +2245,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://intuitem.com",
-"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening.",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions.",
 "freeTier": true,
 "pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
 "tags": [

@@ -2,6 +2,10 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/relay-app.html /categories/agents.html 301
+/tools/relay-app /categories/agents 301
+/tools/pika.html /categories/video.html 301
+/tools/pika /categories/video 301
 /tools/uizard.html /categories/design.html 301
 /tools/uizard /categories/design 301
 /tools/writesonic.html /categories/writing.html 301
@@ -34,6 +38,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/cline https://cline.bot 302
 /go/orca https://www.onorca.dev 302
 /go/aider https://aider.chat 302
+/go/qwen-code https://github.com/QwenLM/qwen-code 302
 /go/chatgpt https://chatgpt.com 302
 /go/claude https://claude.ai 302
 /go/gemini https://gemini.google.com 302
@@ -56,7 +61,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/recraft https://www.recraft.ai 302
 /go/runway https://runway.com 302
 /go/synthesia https://www.synthesia.io 302
-/go/pika https://pika.art 302
 /go/luma-ai https://lumalabs.ai 302
 /go/heygen https://www.heygen.com 302
 /go/descript https://www.descript.com 302
@@ -74,7 +78,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/n8n https://n8n.io 302
 /go/zapier https://zapier.com 302
 /go/make https://www.make.com/?pc=aitrackertool 302
-/go/relay-app https://www.relay.app 302
 /go/muse-meta https://muse.ai 302
 /go/hermes-agent https://hermes-agent.nousresearch.com 302
 /go/harness2-google-research https://github.com/google-research/harness2 302
@@ -135,6 +138,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/cvengine https://github.com/hevnsnt/CVEngine 302
 /go/hol-guard https://github.com/hashgraph-online/hol-guard 302
 /go/bumblebee-perplexity https://github.com/perplexityai/bumblebee 302
+/go/vigilo-cert-eu https://github.com/certeu/vigilo 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -159,6 +163,15 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/vigilo https://github.com/certeu/vigilo 302
+/go/cert-eu-vigilo https://github.com/certeu/vigilo 302
+/go/certeu-vigilo https://github.com/certeu/vigilo 302
+/go/qwen https://github.com/QwenLM/qwen-code 302
+/go/qwencode https://github.com/QwenLM/qwen-code 302
+/go/qwen-code-1 https://github.com/QwenLM/qwen-code 302
+/go/claude-code-2325 https://claude.com/product/claude-code 302
+/go/codex-0169 https://openai.com/codex/ 302
+/go/ciso-430 https://intuitem.com 302
 /go/bumblebee https://github.com/perplexityai/bumblebee 302
 /go/perplexity-bumblebee https://github.com/perplexityai/bumblebee 302
 /go/pplx-bumblebee https://github.com/perplexityai/bumblebee 302
