@@ -419,7 +419,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://github.com/QwenLM/qwen-code",
-"desc": "Open-source (Apache-2.0) AI coding agent from Alibaba's Qwen team for the terminal, with IDE plugins (VS Code, Zed, JetBrains), a desktop app, a web UI, SDKs and chat integrations. It has memory, skills, subagents, agent teams and MCP support, and talks to OpenAI, Anthropic, Gemini and Qwen APIs, any compatible third-party provider or a local model in Ollama or vLLM, switchable at runtime. Sign in with a Qwen account or bring your own API key. Install with the standalone script, npm (Node.js 22+) or Homebrew. Qwen Code 1.0 Preview (tagged Nov 11, 2026; preview.1 on Nov 12) merges the agent harness of Alibaba's Qoder with Qwen Code and ships native packages for macOS, Linux and Windows with no separate Node.js install; interfaces and settings may still change during the preview. The stable line is v0.27.3 (Nov 13). About 30,100 GitHub stars.",
+"desc": "Open-source (Apache-2.0) AI coding agent from Alibaba's Qwen team for the terminal, with IDE plugins (VS Code, Zed, JetBrains), a desktop app, a web UI, SDKs and chat integrations. It has memory, skills, subagents, agent teams and MCP support, and talks to OpenAI, Anthropic, Gemini and Qwen APIs, any compatible third-party provider or a local model in Ollama or vLLM, switchable at runtime. Sign in with a Qwen account or bring your own API key. Install with the standalone script, npm (Node.js 22+) or Homebrew. Qwen Code 1.0 Preview (tagged Nov 11, 2026; preview.1 on Nov 12) merges the agent harness of Alibaba's Qoder with Qwen Code and ships native packages for macOS, Linux and Windows with no separate Node.js install; interfaces and settings may still change during the preview. The stable line is v0.27.3 (Nov 13). v0.27.4 (Nov 15, 2026) makes Auto Mode ask for explicit authorization before risky actions and visibly mark Full Access, restores the /memory controls in the CLI, lets managed agent sessions use local folders you grant without saving credentials or paths, adds Feishu and WeCom webhook output and patches vulnerable dependencies (MCP, DOMPurify and compressed-request parsing). About 30,500 GitHub stars.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0); bring your own API key or use a Qwen account",
 "tags": [
@@ -1257,19 +1257,6 @@ const DIRECTORY=[
 "pf": "paid"
 },
 {
-"name": "Consensus",
-"slug": "consensus",
-"category": "research",
-"catName": "Productivity & Research",
-"url": "https://consensus.app",
-"desc": "AI search engine for scientific research.",
-"tags": [
-"academic",
-"search"
-],
-"pf": ""
-},
-{
 "name": "Gamma",
 "slug": "gamma",
 "category": "design",
@@ -1927,7 +1914,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/hevnsnt/CVEngine",
-"desc": "Free, self-hosted external attack-surface scanner with optional AI triage. Add a domain, IP range or URL and it discovers subdomains (bbot), sweeps ports (naabu), fingerprints services (nmap), runs nuclei checks and matches what you run against exploited CVEs from CISA KEV, EPSS, Exploit-DB, Metasploit and other feeds, then confirms what it can with read-only checks that record the exact command they ran. Bring your own AI (Anthropic, OpenAI, OpenRouter, or local Ollama or vLLM) or run it without one; AI-drafted nuclei templates never run until a person approves them. Includes an MCP server and REST API with read-only tokens for agents. One Docker Compose stack on Linux (4GB RAM minimum, 8GB recommended). A fork of reNgine 2.x from a single maintainer, published Oct 24, 2026 and at about 400 GitHub stars two days later. Only scan systems you own or are authorized to test.",
+"desc": "Free, self-hosted external attack-surface scanner with optional AI triage. Add a domain, IP range or URL and it discovers subdomains (bbot), sweeps ports (naabu), fingerprints services (nmap), runs nuclei checks and matches what you run against exploited CVEs from CISA KEV, EPSS, Exploit-DB, Metasploit and other feeds, then confirms what it can with read-only checks that record the exact command they ran. Bring your own AI (Anthropic, OpenAI, OpenRouter, or local Ollama or vLLM) or run it without one; AI-drafted nuclei templates never run until a person approves them. Includes an MCP server and REST API with read-only tokens for agents. One Docker Compose stack on Linux (4GB RAM minimum, 8GB recommended). A fork of reNgine 2.x from a single maintainer, published Oct 24, 2026 and at about 400 GitHub stars two days later. v1.4.0 and v1.4.1 (Nov 14, 2026) make the status page, project rows and headline counts much faster on small servers, draw each registered domain as its own cluster on the graph and skip restarts for documentation-only updates; about 730 GitHub stars by Nov 15. Only scan systems you own or are authorized to test.",
 "pricing": "Open source (GPL-3.0)",
 "tags": [
 "attack surface",
@@ -1990,6 +1977,26 @@ const DIRECTORY=[
 "appsec",
 "open source",
 "agents",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "claude-code-hooks",
+"slug": "claude-code-hooks",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/karanb192/claude-code-hooks",
+"desc": "Free, open-source (MIT) collection of ready-made hooks for Claude Code from Karan Bansal, Head of AI at the application security company ArmorCode, shipped as a 22-plugin marketplace you install from inside Claude Code (/plugin marketplace add karanb192/claude-code-hooks, then for example /plugin install block-dangerous-commands@claude-code-hooks). The safety plugins run as separate processes before a tool call executes, so the allow-or-deny decision is made by ordinary code rather than the model: block-dangerous-commands stops commands such as rm -rf ~, fork bombs, curl | sh and force pushes to main; protect-secrets blocks reading, editing or exfiltrating .env and other credential files; git-safety adds branch-aware git guardrails; protect-tests stops the agent deleting or skipping tests to fake a green build; config-guard stops it tampering with its own hook and settings files; instructions-audit locks the session when a loaded CLAUDE.md or rules file carries hidden directives. Other plugins handle session logs, auto-formatting, Slack alerts and context-cost tracking. Every hook is mapped to the OWASP LLM Top 10 2026, and the repo reports 1,949 passing tests. Pattern-based rules can be bypassed (the author says he found two bypasses of his own secrets check) and hooks cannot stop a malicious session-start hook already on disk, so use it alongside scoped credentials and sandboxing, not instead of them. Claude Code only. About 580 GitHub stars; ArmorCode published a write-up on Oct 29, 2026, press coverage followed on Nov 14, and the author plans a Black Hat Europe Arsenal demo on Dec 9-10.",
+"freeTier": true,
+"pricing": "Free and open source (MIT)",
+"tags": [
+"claude code",
+"hooks",
+"guardrails",
+"agent security",
+"owasp",
+"open source",
 "new"
 ],
 "pf": "both"
@@ -2245,7 +2252,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://intuitem.com",
-"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions.",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions. v4.3.1 (Nov 14, 2026) makes the AI chat index evidence attachments and published documents, fixes MCP sign-in failing when an app requests scopes it may not have, adds an outline of ISO 9001:2015 for quality management (English and French) and improves how tasks are shown.",
 "freeTier": true,
 "pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
 "tags": [

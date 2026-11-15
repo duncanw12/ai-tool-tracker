@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 15, 2026. Pricing only where the official page states it.
+const DROP_2026_11_15=[
+{name:"claude-code-hooks",url:"https://github.com/karanb192/claude-code-hooks",category:"IT & Security",pricing:"Free and open source (MIT)",desc:"22 installable Claude Code plugins that check each tool call before it runs: block rm -rf ~, curl | sh and force pushes to main, protect .env and credential files, stop test-deleting and guard the agent's own config.",why:"By Karan Bansal, Head of AI at ArmorCode. About 580 GitHub stars and 1,949 passing tests mapped to the OWASP LLM Top 10 2026. Pattern rules can be bypassed, so pair it with sandboxing and scoped credentials."},
+];
 // Daily drop: Nov 14, 2026. Pricing only where the official page states it.
 const DROP_2026_11_14=[
 {name:"Vigilo (CERT-EU)",url:"https://github.com/certeu/vigilo",category:"IT & Security",pricing:"Free and open source (EUPL-1.2); you pay for the model access it uses",desc:"AI pentest and code-review harness from CERT-EU: specialised agents per vulnerability class find and try to prove issues in a web app you own, an adversarial critic re-checks every finding, and white-box runs propose a fix branch per confirmed issue.",why:"Built and used by the EU institutions' CERT and open-sourced Nov 13. Drives Claude Code, Codex or OpenCode with cloud or on-premises models. Brand new on GitHub, so few stars yet."},

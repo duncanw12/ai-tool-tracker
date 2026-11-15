@@ -2,6 +2,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/consensus.html /categories/research.html 301
+/tools/consensus /categories/research 301
 /tools/relay-app.html /categories/agents.html 301
 /tools/relay-app /categories/agents 301
 /tools/pika.html /categories/video.html 301
@@ -93,7 +95,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/fireflies-ai https://fireflies.ai/?fpr=duncan-873b18 302
 /go/exa https://exa.ai 302
 /go/elicit https://elicit.com 302
-/go/consensus https://consensus.app 302
 /go/gamma https://try.gamma.app/74bhdc77mraq 302
 /go/framer https://www.framer.com 302
 /go/figma https://www.figma.com 302
@@ -139,6 +140,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/hol-guard https://github.com/hashgraph-online/hol-guard 302
 /go/bumblebee-perplexity https://github.com/perplexityai/bumblebee 302
 /go/vigilo-cert-eu https://github.com/certeu/vigilo 302
+/go/claude-code-hooks https://github.com/karanb192/claude-code-hooks 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -163,6 +165,13 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/cc-hooks https://github.com/karanb192/claude-code-hooks 302
+/go/claude-hooks https://github.com/karanb192/claude-code-hooks 302
+/go/hooks https://github.com/karanb192/claude-code-hooks 302
+/go/armorcode-hooks https://github.com/karanb192/claude-code-hooks 302
+/go/qwen-0274 https://github.com/QwenLM/qwen-code 302
+/go/ciso-431 https://intuitem.com 302
+/go/cvengine-14 https://github.com/hevnsnt/CVEngine 302
 /go/vigilo https://github.com/certeu/vigilo 302
 /go/cert-eu-vigilo https://github.com/certeu/vigilo 302
 /go/certeu-vigilo https://github.com/certeu/vigilo 302
