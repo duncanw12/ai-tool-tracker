@@ -726,21 +726,6 @@ const DIRECTORY=[
 "pf": "free"
 },
 {
-"name": "Recraft",
-"slug": "recraft",
-"category": "image",
-"catName": "Image",
-"url": "https://www.recraft.ai",
-"desc": "AI image generator for designers, with vector and brand-style output.",
-"freeTier": true,
-"tags": [
-"vector",
-"design",
-"image generation"
-],
-"pf": "free"
-},
-{
 "name": "Runway",
 "slug": "runway",
 "category": "video",
@@ -961,19 +946,6 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
-"name": "QuillBot",
-"slug": "quillbot",
-"category": "writing",
-"catName": "Writing",
-"url": "https://quillbot.com",
-"desc": "AI paraphrasing, grammar checking and summarizing.",
-"tags": [
-"paraphrasing",
-"summarizing"
-],
-"pf": ""
-},
-{
 "name": "n8n",
 "slug": "n8n",
 "category": "agents",
@@ -1177,6 +1149,25 @@ const DIRECTORY=[
 "tags": [
 "meetings",
 "notes"
+],
+"pf": "both"
+},
+{
+"name": "Yogurt",
+"slug": "yogurt",
+"category": "research",
+"catName": "Productivity & Research",
+"url": "https://yogurt.so",
+"desc": "Free, open-source (MIT) desktop app for private AI meeting notes from Frigade (backed by Y Combinator), pitched as an alternative to Granola. It records your microphone and the call audio playing on your computer, so no bot joins the meeting, transcribes as you talk with whisper.cpp (plus Apple SpeechAnalyzer on supported Macs; 99 languages in multi-language mode) and writes the summary with a local open-weight model through llama.cpp. Audio, transcripts and notes stay on your computer, and it works offline after a one-time model download (about 5 GB first, then 14 GB or more for the best model your machine can run). Ask questions across meetings with links to the source, search by folder, title or transcript, export Markdown, and let an assistant app read your notes through a local MCP server when you allow it. No account needed. Runs on Mac (Apple silicon, macOS 14.4+), Windows 10 (2004) or newer and Linux (Ubuntu 22.04+ AppImage) with at least 8 GB of memory; calendar and speaker names from Zoom, Teams and Meet are Mac only for now, and the Windows build is not yet code-signed. Public since Nov 10, 2026, with about 1,760 GitHub stars in under a week and frequent releases (v0.3.31 on Nov 16). Let everyone on the call know you are recording.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); no account needed",
+"tags": [
+"meetings",
+"transcription",
+"local",
+"privacy",
+"open source",
+"new"
 ],
 "pf": "both"
 },
@@ -1829,7 +1820,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/NVIDIA/SkillSpector",
-"desc": "NVIDIA's open-source scanner that checks AI agent skills (for Claude Code, Codex, Gemini CLI and MCP) before you install them. It looks for 71 vulnerability patterns across 17 categories, including prompt injection, data exfiltration, privilege escalation, supply-chain risk and MCP tool poisoning, then gives a 0-100 risk score with JSON, Markdown or SARIF reports. Fast static checks work offline; an optional LLM pass adds deeper review. Scans Git repos, URLs, zip files or folders, and runs in Docker. About 24,700 GitHub stars; v2.13.4 shipped Nov 4, 2026 (provider compatibility and source-inspection fixes).",
+"desc": "NVIDIA's open-source scanner that checks AI agent skills (for Claude Code, Codex, Gemini CLI and MCP) before you install them. It looks for 71 vulnerability patterns across 17 categories, including prompt injection, data exfiltration, privilege escalation, supply-chain risk and MCP tool poisoning, then gives a 0-100 risk score with JSON, Markdown or SARIF reports. Fast static checks work offline; an optional LLM pass adds deeper review. Scans Git repos, URLs, zip files or folders, and runs in Docker. About 26,300 GitHub stars. v2.13.4 shipped Nov 4, 2026 (provider compatibility and source-inspection fixes); v2.13.5 (Nov 16) is a maintenance release that improves bounded parsing of large skills and structured data and keeps security findings across decoded views. A warning or incomplete scan is still not proof a skill is safe.",
 "pricing": "Open source (Apache-2.0); optional LLM analysis billed by your AI provider",
 "tags": [
 "ai security",
@@ -1996,6 +1987,25 @@ const DIRECTORY=[
 "guardrails",
 "agent security",
 "owasp",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "safeagents (Hugging Face)",
+"slug": "safeagents-hugging-face",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/huggingface/safeagents",
+"desc": "Free, open-source (Apache-2.0) local proxy from Hugging Face that sits between your AI coding agent and its model server and checks every tool call the model asks for before the agent sees it. A call is blocked if it uses a tool the request never declared, reaches a host that appears nowhere in the conversation, or trips one of Hugging Face's atif-scan detectors (for example reading /proc/1/environ or a Kubernetes service-account token, curl --noproxy or nsenter); a blocked call is swapped for a text notice, so the agent runs nothing. Borderline calls can go to an optional judge model that sees only what you wrote, the call and the findings, and can add blocks but never lift one; Hugging Face publishes a benchmark of 661 real flagged tool calls to help you pick one. Works with any agent that lets you set a base URL over OpenAI Chat Completions or Anthropic Messages: setup guides cover Claude Code, OpenCode, Qwen Code, Cline, OpenHands, Hermes Agent, OpenClaw, pi, Mistral Vibe, DeepSeek Harness and GitHub Copilot in VS Code (bring-your-own-key models only). Codex CLI (Responses API) and Gemini CLI calls are not checked yet. Start with --log-only to see what it would block before you turn blocking on. A separate scrub command masks credentials, emails, home directories and public IP addresses in agent session logs before you share them. Installs with a one-line script (it uses uv) on macOS, Linux, WSL or Windows PowerShell. About 286 GitHub stars (repo created Oct 28, 2026); no tagged releases yet, with commits as recent as Nov 15.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0); an optional judge model is billed by your AI provider",
+"tags": [
+"ai security",
+"agents",
+"guardrails",
+"proxy",
 "open source",
 "new"
 ],
@@ -2215,7 +2225,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://github.com/FailproofAI/failproofai",
-"desc": "Local guardrails and session history for the AI agents you already run. It hooks 12 agent harnesses (Claude Code, Codex, GitHub Copilot CLI, Cursor Agent, OpenCode, Factory Droid, Devin CLI, Antigravity CLI, Goose, Pi, Hermes and OpenClaw), records every run and blocks dangerous tool calls before they execute using 40 built-in policies or rules you write in TypeScript. A local dashboard on localhost:8020 needs no account, and failproofai audit scans your history for risky patterns and suggests policies. Blocking is verified on all 12 harnesses; what else it can stop varies by harness. Install with npm. About 7,600 GitHub stars and about 2,300 npm downloads in the week of Oct 27-Nov 2, 2026; v1.0.13 (Nov 2) fixed policies that had silently stopped applying on newer OpenClaw and Antigravity versions. A hosted Observability product for teams is sold by demo.",
+"desc": "Local guardrails and session history for the AI agents you already run. It hooks 12 agent harnesses (Claude Code, Codex, GitHub Copilot CLI, Cursor Agent, OpenCode, Factory Droid, Devin CLI, Antigravity CLI, Goose, Pi, Hermes and OpenClaw), records every run and blocks dangerous tool calls before they execute using 40 built-in policies or rules you write in TypeScript. A local dashboard on localhost:8020 needs no account, and failproofai audit scans your history for risky patterns and suggests policies. Blocking is verified on all 12 harnesses; what else it can stop varies by harness. Install with npm. About 9,100 GitHub stars (about 2,300 npm downloads in the week of Oct 27-Nov 2, 2026). v1.0.13 (Nov 2) fixed policies that had silently stopped applying on newer OpenClaw and Antigravity versions; v1.0.14 (Nov 15) keeps telemetry batches on disk and resends them after a network or server outage instead of giving up after three tries, and keeps permanently rejected batches for inspection. A hosted Observability product for teams is sold by demo.",
 "freeTier": true,
 "pricing": "Free for personal and internal use (MIT with Commons Clause); hosted Observability for teams by demo",
 "tags": [
@@ -2252,7 +2262,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://intuitem.com",
-"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions. v4.3.1 (Nov 14, 2026) makes the AI chat index evidence attachments and published documents, fixes MCP sign-in failing when an app requests scopes it may not have, adds an outline of ISO 9001:2015 for quality management (English and French) and improves how tasks are shown.",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions. v4.3.1 (Nov 14, 2026) makes the AI chat index evidence attachments and published documents, fixes MCP sign-in failing when an app requests scopes it may not have, adds an outline of ISO 9001:2015 for quality management (English and French) and improves how tasks are shown. v4.3.2 (Nov 15, 2026) adds MCP tools that let an AI assistant read, create and update documents, and fixes missing audit observations in Word exports, metric quick input ignoring the date and unclear OIDC consent messages.",
 "freeTier": true,
 "pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
 "tags": [

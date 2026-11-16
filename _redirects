@@ -2,6 +2,10 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/recraft.html /categories/image.html 301
+/tools/recraft /categories/image 301
+/tools/quillbot.html /categories/writing.html 301
+/tools/quillbot /categories/writing 301
 /tools/consensus.html /categories/research.html 301
 /tools/consensus /categories/research 301
 /tools/relay-app.html /categories/agents.html 301
@@ -60,7 +64,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/adobe-firefly https://www.adobe.com/products/firefly.html 302
 /go/black-forest-labs-flux https://bfl.ai 302
 /go/invokeai https://github.com/invoke-ai/InvokeAI 302
-/go/recraft https://www.recraft.ai 302
 /go/runway https://runway.com 302
 /go/synthesia https://www.synthesia.io 302
 /go/luma-ai https://lumalabs.ai 302
@@ -76,7 +79,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/jasper https://www.jasper.ai 302
 /go/copy-ai https://www.copy.ai 302
 /go/grammarly https://www.grammarly.com 302
-/go/quillbot https://quillbot.com 302
 /go/n8n https://n8n.io 302
 /go/zapier https://zapier.com 302
 /go/make https://www.make.com/?pc=aitrackertool 302
@@ -90,6 +92,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/perplexity https://www.perplexity.ai 302
 /go/gemini-notebook https://notebook.google 302
 /go/granola https://www.granola.ai 302
+/go/yogurt https://yogurt.so 302
 /go/notion-ai https://www.notion.com 302
 /go/otter-ai https://otter.ai 302
 /go/fireflies-ai https://fireflies.ai/?fpr=duncan-873b18 302
@@ -141,6 +144,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/bumblebee-perplexity https://github.com/perplexityai/bumblebee 302
 /go/vigilo-cert-eu https://github.com/certeu/vigilo 302
 /go/claude-code-hooks https://github.com/karanb192/claude-code-hooks 302
+/go/safeagents-hugging-face https://github.com/huggingface/safeagents 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -165,6 +169,16 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/safeagents https://github.com/huggingface/safeagents 302
+/go/hf-safeagents https://github.com/huggingface/safeagents 302
+/go/huggingface-safeagents https://github.com/huggingface/safeagents 302
+/go/safe-agents https://github.com/huggingface/safeagents 302
+/go/yogurt-notes https://yogurt.so 302
+/go/yogurt-ai https://yogurt.so 302
+/go/frigade-yogurt https://yogurt.so 302
+/go/ciso-432 https://intuitem.com 302
+/go/failproof-1014 https://github.com/FailproofAI/failproofai 302
+/go/skillspector-2135 https://github.com/NVIDIA/SkillSpector 302
 /go/cc-hooks https://github.com/karanb192/claude-code-hooks 302
 /go/claude-hooks https://github.com/karanb192/claude-code-hooks 302
 /go/hooks https://github.com/karanb192/claude-code-hooks 302
