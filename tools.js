@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 17, 2026. Pricing only where the official page states it.
+const DROP_2026_11_17=[
+{name:"Open Code Review (Alibaba)",url:"https://github.com/alibaba/open-code-review",category:"IT & Security",pricing:"Free and open source (Apache-2.0); you pay for your own model, or use your coding agent's model",desc:"Alibaba's AI code review CLI, opened up from its internal review assistant: reads your Git diff and leaves line-level comments, with built-in rules for bugs and security issues such as XSS and SQL injection; ocr scan audits whole folders.",why:"Delegation mode lets Claude Code, Codex, Cursor, Kimi Code or OpenCode do the review under its rules with no extra API key, and it runs in GitHub Actions and GitLab CI. About 53,400 GitHub stars."},
+];
 // Daily drop: Nov 16, 2026. Pricing only where the official page states it.
 const DROP_2026_11_16=[
 {name:"safeagents (Hugging Face)",url:"https://github.com/huggingface/safeagents",category:"IT & Security",pricing:"Free and open source (Apache-2.0)",desc:"Local proxy between your coding agent and its model server: every tool call is checked before the agent sees it, and calls to undeclared tools, unknown hosts or flagged actions are replaced with a notice, so nothing runs.",why:"From Hugging Face. Works with Claude Code, OpenCode, Qwen Code, Cline, OpenHands and more via a base-URL setting; start with --log-only. About 290 GitHub stars. Codex CLI and Gemini CLI calls are not checked yet."},

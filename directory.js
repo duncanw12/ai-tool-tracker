@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -419,7 +419,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://github.com/QwenLM/qwen-code",
-"desc": "Open-source (Apache-2.0) AI coding agent from Alibaba's Qwen team for the terminal, with IDE plugins (VS Code, Zed, JetBrains), a desktop app, a web UI, SDKs and chat integrations. It has memory, skills, subagents, agent teams and MCP support, and talks to OpenAI, Anthropic, Gemini and Qwen APIs, any compatible third-party provider or a local model in Ollama or vLLM, switchable at runtime. Sign in with a Qwen account or bring your own API key. Install with the standalone script, npm (Node.js 22+) or Homebrew. Qwen Code 1.0 Preview (tagged Nov 11, 2026; preview.1 on Nov 12) merges the agent harness of Alibaba's Qoder with Qwen Code and ships native packages for macOS, Linux and Windows with no separate Node.js install; interfaces and settings may still change during the preview. The stable line is v0.27.3 (Nov 13). v0.27.4 (Nov 15, 2026) makes Auto Mode ask for explicit authorization before risky actions and visibly mark Full Access, restores the /memory controls in the CLI, lets managed agent sessions use local folders you grant without saving credentials or paths, adds Feishu and WeCom webhook output and patches vulnerable dependencies (MCP, DOMPurify and compressed-request parsing). About 30,500 GitHub stars.",
+"desc": "Open-source (Apache-2.0) AI coding agent from Alibaba's Qwen team for the terminal, with IDE plugins (VS Code, Zed, JetBrains), a desktop app, a web UI, SDKs and chat integrations. It has memory, skills, subagents, agent teams and MCP support, and talks to OpenAI, Anthropic, Gemini and Qwen APIs, any compatible third-party provider or a local model in Ollama or vLLM, switchable at runtime. Sign in with a Qwen account or bring your own API key. Install with the standalone script, npm (Node.js 22+) or Homebrew. Qwen Code 1.0 Preview (tagged Nov 11, 2026; preview.1 on Nov 12) merges the agent harness of Alibaba's Qoder with Qwen Code and ships native packages for macOS, Linux and Windows with no separate Node.js install; interfaces and settings may still change during the preview. The stable line is v0.27.3 (Nov 13). v0.27.4 (Nov 15, 2026) makes Auto Mode ask for explicit authorization before risky actions and visibly mark Full Access, restores the /memory controls in the CLI, lets managed agent sessions use local folders you grant without saving credentials or paths, adds Feishu and WeCom webhook output and patches vulnerable dependencies (MCP, DOMPurify and compressed-request parsing). v0.28.0 (Nov 17, 2026) runs headless sessions, the terminal UI and subagents on one shared agent loop by default, keeps the latest complete operation when a long session is compacted, shows per-turn hook statistics in the web shell and adds a DingTalk adapter for managed agents. About 30,700 GitHub stars.",
 "freeTier": true,
 "pricing": "Free and open source (Apache-2.0); bring your own API key or use a Qwen account",
 "tags": [
@@ -837,20 +837,6 @@ const DIRECTORY=[
 "desc": "Generate full songs with vocals from a text prompt.",
 "freeTier": true,
 "pricing": "Pro from $8/mo billed yearly",
-"tags": [
-"music generation"
-],
-"pf": "both"
-},
-{
-"name": "Udio",
-"slug": "udio",
-"category": "audio",
-"catName": "Voice & Audio",
-"url": "https://www.udio.com",
-"desc": "AI music generation and remixing.",
-"freeTier": true,
-"pricing": "Standard from $10/mo ($8/mo billed annually)",
 "tags": [
 "music generation"
 ],
@@ -2012,6 +1998,25 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
+"name": "Open Code Review (Alibaba)",
+"slug": "open-code-review-alibaba",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/alibaba/open-code-review",
+"desc": "Free, open-source (Apache-2.0) AI code review command-line tool that started as Alibaba Group's internal code review assistant, which Alibaba says served tens of thousands of its developers over two years before it was opened up. Run ocr review in a repository and it reads your Git diff, groups related files, matches review rules to each file and has an agent read full files and search the codebase before writing line-level comments; ocr scan reviews whole files with no diff, for an audit of existing code. The built-in multi-language rule set covers bugs such as null-pointer errors and thread safety as well as security issues such as cross-site scripting (XSS) and SQL injection, and you can add your own rules by path. Two ways to run it: native mode uses any OpenAI- or Anthropic-compatible model endpoint you configure, and delegation mode lets the coding agent you already use (Claude Code, Codex, Cursor, Kimi Code or OpenCode) do the review under Open Code Review's file selection, rules and coverage checks, with no separate API key. Also runs in CI (GitHub Actions, GitLab CI, Gerrit), has a browser session viewer to mark findings fixed or ignored, and works on Windows, macOS and Linux (needs Git 2.41 or newer; install with npm install -g @alibaba-group/open-code-review). Alibaba's own benchmark (AACR-Bench, 200 real pull requests) reports higher precision than Claude Code on the same model at about a ninth of the tokens, with lower recall by design; those numbers are self-reported. About 53,400 GitHub stars (public since May 2026), about 181,700 npm downloads in the week of Nov 10-16, 2026, and frequent releases (v1.13.11 on Nov 17). An AI review is a second pair of eyes, not a replacement for a security scanner or a human reviewer.",
+"freeTier": true,
+"pricing": "Free and open source (Apache-2.0); you pay for your own model, or use your coding agent's model in delegation mode",
+"tags": [
+"code review",
+"code security",
+"cli",
+"ci",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
 "name": "Zendesk",
 "slug": "zendesk",
 "category": "itsec",
@@ -2262,7 +2267,7 @@ const DIRECTORY=[
 "category": "itsec",
 "catName": "AI for IT & Cybersecurity",
 "url": "https://intuitem.com",
-"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions. v4.3.1 (Nov 14, 2026) makes the AI chat index evidence attachments and published documents, fixes MCP sign-in failing when an app requests scopes it may not have, adds an outline of ISO 9001:2015 for quality management (English and French) and improves how tasks are shown. v4.3.2 (Nov 15, 2026) adds MCP tools that let an AI assistant read, create and update documents, and fixes missing audit observations in Word exports, metric quick input ignoring the date and unclear OIDC consent messages.",
+"desc": "Open-source GRC (governance, risk and compliance) platform from intuitem for risk assessments, audits, vendor risk and compliance tracking against 200+ frameworks, including ISO 27001, NIST CSF, SOC 2, CIS Controls, PCI DSS, HIPAA and CMMC, with automatic mapping between frameworks so one control counts toward several. An optional AI chat mode (off by default) answers questions about your risks, controls and frameworks using a local model through Ollama, LM Studio or llama.cpp, or any OpenAI-compatible endpoint, with a Qdrant vector store. Self-host the free Community edition with Docker Compose, or start a free trial of the cloud version. About 4,600 GitHub stars. v4.2.2 (Nov 7, 2026) adds MCP tools that let an AI assistant assess and write findings, an assets lifecycle, a cumulative outcome for Australia's Essential Eight, new framework libraries (ASD ISM September 2026, ASD Essential Eight October 2026, Swift CSCF 2026 and 2027, SAMA BCM, Germany's 2025 NIS-2 implementation act), a better ISO 27001 to NIST CSF 2.0 mapping and security hardening. v4.3.0 (Nov 13, 2026) adds service accounts federated with an external OIDC identity provider, an MCP tool for reviewing evidence, a more actionable landing-page briefing, a Hungarian NIS2 compliance preset and requirement names for the NIS2 2024/2690 framework, and tightens bulk-action permissions. v4.3.1 (Nov 14, 2026) makes the AI chat index evidence attachments and published documents, fixes MCP sign-in failing when an app requests scopes it may not have, adds an outline of ISO 9001:2015 for quality management (English and French) and improves how tasks are shown. v4.3.2 (Nov 15, 2026) adds MCP tools that let an AI assistant read, create and update documents, and fixes missing audit observations in Word exports, metric quick input ignoring the date and unclear OIDC consent messages. v4.3.3 (Nov 16, 2026) lets workflows fill in field defaults through inline event triggers and name the requester of a validation flow, keeps deprecated and draft items out of the landing-page briefing and fixes visual glitches in the library editor and metric charts.",
 "freeTier": true,
 "pricing": "Community edition free (self-hosted, AGPLv3); Pro SaaS from \u20ac39/contributor/mo billed annually; free cloud trial",
 "tags": [

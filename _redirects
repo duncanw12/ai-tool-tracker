@@ -2,6 +2,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/udio.html /categories/audio.html 301
+/tools/udio /categories/audio 301
 /tools/recraft.html /categories/image.html 301
 /tools/recraft /categories/image 301
 /tools/quillbot.html /categories/writing.html 301
@@ -72,7 +74,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/kling-ai https://kling.ai 302
 /go/elevenlabs https://elevenlabs.io 302
 /go/suno https://suno.com 302
-/go/udio https://www.udio.com 302
 /go/fish-audio https://fish.audio 302
 /go/pocket-tts-kyutai https://github.com/kyutai-labs/pocket-tts 302
 /go/murf-ai https://murf.ai 302
@@ -145,6 +146,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/vigilo-cert-eu https://github.com/certeu/vigilo 302
 /go/claude-code-hooks https://github.com/karanb192/claude-code-hooks 302
 /go/safeagents-hugging-face https://github.com/huggingface/safeagents 302
+/go/open-code-review-alibaba https://github.com/alibaba/open-code-review 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -169,6 +171,13 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/open-code-review https://github.com/alibaba/open-code-review 302
+/go/alibaba-ocr https://github.com/alibaba/open-code-review 302
+/go/alibaba-code-review https://github.com/alibaba/open-code-review 302
+/go/ocr-review https://github.com/alibaba/open-code-review 302
+/go/claude-21326 https://claude.com/product/claude-code 302
+/go/qwen-0280 https://github.com/QwenLM/qwen-code 302
+/go/ciso-433 https://intuitem.com 302
 /go/safeagents https://github.com/huggingface/safeagents 302
 /go/hf-safeagents https://github.com/huggingface/safeagents 302
 /go/huggingface-safeagents https://github.com/huggingface/safeagents 302
