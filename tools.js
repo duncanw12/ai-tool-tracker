@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 18, 2026. Pricing only where the official page states it.
+const DROP_2026_11_18=[
+{name:"Claude BugHunter",url:"https://github.com/elementalsouls/Claude-BugHunter",category:"IT & Security",pricing:"Free and open source (MIT); needs your own Claude Code or other agent subscription",desc:"83 bug bounty and red-team skills plus 15 slash commands for Claude Code: recon, 58 hunt skills built from 681 disclosed HackerOne report patterns, and a triage gate that checks scope before you report.",why:"Topped GitHub Trending on Nov 18 (about 2,300 stars in a day, about 10,300 total). Skills also work in OpenCode, Codex CLI, Hermes Agent and Antigravity. Only for targets you own or are authorized to test."},
+];
 // Daily drop: Nov 17, 2026. Pricing only where the official page states it.
 const DROP_2026_11_17=[
 {name:"Open Code Review (Alibaba)",url:"https://github.com/alibaba/open-code-review",category:"IT & Security",pricing:"Free and open source (Apache-2.0); you pay for your own model, or use your coding agent's model",desc:"Alibaba's AI code review CLI, opened up from its internal review assistant: reads your Git diff and leaves line-level comments, with built-in rules for bugs and security issues such as XSS and SQL injection; ocr scan audits whole folders.",why:"Delegation mode lets Claude Code, Codex, Cursor, Kimi Code or OpenCode do the review under its rules with no extra API key, and it runs in GitHub Actions and GitLab CI. About 53,400 GitHub stars."},

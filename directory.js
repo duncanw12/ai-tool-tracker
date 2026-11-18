@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -339,7 +339,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://openai.com/codex/",
-"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens. Codex CLI 0.169.0 (Nov 13, 2026) keeps project configuration and MCP servers disabled for codex exec in untrusted directories, even with --sandbox workspace-write (pass --trust to save project trust), lets you add or edit custom model providers from the terminal, adds multiple side-chat tabs in the opt-in terminal workspace and fixes Windows sandbox handling for quoted cmd.exe paths.",
+"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens. Codex CLI 0.169.0 (Nov 13, 2026) keeps project configuration and MCP servers disabled for codex exec in untrusted directories, even with --sandbox workspace-write (pass --trust to save project trust), lets you add or edit custom model providers from the terminal, adds multiple side-chat tabs in the opt-in terminal workspace and fixes Windows sandbox handling for quoted cmd.exe paths. GPT-6.2 Astra and GPT-6.2 Sol (Nov 17, 2026) are available in Codex for Plus, Pro, Enterprise and Edu users; in the API gpt-6.2-astra costs $8 per million input tokens ($0.40 cached) and $40 per million output tokens, and gpt-6.2-sol keeps GPT-6.1 Sol's prices. Codex CLI 0.170.0 (Nov 18, 2026) adds realtime voice calls in the terminal UI, fixes MCP OAuth credential races during login and logout and keeps existing sandbox restrictions when permissions change or a child thread starts.",
 "freeTier": true,
 "pricing": "Included with ChatGPT plans (limited on Free and Go)",
 "tags": [
@@ -438,7 +438,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://chatgpt.com",
-"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images. Since Oct 20, 2026 you can lock a chat behind a four-digit PIN or device sign-in so it drops out of your history and search (it is hidden, not end-to-end encrypted). New Oct 30, 2026: account switching is rolling out in the iOS and Android apps. Stay signed in to up to two ChatGPT accounts and switch in Settings > Switch account; chats, memory, files and subscriptions stay separate, and it already works on the web.",
+"desc": "OpenAI's general-purpose AI assistant for chat, writing, code and images. Since Oct 20, 2026 you can lock a chat behind a four-digit PIN or device sign-in so it drops out of your history and search (it is hidden, not end-to-end encrypted). New Oct 30, 2026: account switching is rolling out in the iOS and Android apps. Stay signed in to up to two ChatGPT accounts and switch in Settings > Switch account; chats, memory, files and subscriptions stay separate, and it already works on the web. New Nov 17, 2026: GPT-6.2 Astra, OpenAI's new frontier model for complex professional work, and GPT-6.2 Sol, its everyday model, are available in ChatGPT Work for Plus, Pro, Enterprise and Edu users (Enterprise and Edu admins turn them on); Pro subscribers get the faster Ultrafast mode (Pro 200 starts with Sol).",
 "freeTier": true,
 "pricing": "Plus $20/mo; lower-cost Go plan also available",
 "tags": [
@@ -662,22 +662,6 @@ const DIRECTORY=[
 "tags": [
 "image generation",
 "assets"
-],
-"pf": "both"
-},
-{
-"name": "Krea",
-"slug": "krea",
-"category": "image",
-"catName": "Image",
-"url": "https://www.krea.ai",
-"desc": "Real-time AI image and video generation and enhancement.",
-"freeTier": true,
-"pricing": "Pro from $21/mo billed yearly ($35 monthly)",
-"tags": [
-"image generation",
-"upscaling",
-"real-time"
 ],
 "pf": "both"
 },
@@ -2011,6 +1995,25 @@ const DIRECTORY=[
 "code security",
 "cli",
 "ci",
+"open source",
+"new"
+],
+"pf": "both"
+},
+{
+"name": "Claude BugHunter",
+"slug": "claude-bughunter",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://github.com/elementalsouls/Claude-BugHunter",
+"desc": "Free, open-source (MIT) bundle of 83 agent skills and 15 slash commands for bug bounty hunting and external red-team work, built by security researcher Sachin Sharma. It packs a five-phase bug bounty methodology, 58 hunt skills for web bug classes such as IDOR, SSRF, OAuth, JWT, file upload and GraphQL (drawn from 681 disclosed HackerOne report patterns, 433 of them individually cited), recon and OSINT skills, attack chains for internet-facing enterprise systems (Microsoft 365 and Entra ID, Okta, SharePoint, vCenter, SSL VPN appliances) and reporting skills with a seven-question triage gate that checks scope and accepted impact before you submit. Skills load automatically when you describe what you are testing in plain English. Install it as a Claude Code plugin (/plugin marketplace add elementalsouls/Claude-BugHunter) or with the install script, which also copies the skills to OpenCode, OpenAI Codex CLI, Hermes Agent and Google Antigravity; the slash commands and hunt engine are Claude Code only. Optional Burp MCP wiring and, since Nov 18, 2026, a HackerOne MCP server. Intended only for assets you own or are authorized to test (bug bounty scope, pentest engagements, CTFs, your own lab); the author notes Anthropic's safeguards may refuse some offensive requests unless you join Anthropic's free Cyber Verification Program. Public since May 2026; about 10,300 GitHub stars, with about 2,300 added in one day on Nov 18, 2026 when it topped GitHub Trending.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); needs your own Claude Code or other agent subscription",
+"tags": [
+"bug bounty",
+"pentesting",
+"red team",
+"agent skills",
 "open source",
 "new"
 ],

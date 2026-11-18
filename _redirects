@@ -2,6 +2,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/krea.html /categories/image.html 301
+/tools/krea /categories/image 301
 /tools/udio.html /categories/audio.html 301
 /tools/udio /categories/audio 301
 /tools/recraft.html /categories/image.html 301
@@ -62,7 +64,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/midjourney https://www.midjourney.com 302
 /go/ideogram https://ideogram.ai 302
 /go/leonardo-ai https://leonardo.ai 302
-/go/krea https://www.krea.ai 302
 /go/adobe-firefly https://www.adobe.com/products/firefly.html 302
 /go/black-forest-labs-flux https://bfl.ai 302
 /go/invokeai https://github.com/invoke-ai/InvokeAI 302
@@ -147,6 +148,7 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/claude-code-hooks https://github.com/karanb192/claude-code-hooks 302
 /go/safeagents-hugging-face https://github.com/huggingface/safeagents 302
 /go/open-code-review-alibaba https://github.com/alibaba/open-code-review 302
+/go/claude-bughunter https://github.com/elementalsouls/Claude-BugHunter 302
 /go/zendesk https://www.zendesk.com/employee-service/ 302
 /go/botgauge https://www.botgauge.com 302
 /go/project-quarry-cisco https://github.com/cisco-ai-defense/project-quarry 302
@@ -171,6 +173,12 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/bughunter https://github.com/elementalsouls/Claude-BugHunter 302
+/go/claude-bug-hunter https://github.com/elementalsouls/Claude-BugHunter 302
+/go/bug-hunter https://github.com/elementalsouls/Claude-BugHunter 302
+/go/claude-21327 https://claude.com/product/claude-code 302
+/go/codex-0170 https://openai.com/codex/ 302
+/go/gpt-62 https://chatgpt.com 302
 /go/open-code-review https://github.com/alibaba/open-code-review 302
 /go/alibaba-ocr https://github.com/alibaba/open-code-review 302
 /go/alibaba-code-review https://github.com/alibaba/open-code-review 302
