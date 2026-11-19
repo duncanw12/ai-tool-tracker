@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking. v2.1.328 (Nov 18, 2026) adds auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and the Claude apps gateway, lets mcp_tool hooks block an action when the hook call fails (onFailure set to block), warns in /status and claude doctor when an OpenTelemetry exporter has no endpoint, and fixes zsh Bash commands failing at words that start with = (such as echo ====).",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -332,6 +332,25 @@ const DIRECTORY=[
 "cli"
 ],
 "pf": "paid"
+},
+{
+"name": "Superpowers",
+"slug": "superpowers",
+"category": "coding",
+"catName": "Coding & Vibe Coding",
+"url": "https://github.com/obra/superpowers",
+"desc": "Free, open-source (MIT) skills framework and development method for coding agents, built by Jesse Vincent and Prime Radiant. Instead of jumping straight into code, the agent first asks what you are really trying to build, shows the design back in short chunks for you to approve, writes a step-by-step plan with exact file paths and checks, then works through it with a fresh subagent per task and a review after each one. Skills trigger automatically and cover brainstorming, git worktrees, plan writing and execution, test-driven development (red, green, refactor), systematic debugging, verification before calling something done, requesting and receiving code review, finishing a branch, writing your own skills and diagnosing a session that went wrong. Installs from the official Claude Code plugin marketplace (/plugin install superpowers@claude-plugins-official) and the Codex plugin marketplace, and also works in Cursor, Gemini CLI, GitHub Copilot CLI, Google Antigravity, OpenCode, Factory Droid, Devin CLI, Qwen Code, Kimi Code, Grok Build CLI, Hermes Agent and more. The optional visual companion loads a logo that reports the Superpowers version in use; set SUPERPOWERS_DISABLE_TELEMETRY to turn it off. About 321,000 GitHub stars; v7.0.2 released Nov 3, 2026, and still near the top of GitHub Trending on Nov 19, 2026.",
+"freeTier": true,
+"pricing": "Free and open source (MIT); needs your own coding agent subscription",
+"tags": [
+"agent skills",
+"claude code",
+"codex",
+"tdd",
+"open source",
+"new"
+],
+"pf": "both"
 },
 {
 "name": "OpenAI Codex",
@@ -399,21 +418,6 @@ const DIRECTORY=[
 "pf": "both"
 },
 {
-"name": "Aider",
-"slug": "aider",
-"category": "coding",
-"catName": "Coding & Vibe Coding",
-"url": "https://aider.chat",
-"desc": "Open-source AI pair programming in your terminal, with git integration.",
-"pricing": "Open source",
-"tags": [
-"cli",
-"open source",
-"git"
-],
-"pf": "free"
-},
-{
 "name": "Qwen Code",
 "slug": "qwen-code",
 "category": "coding",
@@ -468,7 +472,7 @@ const DIRECTORY=[
 "category": "chat",
 "catName": "Chat Assistants",
 "url": "https://gemini.google.com",
-"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar. New Oct 29, 2026: Gemini can generate, preview and edit files right in the chat (type edits in full screen, or highlight a section and ask for changes). PDFs work on web and mobile; Google Docs, Sheets, slide decks, Markdown, TXT and code are web only. Available to all Gemini users. New Nov 10, 2026: Gemini 4 Carbon, which Google calls its strongest model for long-running agent work and cybersecurity, is available to developers on the paid tier of the Gemini API in Google AI Studio and Android Studio; Google AI Ultra subscribers can try it in AI Studio and in Google Antigravity. It is also in GitHub Copilot on paid plans.",
+"desc": "Google's AI assistant, connected to Google apps and search. For work, the new Gemini agent (Oct 8, 2026) runs inside Gmail, Docs, Sheets and Calendar. New Oct 29, 2026: Gemini can generate, preview and edit files right in the chat (type edits in full screen, or highlight a section and ask for changes). PDFs work on web and mobile; Google Docs, Sheets, slide decks, Markdown, TXT and code are web only. Available to all Gemini users. New Nov 10, 2026: Gemini 4 Carbon, which Google calls its strongest model for long-running agent work and cybersecurity, is available to developers on the paid tier of the Gemini API in Google AI Studio and Android Studio; Google AI Ultra subscribers can try it in AI Studio and in Google Antigravity. It is also in GitHub Copilot on paid plans. New Nov 18, 2026: Gemini 4 Neon, which Google positions between Carbon (hardest long-running work) and Hydrogen (fast everyday tasks), is rolling out to Google AI Pro and Ultra subscribers in the Gemini app model menu, in Gemini for business, in Google Antigravity for paid Pro and Ultra subscribers and in the paid Gemini API, where it costs $3 per million input tokens ($0.15 cached) and $15 per million output tokens with a 1 million-token context window.",
 "freeTier": true,
 "pricing": "Google AI Plus from $4.99/mo (US)",
 "tags": [

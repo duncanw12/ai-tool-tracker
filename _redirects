@@ -2,6 +2,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/windsurf.html /tools/devin.html 301
 /tools/notebooklm.html /tools/gemini-notebook.html 301
 /tools/tabnine.html /categories/coding.html 301
+/tools/aider.html /categories/coding.html 301
+/tools/aider /categories/coding 301
 /tools/krea.html /categories/image.html 301
 /tools/krea /categories/image 301
 /tools/udio.html /categories/audio.html 301
@@ -43,11 +45,11 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/hugging-face https://huggingface.co 302
 /go/modern-web-guidance https://developer.chrome.com/docs/modern-web-guidance/get-started 302
 /go/claude-code https://claude.com/product/claude-code 302
+/go/superpowers https://github.com/obra/superpowers 302
 /go/openai-codex https://openai.com/codex/ 302
 /go/warp https://www.warp.dev 302
 /go/cline https://cline.bot 302
 /go/orca https://www.onorca.dev 302
-/go/aider https://aider.chat 302
 /go/qwen-code https://github.com/QwenLM/qwen-code 302
 /go/chatgpt https://chatgpt.com 302
 /go/claude https://claude.ai 302
@@ -173,6 +175,11 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/obra-superpowers https://github.com/obra/superpowers 302
+/go/super-powers https://github.com/obra/superpowers 302
+/go/claude-21328 https://claude.com/product/claude-code 302
+/go/gemini-neon https://gemini.google.com 302
+/go/neon https://gemini.google.com 302
 /go/bughunter https://github.com/elementalsouls/Claude-BugHunter 302
 /go/claude-bug-hunter https://github.com/elementalsouls/Claude-BugHunter 302
 /go/bug-hunter https://github.com/elementalsouls/Claude-BugHunter 302

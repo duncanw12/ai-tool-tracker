@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 19, 2026. Pricing only where the official page states it.
+const DROP_2026_11_19=[
+{name:"Superpowers",url:"https://github.com/obra/superpowers",category:"Coding",pricing:"Free and open source (MIT); needs your own coding agent subscription",desc:"Skills framework that makes coding agents brainstorm what you want, write a step-by-step plan, test first, and review each task with a fresh subagent before calling it done.",why:"Top of GitHub Trending on Nov 19 (about 2,000 stars in a day, about 321,000 total). In the official Claude Code and Codex plugin marketplaces; also works in Cursor, Gemini CLI, Copilot CLI, Antigravity and OpenCode."},
+];
 // Daily drop: Nov 18, 2026. Pricing only where the official page states it.
 const DROP_2026_11_18=[
 {name:"Claude BugHunter",url:"https://github.com/elementalsouls/Claude-BugHunter",category:"IT & Security",pricing:"Free and open source (MIT); needs your own Claude Code or other agent subscription",desc:"83 bug bounty and red-team skills plus 15 slash commands for Claude Code: recon, 58 hunt skills built from 681 disclosed HackerOne report patterns, and a triage gate that checks scope before you report.",why:"Topped GitHub Trending on Nov 18 (about 2,300 stars in a day, about 10,300 total). Skills also work in OpenCode, Codex CLI, Hermes Agent and Antigravity. Only for targets you own or are authorized to test."},
