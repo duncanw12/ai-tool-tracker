@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking. v2.1.328 (Nov 18, 2026) adds auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and the Claude apps gateway, lets mcp_tool hooks block an action when the hook call fails (onFailure set to block), warns in /status and claude doctor when an OpenTelemetry exporter has no endpoint, and fixes zsh Bash commands failing at words that start with = (such as echo ====).",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking. v2.1.328 (Nov 18, 2026) adds auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and the Claude apps gateway, lets mcp_tool hooks block an action when the hook call fails (onFailure set to block), warns in /status and claude doctor when an OpenTelemetry exporter has no endpoint, and fixes zsh Bash commands failing at words that start with = (such as echo ====). v2.1.329 (Nov 19, 2026) adds a trust-dialog warning that says where a folder's hooks are declared, a warning when hooks in managed settings fail to load, and this session's scheduled tasks, /loop wakeups and forks in /tasks, and fixes ~/.claude.json sometimes being reset to defaults after a network stall or file lock, repeated sign-outs on macOS when the Keychain could be read but not written, and /terminal-setup corrupting VS Code settings files.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -358,7 +358,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://openai.com/codex/",
-"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens. Codex CLI 0.169.0 (Nov 13, 2026) keeps project configuration and MCP servers disabled for codex exec in untrusted directories, even with --sandbox workspace-write (pass --trust to save project trust), lets you add or edit custom model providers from the terminal, adds multiple side-chat tabs in the opt-in terminal workspace and fixes Windows sandbox handling for quoted cmd.exe paths. GPT-6.2 Astra and GPT-6.2 Sol (Nov 17, 2026) are available in Codex for Plus, Pro, Enterprise and Edu users; in the API gpt-6.2-astra costs $8 per million input tokens ($0.40 cached) and $40 per million output tokens, and gpt-6.2-sol keeps GPT-6.1 Sol's prices. Codex CLI 0.170.0 (Nov 18, 2026) adds realtime voice calls in the terminal UI, fixes MCP OAuth credential races during login and logout and keeps existing sandbox restrictions when permissions change or a child thread starts.",
+"desc": "OpenAI's coding agent for the CLI, IDE and cloud tasks. GPT-6.1 Terra (released Oct 26, 2026) is available in Codex and ChatGPT Work for Plus, Pro, Enterprise and Edu users; OpenAI says the same usage allowance covers more tasks with Terra than with GPT-6.1 Sol or GPT-6 Astra. In the API it is gpt-6.1-terra at $1 per million input tokens and $5 per million output tokens. Codex CLI 0.169.0 (Nov 13, 2026) keeps project configuration and MCP servers disabled for codex exec in untrusted directories, even with --sandbox workspace-write (pass --trust to save project trust), lets you add or edit custom model providers from the terminal, adds multiple side-chat tabs in the opt-in terminal workspace and fixes Windows sandbox handling for quoted cmd.exe paths. GPT-6.2 Astra and GPT-6.2 Sol (Nov 17, 2026) are available in Codex for Plus, Pro, Enterprise and Edu users; in the API gpt-6.2-astra costs $8 per million input tokens ($0.40 cached) and $40 per million output tokens, and gpt-6.2-sol keeps GPT-6.1 Sol's prices. Codex CLI 0.170.0 (Nov 18, 2026) adds realtime voice calls in the terminal UI, fixes MCP OAuth credential races during login and logout and keeps existing sandbox restrictions when permissions change or a child thread starts. Codex CLI 0.171.0 (Nov 19, 2026, stable) adds GPT-6.2 Sol and Astra to the model catalogs with Sol as the default selection, turns the terminal workspace on by default (searchable document previews, image previews and subagent transcripts beside the main conversation), adds codex exec --remote to start or resume non-interactive sessions on an existing app server, adds /rc and /remote for remote control with device pairing codes, and fixes enterprise MCP sign-in for identity providers that issue ID tokens without refresh tokens.",
 "freeTier": true,
 "pricing": "Included with ChatGPT plans (limited on Free and Go)",
 "tags": [
@@ -891,20 +891,6 @@ const DIRECTORY=[
 "pf": "paid"
 },
 {
-"name": "Copy.ai",
-"slug": "copy-ai",
-"category": "writing",
-"catName": "Writing",
-"url": "https://www.copy.ai",
-"desc": "AI platform for go-to-market copy and workflows.",
-"pricing": "Paid plans from $29/mo",
-"tags": [
-"marketing",
-"copywriting"
-],
-"pf": "paid"
-},
-{
 "name": "Grammarly",
 "slug": "grammarly",
 "category": "writing",
@@ -1204,6 +1190,25 @@ const DIRECTORY=[
 "agents",
 "mcp",
 "research"
+],
+"pf": "both"
+},
+{
+"name": "Firecrawl",
+"slug": "firecrawl",
+"category": "research",
+"catName": "Productivity & Research",
+"url": "https://firecrawl.dev",
+"desc": "Open-source web data API for AI agents. Scrape a page or crawl a whole site into clean markdown, search the web, and reach 550+ data providers through its Alexandria service, via an API, SDKs, an MCP server or a command-line tool. Use the hosted Firecrawl Cloud, run Firecrawl Local as a single binary on your own machine (cargo install firecrawl-local), or self-host the full server from the repo. The code is AGPL-3.0 licensed. About 204,700 GitHub stars and still near the top of GitHub Trending on Nov 20, 2026; v2.11.0 (Jun 19, 2026) added a research index covering 3M+ arXiv papers and the GitHub code behind them.",
+"freeTier": true,
+"pricing": "Free plan (1,000 credits/month); paid from $16/month billed yearly (Hobby, 5,000 credits)",
+"tags": [
+"web scraping",
+"crawler",
+"mcp",
+"agents",
+"open source",
+"new"
 ],
 "pf": "both"
 },

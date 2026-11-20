@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 20, 2026. Pricing only where the official page states it.
+const DROP_2026_11_20=[
+{name:"Firecrawl",url:"https://firecrawl.dev",category:"Research",pricing:"Free plan (1,000 credits/month); paid from $16/month billed yearly",desc:"Open-source web data API for AI agents: scrape, crawl and search sites into clean markdown through an API, SDKs, MCP or CLI, with a hosted cloud, a single-binary local mode and a self-hosted server.",why:"On GitHub Trending again on Nov 20 with about 204,700 stars. AGPL-3.0 licensed; the free cloud plan covers 1,000 pages or 500 searches a month."},
+];
 // Daily drop: Nov 19, 2026. Pricing only where the official page states it.
 const DROP_2026_11_19=[
 {name:"Superpowers",url:"https://github.com/obra/superpowers",category:"Coding",pricing:"Free and open source (MIT); needs your own coding agent subscription",desc:"Skills framework that makes coding agents brainstorm what you want, write a step-by-step plan, test first, and review each task with a fresh subagent before calling it done.",why:"Top of GitHub Trending on Nov 19 (about 2,000 stars in a day, about 321,000 total). In the official Claude Code and Codex plugin marketplaces; also works in Cursor, Gemini CLI, Copilot CLI, Antigravity and OpenCode."},
