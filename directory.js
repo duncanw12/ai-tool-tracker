@@ -324,7 +324,7 @@ const DIRECTORY=[
 "category": "coding",
 "catName": "Coding & Vibe Coding",
 "url": "https://claude.com/product/claude-code",
-"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking. v2.1.328 (Nov 18, 2026) adds auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and the Claude apps gateway, lets mcp_tool hooks block an action when the hook call fails (onFailure set to block), warns in /status and claude doctor when an OpenTelemetry exporter has no endpoint, and fixes zsh Bash commands failing at words that start with = (such as echo ====). v2.1.329 (Nov 19, 2026) adds a trust-dialog warning that says where a folder's hooks are declared, a warning when hooks in managed settings fail to load, and this session's scheduled tasks, /loop wakeups and forks in /tasks, and fixes ~/.claude.json sometimes being reset to defaults after a network stall or file lock, repeated sign-outs on macOS when the Keychain could be read but not written, and /terminal-setup corrupting VS Code settings files.",
+"desc": "Anthropic's agentic coding tool for the terminal, IDE and web. New in v2.1.314 (Oct 30, 2026): a permissions.blockWritesOutsideWorkingDirectories setting makes Write, Edit and NotebookEdit refuse any path outside your working directories in every permission mode. v2.1.316 (Oct 31) adds CLAUDE_CODE_DISABLE_ULTRATHINK and CLAUDE_CODE_SUBAGENT_EFFORT settings. v2.1.317 (Nov 3) asks before a web or shell tool call sends your account email address to the network. v2.1.319 (Nov 6) adds a permissions.denyInsteadOfPrompting setting that denies a tool call that would wait on a permission prompt and lets the turn continue, and moves MCP tasks to the background right away. v2.1.321 (Nov 9) adds Claude Fable 5.2 as the default Fable model and fixes several security issues, including MCP OAuth requests sending secrets such as refresh tokens to another host when a server redirected them, and a case where a read-only Bash command ran outside the sandbox without a permission prompt; v2.1.322 (Nov 9) adds fast mode on Vertex. v2.1.323 (Nov 12, 2026) adds Code Mode, an experimental opt-in where Claude writes JavaScript to call its tools (admins can turn it off for an organization), an engines field in plugin.json so plugins outside their stated Claude Code version range are not installed or loaded, a startup warning for Bash allow rules with a * in a variable's value, and in VS Code a trust prompt before the first session in a folder you have not trusted. v2.1.325 (Nov 13) fixes a security issue in how zstd-compressed responses are decoded, tells you how to continue (/rewind or /clear) when your organization's policy blocks a request, and fixes /security-review failing in worktrees of bare repositories and in --separate-git-dir checkouts. v2.1.326 (Nov 16, 2026) warns at startup when an --allowedTools, --disallowedTools or --tools entry does not look like a complete rule, warns and names the file when a permission rule you add cannot actually be saved, stops describing Bash commands that delete or overwrite files (find -delete, cat a > b, sort -o) as a search or a read in the transcript, fixes a cp being refused when only its source was covered by an Edit deny rule, and lets Code Mode run with agent teams. v2.1.327 (Nov 17, 2026) asks before /install-github-app changes a repository, adds claude mcp add-json <name> - so a server's JSON and tokens can come from stdin instead of the command line, lists broken agent, skill and command files, ignored permission settings and hook matchers that never match in /status, and fixes claude mcp add and remove deleting other keys from .mcp.json and /export overwriting an existing file without asking. v2.1.328 (Nov 18, 2026) adds auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and the Claude apps gateway, lets mcp_tool hooks block an action when the hook call fails (onFailure set to block), warns in /status and claude doctor when an OpenTelemetry exporter has no endpoint, and fixes zsh Bash commands failing at words that start with = (such as echo ====). v2.1.330 (Nov 20, 2026) adds sign-in to organizations managed in Anthropic's Enterprise Admin Console (after claude auth login the organization's settings apply) and easel, a built-in mod that draws charts when asked (Pro, Max and, where available, Team and Enterprise, on macOS and Linux), and fixes freezes after compacting a very long conversation and when WebFetch hits some pages, ExitWorktree deleting a worktree another session was using, and user-settings changes lost when several processes saved at once.",
 "pricing": "Included with paid Claude plans",
 "tags": [
 "agent",
@@ -743,19 +743,6 @@ const DIRECTORY=[
 "training"
 ],
 "pf": "both"
-},
-{
-"name": "Luma AI",
-"slug": "luma-ai",
-"category": "video",
-"catName": "Video",
-"url": "https://lumalabs.ai",
-"desc": "AI video generation with the Dream Machine and Ray models.",
-"pricing": "Plus from $30/mo",
-"tags": [
-"video generation"
-],
-"pf": "paid"
 },
 {
 "name": "HeyGen",
@@ -2463,5 +2450,23 @@ const DIRECTORY=[
 "threat hunting"
 ],
 "pf": "paid"
+},
+{
+"name": "OpenSRE",
+"slug": "opensre",
+"category": "itsec",
+"catName": "AI for IT & Cybersecurity",
+"url": "https://opensre.com",
+"desc": "Open-source command-line agent for CI/CD reliability and incident response, from Tracer-Cloud. It reads a failed CI run, pulls the related commits, deploys, logs, metrics and traces, traces the likely cause and pushes a fix for you to review, or answers an alert and posts a summary to Slack, PagerDuty or Telegram. Connects to 60+ tools (Kubernetes, AWS, Datadog, Grafana, GitHub, Jira and more), self-hosted with your own model (Anthropic, OpenAI, Ollama, Gemini and others) and an optional step that masks sensitive identifiers before external model calls. Apache-2.0 licensed. About 13,800 GitHub stars and on GitHub Trending on Nov 21, 2026; the project calls itself a public alpha, so expect APIs to change. Telemetry is opt-out (OPENSRE_NO_TELEMETRY=1).",
+"pricing": "Open source (Apache-2.0); official site does not state hosted pricing",
+"tags": [
+"incident response",
+"ci cd",
+"sre",
+"open source",
+"agents",
+"new"
+],
+"pf": "free"
 }
 ];

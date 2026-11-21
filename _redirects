@@ -10,6 +10,8 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /tools/udio /categories/audio 301
 /tools/copy-ai.html /categories/writing.html 301
 /tools/copy-ai /categories/writing 301
+/tools/luma-ai.html /categories/video.html 301
+/tools/luma-ai /categories/video 301
 /tools/recraft.html /categories/image.html 301
 /tools/recraft /categories/image 301
 /tools/quillbot.html /categories/writing.html 301
@@ -73,7 +75,6 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/invokeai https://github.com/invoke-ai/InvokeAI 302
 /go/runway https://runway.com 302
 /go/synthesia https://www.synthesia.io 302
-/go/luma-ai https://lumalabs.ai 302
 /go/heygen https://www.heygen.com 302
 /go/descript https://www.descript.com 302
 /go/kling-ai https://kling.ai 302
@@ -177,6 +178,10 @@ https://effulgent-crumble-d448c5.netlify.app/* https://aitrackertool.dev/:splat 
 /go/0-0sec-labs https://github.com/0sec-labs/0 302
 /go/neoverse-neo https://verse.neo.ai 302
 /go/elastic-security-ai https://www.elastic.co/security/ai 302
+/go/opensre https://opensre.com 302
+/go/opensre-tracer https://opensre.com 302
+/go/tracer-opensre https://opensre.com 302
+/go/claude-21330 https://claude.com/product/claude-code 302
 /go/firecrawl-dev https://firecrawl.dev 302
 /go/firecrawl-oss https://firecrawl.dev 302
 /go/claude-21329 https://claude.com/product/claude-code 302

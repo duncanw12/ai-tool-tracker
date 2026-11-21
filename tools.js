@@ -26,6 +26,10 @@ const DROP_2026_10_15=[
 {name:"AI Sandboxes by Buddy",url:"https://buddy.works/sandboxes",category:"Infra",pricing:"Pay by the minute",desc:"Persistent Linux VMs for coding agents with root, Docker, SSH, snapshots and public URLs, driven over MCP, CLI, SDK or API.",why:"The disk survives between runs, so an agent can start the app it just built, hit it at a real URL and read the logs. Launched on Product Hunt Oct 15."}];
 
 // Daily drop: Oct 16, 2026. Pricing only where the official page states it.
+// Daily drop: Nov 21, 2026. Pricing only where the official page states it.
+const DROP_2026_11_21=[
+{name:"OpenSRE",url:"https://opensre.com",category:"AI for IT & Cybersecurity",pricing:"Open source (Apache-2.0)",desc:"Open-source CLI agent that investigates failed CI runs and production alerts, traces the likely cause and proposes a fix for you to review. Self-hosted with your own model; connects to 60+ tools.",why:"On GitHub Trending on Nov 21 with about 13,800 stars. Still a public alpha, so try it on a home lab or test repo first."},
+];
 // Daily drop: Nov 20, 2026. Pricing only where the official page states it.
 const DROP_2026_11_20=[
 {name:"Firecrawl",url:"https://firecrawl.dev",category:"Research",pricing:"Free plan (1,000 credits/month); paid from $16/month billed yearly",desc:"Open-source web data API for AI agents: scrape, crawl and search sites into clean markdown through an API, SDKs, MCP or CLI, with a hosted cloud, a single-binary local mode and a self-hosted server.",why:"On GitHub Trending again on Nov 20 with about 204,700 stars. AGPL-3.0 licensed; the free cloud plan covers 1,000 pages or 500 searches a month."},
